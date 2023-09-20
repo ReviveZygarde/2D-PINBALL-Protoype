@@ -2526,7 +2526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modeState: 0
   ballSaverState: 0
-  secondsUntilBallSaveEnds: 10
+  secondsUntilBallSaveEnds: 20
   secondsUntilModeEnds: 10
 --- !u!114 &1745013683
 MonoBehaviour:

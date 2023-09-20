@@ -57,5 +57,7 @@ public class scoreSim_menuBehavior : MonoBehaviour
         modeIndicator.text = $"{modeBehavior.modeState}";
         scoreMultiplierIndicator.text = $"{scoreBehavior.multiplierState}";
         ballsLeft.text = $"{scoreBehavior.ballsLeft}";
+        saverTimer.text = $"{modeBehavior.secondsUntilBallSaveEnds}";
+        modeTimer.text = $"{modeBehavior.secondsUntilModeEnds}";
     }
 }

@@ -360,8 +360,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 871, y: 110}
-  m_SizeDelta: {x: 386.215, y: 51.7066}
+  m_AnchoredPosition: {x: 895, y: 102.71}
+  m_SizeDelta: {x: 121.4577, y: 51.7066}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &132045194
 GameObject:
@@ -1447,8 +1447,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 871, y: 51}
-  m_SizeDelta: {x: 386.215, y: 51.7066}
+  m_AnchoredPosition: {x: 895.01, y: 51.003}
+  m_SizeDelta: {x: 121.44, y: 51.7066}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &840585012
 CanvasRenderer:
@@ -2526,8 +2526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modeState: 0
   ballSaverState: 0
-  secondsUntilBallSaveEnds: 0
-  secondsUntilModeEnds: 0
+  secondsUntilBallSaveEnds: 10
+  secondsUntilModeEnds: 10
 --- !u!114 &1745013683
 MonoBehaviour:
   m_ObjectHideFlags: 0

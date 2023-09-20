@@ -42,11 +42,13 @@ public class scoreSim_menuBehavior : MonoBehaviour
     public Text modeTimer;
     public Text saverTimer;
     public Text ballsLeft;
+    public Button consumeBall;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Instead of gameplay, the menu based simulation will just have buttons to extensively test the ModeBehavior.
+        consumeBall.onClick.AddListener(modeBehavior.consumeBall);
     }
 
     // Update is called once per frame

@@ -13,6 +13,7 @@ public class ModeBehavior : MonoBehaviour
     { ON, OFF, ALMOST_END}
     public ballSaver ballSaverState = ballSaver.ON;
 
+    //for timer
     public int secondsUntilBallSaveEnds;
     public int secondsUntilModeEnds;
 
@@ -20,16 +21,23 @@ public class ModeBehavior : MonoBehaviour
     private int predefined_secondsUntilBallSaveEnds;
     private int predefined_secondsUntilModeEnds;
 
+    //Regular integer to determine how much the score gets multiplied. See
+    //the switch-case on how the scoreBehavior's multiplierState affects this.
+    int multiplierFromScoreComponentOnCalculation;
+
+    private scoreBehavior scoreComponent;
+    private tableTally tally;
+
     /// <summary>
     /// TODO:
     /// - Add timer for Ball Saver (COROUTINE!!!!) - done
-    /// - Make sure ConsumeBall does not make the ball count go down when saver is active
+    /// - Make sure ConsumeBall does not make the ball count go down when saver is active -- done.
     /// - Make the holes and jumper bumps increase score.
     /// - When one of the hole entry count reaches 3, reset the counter for all 3 holes and then start the mode.
     ///   (and when a mode that is NOT normal is happening, do NOT make the counter go up)
     /// - When any other mode is active that is NOT Normal/Multiball/Crack, make the ball saver timer infinite,
     ///   but also start the mode timer, and when that reaches 0 go to END_MODE, calculate score, increase multiplier
-    ///   state, then NORMAL. -- Most of this is done, what's left is score calculation.
+    ///   state, then NORMAL. -- Done. Score calculation may need to be revised as the project continues.
     /// - When ball is consumed and saver is off, multiply the score with the Multiplier. Respawn ball, re-enable ball saver and it's timer.
     /// </summary>
 
@@ -37,6 +45,7 @@ public class ModeBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scoreComponent = GetComponent<scoreBehavior>();
         predefined_secondsUntilBallSaveEnds = secondsUntilBallSaveEnds;
         predefined_secondsUntilModeEnds = secondsUntilModeEnds;
         timerCountdownStart(); //This would be called as soon as the ball is launched from the spring.
@@ -109,14 +118,98 @@ public class ModeBehavior : MonoBehaviour
 
     private void ScoreCalculate()
     {
-        //math stuff goes here
-        revertModeToNormal();
+        //The int variable, multiplierFromScoreComponentOnCalculation, is determined
+        //by the Multiplier state machine from the scoreBehavior component.
+        switch (scoreComponent.multiplierState)
+        {
+            case scoreBehavior.multiplier.X1:
+                if (scoreComponent.multiplierState == scoreBehavior.multiplier.X1)
+                {
+                    multiplierFromScoreComponentOnCalculation = 1;
+                }
+                break;
+            case scoreBehavior.multiplier.X2:
+                if (scoreComponent.multiplierState == scoreBehavior.multiplier.X2)
+                {
+                    multiplierFromScoreComponentOnCalculation = 2;
+                }
+                break;
+            case scoreBehavior.multiplier.X4:
+                if (scoreComponent.multiplierState == scoreBehavior.multiplier.X4)
+                {
+                    multiplierFromScoreComponentOnCalculation = 4;
+                }
+                break;
+            case scoreBehavior.multiplier.X6:
+                if (scoreComponent.multiplierState == scoreBehavior.multiplier.X6)
+                {
+                    multiplierFromScoreComponentOnCalculation = 6;
+                }
+                break;
+            case scoreBehavior.multiplier.X8:
+                if (scoreComponent.multiplierState == scoreBehavior.multiplier.X8)
+                {
+                    multiplierFromScoreComponentOnCalculation = 8;
+                }
+                break;
+            case scoreBehavior.multiplier.X10:
+                if (scoreComponent.multiplierState == scoreBehavior.multiplier.X10)
+                {
+                    multiplierFromScoreComponentOnCalculation = 10;
+                }
+                break;
+        }
+        if(secondsUntilModeEnds == 0) //if there is no time left by the time the mode ends, no bonus is applied.
+        {
+            revertModeToNormal(); //The game mode state goes back to Normal.
+        }
+        else //the bonus will be applied if you have at at least 1 second left on the timer.
+        {
+            scoreComponent.pl_score = scoreComponent.pl_score + (secondsUntilModeEnds * multiplierFromScoreComponentOnCalculation) * (scoreComponent.ballsLeft + 1);
+            revertModeToNormal();
+        }
     }
 
     private void revertModeToNormal()
     {
         modeState = currentMode.NORMAL;
-        secondsUntilBallSaveEnds = predefined_secondsUntilModeEnds;
+        secondsUntilBallSaveEnds = predefined_secondsUntilBallSaveEnds;
         timerCountdownStart();
+    }
+
+    public void consumeBall()
+    {
+        switch (ballSaverState)
+        {
+            case ballSaver.ON:
+                if(ballSaverState == ballSaver.ON)
+                {
+                    return; //intentionally do nothing for now in the menu simulation.
+                            //In the actual game, though, make the ball respawn at the
+                            //starting point.
+                }
+                break;
+            case ballSaver.ALMOST_END:
+                if(ballSaverState == ballSaver.ALMOST_END)
+                {
+                    return;
+                }
+                break;
+            case ballSaver.OFF:
+                if(ballSaverState == ballSaver.OFF)
+                {
+                    if(scoreComponent.ballsLeft <= 0)
+                    {
+                        Debug.Log("Final score is displayed here, calculated with the multiplier. Show game over screen.");
+                    }
+                    else
+                    {
+                        scoreComponent.ballsLeft--;
+                        ballSaverState = ballSaver.ON;
+                        revertModeToNormal();
+                    }
+                }
+                break;
+        }
     }
 }

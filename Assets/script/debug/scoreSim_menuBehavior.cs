@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -32,6 +33,7 @@ public class scoreSim_menuBehavior : MonoBehaviour
 {
     public ModeBehavior modeBehavior;
     public scoreBehavior scoreBehavior;
+    public tableTally tally;
     public Text scoreCounter;
     public Text modeIndicator;
     public Text saverIndicator;
@@ -39,16 +41,34 @@ public class scoreSim_menuBehavior : MonoBehaviour
     public Text hole1count;
     public Text hole2count;
     public Text hole3count;
+    public Text rampCount;
     public Text modeTimer;
     public Text saverTimer;
     public Text ballsLeft;
     public Button consumeBall;
+    public Button hole1;
+    public Button hole2;
+    public Button hole3;
+    public Button ramp;
+    public Button jumper;
+    public Button exit;
 
     // Start is called before the first frame update
     void Start()
     {
         //Instead of gameplay, the menu based simulation will just have buttons to extensively test the ModeBehavior.
         consumeBall.onClick.AddListener(modeBehavior.consumeBall);
+        hole1.onClick.AddListener(tally.tallyHole1);
+        hole2.onClick.AddListener(tally.tallyHole2);
+        hole3.onClick.AddListener(tally.tallyHole3);
+        ramp.onClick.AddListener(tally.tallyRamp);
+        jumper.onClick.AddListener(tally.tallyBumper);
+        exit.onClick.AddListener(gotoMenu);
+    }
+
+    void gotoMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     // Update is called once per frame
@@ -61,5 +81,9 @@ public class scoreSim_menuBehavior : MonoBehaviour
         ballsLeft.text = $"{scoreBehavior.ballsLeft}";
         saverTimer.text = $"{modeBehavior.secondsUntilBallSaveEnds}";
         modeTimer.text = $"{modeBehavior.secondsUntilModeEnds}";
+        hole1count.text = $"{tally.hole1entryTally}";
+        hole2count.text = $"{tally.criteria_hole2entry}";
+        hole3count.text = $"{tally.criteria_hole3entry}";
+        rampCount.text = $"{tally.criteria_ramp_entry}";
     }
 }

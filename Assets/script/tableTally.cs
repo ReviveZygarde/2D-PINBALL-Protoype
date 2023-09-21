@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static ModeBehavior;
 
 /* T A B L E  T A L L Y
  * 
@@ -35,60 +34,87 @@ public class tableTally : MonoBehaviour
         modeBehavior = GetComponent<ModeBehavior>();
     }
 
-    private void tallyHole1()
+    public void tallyHole1()
     {
         hole1entryTally++;
+        scoreComponent.pl_score = scoreComponent.pl_score + 100;
     }
 
-    private void tallyHole2()
+    public void tallyHole2()
     {
         hole2entryTally++;
-        if (modeBehavior.modeState == currentMode.NORMAL)
+        scoreComponent.pl_score = scoreComponent.pl_score + 100;
+        if (modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
         {
             criteria_hole2entry++;
             hole_2_3_rampCheck();
         }
     }
 
-    private void tallyHole3()
+    public void tallyHole3()
     {
         hole3entryTally++;
-        if (modeBehavior.modeState == currentMode.NORMAL)
+        scoreComponent.pl_score = scoreComponent.pl_score + 100;
+        if (modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
         {
             criteria_hole3entry++;
             hole_2_3_rampCheck();
         }
     }
 
-    private void tallyRamp()
+    public void tallyRamp()
     {
         rampTally++;
-        if (modeBehavior.modeState == currentMode.NORMAL)
+        scoreComponent.pl_score = scoreComponent.pl_score + 500;
+        if (modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
         {
             criteria_ramp_entry++;
             hole_2_3_rampCheck();
         }
     }
-    private void tallyBumper()
+    public void tallyBumper()
     {
         bumperTally++;
+        scoreComponent.pl_score = scoreComponent.pl_score + 20;
     }
-    private void hole_2_3_rampCheck()
+    private void hole_2_3_rampCheck() //checks if the ball has been to certain places X amount of times to begin the commented Mode.
     {
         if (criteria_hole2entry >= 3)
         {
-            // start rhythm mode
+            resetCriteriaHoleEntries();
+            // start rhythm mode or Multi-ball based on RNG between 0-1.
+            int randomNumber = Random.Range(0, 1);
+            if(randomNumber == 0)
+            {
+                modeBehavior.modeState = ModeBehavior.currentMode.RHYTHM;
+            }
+            else
+            {
+                modeBehavior.modeState = ModeBehavior.currentMode.MULTIBALL;
+            }
+            modeBehavior.timerCountdownStart();
         }
         if (criteria_hole3entry >= 3)
         {
+            resetCriteriaHoleEntries();
             //start boss mode
+            modeBehavior.modeState = ModeBehavior.currentMode.BOSS;
+            modeBehavior.timerCountdownStart();
         }
         if (criteria_ramp_entry >= 6)
         {
+            resetCriteriaHoleEntries();
             //start rush mode
+            modeBehavior.modeState = ModeBehavior.currentMode.RUSH;
+            modeBehavior.timerCountdownStart();
         }
+    }
+
+    private void resetCriteriaHoleEntries()
+    {
+        StopAllCoroutines();
         criteria_hole2entry = 0;
-        criteria_hole2entry = 0;
+        criteria_hole3entry = 0; //Note to self I need better naming conventions.
         criteria_ramp_entry = 0;
     }
 

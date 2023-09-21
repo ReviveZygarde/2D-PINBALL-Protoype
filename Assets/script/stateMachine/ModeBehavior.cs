@@ -34,7 +34,7 @@ public class ModeBehavior : MonoBehaviour
     /// TODO:
     /// - DONE: Add timer for Ball Saver (COROUTINE!!!!)
     /// - DONE: Make sure ConsumeBall does not make the ball count go down when saver is active
-    /// - Make the holes and jumper bumps increase score.
+    /// - DONE: Make the holes and jumper bumps increase score.
     /// - DONE: When one of the hole entry count reaches 3, reset the counter for all 3 holes and then start the mode.
     ///   (and when a mode that is NOT normal is happening, do NOT make the counter go up)
     /// - DONE: (Score calculation may need to be revised as the project continues.) - When any other mode is active

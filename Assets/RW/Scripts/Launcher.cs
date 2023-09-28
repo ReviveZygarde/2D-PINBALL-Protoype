@@ -43,8 +43,9 @@ public class Launcher : MonoBehaviour
     // Ready for Launch
     public bool isActive = true;
 
-    [SerializeField] private int powerIndex;
-
+    public int powerIndex;
+    private int original_powerIndex; //This works just like the "predefined" variables in ModeBehavior.
+                                     //I think "original" is the better wording in these scenarios.
     private SpringJoint2D springJoint;
     private Rigidbody2D rb;
     private float force = 0f;
@@ -58,6 +59,7 @@ public class Launcher : MonoBehaviour
         springJoint = GetComponent<SpringJoint2D>();
         springJoint.distance = 1f;
         rb = GetComponent<Rigidbody2D>();
+        original_powerIndex = powerIndex;
     }
 
     void Update()
@@ -99,7 +101,7 @@ public class Launcher : MonoBehaviour
         if (isKeyPress)
         {
             // retract the springJoint distance and reduce the power
-            powerIndex = 22;
+            powerIndex = original_powerIndex;
             springJoint.distance = .8f;
             rb.AddForce(Vector3.down * 400);
         }

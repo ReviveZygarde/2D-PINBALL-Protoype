@@ -33,11 +33,14 @@ using UnityEngine;
 public class LaunchListener : MonoBehaviour
 {
     private Launcher launcherScript;
+    private GameObject gateToToggle;
 
     void Start()
     {
         GameObject launcherObj = GameObject.Find("Plunger-springjoint");
         launcherScript = launcherObj.GetComponent<Launcher>();
+        gateToToggle = GameObject.FindGameObjectWithTag("gate");
+        gateToToggle.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D obj)
@@ -45,6 +48,7 @@ public class LaunchListener : MonoBehaviour
         if (obj.name == "Pinball")
         {
             launcherScript.isActive = false;
+            gateToToggle.SetActive(true);
         }
     }
 }

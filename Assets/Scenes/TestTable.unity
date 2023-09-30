@@ -2896,7 +2896,6 @@ GameObject:
   - component: {fileID: 1125024269}
   - component: {fileID: 1125024272}
   - component: {fileID: 1125024271}
-  - component: {fileID: 1125024270}
   - component: {fileID: 1125024273}
   m_Layer: 0
   m_Name: Square
@@ -2920,26 +2919,6 @@ Transform:
   m_Father: {fileID: 87239458}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 48.203}
---- !u!250 &1125024270
-PointEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1125024268}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceMagnitude: 300
-  m_ForceVariation: 0
-  m_DistanceScale: 1
-  m_ForceSource: 0
-  m_ForceTarget: 0
-  m_ForceMode: 0
-  m_Drag: 0
-  m_AngularDrag: 0
 --- !u!61 &1125024271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2951,7 +2930,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -3711,7 +3690,6 @@ GameObject:
   - component: {fileID: 1374017706}
   - component: {fileID: 1374017709}
   - component: {fileID: 1374017708}
-  - component: {fileID: 1374017707}
   - component: {fileID: 1374017710}
   m_Layer: 0
   m_Name: Square (1)
@@ -3735,26 +3713,6 @@ Transform:
   m_Father: {fileID: 87239458}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 138.203}
---- !u!250 &1374017707
-PointEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374017705}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceMagnitude: 300
-  m_ForceVariation: 0
-  m_DistanceScale: 1
-  m_ForceSource: 0
-  m_ForceTarget: 0
-  m_ForceMode: 0
-  m_Drag: 0
-  m_AngularDrag: 0
 --- !u!61 &1374017708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3766,7 +3724,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -4789,7 +4747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1662933317
 Transform:
   m_ObjectHideFlags: 0

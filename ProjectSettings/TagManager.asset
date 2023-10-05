@@ -43,3 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: holesLayer
+    uniqueID: 900533489
+    locked: 0
+  - name: BallLayer
+    uniqueID: 1697104065
+    locked: 0
+  - name: OverlayingObjectsLayer
+    uniqueID: 2522325277
+    locked: 0

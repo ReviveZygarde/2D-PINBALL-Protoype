@@ -5471,24 +5471,40 @@ PrefabInstance:
     m_TransformParent: {fileID: 419208459}
     m_Modifications:
     - target: {fileID: 3488089993128618965, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.50582004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488089993128618965, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12.6455
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488089993128618965, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5291
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488089993128618965, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.88
+      value: -0.829
       objectReference: {fileID: 0}
     - target: {fileID: 3488089993128618965, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.01
+      value: 12.534
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488089993128618965, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3488089993128618965, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.86478025
+      value: 0.988755
       objectReference: {fileID: 0}
     - target: {fileID: 3488089993128618965, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5021505
+      value: 0.14954463
       objectReference: {fileID: 0}
     - target: {fileID: 3488089993128618965, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 60.285
+      value: 17.201
       objectReference: {fileID: 0}
     - target: {fileID: 3492172112364688815, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
       propertyPath: m_LocalPosition.x

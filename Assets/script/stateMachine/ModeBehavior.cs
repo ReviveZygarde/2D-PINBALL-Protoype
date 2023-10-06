@@ -166,7 +166,7 @@ public class ModeBehavior : MonoBehaviour
         }
         if(secondsUntilModeEnds == 0) //if there is no time left by the time the mode ends, no Time Leftover Bonus is applied.
         {
-            scoreComponent.pl_score = scoreComponent.pl_score * multiplierFromScoreComponentOnCalculation * (scoreComponent.ballsLeft + 1);
+            scoreComponent.pl_score = (int)(Time.timeScale * scoreComponent.pl_score * multiplierFromScoreComponentOnCalculation * (scoreComponent.ballsLeft + 1));
             revertModeToNormal(); //The game mode state goes back to Normal.
         }
         else //the Time Leftover bonus will be applied if you have at at least 1 second left on the timer.
@@ -190,6 +190,7 @@ public class ModeBehavior : MonoBehaviour
 
     private void revertModeToNormal()
     {
+        Time.timeScale = 1f; //Timescale is put here in case if the mode that ended was rush, so this undoes the changes rush mode did.
         modeState = currentMode.NORMAL;
         secondsUntilBallSaveEnds = predefined_secondsUntilBallSaveEnds;
         secondsUntilModeEnds = predefined_secondsUntilModeEnds;
@@ -233,6 +234,8 @@ public class ModeBehavior : MonoBehaviour
                     {
                         scoreComponent.ballsLeft--;
                         ballSaverState = ballSaver.ON;
+                        scoreComponent.pl_score = scoreComponent.pl_score + tally.bumperTally + tally.rampTally + tally.hole1entryTally;
+                        tally.resetAllTallies();
                         revertModeToNormal();
                     }
                 }

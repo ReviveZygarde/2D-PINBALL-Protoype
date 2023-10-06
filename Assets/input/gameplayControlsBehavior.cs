@@ -66,11 +66,13 @@ public class gameplayControlsBehavior : MonoBehaviour
     }
 
     //Debug Inputs
+    /*
     void OnDebug_Exit(InputValue value)
     {
         Debug.Log("Scene exit...");
         SceneManager.LoadScene(0);
     }
+    */
 
     // Update is called once per frame
     void Update()

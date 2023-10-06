@@ -84,7 +84,7 @@ public class tableTally : MonoBehaviour
             resetCriteriaHoleEntries();
             // start rhythm mode or Multi-ball based on RNG between 0-1.
             int randomNumber = Random.Range(0, 1);
-            if(randomNumber == 0)
+            if (randomNumber == 0)
             {
                 modeBehavior.modeState = ModeBehavior.currentMode.RHYTHM;
             }
@@ -118,4 +118,15 @@ public class tableTally : MonoBehaviour
         criteria_ramp_entry = 0;
     }
 
+    public void resetAllTallies()
+    {
+        hole1entryTally = 0;
+        hole2entryTally = 0;
+        hole3entryTally = 0;
+        rampTally = 0;
+        bumperTally = 0;
+        criteria_hole2entry = 0;
+        criteria_hole3entry = 0;
+        criteria_ramp_entry = 0;
+    }
 }

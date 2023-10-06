@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ModeBehavior : MonoBehaviour
 {
@@ -229,6 +230,7 @@ public class ModeBehavior : MonoBehaviour
                     if(scoreComponent.ballsLeft <= 0)
                     {
                         Debug.Log("Final score is displayed here, calculated with the multiplier. Show game over screen.");
+                        SceneManager.LoadScene(6);
                     }
                     else
                     {

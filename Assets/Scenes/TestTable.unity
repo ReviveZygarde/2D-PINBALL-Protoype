@@ -5269,7 +5269,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LET'S LAUNCH IT!!
+  m_Text: LET'S GO!!!!! MOVE IT!
 --- !u!222 &1499343795
 CanvasRenderer:
   m_ObjectHideFlags: 0

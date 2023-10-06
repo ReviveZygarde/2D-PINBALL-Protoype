@@ -148,16 +148,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4012710718916186, guid: afae779ec40324d1da8782efc872a8b5, type: 3}
   m_PrefabInstance: {fileID: 3492574160460110055}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3494339307340911511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1828109264587632, guid: afae779ec40324d1da8782efc872a8b5, type: 3}
-  m_PrefabInstance: {fileID: 3492574160460110055}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3494343268735880261 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1824096797676706, guid: afae779ec40324d1da8782efc872a8b5, type: 3}
-  m_PrefabInstance: {fileID: 3492574160460110055}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3492574160665826110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,12 +272,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77598ff18196f2e40a72eb940bdb74d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  efxZoomObj: {fileID: 3494343268735880261}
-  efxLightObj: {fileID: 3494339307340911511}
-  isTouched: 0
   isKeyPress: 0
   isActive: 1
+  powerIndex: 40
   maxForce: 200
+  pl_inputButtonBool: {fileID: 0}
 --- !u!1 &3494401473489121112 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1836259980508262, guid: cf67b35cc0bf642489b1f5b4523b97df, type: 3}

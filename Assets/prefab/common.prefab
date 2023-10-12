@@ -64,7 +64,7 @@ MonoBehaviour:
   modeState: 0
   ballSaverState: 0
   secondsUntilBallSaveEnds: 30
-  secondsUntilModeEnds: 60
+  secondsUntilModeEnds: 100
 --- !u!114 &3664509487736438891
 MonoBehaviour:
   m_ObjectHideFlags: 0

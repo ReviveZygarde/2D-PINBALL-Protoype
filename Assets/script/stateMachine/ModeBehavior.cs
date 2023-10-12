@@ -30,6 +30,7 @@ public class ModeBehavior : MonoBehaviour
     private tableTally tally;
 
     private bool hasAlreadyReachedEndgame; //boolean that prevents crack mode from constantly triggering after every score calculation. Instead, it should every other mode.
+    private bool didPlayerLoseBall;
 
     /// <summary>
     /// TODO:
@@ -165,14 +166,23 @@ public class ModeBehavior : MonoBehaviour
                 }
                 break;  
         }
+        if (didPlayerLoseBall)
+        {
+            //Multiply the total score with the multiplier, reset the multiplier back to 1.
+            didPlayerLoseBall = false;
+            hasAlreadyReachedEndgame = false;
+            scoreComponent.pl_score = scoreComponent.pl_score * multiplierFromScoreComponentOnCalculation;
+            scoreComponent.multiplierState = scoreBehavior.multiplier.X1;
+            return;
+        }
         if(secondsUntilModeEnds == 0) //if there is no time left by the time the mode ends, no Time Leftover Bonus is applied.
         {
-            scoreComponent.pl_score = (int)(Time.timeScale * scoreComponent.pl_score * multiplierFromScoreComponentOnCalculation * (scoreComponent.ballsLeft + 1));
+            scoreComponent.pl_score = (int)(Time.timeScale * scoreComponent.pl_score * (scoreComponent.ballsLeft + 1));
             revertModeToNormal(); //The game mode state goes back to Normal.
         }
         else //the Time Leftover bonus will be applied if you have at at least 1 second left on the timer.
         {
-            scoreComponent.pl_score = scoreComponent.pl_score + (secondsUntilModeEnds * multiplierFromScoreComponentOnCalculation) * (scoreComponent.ballsLeft + 1);
+            scoreComponent.pl_score = scoreComponent.pl_score + (secondsUntilModeEnds * multiplierFromScoreComponentOnCalculation) + (scoreComponent.ballsLeft * 10);
             revertModeToNormal();
         }
     }
@@ -227,6 +237,7 @@ public class ModeBehavior : MonoBehaviour
             case ballSaver.OFF:
                 if(ballSaverState == ballSaver.OFF)
                 {
+                    didPlayerLoseBall = true;
                     if(scoreComponent.ballsLeft <= 0)
                     {
                         Debug.Log("Final score is displayed here, calculated with the multiplier. Show game over screen.");
@@ -236,6 +247,8 @@ public class ModeBehavior : MonoBehaviour
                     {
                         scoreComponent.ballsLeft--;
                         ballSaverState = ballSaver.ON;
+                        ScoreCalculate();
+                        //After the multiplying, comes the additives.
                         scoreComponent.pl_score = scoreComponent.pl_score + tally.bumperTally + tally.rampTally + tally.hole1entryTally;
                         tally.resetAllTallies();
                         revertModeToNormal();

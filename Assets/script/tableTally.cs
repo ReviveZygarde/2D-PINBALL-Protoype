@@ -27,6 +27,11 @@ public class tableTally : MonoBehaviour
     public int criteria_hole3entry;
     public int criteria_ramp_entry;
 
+    //bool flags
+    public bool isRegularHole1;
+    public bool isRhythmMultiballHole2;
+    public bool isBossHole3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,29 +41,29 @@ public class tableTally : MonoBehaviour
 
     public void tallyHole1()
     {
-        hole1entryTally++;
         scoreComponent.pl_score = scoreComponent.pl_score + 100;
-    }
-
-    public void tallyHole2()
-    {
-        hole2entryTally++;
-        scoreComponent.pl_score = scoreComponent.pl_score + 100;
-        if (modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
+        if (isRegularHole1)
         {
-            criteria_hole2entry++;
-            hole_2_3_rampCheck();
+            hole1entryTally++;
+            return;
         }
-    }
-
-    public void tallyHole3()
-    {
-        hole3entryTally++;
-        scoreComponent.pl_score = scoreComponent.pl_score + 100;
-        if (modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
+        else if(isRhythmMultiballHole2)
         {
-            criteria_hole3entry++;
-            hole_2_3_rampCheck();
+            hole2entryTally++;
+            if (modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
+            {
+                criteria_hole2entry++;
+                hole_2_3_rampCheck();
+            }
+        }
+        else if (isBossHole3)
+        {
+            hole3entryTally++;
+            if (modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
+            {
+                criteria_hole3entry++;
+                hole_2_3_rampCheck();
+            }
         }
     }
 

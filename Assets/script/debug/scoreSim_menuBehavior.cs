@@ -59,8 +59,8 @@ public class scoreSim_menuBehavior : MonoBehaviour
         //Instead of gameplay, the menu based simulation will just have buttons to extensively test the ModeBehavior.
         consumeBall.onClick.AddListener(modeBehavior.consumeBall);
         hole1.onClick.AddListener(tally.tallyHole1);
-        hole2.onClick.AddListener(tally.tallyHole2);
-        hole3.onClick.AddListener(tally.tallyHole3);
+        //hole2.onClick.AddListener(tally.tallyHole2);
+        //hole3.onClick.AddListener(tally.tallyHole3);
         ramp.onClick.AddListener(tally.tallyRamp);
         jumper.onClick.AddListener(tally.tallyBumper);
         exit.onClick.AddListener(gotoMenu);

@@ -263,9 +263,10 @@ public class ModeBehavior : MonoBehaviour
         if (scoreComponent.multiplierState == scoreBehavior.multiplier.X10)
         {
             //begin CRACK MODE 
+            StopAllCoroutines();
             modeState = currentMode.CRACK;
             hasAlreadyReachedEndgame = true;
-            StopAllCoroutines();
+            timerCountdown_Mode();
         }
     }
 }

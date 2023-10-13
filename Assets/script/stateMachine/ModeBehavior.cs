@@ -136,6 +136,7 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 2;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X4;
+                    scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X4:

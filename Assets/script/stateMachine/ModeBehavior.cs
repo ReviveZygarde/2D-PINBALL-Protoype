@@ -118,7 +118,7 @@ public class ModeBehavior : MonoBehaviour
         secondsUntilModeEnds--;
     }
 
-    private void ScoreCalculate()
+    public void ScoreCalculate()
     {
         //The int variable, multiplierFromScoreComponentOnCalculation, is determined
         //by the Multiplier state machine from the scoreBehavior component.
@@ -150,6 +150,7 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 6;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X8;
+                    scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X8:
@@ -163,6 +164,7 @@ public class ModeBehavior : MonoBehaviour
                 if (scoreComponent.multiplierState == scoreBehavior.multiplier.X10)
                 {
                     multiplierFromScoreComponentOnCalculation = 10;
+                    scoreComponent.ballsLeft++;
                 }
                 break;  
         }
@@ -183,6 +185,7 @@ public class ModeBehavior : MonoBehaviour
         else //the Time Leftover bonus will be applied if you have at at least 1 second left on the timer.
         {
             scoreComponent.pl_score = scoreComponent.pl_score + (secondsUntilModeEnds * multiplierFromScoreComponentOnCalculation) + (scoreComponent.ballsLeft * 10);
+            Debug.Log($"Player had {secondsUntilModeEnds} sec left.");
             revertModeToNormal();
         }
     }

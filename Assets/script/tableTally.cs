@@ -27,11 +27,16 @@ public class tableTally : MonoBehaviour
     public int criteria_hole3entry;
     public int criteria_ramp_entry;
 
+    //bossEntity GameObject
+    public GameObject bossEntity;
+
     // Start is called before the first frame update
     void Start()
     {
         scoreComponent = GetComponent<scoreBehavior>();
         modeBehavior = GetComponent<ModeBehavior>();
+        bossEntity = GameObject.Find("bossEntity");
+        bossEntity.SetActive(false);
     }
 
     public void tallyHole1(GameObject passedGO) //Takes in the passed GameObject from whatever hole1behavior is calling it.
@@ -99,6 +104,7 @@ public class tableTally : MonoBehaviour
             resetCriteriaHoleEntries();
             //start boss mode
             modeBehavior.modeState = ModeBehavior.currentMode.BOSS;
+            bossEntity.SetActive(true); //We summon the "boss" for the player to kill.
             modeBehavior.timerCountdownStart();
         }
         if (criteria_ramp_entry >= 6)

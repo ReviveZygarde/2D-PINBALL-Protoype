@@ -13,8 +13,8 @@ public class BossCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Pinball = GameObject.Find("Pinball");
-        common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
+        //Pinball = GameObject.Find("Pinball");
+        //common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
         //this.gameObject.SetActive(false); //Gets the required components, then disables itself.
     }
 

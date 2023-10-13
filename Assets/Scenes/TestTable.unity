@@ -3801,8 +3801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c74df9962b2754e9b44421f0582ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pinball: {fileID: 0}
-  common_modeBehavior: {fileID: 0}
+  Pinball: {fileID: 1293363890}
+  common_modeBehavior: {fileID: 556394379}
   HP: 4
 --- !u!212 &1074768323
 SpriteRenderer:

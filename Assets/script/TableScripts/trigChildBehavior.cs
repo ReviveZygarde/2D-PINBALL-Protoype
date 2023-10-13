@@ -1,10 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class trigChildBehavior : MonoBehaviour
 {
     public bool didEnter;
+    private SpriteRenderer spriteRender;
+
+    private void Start()
+    {
+        spriteRender = GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        if (didEnter)
+        {
+            spriteRender.enabled = true;
+        }
+        else
+        {
+            spriteRender.enabled = false;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

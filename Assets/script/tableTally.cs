@@ -27,11 +27,6 @@ public class tableTally : MonoBehaviour
     public int criteria_hole3entry;
     public int criteria_ramp_entry;
 
-    //bool flags
-    public bool isRegularHole1;
-    public bool isRhythmMultiballHole2;
-    public bool isBossHole3;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -39,32 +34,32 @@ public class tableTally : MonoBehaviour
         modeBehavior = GetComponent<ModeBehavior>();
     }
 
-    public void tallyHole1()
+    public void tallyHole1(GameObject passedGO) //Takes in the passed GameObject from whatever hole1behavior is calling it.
     {
+        hole1behavior temp_holeParam = passedGO.GetComponent<hole1behavior>(); //Local variable of hole1behavior component. Only for checking bool flags.
         scoreComponent.pl_score = scoreComponent.pl_score + 100;
-        if (isRegularHole1)
+        if (temp_holeParam.isRegularHole1 == true)
         {
             hole1entryTally++;
             return;
         }
-        else if(isRhythmMultiballHole2)
+        else if(temp_holeParam.isRhythmMultiballHole2 == true)
         {
             hole2entryTally++;
             if (modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
             {
                 criteria_hole2entry++;
-                hole_2_3_rampCheck();
             }
         }
-        else if (isBossHole3)
+        else if (temp_holeParam.isBossHole3 == true)
         {
             hole3entryTally++;
             if (modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
             {
                 criteria_hole3entry++;
-                hole_2_3_rampCheck();
             }
         }
+        hole_2_3_rampCheck();
     }
 
     public void tallyRamp()

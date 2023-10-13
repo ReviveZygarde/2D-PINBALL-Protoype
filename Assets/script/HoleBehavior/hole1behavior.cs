@@ -10,6 +10,11 @@ public class hole1behavior : MonoBehaviour
     private Collider2D triggerCollider;
     public Text statusText;
 
+    //bool flags
+    public bool isRegularHole1;
+    public bool isRhythmMultiballHole2;
+    public bool isBossHole3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +41,7 @@ public class hole1behavior : MonoBehaviour
     IEnumerator cooldown() //Timer-based wait time where the ball will shoot out. Maybe have a message displayed?
     {
         triggerCollider.enabled = false;
-        holeTally.tallyHole1();
+        holeTally.tallyHole1(this.gameObject); //Passes this GameObject into the method in common's TableTally
         statusText.text = "HOLE IN! +100";
         yield return new WaitForSeconds(1f);
         ballObject.SetActive(true); //Should spit the ball back out

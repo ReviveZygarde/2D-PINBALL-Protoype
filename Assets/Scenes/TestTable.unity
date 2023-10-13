@@ -826,7 +826,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.7783019, b: 0.7783019, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1501,7 +1501,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.7783019, b: 0.7783019, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5093,6 +5093,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holeTally: {fileID: 556394376}
   statusText: {fileID: 0}
+  isRegularHole1: 1
+  isRhythmMultiballHole2: 0
+  isBossHole3: 0
 --- !u!1 &1423240324
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,6 +6382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holeTally: {fileID: 556394376}
   statusText: {fileID: 0}
+  isRegularHole1: 1
+  isRhythmMultiballHole2: 0
+  isBossHole3: 0
 --- !u!58 &1670743265
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6660,7 +6666,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.7783019, b: 0.7783019, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

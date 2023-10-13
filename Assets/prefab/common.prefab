@@ -85,3 +85,4 @@ MonoBehaviour:
   criteria_hole2entry: 0
   criteria_hole3entry: 0
   criteria_ramp_entry: 0
+  bossEntity: {fileID: 0}

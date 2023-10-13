@@ -2402,7 +2402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 697792027}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OverRamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2436,7 +2436,7 @@ GameObject:
   - component: {fileID: 700754338}
   - component: {fileID: 700754339}
   - component: {fileID: 700754340}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9158,7 +9158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2109173057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OverRamp1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

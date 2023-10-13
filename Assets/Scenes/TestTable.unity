@@ -3613,6 +3613,10 @@ PrefabInstance:
       propertyPath: bossEntity
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3664509487736438892, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
+      propertyPath: secondsUntilBallSaveEnds
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3664509487736438895, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
       propertyPath: m_Name
       value: common

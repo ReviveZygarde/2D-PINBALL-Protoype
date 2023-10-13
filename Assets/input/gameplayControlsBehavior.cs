@@ -19,6 +19,7 @@ public class gameplayControlsBehavior : MonoBehaviour
     private R_FlipControl rightFlipperJoint;
     public bool lfIsHeld;
     public bool rfIsHeld;
+    public bool plungerActionIsHeld;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,11 @@ public class gameplayControlsBehavior : MonoBehaviour
     void OnRightFlipper(InputValue value)
     {
         rfIsHeld = value.isPressed;
+    }
+
+    void OnPlungerPullAction(InputValue value)
+    {
+        plungerActionIsHeld = value.isPressed;
     }
 
     /*

@@ -66,12 +66,11 @@ public class Launcher : MonoBehaviour
     {
         if (isActive)
         {
-            if (pl_inputButtonBool.rfIsHeld == true)
+            if (pl_inputButtonBool.plungerActionIsHeld == true)
             {
                 isKeyPress = true;
             }
-
-            if (pl_inputButtonBool.rfIsHeld == false)
+            if (pl_inputButtonBool.plungerActionIsHeld == false)
             {
                 isKeyPress = false;
             }

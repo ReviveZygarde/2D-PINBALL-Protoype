@@ -185,7 +185,7 @@ public class ModeBehavior : MonoBehaviour
         }
         else //the Time Leftover bonus will be applied if you have at at least 1 second left on the timer.
         {
-            scoreComponent.pl_score = scoreComponent.pl_score + (secondsUntilModeEnds * multiplierFromScoreComponentOnCalculation) + (scoreComponent.ballsLeft * 10);
+            scoreComponent.pl_score = scoreComponent.pl_score + (secondsUntilModeEnds * multiplierFromScoreComponentOnCalculation * 1000) + (scoreComponent.ballsLeft * 100);
             Debug.Log($"Player had {secondsUntilModeEnds} sec left.");
             revertModeToNormal();
         }

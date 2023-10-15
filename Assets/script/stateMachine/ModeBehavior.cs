@@ -129,6 +129,7 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 1;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X2;
+                    scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X2:
@@ -136,7 +137,6 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 2;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X4;
-                    scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X4:
@@ -144,6 +144,7 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 4;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X6;
+                    scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X6:
@@ -151,7 +152,6 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 6;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X8;
-                    scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X8:
@@ -159,6 +159,7 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 8;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X10;
+                    scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X10:

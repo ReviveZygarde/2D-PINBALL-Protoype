@@ -1091,6 +1091,7 @@ MonoBehaviour:
   LayerToSetPinball: 0
   OriginalLayerToSetPinball: 0
   BallDirection: {fileID: 0}
+  velocityMultiplier: 0
 --- !u!212 &239083490
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2472,7 +2473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &700754338
 Transform:
   m_ObjectHideFlags: 0
@@ -3451,6 +3452,7 @@ MonoBehaviour:
   LayerToSetPinball: 6
   OriginalLayerToSetPinball: 0
   BallDirection: {fileID: 1794675363}
+  velocityMultiplier: 20
 --- !u!212 &853047507
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7397,7 +7399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1619715570
 Transform:
   m_ObjectHideFlags: 0
@@ -8480,7 +8482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1849336079
 Transform:
   m_ObjectHideFlags: 0

@@ -21,8 +21,14 @@ public class OverRampLayerChanger : MonoBehaviour
     [Tooltip("Set the ball back to its original Layer defined by the designer. Recommended value: 0. Only used if IsExit is ON.")]
     public int OriginalLayerToSetPinball;
 
-    [Tooltip("The direction you want the ball to go to. You can select any GameObject and it will use the Rotation of that object to set the ball's respectively. Only used if IsEntrance is ON.")]
-    public Transform BallDirection;
+    [Tooltip("Direction you want the ball to go." +
+        "\nExamples:" +
+        "\n0 , 1 to shoot the ball straight up" +
+        "\n1, 1 to make the go right, diagonally" +
+        "\n-1, 1 to make the go left, diagonally" +
+        "\netc..." +
+        "\nIf FakeElevation is ON, leave this at (0,0).")]
+    public Vector2 ballDirection;
 
     [Tooltip("How fast you want the ball Velocity to be. Recommended value: 20. Only used if IsEntrance is ON.")]
     public int velocityMultiplier;
@@ -40,10 +46,9 @@ public class OverRampLayerChanger : MonoBehaviour
             if (isEntrance)
             {
                 Pinball.transform.position = this.transform.position;
-                Pinball.transform.rotation = BallDirection.rotation;
                 Pinball.layer = LayerToSetPinball;
                 Debug.Log($"Pinball layer is now {Pinball.layer}.");
-                ballRigidbody.velocity = Vector2.one * velocityMultiplier;
+                ballRigidbody.velocity = ballDirection * velocityMultiplier;
 
             }
             if (isExit)
@@ -52,7 +57,7 @@ public class OverRampLayerChanger : MonoBehaviour
                 Debug.Log($"Pinball layer is now {Pinball.layer}.");
                 if (fakeElevation)
                 {
-                    ballRigidbody.velocity = Vector2.one * 0;
+                    ballRigidbody.velocity = ballDirection * 0;
                 }
             }
         }

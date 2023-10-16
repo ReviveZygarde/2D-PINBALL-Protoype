@@ -27,6 +27,7 @@ public class OverRampLayerChanger : MonoBehaviour
         "\n1, 1 to make the go right, diagonally" +
         "\n-1, 1 to make the go left, diagonally" +
         "\netc..." +
+        "\nNOTE: Avoid making the vector 2 go beyond 1 or -1. Use Velocity Multiplier for that." +
         "\nIf FakeElevation is ON, leave this at (0,0).")]
     public Vector2 ballDirection;
 

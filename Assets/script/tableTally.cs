@@ -107,7 +107,7 @@ public class tableTally : MonoBehaviour
             bossEntity.SetActive(true); //We summon the "boss" for the player to kill.
             modeBehavior.timerCountdownStart();
         }
-        if (criteria_ramp_entry >= 6)
+        if (criteria_ramp_entry >= 3)
         {
             resetCriteriaHoleEntries();
             //start rush mode

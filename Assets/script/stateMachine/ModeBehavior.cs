@@ -248,7 +248,7 @@ public class ModeBehavior : MonoBehaviour
                     didPlayerLoseBall = true;
                     if(scoreComponent.ballsLeft <= 0)
                     {
-                        Debug.Log("Final score is displayed here, calculated with the multiplier. Show game over screen.");
+                        Debug.Log($"Score: {scoreComponent.pl_score}. Show game over screen.");
                         SceneManager.LoadScene(6);
                     }
                     else

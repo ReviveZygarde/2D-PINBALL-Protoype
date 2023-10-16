@@ -1088,6 +1088,7 @@ MonoBehaviour:
   Pinball: {fileID: 1293363890}
   isEntrance: 0
   isExit: 1
+  fakeElevation: 1
   LayerToSetPinball: 0
   OriginalLayerToSetPinball: 0
   BallDirection: {fileID: 0}
@@ -3449,6 +3450,7 @@ MonoBehaviour:
   Pinball: {fileID: 1293363890}
   isEntrance: 1
   isExit: 0
+  fakeElevation: 0
   LayerToSetPinball: 6
   OriginalLayerToSetPinball: 0
   BallDirection: {fileID: 1794675363}

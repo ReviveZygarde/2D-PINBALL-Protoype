@@ -129,7 +129,10 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 1;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X2;
-                    scoreComponent.ballsLeft++;
+                    if (!didPlayerLoseBall)
+                    {
+                        scoreComponent.ballsLeft++;
+                    }
                 }
                 break;
             case scoreBehavior.multiplier.X2:

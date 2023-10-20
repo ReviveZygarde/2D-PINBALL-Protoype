@@ -38,7 +38,7 @@ public class OverRampTallier : MonoBehaviour
         {
             statusText.text = "AROUND THE RAMP!";
             yield return new WaitForSeconds(3f);
-            statusText.text = $"{6 - common_tableTally.criteria_ramp_entry} MORE FOR RUSH!";
+            statusText.text = $"{4 - common_tableTally.criteria_ramp_entry} MORE FOR RUSH!";
             yield return new WaitForSeconds(3f);
             statusText.text = "";
             yield return null;

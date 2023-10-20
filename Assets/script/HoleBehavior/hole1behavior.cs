@@ -45,6 +45,7 @@ public class hole1behavior : MonoBehaviour
         statusText.text = "HOLE IN! +100";
         yield return new WaitForSeconds(1f);
         ballObject.SetActive(true); //Should spit the ball back out
+        ballObject.transform.position = this.transform.position;
         yield return new WaitForSeconds(1f);
         triggerCollider.enabled = true;
         statusText.text = "";

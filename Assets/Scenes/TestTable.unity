@@ -3579,6 +3579,7 @@ GameObject:
   - component: {fileID: 853047505}
   - component: {fileID: 853047507}
   - component: {fileID: 853047506}
+  - component: {fileID: 853047509}
   - component: {fileID: 853047508}
   m_Layer: 0
   m_Name: rampEntranceGate
@@ -3700,6 +3701,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &853047509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853047504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25267cd9962cb954e9f7d2130befe757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 0}
 --- !u!1 &858710106
 GameObject:
   m_ObjectHideFlags: 0
@@ -6123,7 +6137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1253346922
 Transform:
   m_ObjectHideFlags: 0

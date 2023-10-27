@@ -96,7 +96,7 @@ public class ModeBehavior : MonoBehaviour
             if (secondsUntilModeEnds <= 0)
             {
                 modeState = currentMode.MODE_END;
-                ScoreCalculate(); //Calculate score method goes here... Do not put any methods or code below this method. This method will STOP All coroutines and will not
+                DetermineNextMultiplier(); //Calculate score method goes here... Do not put any methods or code below this method. This method will STOP All coroutines and will not
                                   //call anything below this.
                                   //yield return new WaitForSeconds(1f);
                 yield return null;
@@ -118,7 +118,7 @@ public class ModeBehavior : MonoBehaviour
         secondsUntilModeEnds--;
     }
 
-    public void ScoreCalculate()
+    public void DetermineNextMultiplier()
     {
         //The int variable, multiplierFromScoreComponentOnCalculation, is determined
         //by the Multiplier state machine from the scoreBehavior component.
@@ -171,8 +171,14 @@ public class ModeBehavior : MonoBehaviour
                     multiplierFromScoreComponentOnCalculation = 10;
                     scoreComponent.ballsLeft++;
                 }
-                break;  
+                break;
         }
+
+        calculateScore();
+    }
+
+    public void calculateScore() //This is public because the BossCollision has to access this so it can skip the DetermineNextMultiplier method.
+    {
         if (didPlayerLoseBall)
         {
             //Multiply the total score with the multiplier, reset the multiplier back to 1.
@@ -182,8 +188,15 @@ public class ModeBehavior : MonoBehaviour
             scoreComponent.multiplierState = scoreBehavior.multiplier.X1;
             return;
         }
-        if(secondsUntilModeEnds == 0) //if there is no time left by the time the mode ends, no Time Leftover Bonus is applied.
+        if (secondsUntilModeEnds == 0) //if there is no time left by the time the mode ends, no Time Leftover Bonus is applied.
         {
+            //Tries to find the bossEntity, and if it's enabled, forcefully disables it.
+            GameObject temp_bossEntityToDisable = GameObject.Find("bossEntity");
+            if (temp_bossEntityToDisable != null)
+            {
+                temp_bossEntityToDisable.SetActive(false);
+            }
+            //calculate score
             scoreComponent.pl_score = (int)(Time.timeScale * 10) + (scoreComponent.ballsLeft * 100) + scoreComponent.pl_score;
             revertModeToNormal(); //The game mode state goes back to Normal.
         }
@@ -255,7 +268,7 @@ public class ModeBehavior : MonoBehaviour
                     {
                         scoreComponent.ballsLeft--;
                         ballSaverState = ballSaver.ON;
-                        ScoreCalculate();
+                        DetermineNextMultiplier();
                         //After the multiplying, comes the additives.
                         scoreComponent.pl_score = scoreComponent.pl_score + tally.bumperTally + tally.rampTally + tally.hole1entryTally;
                         tally.resetAllTallies();

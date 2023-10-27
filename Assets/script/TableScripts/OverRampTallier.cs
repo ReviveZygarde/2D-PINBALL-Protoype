@@ -12,6 +12,7 @@ public class OverRampTallier : MonoBehaviour
     public GameObject Pinball;
     private tableTally common_tableTally;
     private ModeBehavior common_modeBehavior;
+    private scoreBehavior common_scoreBehavior;
     private Text statusText;
 
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class OverRampTallier : MonoBehaviour
         Pinball = GameObject.Find("Pinball");
         common_tableTally = GameObject.Find("common").GetComponent<tableTally>();
         common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
+        common_scoreBehavior = GameObject.Find("common").GetComponent<scoreBehavior>();
         statusText = GameObject.Find("UI_statusText").GetComponent<Text>();
     }
 
@@ -27,6 +29,7 @@ public class OverRampTallier : MonoBehaviour
     {
         if(collision.gameObject == Pinball)
         {
+            common_scoreBehavior.pl_score = common_scoreBehavior.pl_score + 100;
             StartCoroutine(statusTextChange());
             common_tableTally.tallyRamp();
         }

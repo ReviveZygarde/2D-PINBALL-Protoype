@@ -10,20 +10,16 @@ public class BossCollision : MonoBehaviour
     public Text uiStatusText;
     private int timesHit = 0;
     public int HP;
+    public bool isDefeated;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        isDefeated = false;
         //Pinball = GameObject.Find("Pinball");
         //common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
         //this.gameObject.SetActive(false); //Gets the required components, then disables itself.
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -36,6 +32,7 @@ public class BossCollision : MonoBehaviour
             if (timesHit >= HP)
             {
                 uiStatusText.text = $"ALL RIGHT!! YOU DID IT!";
+                isDefeated = true;
                 timesHit = 0;
                 this.gameObject.SetActive(false);
                 common_modeBehavior.DetermineNextMultiplier();

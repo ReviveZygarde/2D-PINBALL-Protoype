@@ -120,6 +120,19 @@ public class ModeBehavior : MonoBehaviour
 
     public void DetermineNextMultiplier()
     {
+        //Tries to find the bossEntity, and if it's enabled, forcefully disables it.
+        GameObject temp_bossEntityToDisable = GameObject.Find("bossEntity");
+        if (temp_bossEntityToDisable != null)
+        {
+            BossCollision bossComponent = temp_bossEntityToDisable.GetComponent<BossCollision>(); //gets the bossCollision component to check a bool.
+            if(bossComponent.isDefeated == false)
+            {
+                calculateScore(); //skips the multiplier case-switch, then disables the boss GameObject.
+                temp_bossEntityToDisable.SetActive(false);
+            }
+            return;
+        }
+
         //The int variable, multiplierFromScoreComponentOnCalculation, is determined
         //by the Multiplier state machine from the scoreBehavior component.
         switch (scoreComponent.multiplierState)
@@ -190,12 +203,6 @@ public class ModeBehavior : MonoBehaviour
         }
         if (secondsUntilModeEnds == 0) //if there is no time left by the time the mode ends, no Time Leftover Bonus is applied.
         {
-            //Tries to find the bossEntity, and if it's enabled, forcefully disables it.
-            GameObject temp_bossEntityToDisable = GameObject.Find("bossEntity");
-            if (temp_bossEntityToDisable != null)
-            {
-                temp_bossEntityToDisable.SetActive(false);
-            }
             //calculate score
             scoreComponent.pl_score = (int)(Time.timeScale * 10) + (scoreComponent.ballsLeft * 100) + scoreComponent.pl_score;
             revertModeToNormal(); //The game mode state goes back to Normal.

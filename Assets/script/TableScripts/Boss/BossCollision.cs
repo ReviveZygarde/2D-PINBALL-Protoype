@@ -36,6 +36,7 @@ public class BossCollision : MonoBehaviour
                 timesHit = 0;
                 this.gameObject.SetActive(false);
                 common_modeBehavior.DetermineNextMultiplier();
+                isDefeated = false;
             }
             else
             {

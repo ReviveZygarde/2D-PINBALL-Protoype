@@ -129,8 +129,8 @@ public class ModeBehavior : MonoBehaviour
             {
                 calculateScore(); //skips the multiplier case-switch, then disables the boss GameObject.
                 temp_bossEntityToDisable.SetActive(false);
+                return;
             }
-            return;
         }
 
         //The int variable, multiplierFromScoreComponentOnCalculation, is determined

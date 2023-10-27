@@ -6429,7 +6429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pinball: {fileID: 1293363890}
   common_modeBehavior: {fileID: 556394379}
-  HP: 4
+  uiStatusText: {fileID: 0}
+  HP: 10
 --- !u!212 &1074768323
 SpriteRenderer:
   m_ObjectHideFlags: 0

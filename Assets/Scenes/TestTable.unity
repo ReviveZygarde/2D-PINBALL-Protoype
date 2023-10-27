@@ -6430,7 +6430,7 @@ MonoBehaviour:
   Pinball: {fileID: 1293363890}
   common_modeBehavior: {fileID: 556394379}
   uiStatusText: {fileID: 0}
-  HP: 10
+  HP: 4
 --- !u!212 &1074768323
 SpriteRenderer:
   m_ObjectHideFlags: 0

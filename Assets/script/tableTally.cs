@@ -33,9 +33,13 @@ public class tableTally : MonoBehaviour
     //Interrupt Event stuff for UI
     public GameObject interruptEvent_Boss;
 
+    //VO audio
+    private commonAudioManager AudioManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        AudioManager = GetComponent<commonAudioManager>();
         scoreComponent = GetComponent<scoreBehavior>();
         modeBehavior = GetComponent<ModeBehavior>();
         bossEntity = GameObject.Find("bossEntity");
@@ -142,6 +146,7 @@ public class tableTally : MonoBehaviour
     IEnumerator interruptEventPopUp()
     {
         interruptEvent_Boss.SetActive(true);
+        AudioManager.vo_mission.Play();
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
         Time.timeScale = 1.0f;

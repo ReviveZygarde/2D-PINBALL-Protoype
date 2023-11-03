@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 using UnityEngine.UI;
 
 public class BossCollision : MonoBehaviour
 {
     public  GameObject Pinball;
     public ModeBehavior common_modeBehavior;
+    private SplineAnimate splineAnimation;
     public Text uiStatusText;
     private int timesHit = 0;
     public int HP;
@@ -17,6 +19,7 @@ public class BossCollision : MonoBehaviour
     void Start()
     {
         isDefeated = false;
+        splineAnimation = GetComponent<SplineAnimate>();
         //Pinball = GameObject.Find("Pinball");
         //common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
         //this.gameObject.SetActive(false); //Gets the required components, then disables itself.
@@ -41,7 +44,16 @@ public class BossCollision : MonoBehaviour
             else
             {
                 uiStatusText.text = $"TAKE THAT!! {HP - timesHit} HITS LEFT!";
+                StartCoroutine(PauseSplineAnimation());
             }
         }
+    }
+
+    IEnumerator PauseSplineAnimation()
+    {
+        splineAnimation.Pause();
+        yield return new WaitForSecondsRealtime(1f);
+        splineAnimation.Play();
+        yield return null;
     }
 }

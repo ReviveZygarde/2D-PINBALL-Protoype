@@ -101,7 +101,6 @@ public class tableTally : MonoBehaviour
             {
                 modeBehavior.modeState = ModeBehavior.currentMode.MULTIBALL;
             }
-            StartCoroutine(interruptEventPopUp());
         }
         if (criteria_hole3entry >= 3)
         {
@@ -109,7 +108,7 @@ public class tableTally : MonoBehaviour
             //start boss mode
             modeBehavior.modeState = ModeBehavior.currentMode.BOSS;
             bossEntity.SetActive(true); //We summon the "boss" for the player to kill.
-            modeBehavior.timerCountdownStart();
+            StartCoroutine(interruptEventPopUp());
         }
         if (criteria_ramp_entry >= 4)
         {
@@ -146,6 +145,7 @@ public class tableTally : MonoBehaviour
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
         Time.timeScale = 1.0f;
+        interruptEvent_Boss.SetActive(false);
         modeBehavior.timerCountdownStart();
         yield return null;
     }

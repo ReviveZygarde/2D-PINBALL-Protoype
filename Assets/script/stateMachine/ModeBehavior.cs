@@ -32,6 +32,9 @@ public class ModeBehavior : MonoBehaviour
     private bool hasAlreadyReachedEndgame; //boolean that prevents crack mode from constantly triggering after every score calculation. Instead, it should every other mode.
     private bool didPlayerLoseBall;
 
+    //et cetera...
+    private commonAudioManager AudioManager;
+
     /// <summary>
     /// TODO:
     /// - DONE: Add timer for Ball Saver (COROUTINE!!!!)
@@ -55,6 +58,7 @@ public class ModeBehavior : MonoBehaviour
         predefined_secondsUntilBallSaveEnds = secondsUntilBallSaveEnds;
         predefined_secondsUntilModeEnds = secondsUntilModeEnds;
         timerCountdownStart(); //This would be called as soon as the ball is launched from the spring.
+        AudioManager = GetComponent<commonAudioManager>();
     }
 
     public void timerCountdownStart()
@@ -116,10 +120,26 @@ public class ModeBehavior : MonoBehaviour
     private void decrementModeTimerBy1()
     {
         secondsUntilModeEnds--;
+
+        //Sounds for playing the vocoder announcer clips
+        if (secondsUntilModeEnds == 3)
+        {
+            AudioManager.vo_three.Play();
+        }
+        if (secondsUntilModeEnds == 2)
+        {
+            AudioManager.vo_two.Play();
+        }
+        if (secondsUntilModeEnds == 1)
+        {
+            AudioManager.vo_one.Play();
+        }
     }
 
     public void DetermineNextMultiplier()
     {
+        AudioManager.vo_finish.Play();
+
         //Tries to find the bossEntity, and if it's enabled, forcefully disables it.
         GameObject temp_bossEntityToDisable = GameObject.Find("bossEntity");
         if (temp_bossEntityToDisable != null)

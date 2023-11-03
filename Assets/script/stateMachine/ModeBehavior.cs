@@ -34,7 +34,6 @@ public class ModeBehavior : MonoBehaviour
 
     //et cetera...
     private commonAudioManager AudioManager;
-    private common_interruptEventUImanager modeEndResultsScreen;
 
     /// <summary>
     /// TODO:
@@ -56,7 +55,6 @@ public class ModeBehavior : MonoBehaviour
     {
         scoreComponent = GetComponent<scoreBehavior>();
         tally = GetComponent<tableTally>();
-        modeEndResultsScreen = GetComponent<common_interruptEventUImanager>();
         predefined_secondsUntilBallSaveEnds = secondsUntilBallSaveEnds;
         predefined_secondsUntilModeEnds = secondsUntilModeEnds;
         timerCountdownStart(); //This would be called as soon as the ball is launched from the spring.
@@ -227,15 +225,13 @@ public class ModeBehavior : MonoBehaviour
         {
             //calculate score
             scoreComponent.pl_score = (int)(Time.timeScale * 10) + (scoreComponent.ballsLeft * 100) + scoreComponent.pl_score;
-            modeEndResultsScreen.screenAfterCalculate();
-            //revertModeToNormal(); //The game mode state goes back to Normal.
+            revertModeToNormal(); //The game mode state goes back to Normal.
         }
         else //the Time Leftover bonus will be applied if you have at at least 1 second left on the timer.
         {
             scoreComponent.pl_score = scoreComponent.pl_score + (secondsUntilModeEnds * multiplierFromScoreComponentOnCalculation * 100) + (scoreComponent.ballsLeft * 100);
             Debug.Log($"Player had {secondsUntilModeEnds} sec left.");
-            modeEndResultsScreen.screenAfterCalculate();
-            //revertModeToNormal();
+            revertModeToNormal();
         }
     }
 
@@ -251,7 +247,7 @@ public class ModeBehavior : MonoBehaviour
      * The only way to get out of it is if you lose the mode.
      */
 
-    public void revertModeToNormal()
+    private void revertModeToNormal()
     {
         Time.timeScale = 1f; //Timescale is put here in case if the mode that ended was rush, so this undoes the changes rush mode did.
         modeState = currentMode.NORMAL;

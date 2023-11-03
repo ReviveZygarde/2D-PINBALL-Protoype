@@ -8,7 +8,7 @@ public class warning_moveLeft : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.transform.localPosition = Vector2.zero;
+       this.transform.localPosition = Vector2.zero;
     }
 
     // Update is called once per frame

@@ -147,13 +147,16 @@ public class tableTally : MonoBehaviour
     IEnumerator interruptEventPopUp()
     {
         interruptEvent_Boss.SetActive(true);
-        GameObject temp_bossTitleI = GameObject.Find("interrupt_bossTitle");
-        SplineAnimate bossTitleAnimator = temp_bossTitleI.GetComponent<SplineAnimate>();
-        bossTitleAnimator.Restart(true);
+        //GameObject temp_bossTitleI = GameObject.Find("interrupt_bossTitle");
+        //SplineAnimate bossTitleAnimator = temp_bossTitleI.GetComponent<SplineAnimate>();
+        //bossTitleAnimator.Restart(true);
         AudioManager.vo_mission.Play();
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
         Time.timeScale = 1.0f;
+        //i tried
+        common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
+        ui_manager.resetBossInterruptBars();
         interruptEvent_Boss.SetActive(false);
         modeBehavior.timerCountdownStart();
         yield return null;

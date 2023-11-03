@@ -250,6 +250,7 @@ MonoBehaviour:
   criteria_ramp_entry: 0
   bossEntity: {fileID: 0}
   interruptEvent_Boss: {fileID: 0}
+  interruptEvent_Rush: {fileID: 0}
 --- !u!114 &5721602847240809413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37c25767050209940949114ba834879b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modeFinishInterruptEvent: {fileID: 0}
 --- !u!1 &4571845502764304343
 GameObject:
   m_ObjectHideFlags: 0

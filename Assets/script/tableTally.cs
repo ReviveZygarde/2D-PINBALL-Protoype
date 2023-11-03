@@ -33,15 +33,18 @@ public class tableTally : MonoBehaviour
 
     //Interrupt Event stuff for UI
     public GameObject interruptEvent_Boss;
+    public GameObject interruptEvent_Rush;
     private commonAudioManager AudioManager;
 
     // Start is called before the first frame update
     void Start()
     {
         scoreComponent = GetComponent<scoreBehavior>();
+        AudioManager = GetComponent<commonAudioManager>();
         modeBehavior = GetComponent<ModeBehavior>();
         bossEntity = GameObject.Find("bossEntity");
-        interruptEvent_Boss.SetActive(false);
+        //interruptEvent_Boss.SetActive(false);
+        //interruptEvent_Rush.SetActive(false);
         bossEntity.SetActive(false);
     }
 
@@ -110,14 +113,14 @@ public class tableTally : MonoBehaviour
             //start boss mode
             modeBehavior.modeState = ModeBehavior.currentMode.BOSS;
             bossEntity.SetActive(true); //We summon the "boss" for the player to kill.
-            StartCoroutine(interruptEventPopUp());
+            StartCoroutine(interruptBossEventPopUp());
         }
         if (criteria_ramp_entry >= 4)
         {
             resetCriteriaHoleEntries();
             //start rush mode
             modeBehavior.modeState = ModeBehavior.currentMode.RUSH;
-            modeBehavior.timerCountdownStart();
+            StartCoroutine(interruptRushEventPopUp());
         }
     }
 
@@ -141,7 +144,7 @@ public class tableTally : MonoBehaviour
         criteria_ramp_entry = 0;
     }
 
-    IEnumerator interruptEventPopUp()
+    IEnumerator interruptBossEventPopUp()
     {
         interruptEvent_Boss.SetActive(true);
         //GameObject temp_bossTitleI = GameObject.Find("interrupt_bossTitle");
@@ -154,6 +157,23 @@ public class tableTally : MonoBehaviour
         common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
         ui_manager.resetBossInterruptBars();
         interruptEvent_Boss.SetActive(false);
+        modeBehavior.timerCountdownStart();
+        yield return null;
+    }
+
+    IEnumerator interruptRushEventPopUp()
+    {
+        interruptEvent_Rush.SetActive(true);
+        //GameObject temp_bossTitleI = GameObject.Find("interrupt_bossTitle");
+        //SplineAnimate bossTitleAnimator = temp_bossTitleI.GetComponent<SplineAnimate>();
+        //bossTitleAnimator.Restart(true);
+        AudioManager.vo_mission.Play();
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(5);
+        Time.timeScale = 1.0f;
+        common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
+        //ui_manager.resetBossInterruptBars();
+        interruptEvent_Rush.SetActive(false);
         modeBehavior.timerCountdownStart();
         yield return null;
     }

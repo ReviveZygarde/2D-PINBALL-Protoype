@@ -33,6 +33,7 @@ public class tableTally : MonoBehaviour
 
     //Interrupt Event stuff for UI
     public GameObject interruptEvent_Boss;
+    private commonAudioManager AudioManager;
 
     // Start is called before the first frame update
     void Start()

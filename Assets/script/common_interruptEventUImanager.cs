@@ -89,12 +89,12 @@ public class common_interruptEventUImanager : MonoBehaviour
                 secondSubtract--;
             }
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
-            canShowScore = false;
+            if (confirmButton.rfIsHeld)
+            {
+                modeComponent.revertModeToNormal(); //The game mode state goes back to Normal.
+            }
         }
-        if (confirmButton.rfIsHeld)
-        {
-            modeComponent.revertModeToNormal(); //The game mode state goes back to Normal.
-        }
+
 
     }
 

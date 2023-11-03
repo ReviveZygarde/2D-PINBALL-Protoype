@@ -154,7 +154,6 @@ public class tableTally : MonoBehaviour
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
         Time.timeScale = 1.0f;
-        //i tried
         common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
         ui_manager.resetBossInterruptBars();
         interruptEvent_Boss.SetActive(false);

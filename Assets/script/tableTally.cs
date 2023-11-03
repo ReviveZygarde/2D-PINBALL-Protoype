@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 
 /* T A B L E  T A L L Y
  * 
@@ -146,6 +147,9 @@ public class tableTally : MonoBehaviour
     IEnumerator interruptEventPopUp()
     {
         interruptEvent_Boss.SetActive(true);
+        GameObject temp_bossTitleI = GameObject.Find("interrupt_bossTitle");
+        SplineAnimate bossTitleAnimator = temp_bossTitleI.GetComponent<SplineAnimate>();
+        bossTitleAnimator.Restart(true);
         AudioManager.vo_mission.Play();
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);

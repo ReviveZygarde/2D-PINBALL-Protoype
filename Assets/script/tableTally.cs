@@ -30,12 +30,16 @@ public class tableTally : MonoBehaviour
     //bossEntity GameObject
     public GameObject bossEntity;
 
+    //Interrupt Event stuff for UI
+    public GameObject interruptEvent_Boss;
+
     // Start is called before the first frame update
     void Start()
     {
         scoreComponent = GetComponent<scoreBehavior>();
         modeBehavior = GetComponent<ModeBehavior>();
         bossEntity = GameObject.Find("bossEntity");
+        interruptEvent_Boss.SetActive(false);
         bossEntity.SetActive(false);
     }
 
@@ -97,7 +101,7 @@ public class tableTally : MonoBehaviour
             {
                 modeBehavior.modeState = ModeBehavior.currentMode.MULTIBALL;
             }
-            modeBehavior.timerCountdownStart();
+            StartCoroutine(interruptEventPopUp());
         }
         if (criteria_hole3entry >= 3)
         {
@@ -134,5 +138,15 @@ public class tableTally : MonoBehaviour
         criteria_hole2entry = 0;
         criteria_hole3entry = 0;
         criteria_ramp_entry = 0;
+    }
+
+    IEnumerator interruptEventPopUp()
+    {
+        interruptEvent_Boss.SetActive(true);
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(5);
+        Time.timeScale = 1.0f;
+        modeBehavior.timerCountdownStart();
+        yield return null;
     }
 }

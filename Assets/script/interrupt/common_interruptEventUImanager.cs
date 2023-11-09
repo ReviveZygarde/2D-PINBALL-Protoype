@@ -54,7 +54,7 @@ public class common_interruptEventUImanager : MonoBehaviour
         canShowScore = false;
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(0.5f);
-        modeFinishSpeedCounter.text = $"{(int)(Time.timeScale * 10)}";
+        modeFinishSpeedCounter.text = $"{modeComponent.timescaleBonus * 10}";
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishBallCounter.text = $"{(scoreComponent.ballsLeft * 100)}";
         yield return new WaitForSecondsRealtime(0.5f);
@@ -62,6 +62,48 @@ public class common_interruptEventUImanager : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishMultiplyCounter.text = $"{scoreComponent.multiplierState}";
         yield return new WaitForSecondsRealtime(2f);
+
+        timeSubtract = modeComponent.timescaleBonus * 10;
+        while (timeSubtract > 0)
+        {
+            timeSubtract--;
+            modeFinishSpeedCounter.text = $"{timeSubtract}";
+            scoreDisplay++;
+            modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            yield return new WaitForSecondsRealtime(0.0001f);
+        }
+
+        ballSubtract = (scoreComponent.ballsLeft * 100);
+        while (ballSubtract > 0)
+        {
+            ballSubtract--;
+            modeFinishBallCounter.text = $"{ballSubtract}";
+            scoreDisplay++;
+            modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            yield return new WaitForSecondsRealtime(0.0001f);
+        }
+
+        secondSubtract = modeComponent.secondsUntilModeEnds;
+        while (secondSubtract > 0)
+        {
+            secondSubtract--;
+            modeFinishTimeCounter.text = $"{secondSubtract}";
+            scoreDisplay++;
+            modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            yield return new WaitForSecondsRealtime(0.0001f);
+        }
+
+        while(scoreDisplay < scoreComponent.pl_score)
+        {
+            scoreDisplay++;
+            modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            yield return new WaitForSecondsRealtime(0.000001f);
+            if(confirmButton.lfIsHeld || confirmButton.rfIsHeld) //so the player doesnt have to wait
+            {
+                scoreDisplay = scoreComponent.pl_score;
+                modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            }
+        }
         canShowScore = true;
         yield return null;
     }
@@ -71,27 +113,15 @@ public class common_interruptEventUImanager : MonoBehaviour
     {
         if (canShowScore)
         {
-            timeSubtract = (int)(Time.timeScale * 10);
-            if (timeSubtract > 0)
-            {
-                timeSubtract--;
-                modeFinishSpeedCounter.text = $"{timeSubtract}";
-            }
-
-            ballSubtract = (scoreComponent.ballsLeft * 100);
-            if(ballSubtract > 0)
-            {
-                ballSubtract--;
-            }
-            secondSubtract = modeComponent.secondsUntilModeEnds;
-            if(secondSubtract > 0)
-            {
-                secondSubtract--;
-            }
-            modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
-            if (confirmButton.rfIsHeld)
+            if (confirmButton.rfIsHeld || confirmButton.lfIsHeld)
             {
                 modeComponent.revertModeToNormal(); //The game mode state goes back to Normal.
+                modeFinishSpeedCounter.text = $"";
+                modeFinishBallCounter.text = $"";
+                modeFinishTimeCounter.text = $"";
+                modeFinishMultiplyCounter.text = $"";
+                canShowScore = false;
+                modeFinishInterruptEvent.SetActive(false);
             }
         }
 

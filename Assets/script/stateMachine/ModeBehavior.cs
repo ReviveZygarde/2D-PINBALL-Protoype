@@ -18,6 +18,10 @@ public class ModeBehavior : MonoBehaviour
     public int secondsUntilBallSaveEnds;
     public int secondsUntilModeEnds;
 
+    //Other bonuses
+    public int timescaleBonus;
+    private float finalTimescale;
+
     //"Predefined" variables. What the timer resets back to.
     private int predefined_secondsUntilBallSaveEnds;
     private int predefined_secondsUntilModeEnds;
@@ -134,7 +138,9 @@ public class ModeBehavior : MonoBehaviour
         }
         if (secondsUntilModeEnds == 1)
         {
+            finalTimescale = Time.timeScale;
             AudioManager.vo_one.Play();
+
         }
     }
 
@@ -226,7 +232,8 @@ public class ModeBehavior : MonoBehaviour
         if (secondsUntilModeEnds == 0) //if there is no time left by the time the mode ends, no Time Leftover Bonus is applied.
         {
             //calculate score
-            scoreComponent.pl_score = (int)(Time.timeScale * 10) + (scoreComponent.ballsLeft * 100) + scoreComponent.pl_score;
+            timescaleBonus = (int)(finalTimescale * 10);
+            scoreComponent.pl_score =  timescaleBonus + (scoreComponent.ballsLeft * 100) + scoreComponent.pl_score;
             modeEndResultsScreen.screenAfterCalculate();
             //revertModeToNormal(); //The game mode state goes back to Normal.
         }

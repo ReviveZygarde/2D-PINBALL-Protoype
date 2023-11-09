@@ -13,11 +13,11 @@ public class common_interruptEventUImanager : MonoBehaviour
 
     //This is to properly restart the UI position transforms and all that stuff to its initial values if possible.
     public GameObject modeFinishInterruptEvent;
-    private Text modeFinishSpeedCounter;
-    private Text modeFinishBallCounter;
-    private Text modeFinishTimeCounter;
-    private Text modeFinishMultiplyCounter;
-    private Text modeFinishFinalScoreCounter;
+    public Text modeFinishSpeedCounter;
+    public Text modeFinishBallCounter;
+    public Text modeFinishTimeCounter;
+    public Text modeFinishMultiplyCounter;
+    public Text modeFinishFinalScoreCounter;
     private int scoreDisplay;
     private bool canShowScore;
 

@@ -227,15 +227,15 @@ public class ModeBehavior : MonoBehaviour
         {
             //calculate score
             scoreComponent.pl_score = (int)(Time.timeScale * 10) + (scoreComponent.ballsLeft * 100) + scoreComponent.pl_score;
-            //modeEndResultsScreen.screenAfterCalculate();
-            revertModeToNormal(); //The game mode state goes back to Normal.
+            modeEndResultsScreen.screenAfterCalculate();
+            //revertModeToNormal(); //The game mode state goes back to Normal.
         }
         else //the Time Leftover bonus will be applied if you have at at least 1 second left on the timer.
         {
             scoreComponent.pl_score = scoreComponent.pl_score + (secondsUntilModeEnds * multiplierFromScoreComponentOnCalculation * 100) + (scoreComponent.ballsLeft * 100);
             Debug.Log($"Player had {secondsUntilModeEnds} sec left.");
-            //modeEndResultsScreen.screenAfterCalculate();
-            revertModeToNormal();
+            modeEndResultsScreen.screenAfterCalculate();
+            //revertModeToNormal();
         }
     }
 

@@ -51,6 +51,7 @@ public class common_interruptEventUImanager : MonoBehaviour
 
     IEnumerator showModeEndStats()
     {
+        //This basically relays all the variable data on-screen.
         canShowScore = false;
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(0.5f);
@@ -115,7 +116,7 @@ public class common_interruptEventUImanager : MonoBehaviour
         {
             if (confirmButton.rfIsHeld || confirmButton.lfIsHeld)
             {
-                modeComponent.revertModeToNormal(); //The game mode state goes back to Normal.
+                modeComponent.revertModeToNormal(); //The game mode state goes back to Normal, clears all the UI text strings.
                 modeFinishSpeedCounter.text = $"";
                 modeFinishBallCounter.text = $"";
                 modeFinishTimeCounter.text = $"";

@@ -58,7 +58,7 @@ public class common_interruptEventUImanager : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishBallCounter.text = $"{(scoreComponent.ballsLeft * 100)}";
         yield return new WaitForSecondsRealtime(0.5f);
-        modeFinishTimeCounter.text = $"{modeComponent.secondsUntilModeEnds}";
+        modeFinishTimeCounter.text = $"{modeComponent.secondsUntilModeEnds * modeComponent.multiplierFromScoreComponentOnCalculation * 100}";
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishMultiplyCounter.text = $"{scoreComponent.multiplierState}";
         yield return new WaitForSecondsRealtime(2f);
@@ -83,7 +83,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.0001f);
         }
 
-        secondSubtract = modeComponent.secondsUntilModeEnds;
+        secondSubtract = modeComponent.secondsUntilModeEnds * modeComponent.multiplierFromScoreComponentOnCalculation * 100;
         while (secondSubtract > 0)
         {
             secondSubtract--;

@@ -28,7 +28,8 @@ public class ModeBehavior : MonoBehaviour
 
     //Regular integer to determine how much the score gets multiplied. See
     //the switch-case on how the scoreBehavior's multiplierState affects this.
-    private int multiplierFromScoreComponentOnCalculation;
+    //It is public only for the UI to see (my god i need to find a better way for this i swear there was something else)
+    public int multiplierFromScoreComponentOnCalculation;
 
     private scoreBehavior scoreComponent;
     private tableTally tally;

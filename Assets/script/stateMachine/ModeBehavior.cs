@@ -171,10 +171,12 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 1;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X2;
+                    /*
                     if (!didPlayerLoseBall)
                     {
                         scoreComponent.ballsLeft++;
                     }
+                    */
                 }
                 break;
             case scoreBehavior.multiplier.X2:
@@ -189,7 +191,7 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 4;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X6;
-                    scoreComponent.ballsLeft++;
+                    //scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X6:
@@ -204,7 +206,7 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 8;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X10;
-                    scoreComponent.ballsLeft++;
+                    //scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X10:

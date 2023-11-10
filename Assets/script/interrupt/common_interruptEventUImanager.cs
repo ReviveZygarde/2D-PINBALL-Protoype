@@ -37,6 +37,7 @@ public class common_interruptEventUImanager : MonoBehaviour
 
     public void resetBossInterruptBars()
     {
+        //Finds UI game objects, and resets their localPosition to zero.
         GameObject tmp_UIbottomBars = GameObject.Find("int_b_barsBottom");
         GameObject tmp_UItopBars = GameObject.Find("int_b_barsTop");
         tmp_UIbottomBars.transform.localPosition = Vector2.zero;
@@ -96,7 +97,7 @@ public class common_interruptEventUImanager : MonoBehaviour
 
         while(scoreDisplay < scoreComponent.pl_score)
         {
-            scoreDisplay++;
+            scoreDisplay = scoreDisplay + 15;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.000001f);
             if(confirmButton.lfIsHeld || confirmButton.rfIsHeld) //so the player doesnt have to wait
@@ -105,6 +106,7 @@ public class common_interruptEventUImanager : MonoBehaviour
                 modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             }
         }
+        modeFinishFinalScoreCounter.text = $"{scoreComponent.pl_score}";
         canShowScore = true;
         yield return null;
     }
@@ -121,6 +123,7 @@ public class common_interruptEventUImanager : MonoBehaviour
                 modeFinishBallCounter.text = $"";
                 modeFinishTimeCounter.text = $"";
                 modeFinishMultiplyCounter.text = $"";
+                scoreDisplay = scoreComponent.pl_score;
                 canShowScore = false;
                 modeFinishInterruptEvent.SetActive(false);
             }

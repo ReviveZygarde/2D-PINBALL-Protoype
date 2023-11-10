@@ -60,7 +60,7 @@ public class common_interruptEventUImanager : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishTimeCounter.text = $"{modeComponent.secondsUntilModeEnds * modeComponent.multiplierFromScoreComponentOnCalculation * 100}";
         yield return new WaitForSecondsRealtime(0.5f);
-        modeFinishMultiplyCounter.text = $"{scoreComponent.multiplierState}";
+        modeFinishMultiplyCounter.text = $"{modeComponent.multiplierFromScoreComponentOnCalculation}";
         yield return new WaitForSecondsRealtime(2f);
 
         timeSubtract = modeComponent.timescaleBonus * 10;

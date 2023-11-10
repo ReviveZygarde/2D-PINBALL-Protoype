@@ -5,6 +5,7 @@ using UnityEngine;
 public class scoreBehavior : MonoBehaviour
 {
     private ModeBehavior modeBehavior;
+    private globalScoreBehavior gl_scoreBehavior;
     public int ballsLeft = 3;
     public int pl_score;
     public enum multiplier
@@ -14,13 +15,19 @@ public class scoreBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pl_score = 0;
+        gl_scoreBehavior = GameObject.Find("GL_score").GetComponent<globalScoreBehavior>();
+        pl_score = gl_scoreBehavior.global_pl_score;
         modeBehavior = GetComponent<ModeBehavior>();
+    }
+
+    public void applyScoreToGLscore()
+    {
+        gl_scoreBehavior.global_pl_score = pl_score;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        applyScoreToGLscore();
     }
 }

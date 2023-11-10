@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 using UnityEngine.UI;
 
 public class BossCollision : MonoBehaviour
@@ -41,7 +42,20 @@ public class BossCollision : MonoBehaviour
             else
             {
                 uiStatusText.text = $"TAKE THAT!! {HP - timesHit} HITS LEFT!";
+                StartCoroutine(pauseMovement());
             }
         }
+    }
+
+    IEnumerator pauseMovement()
+    {
+        SplineAnimate splineAnim = GetComponent<SplineAnimate>();
+        Collider2D collider = GetComponent<Collider2D>();
+        splineAnim.Pause();
+        collider.enabled = false;
+        yield return new WaitForSecondsRealtime(2);
+        splineAnim.Play();
+        collider.enabled = true;
+        yield return null;
     }
 }

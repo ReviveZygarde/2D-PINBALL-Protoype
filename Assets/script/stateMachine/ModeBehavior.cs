@@ -303,7 +303,7 @@ public class ModeBehavior : MonoBehaviour
                     if(scoreComponent.ballsLeft <= 0)
                     {
                         Debug.Log($"Score: {scoreComponent.pl_score}. Show game over screen.");
-                        SceneManager.LoadScene(6);
+                        SceneManager.LoadScene("ProtoGameOver");
                     }
                     else
                     {

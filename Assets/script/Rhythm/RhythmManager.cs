@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Rhythm Program made by Mack Pearson-Muggli.
+/// RHYTHM PROGRAM made by Mack Pearson-Muggli.
 /// Used with permission.
 /// </summary>
 

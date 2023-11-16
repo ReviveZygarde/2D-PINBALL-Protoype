@@ -93,6 +93,11 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
+            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld) //so the player doesnt have to wait
+            {
+                scoreDisplay = scoreComponent.pl_score;
+                modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            }
         }
 
         while(scoreDisplay < scoreComponent.pl_score)
@@ -100,7 +105,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay = scoreDisplay + 15;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.000001f);
-            if(confirmButton.lfIsHeld || confirmButton.rfIsHeld) //so the player doesnt have to wait
+            if(confirmButton.lfIsHeld || confirmButton.rfIsHeld)
             {
                 scoreDisplay = scoreComponent.pl_score;
                 modeFinishFinalScoreCounter.text = $"{scoreDisplay}";

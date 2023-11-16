@@ -19,6 +19,8 @@ public class gameplayControlsBehavior : MonoBehaviour
     public bool lfIsHeld;
     public bool rfIsHeld;
     public bool plungerActionIsHeld;
+    private Rigidbody2D pinballRigidbody;
+    private bool canShake = true; //Leave this enabled by default.
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,8 @@ public class gameplayControlsBehavior : MonoBehaviour
         pl_input = GetComponent<PlayerInput>();
         leftFlipperJoint = GameObject.Find("L_HingeJoint").GetComponent<L_FlipControl>();
         rightFlipperJoint = GameObject.Find("R_HingeJoint").GetComponent<R_FlipControl>();
+        GameObject pinballObject = GameObject.Find("Pinball");
+        pinballRigidbody = pinballObject.GetComponent<Rigidbody2D>();
     }
 
     void OnLeftFlipper(InputValue value)
@@ -57,17 +61,40 @@ public class gameplayControlsBehavior : MonoBehaviour
 
     void OnBoardShake_Up(InputValue value)
     {
-        Debug.Log("Table shake UP!!");
+        if (canShake)
+        {
+            Debug.Log("Table shake UP!!");
+            pinballRigidbody.velocity = pinballRigidbody.velocity + new Vector2(0, 5f); //Simply adds Velocity for a gentle push on the ball.
+            StartCoroutine(DisableShake());
+        }
     }
 
     void OnBoardShake_L(InputValue value)
     {
-        Debug.Log("Table shake LEFT!!");
+        if (canShake)
+        {
+            Debug.Log("Table shake LEFT!!");
+            pinballRigidbody.velocity = pinballRigidbody.velocity - new Vector2(5f, 0);
+            StartCoroutine(DisableShake());
+        }
     }
 
     void OnBoardShake_R(InputValue value)
     {
-        Debug.Log("Table shake RIGHT!!");
+        if (canShake)
+        {
+            Debug.Log("Table shake RIGHT!!");
+            pinballRigidbody.velocity = pinballRigidbody.velocity + new Vector2(5f, 0);
+            StartCoroutine(DisableShake());
+        }
+    }
+
+    IEnumerator DisableShake() //Temporarily disables a boolean so you cannot spam the table shake (and thus attempting to defy gravity)
+    {
+        canShake = false;
+        yield return new WaitForSeconds(0.75f);
+        canShake = true;
+        yield return null;
     }
 
     //Debug Inputs

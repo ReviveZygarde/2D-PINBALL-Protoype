@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,6 +23,11 @@ public class gameplayControlsBehavior : MonoBehaviour
     private Rigidbody2D pinballRigidbody;
     private bool canShake = true; //Leave this enabled by default.
 
+    //for CINEMACHINE Camera Shake
+    private CinemachineImpulseSource cameraShakeUp;
+    private CinemachineImpulseSource cameraShakeLeft;
+    private CinemachineImpulseSource cameraShakeRight;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +36,10 @@ public class gameplayControlsBehavior : MonoBehaviour
         rightFlipperJoint = GameObject.Find("R_HingeJoint").GetComponent<R_FlipControl>();
         GameObject pinballObject = GameObject.Find("Pinball");
         pinballRigidbody = pinballObject.GetComponent<Rigidbody2D>();
+        //for Cinemachine components
+        cameraShakeUp = GameObject.Find("camShakeUp").GetComponent<CinemachineImpulseSource>();
+        cameraShakeLeft = GameObject.Find("camShakeLeft").GetComponent<CinemachineImpulseSource>();
+        cameraShakeRight = GameObject.Find("camShakeRight").GetComponent<CinemachineImpulseSource>();
     }
 
     void OnLeftFlipper(InputValue value)
@@ -64,6 +74,7 @@ public class gameplayControlsBehavior : MonoBehaviour
         if (canShake)
         {
             Debug.Log("Table shake UP!!");
+            cameraShakeUp.GenerateImpulse();
             pinballRigidbody.velocity = pinballRigidbody.velocity + new Vector2(0, 5f); //Simply adds Velocity for a gentle push on the ball.
             StartCoroutine(DisableShake());
         }
@@ -74,6 +85,7 @@ public class gameplayControlsBehavior : MonoBehaviour
         if (canShake)
         {
             Debug.Log("Table shake LEFT!!");
+            cameraShakeLeft.GenerateImpulse();
             pinballRigidbody.velocity = pinballRigidbody.velocity - new Vector2(5f, 0);
             StartCoroutine(DisableShake());
         }
@@ -84,6 +96,7 @@ public class gameplayControlsBehavior : MonoBehaviour
         if (canShake)
         {
             Debug.Log("Table shake RIGHT!!");
+            cameraShakeRight.GenerateImpulse();
             pinballRigidbody.velocity = pinballRigidbody.velocity + new Vector2(5f, 0);
             StartCoroutine(DisableShake());
         }

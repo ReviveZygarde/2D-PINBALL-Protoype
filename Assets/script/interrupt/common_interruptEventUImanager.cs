@@ -73,6 +73,11 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
+            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld) //so the player doesnt have to wait
+            {
+                scoreDisplay = scoreComponent.pl_score;
+                modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            }
         }
 
         ballSubtract = (scoreComponent.ballsLeft * 100);
@@ -83,6 +88,11 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
+            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld)
+            {
+                scoreDisplay = scoreComponent.pl_score;
+                modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            }
         }
 
         secondSubtract = modeComponent.secondsUntilModeEnds * modeComponent.multiplierFromScoreComponentOnCalculation * 100;
@@ -93,7 +103,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
-            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld) //so the player doesnt have to wait
+            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld)
             {
                 scoreDisplay = scoreComponent.pl_score;
                 modeFinishFinalScoreCounter.text = $"{scoreDisplay}";

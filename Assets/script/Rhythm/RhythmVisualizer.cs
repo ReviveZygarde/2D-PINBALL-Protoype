@@ -10,15 +10,18 @@ using UnityEngine.UI;
 
 public class RhythmVisualizer : MonoBehaviour
 {
-    [SerializeField]
-    GameObject imageObj, textObj;
-    Image image;
-    TMPro.TextMeshProUGUI textMeshPro;
+    //[SerializeField]
+    //GameObject imageObj, textObj;
+    //Image image;
+    //TMPro.TextMeshProUGUI textMeshPro;
     // Start is called before the first frame update
+    public Text rh_Status;
+    public gameplayControlsBehavior_forRH pl_input;
+
     void Start()
     {
-        image = imageObj.GetComponent<Image>();
-        textMeshPro = textObj.GetComponent<TMPro.TextMeshProUGUI>();
+        //image = imageObj.GetComponent<Image>();
+        //textMeshPro = textObj.GetComponent<TMPro.TextMeshProUGUI>();
     }
 
 
@@ -26,18 +29,26 @@ public class RhythmVisualizer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (pl_input.lfIsHeld || pl_input.rfIsHeld)
         {
             if (RhythmManager.Instance.IsOnBeat())
             {
-                textMeshPro.text = "Good";
+                rh_Status.text = "Good";
             }
             if (!RhythmManager.Instance.IsOnBeat())
             {
-                textMeshPro.text = "Bad";
+                rh_Status.text = "Bad";
             }
         }
-        changeSquareColor();
+        if(!pl_input.lfIsHeld || !pl_input.rfIsHeld)
+        {
+            if (!RhythmManager.Instance.IsOnBeat())
+            {
+                rh_Status.text = "Bad";
+            }
+        }
+
+        //changeSquareColor();
         /*else if (!SongPlayer.Instance.IsOnBeat())
         {
             image.color = Color.white;
@@ -45,7 +56,7 @@ public class RhythmVisualizer : MonoBehaviour
     }
 
 
-
+    /*
     void changeSquareColor()
     {
         if (RhythmManager.Instance.IsOnBeat())
@@ -57,4 +68,5 @@ public class RhythmVisualizer : MonoBehaviour
             image.color = Color.red;
         }
     }
+    */
 }

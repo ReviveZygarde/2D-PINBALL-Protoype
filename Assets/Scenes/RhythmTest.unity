@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatState: 0
-  bpm: 96
+  bpm: 95
   gain: 0.5
   signatureHi: 4
   signatureLo: 4
@@ -841,9 +841,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c85f6952e6926e543913b8ff5a99ede4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cf6355ae1a40fae4aa203df53a7bfe86, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.188
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -852,7 +852,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

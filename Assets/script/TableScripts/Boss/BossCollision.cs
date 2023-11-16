@@ -33,7 +33,7 @@ public class BossCollision : MonoBehaviour
             //Find the camShakeExplosion Game Object, and make the impulse signal to the cinemachine
             GameObject camShakeExplosionObject = GameObject.Find("camShakeExplosion");
             CinemachineImpulseSource explosionImpulse = camShakeExplosionObject.GetComponent<CinemachineImpulseSource>();
-            explosionImpulse.GenerateImpulse();
+            explosionImpulse.GenerateImpulseWithForce(4);
 
             //When the pinball hits the boss, it finds the UI_StatusText game object and takes the Text Component.
             uiStatusText = GameObject.Find("UI_statusText").GetComponent<Text>();

@@ -21,7 +21,7 @@ public class common_interruptEventUImanager : MonoBehaviour
     public Text modeFinishFinalScoreCounter;
     public Text specialMessage;
     private int scoreDisplay;
-    private bool canShowScore;
+    [SerializeField] private bool canShowScore;
 
     private int timeSubtract;
     private int ballSubtract;
@@ -80,7 +80,6 @@ public class common_interruptEventUImanager : MonoBehaviour
             {
                 scoreDisplay = scoreComponent.pl_score;
                 modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
-                canShowScore = true;
             }
         }
 
@@ -96,7 +95,6 @@ public class common_interruptEventUImanager : MonoBehaviour
             {
                 scoreDisplay = scoreComponent.pl_score;
                 modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
-                canShowScore = true;
             }
         }
 
@@ -112,7 +110,6 @@ public class common_interruptEventUImanager : MonoBehaviour
             {
                 scoreDisplay = scoreComponent.pl_score;
                 modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
-                canShowScore = true;
             }
         }
 
@@ -128,12 +125,12 @@ public class common_interruptEventUImanager : MonoBehaviour
             }
         }
         modeFinishFinalScoreCounter.text = $"{scoreComponent.pl_score}";
-        canShowScore = true;
         if(modeComponent.multiplierFromScoreComponentOnCalculation == 8)
         {
             audioManager.jingle_winExtra.Play();
             specialMessage.text = "EXTRA BALL GET!!";
         }
+        canShowScore = true;
         yield return null;
     }
 

@@ -37,6 +37,9 @@ public class ModeBehavior : MonoBehaviour
     private bool hasAlreadyReachedEndgame; //boolean that prevents crack mode from constantly triggering after every score calculation. Instead, it should every other mode.
     private bool didPlayerLoseBall;
 
+    //for the Rhythm Mode
+    public int beatPressCount;
+
     //et cetera...
     private commonAudioManager AudioManager;
     private common_interruptEventUImanager modeEndResultsScreen;
@@ -99,6 +102,11 @@ public class ModeBehavior : MonoBehaviour
 
     IEnumerator timerCountdown_Mode()
     {
+        if(modeState == currentMode.RHYTHM)
+        {
+            secondsUntilModeEnds = 60;
+        }
+
         while(secondsUntilModeEnds > 0)
         {
             secondsUntilBallSaveEnds = 99;
@@ -160,6 +168,12 @@ public class ModeBehavior : MonoBehaviour
                 temp_bossEntityToDisable.SetActive(false);
                 return;
             }
+        }
+
+        GameObject rhythmParent = GameObject.Find("rhythmParent");
+        if(rhythmParent != null)
+        {
+            rhythmParent.SetActive(false);
         }
 
         //The int variable, multiplierFromScoreComponentOnCalculation, is determined

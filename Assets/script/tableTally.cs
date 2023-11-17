@@ -34,7 +34,11 @@ public class tableTally : MonoBehaviour
     //Interrupt Event stuff for UI
     public GameObject interruptEvent_Boss;
     public GameObject interruptEvent_Rush;
+    public GameObject interruptEvent_Rhythm;
     private commonAudioManager AudioManager;
+
+    //for the RhythmMode Manager
+    public GameObject rhythmParent;
 
     // Start is called before the first frame update
     void Start()
@@ -97,15 +101,16 @@ public class tableTally : MonoBehaviour
         {
             resetCriteriaHoleEntries();
             // start rhythm mode or Multi-ball based on RNG between 0-1.
-            int randomNumber = Random.Range(0, 1);
-            if (randomNumber == 0)
-            {
-                modeBehavior.modeState = ModeBehavior.currentMode.RHYTHM;
-            }
-            else
-            {
-                modeBehavior.modeState = ModeBehavior.currentMode.MULTIBALL;
-            }
+            //int randomNumber = Random.Range(0, 1);
+            //if (randomNumber == 0)
+            //{
+            modeBehavior.modeState = ModeBehavior.currentMode.RHYTHM;
+            StartCoroutine(interruptRhythmEventPopUp());
+            //}
+            //else
+            //{
+                //modeBehavior.modeState = ModeBehavior.currentMode.MULTIBALL;
+            //}
         }
         if (criteria_hole3entry >= 3)
         {
@@ -177,4 +182,26 @@ public class tableTally : MonoBehaviour
         modeBehavior.timerCountdownStart();
         yield return null;
     }
+
+    IEnumerator interruptRhythmEventPopUp()
+    {
+        interruptEvent_Rhythm.SetActive(true);
+        //GameObject temp_bossTitleI = GameObject.Find("interrupt_bossTitle");
+        //SplineAnimate bossTitleAnimator = temp_bossTitleI.GetComponent<SplineAnimate>();
+        //bossTitleAnimator.Restart(true);
+        AudioManager.vo_mission.Play();
+        Time.timeScale = 0f;
+        rhythmParent.SetActive(true);
+        while(modeBehavior.beatPressCount <= 10)
+        {
+            yield return new WaitForSecondsRealtime(0.000001f);
+        }
+        Time.timeScale = 1.0f;
+        common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
+        //ui_manager.resetBossInterruptBars();
+        interruptEvent_Rhythm.SetActive(false);
+        modeBehavior.timerCountdownStart();
+        yield return null;
+    }
+
 }

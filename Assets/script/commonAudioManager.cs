@@ -11,6 +11,7 @@ public class commonAudioManager : MonoBehaviour
     public AudioSource vo_go;
     public AudioSource vo_mission;
     public AudioSource vo_finish;
+    public AudioSource jingle_winExtra;
 
     // Start is called before the first frame update
     void Start()

@@ -8304,6 +8304,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1362884181 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3174433799139836073, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+  m_PrefabInstance: {fileID: 2477495271436816692}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1364216037
 GameObject:
   m_ObjectHideFlags: 0
@@ -12979,6 +12990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 5212537072521655485, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7077221710989962403, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: ScoreBehavior
       value: 
@@ -13058,6 +13073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: common
       objectReference: {fileID: 0}
+    - target: {fileID: 7119321930190143036, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
+      propertyPath: specialMessage
+      value: 
+      objectReference: {fileID: 1362884181}
     - target: {fileID: 7119321930190143036, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
       propertyPath: modeFinishBallCounter
       value: 

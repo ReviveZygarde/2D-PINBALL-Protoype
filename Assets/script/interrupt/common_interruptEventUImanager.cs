@@ -10,6 +10,7 @@ public class common_interruptEventUImanager : MonoBehaviour
     private ModeBehavior modeComponent;
     private GameObject pl_input;
     private gameplayControlsBehavior confirmButton;
+    public commonAudioManager audioManager;
 
     //This is to properly restart the UI position transforms and all that stuff to its initial values if possible.
     public GameObject modeFinishInterruptEvent;
@@ -18,6 +19,7 @@ public class common_interruptEventUImanager : MonoBehaviour
     public Text modeFinishTimeCounter;
     public Text modeFinishMultiplyCounter;
     public Text modeFinishFinalScoreCounter;
+    public Text specialMessage;
     private int scoreDisplay;
     private bool canShowScore;
 
@@ -33,6 +35,7 @@ public class common_interruptEventUImanager : MonoBehaviour
         modeComponent = GetComponent<ModeBehavior>();
         pl_input = GameObject.Find("pl_input");
         confirmButton = pl_input.GetComponent<gameplayControlsBehavior>();
+        audioManager = GetComponent<commonAudioManager>();
     }
 
     public void resetBossInterruptBars()
@@ -126,6 +129,11 @@ public class common_interruptEventUImanager : MonoBehaviour
         }
         modeFinishFinalScoreCounter.text = $"{scoreComponent.pl_score}";
         canShowScore = true;
+        if(modeComponent.multiplierFromScoreComponentOnCalculation == 8)
+        {
+            audioManager.jingle_winExtra.Play();
+            specialMessage.text = "EXTRA BALL GET!!";
+        }
         yield return null;
     }
 

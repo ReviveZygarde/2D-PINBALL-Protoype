@@ -206,14 +206,14 @@ public class ModeBehavior : MonoBehaviour
                 {
                     multiplierFromScoreComponentOnCalculation = 8;
                     scoreComponent.multiplierState = scoreBehavior.multiplier.X10;
-                    //scoreComponent.ballsLeft++;
+                    scoreComponent.ballsLeft++;
                 }
                 break;
             case scoreBehavior.multiplier.X10:
                 if (scoreComponent.multiplierState == scoreBehavior.multiplier.X10)
                 {
                     multiplierFromScoreComponentOnCalculation = 10;
-                    scoreComponent.ballsLeft++;
+                    //scoreComponent.ballsLeft++;
                 }
                 break;
         }

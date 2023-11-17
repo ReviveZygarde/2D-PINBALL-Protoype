@@ -37,9 +37,6 @@ public class ModeBehavior : MonoBehaviour
     private bool hasAlreadyReachedEndgame; //boolean that prevents crack mode from constantly triggering after every score calculation. Instead, it should every other mode.
     private bool didPlayerLoseBall;
 
-    //for the Rhythm Mode
-    public int beatPressCount;
-
     //et cetera...
     private commonAudioManager AudioManager;
     private common_interruptEventUImanager modeEndResultsScreen;

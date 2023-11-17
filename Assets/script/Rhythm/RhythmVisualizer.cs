@@ -16,16 +16,12 @@ public class RhythmVisualizer : MonoBehaviour
     //TMPro.TextMeshProUGUI textMeshPro;
     // Start is called before the first frame update
     public Text rh_Status;
-    public GameObject interrupt_rhStatusOK;
-    public GameObject interrupt_rhStatusNG;
     public gameplayControlsBehavior pl_input;
     public scoreBehavior scoreComponent;
-    public ModeBehavior modeComponent;
 
     void Start()
     {
-        //image = imageObj.GetComponent<Image>();
-        //textMeshPro = textObj.GetComponent<TMPro.TextMeshProUGUI>();
+
     }
 
 
@@ -37,26 +33,19 @@ public class RhythmVisualizer : MonoBehaviour
         {
             if (RhythmManager.Instance.IsOnBeat())
             {
-                rh_Status.text = "Good";
-                interrupt_rhStatusOK.SetActive(true);
-                interrupt_rhStatusNG.SetActive(false);
+                rh_Status.text = "GOOD!";
                 scoreComponent.pl_score++;
-                modeComponent.beatPressCount++;
             }
             if (!RhythmManager.Instance.IsOnBeat())
             {
-                rh_Status.text = "Bad";
-                interrupt_rhStatusNG.SetActive(true);
-                interrupt_rhStatusOK.SetActive(false);
+                rh_Status.text = "";
             }
         }
         if(!pl_input.lfIsHeld || !pl_input.rfIsHeld)
         {
             if (!RhythmManager.Instance.IsOnBeat())
             {
-                rh_Status.text = "Bad";
-                interrupt_rhStatusNG.SetActive(true);
-                interrupt_rhStatusOK.SetActive(false);
+                rh_Status.text = "";
             }
         }
 

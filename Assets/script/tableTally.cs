@@ -192,10 +192,7 @@ public class tableTally : MonoBehaviour
         AudioManager.vo_mission.Play();
         Time.timeScale = 0f;
         rhythmParent.SetActive(true);
-        while(modeBehavior.beatPressCount <= 10)
-        {
-            yield return new WaitForSecondsRealtime(0.000001f);
-        }
+        yield return new WaitForSecondsRealtime(5f);
         Time.timeScale = 1.0f;
         common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
         //ui_manager.resetBossInterruptBars();

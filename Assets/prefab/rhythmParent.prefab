@@ -161,11 +161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rh_Status: {fileID: 0}
-  interrupt_rhStatusOK: {fileID: 0}
-  interrupt_rhStatusNG: {fileID: 0}
   pl_input: {fileID: 0}
   scoreComponent: {fileID: 0}
-  modeComponent: {fileID: 0}
 --- !u!1 &6308409819723807833
 GameObject:
   m_ObjectHideFlags: 0

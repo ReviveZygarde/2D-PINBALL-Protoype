@@ -10110,11 +10110,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1621916384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 296804894881523607, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-  m_PrefabInstance: {fileID: 2477495271436816692}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1662933316
 GameObject:
   m_ObjectHideFlags: 0
@@ -11212,11 +11207,6 @@ Transform:
   - {fileID: 890866625}
   m_Father: {fileID: 1549191529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1828529268 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 799602840220263882, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-  m_PrefabInstance: {fileID: 2477495271436816692}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1835954752
 GameObject:
   m_ObjectHideFlags: 0
@@ -13227,21 +13217,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 531086696}
     - target: {fileID: 5762487851044075571, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
-      propertyPath: modeComponent
-      value: 
-      objectReference: {fileID: 3664509487105658094}
-    - target: {fileID: 5762487851044075571, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
       propertyPath: scoreComponent
       value: 
       objectReference: {fileID: 3664509487105658095}
-    - target: {fileID: 5762487851044075571, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
-      propertyPath: interrupt_rhStatusNG
-      value: 
-      objectReference: {fileID: 1621916384}
-    - target: {fileID: 5762487851044075571, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
-      propertyPath: interrupt_rhStatusOK
-      value: 
-      objectReference: {fileID: 1828529268}
     - target: {fileID: 6308409819723807833, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
       propertyPath: m_Name
       value: rhythmParent

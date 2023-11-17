@@ -77,6 +77,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             {
                 scoreDisplay = scoreComponent.pl_score;
                 modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+                canShowScore = true;
             }
         }
 
@@ -92,6 +93,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             {
                 scoreDisplay = scoreComponent.pl_score;
                 modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+                canShowScore = true;
             }
         }
 
@@ -107,6 +109,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             {
                 scoreDisplay = scoreComponent.pl_score;
                 modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+                canShowScore = true;
             }
         }
 

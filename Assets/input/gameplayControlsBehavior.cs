@@ -20,8 +20,9 @@ public class gameplayControlsBehavior : MonoBehaviour
     public bool lfIsHeld;
     public bool rfIsHeld;
     public bool plungerActionIsHeld;
+    private GameObject pinball;
     private Rigidbody2D pinballRigidbody;
-    private bool canShake = true; //Leave this enabled by default.
+    public bool canShake = true; //Leave this enabled by default.
 
     //for CINEMACHINE Camera Shake
     private CinemachineImpulseSource cameraShakeUp;
@@ -34,8 +35,8 @@ public class gameplayControlsBehavior : MonoBehaviour
         pl_input = GetComponent<PlayerInput>();
         leftFlipperJoint = GameObject.Find("L_HingeJoint").GetComponent<L_FlipControl>();
         rightFlipperJoint = GameObject.Find("R_HingeJoint").GetComponent<R_FlipControl>();
-        GameObject pinballObject = GameObject.Find("Pinball");
-        pinballRigidbody = pinballObject.GetComponent<Rigidbody2D>();
+        pinball = GameObject.Find("Pinball");
+        pinballRigidbody = pinball.GetComponent<Rigidbody2D>();
         //for Cinemachine components
         cameraShakeUp = GameObject.Find("camShakeUp").GetComponent<CinemachineImpulseSource>();
         cameraShakeLeft = GameObject.Find("camShakeLeft").GetComponent<CinemachineImpulseSource>();
@@ -140,5 +141,11 @@ public class gameplayControlsBehavior : MonoBehaviour
             //defaultRFlipper();
             rightFlipperJoint.isKeyPress = false;
         }
+
+        if(pinball.layer != 0) //This is to prevent the ball from clipping through the OverRamp
+        {
+            canShake = false;
+        }
+
     }
 }

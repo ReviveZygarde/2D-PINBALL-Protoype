@@ -56,6 +56,9 @@ public class OverRampLayerChanger : MonoBehaviour
             {
                 Pinball.layer = OriginalLayerToSetPinball;
                 Debug.Log($"Pinball layer is now {Pinball.layer}.");
+                GameObject pl_input_object = GameObject.Find("pl_input");
+                gameplayControlsBehavior controlsBehavior = pl_input_object.GetComponent<gameplayControlsBehavior>();
+                controlsBehavior.canShake = true; //re-enables the player to shake the table.
                 if (fakeElevation)
                 {
                     ballRigidbody.velocity = ballDirection * 0;

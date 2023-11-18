@@ -52,3 +52,6 @@ TagManager:
   - name: OverlayingObjectsLayer
     uniqueID: 2522325277
     locked: 0
+  - name: EffectsLayer
+    uniqueID: 2871176555
+    locked: 0

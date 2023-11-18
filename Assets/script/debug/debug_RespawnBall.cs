@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -9,9 +10,11 @@ public class debug_RespawnBall : MonoBehaviour
     private GameObject Pinball;
     public GameObject PinballSpawnpoint;
     public GameObject launcherGate;
+    [SerializeField] private GameObject blastEffect;
     public Launcher springLauncher;
     private ModeBehavior common_modeBehavior;
     private scoreBehavior common_scoreBehavior;
+    private CinemachineImpulseSource camShakeBlast;
     public Text statusText;
 
     // Start is called before the first frame update
@@ -21,6 +24,7 @@ public class debug_RespawnBall : MonoBehaviour
         common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
         common_scoreBehavior = GameObject.Find("common").GetComponent<scoreBehavior>();
         statusText = GameObject.Find("UI_statusText").GetComponent<Text>();
+        camShakeBlast = GameObject.Find("camShakeBlast").GetComponent<CinemachineImpulseSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -33,6 +37,8 @@ public class debug_RespawnBall : MonoBehaviour
         Pinball.transform.position = PinballSpawnpoint.transform.position;
         Pinball.SetActive(true);
         springLauncher.isActive = true; // Make the spring launcher usable again.
+        camShakeBlast.GenerateImpulse();
+        blastEffect.SetActive(true);
     }
 
     IEnumerator statusMessageChange()
@@ -54,6 +60,7 @@ public class debug_RespawnBall : MonoBehaviour
             statusText.text = "";
         }
 
+        blastEffect.SetActive(false);
         yield return null;
     }
 }

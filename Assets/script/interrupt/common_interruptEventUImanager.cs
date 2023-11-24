@@ -76,11 +76,6 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
-            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld) //so the player doesnt have to wait
-            {
-                scoreDisplay = scoreComponent.pl_score;
-                modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
-            }
         }
 
         ballSubtract = (scoreComponent.ballsLeft * 100);
@@ -91,39 +86,27 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
-            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld)
-            {
-                scoreDisplay = scoreComponent.pl_score;
-                modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
-            }
         }
 
         secondSubtract = modeComponent.secondsUntilModeEnds * modeComponent.multiplierFromScoreComponentOnCalculation * 100;
         while (secondSubtract > 0)
         {
-            secondSubtract--;
+            secondSubtract = secondSubtract - 150;
             modeFinishTimeCounter.text = $"{secondSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
-            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld)
+            if(secondSubtract < 0)
             {
-                scoreDisplay = scoreComponent.pl_score;
-                modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
-                //canShowScore = true;
+                secondSubtract = 0;
             }
         }
 
         while(scoreDisplay < scoreComponent.pl_score)
         {
-            scoreDisplay = scoreDisplay + 15;
+            scoreDisplay = scoreDisplay + 25;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.000001f);
-            if(confirmButton.lfIsHeld || confirmButton.rfIsHeld)
-            {
-                scoreDisplay = scoreComponent.pl_score;
-                modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
-            }
         }
         modeFinishFinalScoreCounter.text = $"{scoreComponent.pl_score}";
         if(modeComponent.multiplierFromScoreComponentOnCalculation == 8)

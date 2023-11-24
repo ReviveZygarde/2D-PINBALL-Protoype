@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 /// <summary>
@@ -16,12 +17,43 @@ public class RhythmVisualizer : MonoBehaviour
     //TMPro.TextMeshProUGUI textMeshPro;
     // Start is called before the first frame update
     public Text rh_Status;
-    public gameplayControlsBehavior pl_input;
     public scoreBehavior scoreComponent;
+
+    [Tooltip("For the OnLeftFlipper() and OnRightFlipper(), they only work if you have the" +
+        " PlayerInput component on the same GameObject this component is attached to." +
+        " It will not work if you try to reference the PlayerInput from another GameObject.")]
+    public PlayerInput rhythmVisualizer_pl_input;
+
+    //For the OnLeftFlipper() and OnRightFlipper(), they only work if you have the PlayerInput
+    //component on the same GameObject this component is attached to. It will not work if you
+    //try to reference the PlayerInput from another GameObject.
 
     void Start()
     {
 
+    }
+
+    void OnLeftFlipper(InputValue value)
+    {
+        checkOnBeat();
+    }
+
+    void OnRightFlipper(InputValue value)
+    {
+        checkOnBeat();
+    }
+
+    void checkOnBeat()
+    {
+        if (RhythmManager.Instance.IsOnBeat())
+        {
+            rh_Status.text = "GOOD!";
+            scoreComponent.pl_score = scoreComponent.pl_score + 20;
+        }
+        if (!RhythmManager.Instance.IsOnBeat())
+        {
+            rh_Status.text = "";
+        }
     }
 
 
@@ -29,25 +61,10 @@ public class RhythmVisualizer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pl_input.lfIsHeld || pl_input.rfIsHeld)
-        {
-            if (RhythmManager.Instance.IsOnBeat())
-            {
-                rh_Status.text = "GOOD!";
-                scoreComponent.pl_score++;
-            }
-            if (!RhythmManager.Instance.IsOnBeat())
-            {
-                rh_Status.text = "";
-            }
-        }
-        if(!pl_input.lfIsHeld || !pl_input.rfIsHeld)
-        {
-            if (!RhythmManager.Instance.IsOnBeat())
-            {
-                rh_Status.text = "";
-            }
-        }
+       if (!RhythmManager.Instance.IsOnBeat())
+       {
+          rh_Status.text = "";
+       }
 
         //changeSquareColor();
         /*else if (!SongPlayer.Instance.IsOnBeat())

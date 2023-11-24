@@ -100,17 +100,8 @@ public class tableTally : MonoBehaviour
         if (criteria_hole2entry >= 3)
         {
             resetCriteriaHoleEntries();
-            // start rhythm mode or Multi-ball based on RNG between 0-1.
-            //int randomNumber = Random.Range(0, 1);
-            //if (randomNumber == 0)
-            //{
             modeBehavior.modeState = ModeBehavior.currentMode.RHYTHM;
             StartCoroutine(interruptRhythmEventPopUp());
-            //}
-            //else
-            //{
-                //modeBehavior.modeState = ModeBehavior.currentMode.MULTIBALL;
-            //}
         }
         if (criteria_hole3entry >= 3)
         {
@@ -152,9 +143,6 @@ public class tableTally : MonoBehaviour
     IEnumerator interruptBossEventPopUp()
     {
         interruptEvent_Boss.SetActive(true);
-        //GameObject temp_bossTitleI = GameObject.Find("interrupt_bossTitle");
-        //SplineAnimate bossTitleAnimator = temp_bossTitleI.GetComponent<SplineAnimate>();
-        //bossTitleAnimator.Restart(true);
         AudioManager.vo_mission.Play();
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
@@ -169,9 +157,6 @@ public class tableTally : MonoBehaviour
     IEnumerator interruptRushEventPopUp()
     {
         interruptEvent_Rush.SetActive(true);
-        //GameObject temp_bossTitleI = GameObject.Find("interrupt_bossTitle");
-        //SplineAnimate bossTitleAnimator = temp_bossTitleI.GetComponent<SplineAnimate>();
-        //bossTitleAnimator.Restart(true);
         AudioManager.vo_mission.Play();
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
@@ -186,9 +171,6 @@ public class tableTally : MonoBehaviour
     IEnumerator interruptRhythmEventPopUp()
     {
         interruptEvent_Rhythm.SetActive(true);
-        //GameObject temp_bossTitleI = GameObject.Find("interrupt_bossTitle");
-        //SplineAnimate bossTitleAnimator = temp_bossTitleI.GetComponent<SplineAnimate>();
-        //bossTitleAnimator.Restart(true);
         AudioManager.vo_mission.Play();
         Time.timeScale = 0f;
         rhythmParent.SetActive(true);

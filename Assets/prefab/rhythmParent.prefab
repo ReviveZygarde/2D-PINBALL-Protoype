@@ -47,7 +47,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dca3a555bab73074ea35e3e5d111383f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.038
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beatState: 0
   bpm: 90
-  gain: 1
+  gain: 0
   signatureHi: 1
   signatureLo: 4
   inputBufScale: 0.5799999833106995

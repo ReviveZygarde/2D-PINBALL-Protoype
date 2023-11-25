@@ -13,6 +13,12 @@ public class BossCollision : MonoBehaviour
     private int timesHit = 0;
     public int HP;
     public bool isDefeated;
+    /// <summary>
+    /// The variables below are for the Particles
+    /// </summary>
+    [SerializeField] private GameObject hitEffectObject;
+    [SerializeField] private GameObject oneMoreHitEffectObject;
+    [SerializeField] private GameObject winEffectObject;
 
 
     // Start is called before the first frame update
@@ -29,6 +35,7 @@ public class BossCollision : MonoBehaviour
         if(collision.gameObject == Pinball)
         {
             timesHit++;
+            hitEffectObject.SetActive(true);
 
             //Find the camShakeExplosion Game Object, and make the impulse signal to the cinemachine
             GameObject camShakeExplosionObject = GameObject.Find("camShakeExplosion");
@@ -41,6 +48,7 @@ public class BossCollision : MonoBehaviour
             {
                 uiStatusText.text = $"ALL RIGHT!! YOU DID IT!";
                 isDefeated = true;
+                oneMoreHitEffectObject.SetActive(false);
                 timesHit = 0;
                 this.gameObject.SetActive(false);
                 common_modeBehavior.DetermineNextMultiplier();
@@ -49,6 +57,10 @@ public class BossCollision : MonoBehaviour
             else
             {
                 uiStatusText.text = $"TAKE THAT!! {HP - timesHit} HITS LEFT!";
+                if((HP - timesHit) == 1)
+                {
+                    oneMoreHitEffectObject.SetActive(true);
+                }
                 StartCoroutine(pauseMovement());
             }
         }
@@ -63,6 +75,7 @@ public class BossCollision : MonoBehaviour
         yield return new WaitForSecondsRealtime(2);
         splineAnim.Play();
         collider.enabled = true;
+        hitEffectObject.SetActive(false);
         yield return null;
     }
 }

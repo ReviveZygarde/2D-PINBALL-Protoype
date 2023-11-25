@@ -9681,6 +9681,11 @@ MonoBehaviour:
   isRegularHole1: 0
   isRhythmMultiballHole2: 0
   isBossHole3: 1
+--- !u!1 &1406812695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8845700298176322924, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
+  m_PrefabInstance: {fileID: 3310696177322667972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1430467585
 GameObject:
   m_ObjectHideFlags: 0
@@ -12075,6 +12080,11 @@ MonoBehaviour:
     m_DissipationDistance: 100
     m_PropagationSpeed: 343
   m_DefaultVelocity: {x: -0.2, y: 0, z: 0}
+--- !u!1 &1784656397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2686032727827843273, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
+  m_PrefabInstance: {fileID: 3310696177322667972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1821496295
 GameObject:
   m_ObjectHideFlags: 0
@@ -12422,6 +12432,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9141ba3de80049f4197efc890276f57b, type: 3}
+--- !u!1 &1878118674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5124641069896056040, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
+  m_PrefabInstance: {fileID: 3310696177322667972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1878448127
 GameObject:
   m_ObjectHideFlags: 0
@@ -14463,9 +14478,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1293363890}
     - target: {fileID: 3979401492572330161, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
+      propertyPath: hitEffectObject
+      value: 
+      objectReference: {fileID: 1878118674}
+    - target: {fileID: 3979401492572330161, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
+      propertyPath: winEffectObject
+      value: 
+      objectReference: {fileID: 1406812695}
+    - target: {fileID: 3979401492572330161, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
       propertyPath: common_modeBehavior
       value: 
       objectReference: {fileID: 3664509487105658094}
+    - target: {fileID: 3979401492572330161, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
+      propertyPath: oneMoreHitEffectObject
+      value: 
+      objectReference: {fileID: 1784656397}
     - target: {fileID: 6909975805659957887, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
       propertyPath: m_Target
       value: 

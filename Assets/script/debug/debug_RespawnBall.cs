@@ -38,6 +38,7 @@ public class debug_RespawnBall : MonoBehaviour
         Pinball.SetActive(true);
         springLauncher.isActive = true; // Make the spring launcher usable again.
         camShakeBlast.GenerateImpulse();
+        blastEffect.SetActive(false);
         blastEffect.SetActive(true);
     }
 
@@ -59,8 +60,6 @@ public class debug_RespawnBall : MonoBehaviour
             yield return new WaitForSeconds(1);
             statusText.text = "";
         }
-
-        blastEffect.SetActive(false);
         yield return null;
     }
 }

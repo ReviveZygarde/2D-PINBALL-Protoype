@@ -13,6 +13,7 @@ Public Domain
 "n-Dimensions"
 Music by Matthew Pablo
 http://www.matthewpablo.com
+Creative Commons CC-BY
 
 //-----------------------------------------------------
 
@@ -26,5 +27,16 @@ Creative Commons CC-BY
 (Open Game Art)
 Music by Migfus, https://opengameart.org/content/setting-relaxing-orchestra
 CC-BY 4.0.
+
+//-----------------------------------------------------
+
+"Monolith"
+Music by Tri-Tachyon - https://soundcloud.com/tri-tachyon/albums
+CC-BY 4.0.
+
+//-----------------------------------------------------
+
+"The Celebrity"
+Public Domain.
 
 //-----------------------------------------------------

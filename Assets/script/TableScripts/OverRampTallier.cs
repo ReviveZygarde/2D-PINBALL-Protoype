@@ -14,6 +14,7 @@ public class OverRampTallier : MonoBehaviour
     private ModeBehavior common_modeBehavior;
     private scoreBehavior common_scoreBehavior;
     private Text statusText;
+    [SerializeField] private bool debug_OverWriteAsBoss;
 
     // Start is called before the first frame update
     void Start()
@@ -57,3 +58,27 @@ public class OverRampTallier : MonoBehaviour
     }
 
 }
+
+///some commented out code here for maybe future reference....... maybe.
+/*
+          if (common_modeBehavior.modeState == ModeBehavior.currentMode.NORMAL)
+        {
+            statusText.text = "AROUND THE RAMP!";
+            yield return new WaitForSeconds(3f);
+            if (!debug_OverWriteAsBoss)
+            {
+                statusText.text = $"{4 - common_tableTally.criteria_ramp_entry} MORE FOR RUSH!";
+            }
+            
+            else if(debug_OverWriteAsBoss) //to change the behavior for the criteria tally to access BOSS Mode easier. Feel free to comment this out.
+            {
+                statusText.text = $"{3 - common_tableTally.criteria_hole3entry} MORE FOR BOSS! (debug)";
+                common_tableTally.criteria_hole3entry++;
+                common_tableTally.criteria_ramp_entry--;
+            }
+            
+            yield return new WaitForSeconds(3f);
+            statusText.text = "";
+            yield return null;
+        }
+*/

@@ -76,6 +76,10 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
+            if(timeSubtract <= 0)
+            {
+                timeSubtract = 0;
+            }
         }
 
         ballSubtract = (scoreComponent.ballsLeft * 100);
@@ -96,7 +100,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
-            if(secondSubtract < 0)
+            if(secondSubtract <= 0)
             {
                 secondSubtract = 0;
             }
@@ -104,7 +108,7 @@ public class common_interruptEventUImanager : MonoBehaviour
 
         while(scoreDisplay < scoreComponent.pl_score)
         {
-            scoreDisplay = scoreDisplay + 25;
+            scoreDisplay = scoreDisplay + 256;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.000001f);
         }
@@ -130,6 +134,7 @@ public class common_interruptEventUImanager : MonoBehaviour
                 modeFinishBallCounter.text = $"";
                 modeFinishTimeCounter.text = $"";
                 modeFinishMultiplyCounter.text = $"";
+                specialMessage.text = "";
                 scoreDisplay = scoreComponent.pl_score;
                 canShowScore = false;
                 modeFinishInterruptEvent.SetActive(false);

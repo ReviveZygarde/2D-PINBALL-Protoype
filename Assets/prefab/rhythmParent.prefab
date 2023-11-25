@@ -144,11 +144,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatState: 0
-  bpm: 90
+  bpm: 92
   gain: 0
   signatureHi: 1
   signatureLo: 4
-  inputBufScale: 0.5799999833106995
+  inputBufScale: 0.3
 --- !u!114 &5762487851044075571
 MonoBehaviour:
   m_ObjectHideFlags: 0

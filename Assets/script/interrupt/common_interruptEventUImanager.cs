@@ -83,6 +83,7 @@ public class common_interruptEventUImanager : MonoBehaviour
         if (timeSubtract <= 0)
         {
             timeSubtract = 0;
+            modeFinishSpeedCounter.text = $"{timeSubtract}";
         }
 
         ballSubtract = (scoreComponent.ballsLeft * 100);
@@ -108,6 +109,7 @@ public class common_interruptEventUImanager : MonoBehaviour
         if (secondSubtract <= 0)
         {
             secondSubtract = 0;
+            modeFinishTimeCounter.text = $"{secondSubtract}";
         }
 
         while (scoreDisplay < scoreComponent.pl_score)

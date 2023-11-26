@@ -56,6 +56,8 @@ public class common_interruptEventUImanager : MonoBehaviour
     IEnumerator showModeEndStats()
     {
         //This basically relays all the variable data on-screen.
+        //Uses a WHILE loop to do the numbers counting down rapidly.
+
         canShowScore = false;
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(0.5f);
@@ -76,10 +78,11 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
-            if(timeSubtract <= 0)
-            {
-                timeSubtract = 0;
-            }
+        }
+
+        if (timeSubtract <= 0)
+        {
+            timeSubtract = 0;
         }
 
         ballSubtract = (scoreComponent.ballsLeft * 100);
@@ -100,13 +103,14 @@ public class common_interruptEventUImanager : MonoBehaviour
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.0001f);
-            if(secondSubtract <= 0)
-            {
-                secondSubtract = 0;
-            }
         }
 
-        while(scoreDisplay < scoreComponent.pl_score)
+        if (secondSubtract <= 0)
+        {
+            secondSubtract = 0;
+        }
+
+        while (scoreDisplay < scoreComponent.pl_score)
         {
             scoreDisplay = scoreDisplay + 256;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";

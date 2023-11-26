@@ -14498,38 +14498,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1835954753}
     m_Modifications:
-    - target: {fileID: 2686032726795737317, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2686032727827843273, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 3979401492572330161, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
       propertyPath: Pinball
       value: 
       objectReference: {fileID: 1293363890}
     - target: {fileID: 3979401492572330161, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
+      propertyPath: explosionImpulse
+      value: 
+      objectReference: {fileID: 1720656992}
+    - target: {fileID: 3979401492572330161, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
       propertyPath: common_modeBehavior
       value: 
       objectReference: {fileID: 3664509487105658094}
-    - target: {fileID: 5124641068713139380, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5124641069213670494, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5124641069586430047, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5124641069896056040, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 6909975805659957887, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
       propertyPath: m_Target
       value: 
@@ -14577,38 +14557,6 @@ PrefabInstance:
     - target: {fileID: 8621129239095236561, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
       propertyPath: m_Name
       value: bossEntity
-      objectReference: {fileID: 0}
-    - target: {fileID: 8845700296066048665, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8845700296504676092, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8845700296525315262, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8845700297077483913, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8845700297162635908, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8845700297386107523, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8845700298127430475, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8845700298176322924, guid: 823bfd93291e59d4bad9578c0f800376, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

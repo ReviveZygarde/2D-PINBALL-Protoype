@@ -108,6 +108,7 @@ MonoBehaviour:
   HP: 4
   isDefeated: 0
   splineAnim: {fileID: 6909975805659957887}
+  explosionImpulse: {fileID: 0}
   hitEffectObject: {fileID: 5124641069896056040}
   oneMoreHitEffectObject: {fileID: 2686032727827843273}
   winEffectObject: {fileID: 8845700298176322924}
@@ -238,6 +239,10 @@ PrefabInstance:
       value: hitEffect
       objectReference: {fileID: 0}
     - target: {fileID: 5585671604984661021, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585671604984661021, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -252,6 +257,10 @@ PrefabInstance:
     - target: {fileID: 5585671606167315520, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.38128
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585671606167315521, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5585671606167315527, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
       propertyPath: m_Materials.Array.size
@@ -273,6 +282,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.38128
       objectReference: {fileID: 0}
+    - target: {fileID: 5585671606615352491, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5585671606770024616, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -288,6 +301,10 @@ PrefabInstance:
     - target: {fileID: 5585671606770024617, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.38128
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585671606770024618, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -315,6 +332,10 @@ PrefabInstance:
     - target: {fileID: 483918908983999528, guid: 2111d2eee3769bf45925d85467473212, type: 3}
       propertyPath: m_Name
       value: onemore
+      objectReference: {fileID: 0}
+    - target: {fileID: 483918908983999528, guid: 2111d2eee3769bf45925d85467473212, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 483918908983999528, guid: 2111d2eee3769bf45925d85467473212, type: 3}
       propertyPath: m_IsActive
@@ -387,6 +408,10 @@ PrefabInstance:
     - target: {fileID: 483918908983999531, guid: 2111d2eee3769bf45925d85467473212, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483918910038387716, guid: 2111d2eee3769bf45925d85467473212, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 483918910038387716, guid: 2111d2eee3769bf45925d85467473212, type: 3}
       propertyPath: m_IsActive
@@ -504,6 +529,10 @@ PrefabInstance:
       value: winEffect
       objectReference: {fileID: 0}
     - target: {fileID: 874244544889619525, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 874244544889619525, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -523,6 +552,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.17799
       objectReference: {fileID: 0}
+    - target: {fileID: 874244544971278946, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 874244545130783659, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -538,6 +571,10 @@ PrefabInstance:
     - target: {fileID: 874244545130783660, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.17799
+      objectReference: {fileID: 0}
+    - target: {fileID: 874244545130783661, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 874244545173388200, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_Materials.Array.size
@@ -555,6 +592,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.17799
       objectReference: {fileID: 0}
+    - target: {fileID: 874244545173388202, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 874244545988735134, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -570,6 +611,10 @@ PrefabInstance:
     - target: {fileID: 874244545988735135, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.17799
+      objectReference: {fileID: 0}
+    - target: {fileID: 874244545988735136, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 874244546185165741, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -599,6 +644,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.17799
       objectReference: {fileID: 0}
+    - target: {fileID: 874244546185165744, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 874244546553141203, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -615,6 +664,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.17799
       objectReference: {fileID: 0}
+    - target: {fileID: 874244546553141205, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 874244546573149589, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -630,6 +683,10 @@ PrefabInstance:
     - target: {fileID: 874244546573149590, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.17799
+      objectReference: {fileID: 0}
+    - target: {fileID: 874244546573149591, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

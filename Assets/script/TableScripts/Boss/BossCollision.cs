@@ -14,6 +14,7 @@ public class BossCollision : MonoBehaviour
     public int HP;
     public bool isDefeated;
     [SerializeField] private SplineAnimate splineAnim;
+    [SerializeField] private CinemachineImpulseSource explosionImpulse;
     /// <summary>
     /// The variables below are for the Particles
     /// </summary>
@@ -39,8 +40,6 @@ public class BossCollision : MonoBehaviour
             hitEffectObject.SetActive(true);
 
             //Find the camShakeExplosion Game Object, and make the impulse signal to the cinemachine
-            GameObject camShakeExplosionObject = GameObject.Find("camShakeExplosion");
-            CinemachineImpulseSource explosionImpulse = camShakeExplosionObject.GetComponent<CinemachineImpulseSource>();
             explosionImpulse.GenerateImpulseWithForce(4);
 
             //When the pinball hits the boss, it finds the UI_StatusText game object and takes the Text Component.
@@ -72,6 +71,7 @@ public class BossCollision : MonoBehaviour
         splineAnim.Pause();
         common_modeBehavior.pauseTimers();
         yield return new WaitForSecondsRealtime(5); //Freezes the ball so the player can see the particle effect
+        explosionImpulse.GenerateImpulseWithForce(5);
         SpriteRenderer sprr = this.gameObject.GetComponent<SpriteRenderer>();
         sprr.enabled = false;
         yield return new WaitForSecondsRealtime(3);

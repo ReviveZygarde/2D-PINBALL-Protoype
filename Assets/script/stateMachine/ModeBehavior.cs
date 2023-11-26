@@ -120,6 +120,11 @@ public class ModeBehavior : MonoBehaviour
         }
     }
 
+    public void pauseTimers()
+    {
+        StopAllCoroutines();
+    }
+
     private void decrementSaverTimerBy1()
     {
         secondsUntilBallSaveEnds--;
@@ -132,7 +137,7 @@ public class ModeBehavior : MonoBehaviour
     private void decrementModeTimerBy1()
     {
         secondsUntilModeEnds--;
-
+        
         //Sounds for playing the vocoder announcer clips
         if (secondsUntilModeEnds == 3)
         {

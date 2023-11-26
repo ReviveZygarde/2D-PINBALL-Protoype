@@ -13,6 +13,7 @@ public class BossCollision : MonoBehaviour
     private int timesHit = 0;
     public int HP;
     public bool isDefeated;
+    [SerializeField] private SplineAnimate splineAnim;
     /// <summary>
     /// The variables below are for the Particles
     /// </summary>
@@ -46,13 +47,7 @@ public class BossCollision : MonoBehaviour
             uiStatusText = GameObject.Find("UI_statusText").GetComponent<Text>();
             if (timesHit >= HP)
             {
-                uiStatusText.text = $"ALL RIGHT!! YOU DID IT!";
-                isDefeated = true;
-                oneMoreHitEffectObject.SetActive(false);
-                timesHit = 0;
-                this.gameObject.SetActive(false);
-                common_modeBehavior.DetermineNextMultiplier();
-                isDefeated = false;
+                StartCoroutine(explosionSequence());
             }
             else
             {
@@ -66,9 +61,33 @@ public class BossCollision : MonoBehaviour
         }
     }
 
+    IEnumerator explosionSequence()
+    {
+        uiStatusText.text = $"ALL RIGHT!! YOU DID IT!";
+        isDefeated = true;
+        oneMoreHitEffectObject.SetActive(false);
+        timesHit = 0;
+        winEffectObject.SetActive(true);
+        Pinball.gameObject.SetActive(false);
+        splineAnim.Pause();
+        common_modeBehavior.pauseTimers();
+        yield return new WaitForSecondsRealtime(5); //Freezes the ball so the player can see the particle effect
+        SpriteRenderer sprr = this.gameObject.GetComponent<SpriteRenderer>();
+        sprr.enabled = false;
+        yield return new WaitForSecondsRealtime(3);
+        Pinball.gameObject.SetActive(true);
+        common_modeBehavior.DetermineNextMultiplier();
+        isDefeated = false;
+        sprr.enabled = true;
+        winEffectObject.SetActive(false);
+        hitEffectObject.SetActive(false);
+        splineAnim.Play();
+        this.gameObject.SetActive(false); //Game resumes.
+        yield return null;
+    }
+
     IEnumerator pauseMovement()
     {
-        SplineAnimate splineAnim = GetComponent<SplineAnimate>();
         Collider2D collider = GetComponent<Collider2D>();
         splineAnim.Pause();
         collider.enabled = false;

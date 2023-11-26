@@ -107,9 +107,10 @@ MonoBehaviour:
   uiStatusText: {fileID: 0}
   HP: 4
   isDefeated: 0
-  hitEffectObject: {fileID: 0}
-  oneMoreHitEffectObject: {fileID: 0}
-  winEffectObject: {fileID: 0}
+  splineAnim: {fileID: 6909975805659957887}
+  hitEffectObject: {fileID: 5124641069896056040}
+  oneMoreHitEffectObject: {fileID: 2686032727827843273}
+  winEffectObject: {fileID: 8845700298176322924}
 --- !u!70 &3714659179198308212
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -298,6 +299,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5585671604984661010, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
   m_PrefabInstance: {fileID: 763970768639949045}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5124641069896056040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5585671604984661021, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
+  m_PrefabInstance: {fileID: 763970768639949045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2590006463306233057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -419,6 +425,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2111d2eee3769bf45925d85467473212, type: 3}
+--- !u!1 &2686032727827843273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 483918908983999528, guid: 2111d2eee3769bf45925d85467473212, type: 3}
+  m_PrefabInstance: {fileID: 2590006463306233057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2686032727827843274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 483918908983999531, guid: 2111d2eee3769bf45925d85467473212, type: 3}
@@ -560,6 +571,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.17799
       objectReference: {fileID: 0}
+    - target: {fileID: 874244546185165741, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.08018869
+      objectReference: {fileID: 0}
+    - target: {fileID: 874244546185165741, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 874244546185165741, guid: 0728f683564eb00408dbd34352577569, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9529451
+      objectReference: {fileID: 0}
     - target: {fileID: 874244546185165742, guid: 0728f683564eb00408dbd34352577569, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -616,5 +639,10 @@ PrefabInstance:
 --- !u!4 &8845700298176322923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 874244544889619522, guid: 0728f683564eb00408dbd34352577569, type: 3}
+  m_PrefabInstance: {fileID: 8566916616294881577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8845700298176322924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 874244544889619525, guid: 0728f683564eb00408dbd34352577569, type: 3}
   m_PrefabInstance: {fileID: 8566916616294881577}
   m_PrefabAsset: {fileID: 0}

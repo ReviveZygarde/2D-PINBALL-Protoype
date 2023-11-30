@@ -21,6 +21,7 @@ public class BossCollision : MonoBehaviour
     [SerializeField] private GameObject hitEffectObject;
     [SerializeField] private GameObject oneMoreHitEffectObject;
     [SerializeField] private GameObject winEffectObject;
+    [SerializeField] private GameObject childMesh;
 
 
     // Start is called before the first frame update
@@ -72,13 +73,15 @@ public class BossCollision : MonoBehaviour
         common_modeBehavior.pauseTimers();
         yield return new WaitForSecondsRealtime(5); //Freezes the ball so the player can see the particle effect
         explosionImpulse.GenerateImpulseWithForce(5);
-        SpriteRenderer sprr = this.gameObject.GetComponent<SpriteRenderer>();
-        sprr.enabled = false;
+        //SpriteRenderer sprr = this.gameObject.GetComponent<SpriteRenderer>();
+        //sprr.enabled = false;
+        childMesh.SetActive(false);
         yield return new WaitForSecondsRealtime(3);
         Pinball.gameObject.SetActive(true);
         common_modeBehavior.DetermineNextMultiplier();
         isDefeated = false;
-        sprr.enabled = true;
+        //sprr.enabled = true;
+        childMesh.SetActive(true);
         winEffectObject.SetActive(false);
         hitEffectObject.SetActive(false);
         splineAnim.Play();

@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c3c56d9260a4744a02cd7efb3ef6d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballsLeft: 3
+  ballsLeft: 2
   pl_score: 0
   multiplierState: 0
 --- !u!114 &8643073791273722883
@@ -423,7 +423,6 @@ MonoBehaviour:
   secondsUntilModeEnds: 100
   timescaleBonus: 0
   multiplierFromScoreComponentOnCalculation: 0
-  beatPressCount: 0
 --- !u!114 &4720631735700629072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,6 +487,7 @@ MonoBehaviour:
   modeFinishMultiplyCounter: {fileID: 0}
   modeFinishFinalScoreCounter: {fileID: 0}
   specialMessage: {fileID: 0}
+  canShowScore: 0
 --- !u!1 &5925515330540571468
 GameObject:
   m_ObjectHideFlags: 0

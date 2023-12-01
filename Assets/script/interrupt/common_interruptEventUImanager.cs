@@ -20,6 +20,7 @@ public class common_interruptEventUImanager : MonoBehaviour
     public Text modeFinishMultiplyCounter;
     public Text modeFinishFinalScoreCounter;
     public Text specialMessage;
+    public Text finishTitle;
     private int scoreDisplay;
     [SerializeField] private bool canShowScore;
 
@@ -50,6 +51,11 @@ public class common_interruptEventUImanager : MonoBehaviour
     public void screenAfterCalculate()
     {
         modeFinishInterruptEvent.SetActive(true);
+        if (modeComponent.didPlayerLoseBall)
+        {
+            finishTitle.text = "LOSE";
+        }
+        Time.timeScale = 0;
         StartCoroutine(showModeEndStats());
     }
 
@@ -59,18 +65,29 @@ public class common_interruptEventUImanager : MonoBehaviour
         //Uses a WHILE loop to do the numbers counting down rapidly.
 
         canShowScore = false;
-        Time.timeScale = 0;
+
+        
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishSpeedCounter.text = $"{modeComponent.timescaleBonus * 10}";
+        if (modeComponent.didPlayerLoseBall) { modeFinishSpeedCounter.text = ""; }
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishBallCounter.text = $"{(scoreComponent.ballsLeft * 100)}";
+        if (modeComponent.didPlayerLoseBall) { modeFinishBallCounter.text = ""; }
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishTimeCounter.text = $"{modeComponent.secondsUntilModeEnds * modeComponent.multiplierFromScoreComponentOnCalculation * 100}";
+        if (modeComponent.didPlayerLoseBall) { modeFinishTimeCounter.text = ""; }
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishMultiplyCounter.text = $"{modeComponent.multiplierFromScoreComponentOnCalculation}";
+        if (modeComponent.didPlayerLoseBall) { modeFinishMultiplyCounter.text = ""; }
         yield return new WaitForSecondsRealtime(2f);
 
         timeSubtract = modeComponent.timescaleBonus * 10;
+
+        if (modeComponent.didPlayerLoseBall)
+        {
+            timeSubtract = 0;
+        }
+
         while (timeSubtract > 0)
         {
             timeSubtract--;
@@ -87,6 +104,12 @@ public class common_interruptEventUImanager : MonoBehaviour
         }
 
         ballSubtract = (scoreComponent.ballsLeft * 100);
+
+        if (modeComponent.didPlayerLoseBall)
+        {
+            ballSubtract = 0;
+        }
+
         while (ballSubtract > 0)
         {
             ballSubtract--;
@@ -97,6 +120,12 @@ public class common_interruptEventUImanager : MonoBehaviour
         }
 
         secondSubtract = modeComponent.secondsUntilModeEnds * modeComponent.multiplierFromScoreComponentOnCalculation * 100;
+
+        if (modeComponent.didPlayerLoseBall)
+        {
+            secondSubtract = 0;
+        }
+
         while (secondSubtract > 0)
         {
             secondSubtract = secondSubtract - 150;
@@ -141,6 +170,7 @@ public class common_interruptEventUImanager : MonoBehaviour
                 modeFinishTimeCounter.text = $"";
                 modeFinishMultiplyCounter.text = $"";
                 specialMessage.text = "";
+                finishTitle.text = "FINISH!!";
                 scoreDisplay = scoreComponent.pl_score;
                 canShowScore = false;
                 modeFinishInterruptEvent.SetActive(false);

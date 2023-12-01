@@ -164,6 +164,13 @@ MonoBehaviour:
   rh_Status: {fileID: 0}
   scoreComponent: {fileID: 0}
   rhythmVisualizer_pl_input: {fileID: 473060228271647785}
+  Jumpers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &473060228271647785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9129640943646855806
 Transform:
   m_ObjectHideFlags: 0

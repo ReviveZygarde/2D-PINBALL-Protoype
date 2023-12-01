@@ -1536,7 +1536,7 @@ GameObject:
   - component: {fileID: 7717782968493895350}
   - component: {fileID: 7873398882840602965}
   m_Layer: 0
-  m_Name: Text (Legacy)
+  m_Name: finishTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -35,7 +35,7 @@ public class ModeBehavior : MonoBehaviour
     private tableTally tally;
 
     private bool hasAlreadyReachedEndgame; //boolean that prevents crack mode from constantly triggering after every score calculation. Instead, it should every other mode.
-    private bool didPlayerLoseBall;
+    public bool didPlayerLoseBall;
 
     //et cetera...
     private commonAudioManager AudioManager;
@@ -242,11 +242,15 @@ public class ModeBehavior : MonoBehaviour
         if (didPlayerLoseBall)
         {
             //Multiply the total score with the multiplier, reset the multiplier back to 1.
+            scoreComponent.pl_score = scoreComponent.pl_score * multiplierFromScoreComponentOnCalculation;
+            secondsUntilModeEnds = 0;
+            //After the multiplying, comes the additives.
+            scoreComponent.pl_score = scoreComponent.pl_score + tally.bumperTally + tally.rampTally + tally.hole1entryTally;
+            modeEndResultsScreen.screenAfterCalculate();
             didPlayerLoseBall = false;
             hasAlreadyReachedEndgame = false;
-            scoreComponent.pl_score = scoreComponent.pl_score * multiplierFromScoreComponentOnCalculation;
             scoreComponent.multiplierState = scoreBehavior.multiplier.X1;
-            return;
+            //return;
         }
         if (secondsUntilModeEnds == 0) //if there is no time left by the time the mode ends, no Time Leftover Bonus is applied.
         {
@@ -274,7 +278,7 @@ public class ModeBehavior : MonoBehaviour
      * so I don't think anyone would actually see this unintended bug, but who knows.
      * 
      * TL;DR: Crack Mode doesn't work on a timer, so technically it lasts infinitely, but the Ball Saver timer still works.
-     * The only way to get out of it is if you lose the mode.
+     * The only way to get out of it is if you lose the ball chance.
      */
 
     public void revertModeToNormal()
@@ -326,10 +330,8 @@ public class ModeBehavior : MonoBehaviour
                         scoreComponent.ballsLeft--;
                         ballSaverState = ballSaver.ON;
                         DetermineNextMultiplier();
-                        //After the multiplying, comes the additives.
-                        scoreComponent.pl_score = scoreComponent.pl_score + tally.bumperTally + tally.rampTally + tally.hole1entryTally;
                         tally.resetAllTallies();
-                        revertModeToNormal();
+                        //revertModeToNormal(); //This line was the reason why the timescale refused to go to 0 when the Finish Interrupt appears.
                     }
                 }
                 break;

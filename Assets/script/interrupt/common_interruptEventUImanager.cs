@@ -55,7 +55,6 @@ public class common_interruptEventUImanager : MonoBehaviour
         {
             finishTitle.text = "LOSE";
         }
-        Time.timeScale = 0;
         StartCoroutine(showModeEndStats());
     }
 
@@ -65,8 +64,8 @@ public class common_interruptEventUImanager : MonoBehaviour
         //Uses a WHILE loop to do the numbers counting down rapidly.
 
         canShowScore = false;
+        Time.timeScale = 0;
 
-        
         yield return new WaitForSecondsRealtime(0.5f);
         modeFinishSpeedCounter.text = $"{modeComponent.timescaleBonus * 10}";
         if (modeComponent.didPlayerLoseBall) { modeFinishSpeedCounter.text = ""; }

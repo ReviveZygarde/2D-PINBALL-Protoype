@@ -37,6 +37,6 @@ public class testMenuSelection : MonoBehaviour
 
     void startSMtest()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("TestTable");
     }
 }

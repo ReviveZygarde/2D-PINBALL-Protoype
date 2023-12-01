@@ -6,23 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitlePrototype.unity
+    guid: 2aef813e1ff200147ad3679b1c68a7f8
+  - enabled: 1
     path: Assets/Scenes/TestTable.unity
     guid: eb2a6c8c8d2631c4b9101f0873db4188
-  - enabled: 1
-    path: Assets/Scenes/menu.unity
-    guid: ff64d78e0d528c74b8c8c01eb0053f71
-  - enabled: 1
-    path: Assets/Scenes/FlipperTest.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/JumperTest.unity
-    guid: 6b486a28dc162c742a341d4cb5f1b069
-  - enabled: 1
-    path: Assets/Scenes/springTest.unity
-    guid: de2ce3f6b9c06db43b231055b0e69c2d
-  - enabled: 1
-    path: Assets/Scenes/stateMachineTest.unity
-    guid: d730fbdd2f5e3364287fd4799516b8dd
   - enabled: 1
     path: Assets/Scenes/ProtoGameOver.unity
     guid: 8b55aaccb0189324a8188ed281bacbbc

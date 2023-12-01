@@ -19,6 +19,7 @@ public class scoreDisplay : MonoBehaviour
     void OnPauseButton()
     {
         SceneManager.LoadScene("TestTable");
+        globalScoreBehavior.Instance.global_pl_score = 0;
     }
 
     // Update is called once per frame

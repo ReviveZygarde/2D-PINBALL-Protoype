@@ -53,6 +53,7 @@ public class RhythmVisualizer : MonoBehaviour
             rh_Status.text = "GOOD!";
             scoreComponent.pl_score = scoreComponent.pl_score + 20;
 
+            //Make the jumpers change the sprite when you are OnBeat.
             foreach (JumperBehavior jumper in Jumpers)
             {
                 jumper.forceJumperEffect();

@@ -28,6 +28,9 @@ public class RhythmVisualizer : MonoBehaviour
     //component on the same GameObject this component is attached to. It will not work if you
     //try to reference the PlayerInput from another GameObject.
 
+    [SerializeField] private JumperBehavior[] Jumpers;
+    //An array of JumperBehaviors are needed because the GOOD! indicator will also make the jumpers do its collision effect
+
     void Start()
     {
 
@@ -49,6 +52,11 @@ public class RhythmVisualizer : MonoBehaviour
         {
             rh_Status.text = "GOOD!";
             scoreComponent.pl_score = scoreComponent.pl_score + 20;
+
+            foreach (JumperBehavior jumper in Jumpers)
+            {
+                jumper.forceJumperEffect();
+            }
         }
         if (!RhythmManager.Instance.IsOnBeat())
         {

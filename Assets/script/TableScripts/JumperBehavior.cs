@@ -22,6 +22,11 @@ public class JumperBehavior : MonoBehaviour
         StartCoroutine(changeStatusMessage());
     }
 
+    public void forceJumperEffect()
+    {
+        StartCoroutine(spriteChange());
+    }
+
     IEnumerator spriteChange() //change the sprites which are GameObjects. Simple enable/disable.
     {
         if(NonHitChildSprite != null && OnHitChildSprite != null) //if they are null leave it alone and dont get the console angry.

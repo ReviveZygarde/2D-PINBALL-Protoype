@@ -169,6 +169,17 @@
                 },
                 {
                     "name": "",
+                    "id": "1660ff9d-cc1e-4d5b-8498-f5cf6f225520",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PauseButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "720661b0-ff2e-47cb-989d-0589b98e143d",
                     "path": "<Gamepad>/leftShoulder",
                     "interactions": "",

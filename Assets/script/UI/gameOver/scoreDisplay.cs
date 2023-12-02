@@ -13,7 +13,10 @@ public class scoreDisplay : MonoBehaviour
     void Start()
     {
         pl_input = GetComponent<PlayerInput>();
-        score.text = $"{globalScoreBehavior.Instance.global_pl_score}";
+        if(score != null && globalScoreBehavior.Instance != null)
+        {
+            score.text = $"{globalScoreBehavior.Instance.global_pl_score}";
+        }
     }
 
     void OnPauseButton()

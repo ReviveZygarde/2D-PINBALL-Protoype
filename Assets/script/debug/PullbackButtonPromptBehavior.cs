@@ -24,12 +24,11 @@ public class PullbackButtonPromptBehavior : MonoBehaviour
             sprr.enabled = true;
             yield return new WaitForSecondsRealtime(0.5f);
         }
-        while(launcher.isActive == false)
+        if(launcher.isActive == false)
         {
             sprr.enabled = false;
-            yield return new WaitForSecondsRealtime(0.5f);
         }
-        yield return null;
+        //yield return null;
     }
 
     // Update is called once per frame

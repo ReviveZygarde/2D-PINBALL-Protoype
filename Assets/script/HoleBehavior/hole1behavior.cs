@@ -7,6 +7,7 @@ public class hole1behavior : MonoBehaviour
 {
     public tableTally holeTally;
     private GameObject ballObject;
+    [SerializeField] private GameObject particleChild;
     private Collider2D triggerCollider;
     public Text statusText;
 
@@ -34,6 +35,8 @@ public class hole1behavior : MonoBehaviour
         if(col.gameObject == ballObject)
         {
             ballObject.SetActive(false);
+            particleChild.SetActive(false);
+            particleChild.SetActive(true);
             StartCoroutine(cooldown());
         }
     }

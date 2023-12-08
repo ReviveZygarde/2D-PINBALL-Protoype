@@ -8531,6 +8531,10 @@ PrefabInstance:
       propertyPath: holeTally
       value: 
       objectReference: {fileID: 3664509487105658089}
+    - target: {fileID: 2272384491993723621, guid: ca2ce5cf97112cc4a8b3d4cf5758b876, type: 3}
+      propertyPath: m_Creator
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2289865932907721993, guid: ca2ce5cf97112cc4a8b3d4cf5758b876, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.12

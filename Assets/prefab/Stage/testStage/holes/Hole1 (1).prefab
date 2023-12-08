@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holeTally: {fileID: 0}
-  particleChild: {fileID: 0}
+  particleChild: {fileID: 3040258204601444648}
   statusText: {fileID: 0}
   isRegularHole1: 0
   isRhythmMultiballHole2: 0
@@ -302,6 +302,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f34d53a9f8cd409428b8d1e3addf4807, type: 3}
+--- !u!1 &3040258204601444648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4212237911574779972, guid: f34d53a9f8cd409428b8d1e3addf4807, type: 3}
+  m_PrefabInstance: {fileID: 1172566111815037292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3040258204601444653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4212237911574779969, guid: f34d53a9f8cd409428b8d1e3addf4807, type: 3}

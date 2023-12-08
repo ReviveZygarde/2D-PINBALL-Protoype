@@ -48,6 +48,7 @@ public class arrowLightsBehavior : MonoBehaviour
 
     private void OnEnable()
     {
+        //You may see compiler errors when the game runs for the first time, ignore it.
         deactivateAllLights();
         foreach (SpriteRenderer spriteRenderer in FirstEntryArrows)
         { spriteRenderer.color = Color.white; }

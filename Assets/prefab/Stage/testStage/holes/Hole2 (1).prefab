@@ -426,6 +426,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2254772168903597515}
     m_Modifications:
+    - target: {fileID: 3302442363463960424, guid: 10434d6bf3af98b46a88ab696f543ee3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3302442363463960437, guid: 10434d6bf3af98b46a88ab696f543ee3, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 1
@@ -543,6 +547,10 @@ PrefabInstance:
       value: Arcade Spark (3)
       objectReference: {fileID: 0}
     - target: {fileID: 3302442364004722511, guid: 10434d6bf3af98b46a88ab696f543ee3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302442364004722511, guid: 10434d6bf3af98b46a88ab696f543ee3, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -590,9 +598,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.30173
       objectReference: {fileID: 0}
+    - target: {fileID: 3302442364771652868, guid: 10434d6bf3af98b46a88ab696f543ee3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3302442364988706140, guid: 10434d6bf3af98b46a88ab696f543ee3, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302442364988706142, guid: 10434d6bf3af98b46a88ab696f543ee3, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3302442364988706142, guid: 10434d6bf3af98b46a88ab696f543ee3, type: 3}
       propertyPath: m_IsActive

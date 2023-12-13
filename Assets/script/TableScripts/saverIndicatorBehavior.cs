@@ -16,11 +16,7 @@ public class saverIndicatorBehavior : MonoBehaviour
     IEnumerator indicatorFlash() //just to make the corotutine constantly run every second if it's not in ALMOST_END mode. also to prevent the coroutine from
                                  //actually stopping.
     {
-        while(common_ModeBehavior.ballSaverState == ModeBehavior.ballSaver.ON)
-        {
-            yield return new WaitForSecondsRealtime(1f);
-        }
-        while (common_ModeBehavior.ballSaverState == ModeBehavior.ballSaver.OFF)
+        while (common_ModeBehavior.ballSaverState == ModeBehavior.ballSaver.ON)
         {
             yield return new WaitForSecondsRealtime(1f);
         }
@@ -33,6 +29,12 @@ public class saverIndicatorBehavior : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.25f);
             SAVER_OFF.SetActive(false);
         }
+        while (common_ModeBehavior.ballSaverState == ModeBehavior.ballSaver.OFF)
+        {
+            yield return new WaitForSecondsRealtime(1f);
+        }
+        StopAllCoroutines();
+        StartCoroutine(indicatorFlash());
     }
 
     // Update is called once per frame

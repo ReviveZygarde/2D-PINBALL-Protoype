@@ -7412,10 +7412,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MultiplierIndicator
       objectReference: {fileID: 0}
-    - target: {fileID: 5216462477254079228, guid: 5ed2f124558a9db468317405afc84002, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7504,30 +7500,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 408450841}
     m_Modifications:
-    - target: {fileID: 50939872936734460, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: dc3f5dba5675ac84a8fc19b9398171a6, type: 3}
-    - target: {fileID: 3320432696413255566, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b440a9a6cc85083479519f759d86a825, type: 3}
-    - target: {fileID: 4171863017572220105, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4189744429367100458, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.19567
-      objectReference: {fileID: 0}
-    - target: {fileID: 4189744429367100458, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.19567
-      objectReference: {fileID: 0}
-    - target: {fileID: 4189744429367100458, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.19567
-      objectReference: {fileID: 0}
     - target: {fileID: 5441609217138391802, guid: 205d393039a97934780e53ff7b49137f, type: 3}
       propertyPath: common_ModeBehavior
       value: 
@@ -7572,29 +7544,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8320023211687149609, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8630702889776060427, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8830786773120666112, guid: 205d393039a97934780e53ff7b49137f, type: 3}
       propertyPath: m_Name
       value: saver
-      objectReference: {fileID: 0}
-    - target: {fileID: 9197540524176465604, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.19567
-      objectReference: {fileID: 0}
-    - target: {fileID: 9197540524176465604, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.19567
-      objectReference: {fileID: 0}
-    - target: {fileID: 9197540524176465604, guid: 205d393039a97934780e53ff7b49137f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.19567
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8066,10 +8018,6 @@ PrefabInstance:
     - target: {fileID: 6308409819723807833, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
       propertyPath: m_Name
       value: rhythmParent
-      objectReference: {fileID: 0}
-    - target: {fileID: 6308409819723807833, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9129640943646855806, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
       propertyPath: m_LocalPosition.x

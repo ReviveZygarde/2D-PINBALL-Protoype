@@ -48,21 +48,25 @@ public class arrowLightsBehavior : MonoBehaviour
 
     private void OnEnable()
     {
-        //You may see compiler errors when the game runs for the first time, ignore it.
-        deactivateAllLights();
-        foreach (SpriteRenderer spriteRenderer in FirstEntryArrows)
-        { spriteRenderer.color = Color.white; }
-        if (arrowForHole == arrowType.BOSS)
+        //this whole if thing should prevent the NullException every time the Scene starts.
+        //The error happens because OnEnable is trying to access Mode first before Start can.
+        if(mode != null)
         {
-            StartCoroutine(lightCorrespondence_boss());
-        }
-        if (arrowForHole == arrowType.RHYTHM)
-        {
-            StartCoroutine(lightCorrespondence_rhythm());
-        }
-        if (arrowForHole == arrowType.RUSH)
-        {
-            StartCoroutine(lightCorrespondence_rush());
+            deactivateAllLights();
+            foreach (SpriteRenderer spriteRenderer in FirstEntryArrows)
+            { spriteRenderer.color = Color.white; }
+            if (arrowForHole == arrowType.BOSS)
+            {
+                StartCoroutine(lightCorrespondence_boss());
+            }
+            if (arrowForHole == arrowType.RHYTHM)
+            {
+                StartCoroutine(lightCorrespondence_rhythm());
+            }
+            if (arrowForHole == arrowType.RUSH)
+            {
+                StartCoroutine(lightCorrespondence_rush());
+            }
         }
     }
 

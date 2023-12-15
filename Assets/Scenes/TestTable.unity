@@ -7412,6 +7412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MultiplierIndicator
       objectReference: {fileID: 0}
+    - target: {fileID: 5216462477254079228, guid: 5ed2f124558a9db468317405afc84002, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

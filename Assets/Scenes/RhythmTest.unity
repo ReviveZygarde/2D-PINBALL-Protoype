@@ -955,7 +955,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rh_Status: {fileID: 287199672}
-  pl_input: {fileID: 6116456757819754246}
+  scoreComponent: {fileID: 0}
+  rhythmVisualizer_pl_input: {fileID: 0}
+  Jumpers: []
 --- !u!114 &6116456757819754243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,7 +1025,7 @@ MonoBehaviour:
     m_ActionName: player1/PauseButton[/XInputControllerWindows/start,/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: player1
+  m_DefaultActionMap: ControlTypeA
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!4 &6116456757819754244

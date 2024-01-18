@@ -33,6 +33,10 @@ public class gameplayControlsBehavior : MonoBehaviour
     void Start()
     {
         pl_input = GetComponent<PlayerInput>();
+        //Gets the control scheme configuration State Machine from GL_Setting, and retroactively applies it to the pl_input.
+        //If it can't find the globalSetting singleton (usually for testing), it will use w/e control type defined in the inspector, per scene.
+        pl_input.SwitchCurrentActionMap("ControlType" + globalSetting.Instance.Control_Type);
+        //Finds Gameobjects and obtains their Rigidbody for manipulation
         leftFlipperJoint = GameObject.Find("L_HingeJoint").GetComponent<L_FlipControl>();
         rightFlipperJoint = GameObject.Find("R_HingeJoint").GetComponent<R_FlipControl>();
         pinball = GameObject.Find("Pinball");

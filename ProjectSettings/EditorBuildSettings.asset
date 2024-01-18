@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/attractScene.unity
     guid: 9dcc2c2efeae4ba429f33f874cc665ea
+  - enabled: 1
+    path: Assets/Scenes/masterDebugStandalone.unity
+    guid: ebb69eba04705814694b6039fd066ffb
   m_configObjects: {}

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -13,6 +15,7 @@ public class debugMasterMenuBehavior : MonoBehaviour
     public GameObject controlDiagramA;
     public GameObject controlDiagramB;
     public GameObject controlDiagramC;
+    public Gamepad gamepad;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +24,7 @@ public class debugMasterMenuBehavior : MonoBehaviour
         ballMass.text = gl_setting.ballSetting.ToString();
         controltypetext.text = gl_setting.Control_Type.ToString();
         gmlanguageset.text = gl_setting.languageType.ToString();
+        debugLogging();
     }
 
     public void changeBallMass()
@@ -84,6 +88,16 @@ public class debugMasterMenuBehavior : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1);
         SceneManager.LoadScene("TitlePrototype");
+    }
+
+    public void gotoSelectedScene(Text inputtedText)
+    {
+        SceneManager.LoadScene(int.Parse(inputtedText.text));
+    }
+
+    void debugLogging()
+    {
+        Debug.Log(string.Join("\n", Gamepad.all));
     }
 
     // Update is called once per frame

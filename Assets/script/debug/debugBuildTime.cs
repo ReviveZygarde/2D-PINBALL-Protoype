@@ -8,11 +8,13 @@ using UnityEngine.UI;
 public class debugBuildTime : MonoBehaviour
 {
     private Text text;
+    public Text versiontext;
     // Start is called before the first frame update
     void Start()
     {
         text = GetComponent<Text>();
         print(Assembly.GetExecutingAssembly().GetName().Version.ToString());
+        versiontext.text = $"Version {Assembly.GetExecutingAssembly().GetName().Version.ToString()}";
         System.Version version = Assembly.GetExecutingAssembly().GetName().Version;
         System.DateTime startDate = new System.DateTime(2000, 1, 1, 0, 0, 0);
         System.TimeSpan span = new System.TimeSpan(version.Build, 0, 0, version.Revision * 2);

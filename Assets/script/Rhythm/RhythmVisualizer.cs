@@ -33,7 +33,12 @@ public class RhythmVisualizer : MonoBehaviour
 
     void Start()
     {
+        
+    }
 
+    private void OnEnable()
+    {
+        rhythmVisualizer_pl_input.SwitchCurrentActionMap("ControlType" + globalSetting.Instance.Control_Type);
     }
 
     void OnLeftFlipper(InputValue value)

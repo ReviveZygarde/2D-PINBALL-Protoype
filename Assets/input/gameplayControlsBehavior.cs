@@ -34,7 +34,7 @@ public class gameplayControlsBehavior : MonoBehaviour
     {
         pl_input = GetComponent<PlayerInput>();
         //Gets the control scheme configuration State Machine from GL_Setting, and retroactively applies it to the pl_input
-        //by appending the State Machine's state to the end of the "ControlType" string. (i.e. A = ControlTypeB, B = ControlTypeB, etc.)
+        //by appending the State Machine's state to the end of the "ControlType" string. (i.e. A = ControlTypeA, B = ControlTypeB, etc.)
         //If it can't find the globalSetting singleton (usually for testing), it will use w/e control type defined in the inspector, per scene.
         pl_input.SwitchCurrentActionMap("ControlType" + globalSetting.Instance.Control_Type);
         //Finds Gameobjects and obtains their Rigidbody for manipulation

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/aicalogoFMV.unity
+    guid: 1d569c52daafb284d888777cf9a6426d
+  - enabled: 1
     path: Assets/Scenes/masterDebugStandalone.unity
     guid: ebb69eba04705814694b6039fd066ffb
   - enabled: 1

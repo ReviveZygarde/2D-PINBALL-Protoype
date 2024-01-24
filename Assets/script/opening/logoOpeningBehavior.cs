@@ -7,6 +7,7 @@ public class logoOpeningBehavior : MonoBehaviour
 {
     private SpriteRenderer spr;
     [SerializeField] private int SceneToExitTo;
+    [SerializeField] private int secondsToWait;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class logoOpeningBehavior : MonoBehaviour
         yield return new WaitForSeconds(1);
         spr.enabled = true;
         yield return null;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(secondsToWait);
         exit();
     }
 

@@ -17,6 +17,7 @@ public class tableTally : MonoBehaviour
     private ModeBehavior modeBehavior;
 
     //Summative tallies for final score calculation
+    [Tooltip("Normal table holes that the player enters for points. Does not count for anything.")]
     public int hole1entryTally;
     public int hole2entryTally;
     public int hole3entryTally;
@@ -24,8 +25,11 @@ public class tableTally : MonoBehaviour
     public int bumperTally;
 
     //Tallies that will reset to 0 once certain criteria are met. These are needed to activate the other modes.
+    [Tooltip("Hole 2. Player enters this for Rhythm Mode.")]
     public int criteria_hole2entry;
+    [Tooltip("Hole 2. Player enters this for Boss Mode.")]
     public int criteria_hole3entry;
+    [Tooltip("Hole 2. Player enters this for Rush Mode. (please excuse the name convention error...)")]
     public int criteria_ramp_entry;
 
     //bossEntity GameObject

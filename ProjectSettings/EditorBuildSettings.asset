@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/safetyWarning.unity
+    guid: 4b71b0a53245759478e0987977848af8
+  - enabled: 1
     path: Assets/Scenes/aicalogoFMV.unity
     guid: 1d569c52daafb284d888777cf9a6426d
   - enabled: 1

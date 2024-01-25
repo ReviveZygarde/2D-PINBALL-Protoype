@@ -11,6 +11,8 @@ public class attract_videoPlaybackBehavior : MonoBehaviour
     private VideoPlayer video;
     [SerializeField] private PlayerInput pl_input;
     [SerializeField] private GameObject startButtonText;
+    [Tooltip("Refer to Build Settings for scene index. Leaving this at 0 or a negative number will take the player to the title screen.")]
+    [SerializeField] private int sceneToExitTo;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +45,14 @@ public class attract_videoPlaybackBehavior : MonoBehaviour
     {
         if (video.isPaused)
         {
-            SceneManager.LoadScene("TitlePrototype");
+            if(sceneToExitTo <= 0)
+            {
+                SceneManager.LoadScene("TitlePrototype");
+            }
+            else
+            {
+                SceneManager.LoadScene(sceneToExitTo);
+            }
         }
     }
 }

@@ -5,7 +5,6 @@ Public Domain
 
 //-----------------------------------------------------
 
-"n-Dimensions"
 Music by Matthew Pablo
 http://www.matthewpablo.com
 Creative Commons CC-BY

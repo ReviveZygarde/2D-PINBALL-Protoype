@@ -10,6 +10,6 @@ public class axisCopyY : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector2(0, objectToCopy_Y.transform.position.y);
+        transform.position = new Vector2(this.transform.position.x, objectToCopy_Y.transform.position.y);
     }
 }

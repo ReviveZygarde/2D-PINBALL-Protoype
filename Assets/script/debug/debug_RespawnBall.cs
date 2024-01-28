@@ -9,6 +9,8 @@ public class debug_RespawnBall : MonoBehaviour
 {
     private GameObject Pinball;
     public GameObject PinballSpawnpoint;
+    [Tooltip("The GameObject to enable/disable once the PlungeGate trigger is touched. " +
+        "This is to prevent the ball from re-entering the plunger shaft.")]
     public GameObject launcherGate;
     [SerializeField] private GameObject blastEffect;
     public Launcher springLauncher;

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ball
   - gate
+  - rouletteTag
   layers:
   - Default
   - TransparentFX

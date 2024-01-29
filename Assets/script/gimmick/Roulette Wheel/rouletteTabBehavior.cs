@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class rouletteTabBehavior : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class rouletteTabBehavior : MonoBehaviour
     private Collider2D triggerCollider;
     public RouletteManager rouletteManager;
     [SerializeField] private GameObject childParticleObject;
+    public Text UIstatusText;
 
     // Start is called before the first frame update
     void Start()
@@ -84,9 +86,13 @@ public class rouletteTabBehavior : MonoBehaviour
                         }
                         break;
                 }
-
-                scoreBehavior.pl_score = scoreBehavior.pl_score + pointsToAdd;
-            }
+            scoreBehavior.pl_score = scoreBehavior.pl_score + pointsToAdd;
+            UIstatusText.text = $"JACKPOT! {pointsToAdd} POINTS!";
+        }
+        else
+        {
+            UIstatusText.text = $"A DUD...";
+        }
     }
 
     public void reEnableCollider()

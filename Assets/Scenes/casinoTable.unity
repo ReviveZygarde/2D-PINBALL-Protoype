@@ -3876,6 +3876,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1296124319}
     m_Modifications:
+    - target: {fileID: 2460674182963433616, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
     - target: {fileID: 2635307008793210963, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.76
@@ -3916,6 +3920,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3547472070439617745, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
+    - target: {fileID: 3588469745380888492, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
+    - target: {fileID: 3632263906569740011, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
+    - target: {fileID: 5373108048400001382, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
+    - target: {fileID: 5580976924561010002, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
+    - target: {fileID: 5924334972700053571, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
+    - target: {fileID: 6461160577967878892, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
+    - target: {fileID: 6636952288839117288, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
+    - target: {fileID: 7102018736683355872, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
     - target: {fileID: 7152697018273694068, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
       propertyPath: m_Name
       value: RouletteWheel
@@ -3928,6 +3968,14 @@ PrefabInstance:
       propertyPath: CinemachineCopyYAxisToDisable
       value: 
       objectReference: {fileID: 547681149}
+    - target: {fileID: 8080713709213519070, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
+    - target: {fileID: 8649505424224216052, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: UIstatusText
+      value: 
+      objectReference: {fileID: 29994097}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

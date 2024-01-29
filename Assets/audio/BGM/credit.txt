@@ -1,49 +1,5 @@
-
-"ld47" by bertsz
-(Open Game Art)
-Public Domain
-
-//-----------------------------------------------------
-
-Music by Matthew Pablo
-http://www.matthewpablo.com
-Creative Commons CC-BY
-
-//-----------------------------------------------------
-
-"Like Cats And Dogs"
-Produced by Wontolla: soundcloud.com/iamwontolla
-Creative Commons CC-BY
-
-//-----------------------------------------------------
-
-"Setting - Relaxing Orchestra" (genshin_5.ogg)
-(Open Game Art)
-Music by Migfus, https://opengameart.org/content/setting-relaxing-orchestra
-CC-BY 4.0.
-
-//-----------------------------------------------------
-
-"Monolith"
-Music by Tri-Tachyon - https://soundcloud.com/tri-tachyon/albums
-CC-BY 4.0.
-
-//-----------------------------------------------------
-
-"The Celebrity"
-(Open Game Art)
-Public Domain.
-
-//-----------------------------------------------------
-
-"Airport Attack"
-(Open Game Art)
-Public Domain.
-
-//-----------------------------------------------------
-
-
 music we will actually put in the game:
+
 //-----------------------------------------------------
 
 Heterophony by Glitch | https://soundcloud.com/glitch
@@ -74,6 +30,20 @@ https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
 //-----------------------------------------------------
 
 Some Distant Memory by Glitch | https://soundcloud.com/glitch
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution 3.0 Unported License (CC BY 3.0)
+https://creativecommons.org/licenses/by/3.0/deed.en_US
+
+//-----------------------------------------------------
+
+Worthy Rivals by Arthur Vyncke | https://soundcloud.com/arthurvost
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+//-----------------------------------------------------
+
+E.F by Glitch | https://soundcloud.com/glitch
 Music promoted by https://www.free-stock-music.com
 Creative Commons / Attribution 3.0 Unported License (CC BY 3.0)
 https://creativecommons.org/licenses/by/3.0/deed.en_US

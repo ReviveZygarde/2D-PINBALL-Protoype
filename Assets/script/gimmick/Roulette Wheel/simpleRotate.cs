@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class simpleRotate : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    public float speed;
+    public float originalSpeed;
 
+    private void Start()
+    {
+        originalSpeed = speed;
+    }
 
     // Update is called once per frame
     void Update()

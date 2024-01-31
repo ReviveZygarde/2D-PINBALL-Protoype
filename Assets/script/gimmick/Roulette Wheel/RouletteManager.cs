@@ -17,6 +17,9 @@ public class RouletteManager : MonoBehaviour
     [SerializeField] private Vector2 directionToShoot;
     [SerializeField] private Rigidbody2D PinballRigidbody;
     [SerializeField] private GameObject CinemachineCopyYAxisToDisable;
+    public GameObject rimDashPanelsParent;
+    public simpleRotate rotationSpeedComponent;
+    [SerializeField] private GameObject tableTrigger;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +39,8 @@ public class RouletteManager : MonoBehaviour
         //In the coroutine, I might have to use the array so
         //it gets all the rouletteTabs tagged Objects and make
         //the CanContactBall on all of them OFF.
+        rimDashPanelsParent.SetActive(false);
+        tableTrigger.SetActive(false);
         foreach(rouletteTabBehavior tab in rouletteTabChildren) //gets the array of the script and disables the CanContactPinball. See Update() in the referenced script.
         {
             tab.canContactPinball = false;
@@ -63,6 +68,9 @@ public class RouletteManager : MonoBehaviour
             tab.reEnableCollider(); //re-enables the collider of the roulette tabs and CanContactPinball.
         }
         releaseMarkerBehavior.isOKtoRelease = false; //Turns OFF the bool so the ball doesnt get pushed out automatically when it contacts the Tab.
+        rimDashPanelsParent.SetActive(true);
+        rotationSpeedComponent.speed = rotationSpeedComponent.originalSpeed;
+        tableTrigger.SetActive(true);
         yield return null;
     }
 

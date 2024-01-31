@@ -1,6 +1,6 @@
 1.Trigger that the pinball enters
 2. Pinball enters big circular trigger → pinball changes collision layer
 3. After collision layer change → pinball spins around roulette table 5 times (5 is just an arbitrary number)
-4. After 5 spins around the table, funnel it to the number at the top of the wheel as the wheel is spinning
+4. After 5 spins around the table, funnel it to the number at the top of the wheel as the wheel is spinning while also reducing the rotation speed of the roulette wheel to half
 5. When ball is stuck on the number let it stick until it reaches releaseMarker
 6. When contacting ReleaseMarker → disable circular trigger at layer 0 -> shoot ball out and change collision layer to 0

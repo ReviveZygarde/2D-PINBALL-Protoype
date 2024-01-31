@@ -151,9 +151,5 @@ public class gameplayControlsBehavior : MonoBehaviour
         {
             canShake = false;
         }
-        if(pinball.layer == 0)
-        {
-            canShake = true;
-        }
     }
 }

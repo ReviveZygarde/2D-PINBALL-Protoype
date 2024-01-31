@@ -23,6 +23,7 @@ public class gameplayControlsBehavior : MonoBehaviour
     private GameObject pinball;
     private Rigidbody2D pinballRigidbody;
     public bool canShake = true; //Leave this enabled by default.
+    public bool currentlyShaking;
 
     //for CINEMACHINE Camera Shake
     private CinemachineImpulseSource cameraShakeUp;
@@ -110,9 +111,11 @@ public class gameplayControlsBehavior : MonoBehaviour
 
     IEnumerator DisableShake() //Temporarily disables a boolean so you cannot spam the table shake (and thus attempting to defy gravity)
     {
+        currentlyShaking = true;
         canShake = false;
         yield return new WaitForSeconds(0.75f);
         canShake = true;
+        currentlyShaking = false;
         yield return null;
     }
 

@@ -269,6 +269,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
   m_PrefabInstance: {fileID: 718705677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &197281629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3779545399111391870, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
+  m_PrefabInstance: {fileID: 718705677}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &240592985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3313963769489429404, guid: 4eba133fa5ee34f4ea3cdd6281f35f09, type: 3}
@@ -1009,12 +1014,20 @@ PrefabInstance:
       value: -2.56
       objectReference: {fileID: 0}
     - target: {fileID: 7619042227866692139, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3249.2974
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619042227866692139, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.69
       objectReference: {fileID: 0}
     - target: {fileID: 7619042227866692139, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
       propertyPath: m_LocalPosition.y
       value: -9.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739187353382133028, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1090,32 +1103,32 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -14.855466, y: -2.1082253}
-  - {x: -14.88646, y: 0.6416512}
-  - {x: -15.123496, y: 14.139883}
-  - {x: -15.196349, y: 18.639397}
-  - {x: -15.2444515, y: 22.43074}
-  - {x: -15.253181, y: 24.139175}
-  - {x: -15.25048, y: 24.939556}
+  - {x: -14.855441, y: -1.1676905}
+  - {x: -14.881713, y: 1.2406106}
+  - {x: -15.124511, y: 14.605987}
+  - {x: -15.199767, y: 19.112913}
+  - {x: -15.245057, y: 22.61849}
+  - {x: -15.253377, y: 24.120972}
+  - {x: -15.25048, y: 24.95154}
   - {x: -15.231872, y: 25.477074}
   - {x: -15.154221, y: 25.963402}
   - {x: -15.045113, y: 26.377731}
   - {x: -14.884604, y: 26.799576}
   - {x: -14.665666, y: 27.197426}
-  - {x: -14.459403, y: 27.459736}
-  - {x: -14.102819, y: 27.80969}
+  - {x: -14.467901, y: 27.450687}
+  - {x: -14.111605, y: 27.802137}
   - {x: -13.608049, y: 28.190657}
   - {x: -13.21804, y: 28.427193}
   - {x: -12.82155, y: 28.62099}
-  - {x: -12.373651, y: 28.784985}
+  - {x: -12.381596, y: 28.782673}
   - {x: -12.052364, y: 28.867254}
   - {x: -11.701301, y: 28.913187}
   - {x: -11.297783, y: 28.908106}
-  - {x: -10.892087, y: 28.848442}
+  - {x: -10.897687, y: 28.849915}
   - {x: -10.532121, y: 28.75377}
   - {x: -10.174346, y: 28.619608}
   - {x: -9.836191, y: 28.457504}
-  - {x: -9.515396, y: 28.272047}
+  - {x: -9.518145, y: 28.273884}
   - {x: -8.961372, y: 27.879084}
   - {x: -8.516424, y: 27.492174}
   - {x: -8.015315, y: 26.960546}
@@ -1166,7 +1179,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
-    - position: {x: -14.857807, y: -1.858232, z: 0}
+    - position: {x: -14.857807, y: -0.9176974, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 3.116088, z: 0}
       mode: 2
@@ -1271,32 +1284,32 @@ MonoBehaviour:
   m_Creator: {fileID: 0}
   m_Modifiers: []
   m_ColliderSegment:
-  - {x: -14.855466, y: -2.1082253}
-  - {x: -14.88646, y: 0.6416512}
-  - {x: -15.123496, y: 14.139883}
-  - {x: -15.196349, y: 18.639397}
-  - {x: -15.2444515, y: 22.43074}
-  - {x: -15.253181, y: 24.139175}
-  - {x: -15.25048, y: 24.939556}
+  - {x: -14.855441, y: -1.1676905}
+  - {x: -14.881713, y: 1.2406106}
+  - {x: -15.124511, y: 14.605987}
+  - {x: -15.199767, y: 19.112913}
+  - {x: -15.245057, y: 22.61849}
+  - {x: -15.253377, y: 24.120972}
+  - {x: -15.25048, y: 24.95154}
   - {x: -15.231872, y: 25.477074}
   - {x: -15.154221, y: 25.963402}
   - {x: -15.045113, y: 26.377731}
   - {x: -14.884604, y: 26.799576}
   - {x: -14.665666, y: 27.197426}
-  - {x: -14.459403, y: 27.459736}
-  - {x: -14.102819, y: 27.80969}
+  - {x: -14.467901, y: 27.450687}
+  - {x: -14.111605, y: 27.802137}
   - {x: -13.608049, y: 28.190657}
   - {x: -13.21804, y: 28.427193}
   - {x: -12.82155, y: 28.62099}
-  - {x: -12.373651, y: 28.784985}
+  - {x: -12.381596, y: 28.782673}
   - {x: -12.052364, y: 28.867254}
   - {x: -11.701301, y: 28.913187}
   - {x: -11.297783, y: 28.908106}
-  - {x: -10.892087, y: 28.848442}
+  - {x: -10.897687, y: 28.849915}
   - {x: -10.532121, y: 28.75377}
   - {x: -10.174346, y: 28.619608}
   - {x: -9.836191, y: 28.457504}
-  - {x: -9.515396, y: 28.272047}
+  - {x: -9.518145, y: 28.273884}
   - {x: -8.961372, y: 27.879084}
   - {x: -8.516424, y: 27.492174}
   - {x: -8.015315, y: 26.960546}
@@ -1338,7 +1351,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1384,8 +1397,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: -6.409464, y: 13.527626, z: 0}
-    m_Extent: {x: 9.095026, y: 15.635852, z: 0}
+    m_Center: {x: -6.409464, y: 13.997894, z: 0}
+    m_Extent: {x: 9.095026, y: 15.165585, z: 0}
   m_SpriteSortPoint: 0
 --- !u!1001 &846427237
 PrefabInstance:
@@ -3926,6 +3939,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3437533598669375139, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1862810879}
+    - target: {fileID: 3437533598669375139, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 639372330}
+    - target: {fileID: 3437533598669375139, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 2122993485}
+    - target: {fileID: 3437533598669375139, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: PinballSpawnpoint
+      value: 
+      objectReference: {fileID: 197281629}
     - target: {fileID: 3547472070439617745, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
       propertyPath: UIstatusText
       value: 

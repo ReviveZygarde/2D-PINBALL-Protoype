@@ -7,6 +7,7 @@ public class innerTriggerBehavior : MonoBehaviour
     public GameObject Pinball;
     public GameObject funnels;
     public GameObject innerBarrier;
+    public GameObject shakePrompter;
     public rouletteRimDashPanel[] dashPanels;
 
     // Start is called before the first frame update
@@ -25,6 +26,7 @@ public class innerTriggerBehavior : MonoBehaviour
     {
         if (collision.gameObject == Pinball)
         {
+            shakePrompter.SetActive(false);
             Pinball.layer = 0;
             funnels.SetActive(false);
             innerBarrier.SetActive(true);
@@ -32,6 +34,7 @@ public class innerTriggerBehavior : MonoBehaviour
             {
                 panel.markerPassCount = 0;
             }
+            shakePrompter.SetActive(true);
         }
     }
 }

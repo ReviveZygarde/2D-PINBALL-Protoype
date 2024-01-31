@@ -36,6 +36,11 @@ public class debug_RespawnBall : MonoBehaviour
         launcherGate.SetActive(false); //Deactivates the Gate so the ball can get back in the big portion of the table.
         StartCoroutine(statusMessageChange());
         common_modeBehavior.consumeBall();
+        if(Pinball.layer == 9)
+        //if the pinball is in the roulette layer and it somehow goes out of bounds, the game doesn't softlock, so it actually changes the ball's location
+        {
+            Pinball.layer = 0;
+        }
         Pinball.transform.position = PinballSpawnpoint.transform.position;
         Pinball.SetActive(true);
         springLauncher.isActive = true; // Make the spring launcher usable again.

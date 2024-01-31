@@ -14,11 +14,16 @@ public class rouletteRimDashPanel : MonoBehaviour
     public GameObject funnel;
     private float timerToActivateFunnel;
     public simpleRotate rotatingWheel;
+    private GameObject pinball;
+    private gameplayControlsBehavior pl_input;
+    public GameObject shakePrompter;
 
     // Start is called before the first frame update
     void Start()
     {
         originalDashDirection = dashDirection;
+        pinball = GameObject.Find("Pinball");
+        pl_input = GameObject.Find("pl_input").GetComponent<gameplayControlsBehavior>();
         markerPassCountGoal = Random.Range(3, 10);
         pinballRigidbody = GameObject.Find("Pinball").GetComponent<Rigidbody2D>();
         if (marker)
@@ -40,6 +45,23 @@ public class rouletteRimDashPanel : MonoBehaviour
                 {
                     StartCoroutine(enableFunnels());
                 }
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (marker && pinball.layer == 9)
+        {
+            if (pl_input.currentlyShaking && pinball)
+            {
+                markerPassCount = markerPassCountGoal;
+                shakePrompter.SetActive(false);
+                funnel.SetActive(true);
+            }
+            else if (pl_input.currentlyShaking == false)
+            {
+                return;
             }
         }
     }

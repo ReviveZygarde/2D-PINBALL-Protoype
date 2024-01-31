@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -8,7 +9,7 @@ public class shakePrompter : MonoBehaviour
     private SpriteRenderer spr;
     private GameObject pinball; 
     public rouletteRimDashPanel markerDashPanel;
-    public GameObject objectToCopy_Y;
+    //public GameObject objectToCopy_Y;
     public AudioSource jingle;
 
     // Start is called before the first frame update
@@ -23,6 +24,12 @@ public class shakePrompter : MonoBehaviour
 
     private void OnEnable()
     {
+        if (spr == null)
+        {
+            Debug.Log("shakePrompter has an OnEnable() method, and is trying to give a null error because it's trying to enable a component through this." +
+                "\n You can safely disregard :)");
+            return;
+        }
         spr.enabled = false;
         StartCoroutine(showPrompt());
     }

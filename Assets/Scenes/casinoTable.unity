@@ -3895,6 +3895,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1296124319}
     m_Modifications:
+    - target: {fileID: 418425193996345319, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: m_Creator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 433939062844126773, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: m_Creator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303433786577959012, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: m_Creator
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2460674182963433616, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
       propertyPath: UIstatusText
       value: 
@@ -3994,10 +4006,6 @@ PrefabInstance:
     - target: {fileID: 7152697018273694068, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
       propertyPath: m_Name
       value: RouletteWheel
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152697018273694068, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7884956133879478699, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
       propertyPath: PinballRigidbody

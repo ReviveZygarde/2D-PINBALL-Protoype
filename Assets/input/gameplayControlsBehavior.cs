@@ -147,7 +147,7 @@ public class gameplayControlsBehavior : MonoBehaviour
             rightFlipperJoint.isKeyPress = false;
         }
 
-        if(pinball.layer != 0) //This is to prevent the ball from clipping through the OverRamp
+        if(pinball.layer != 0 && pinball.layer != 9) //This is to prevent the ball from clipping through the OverRamp
         {
             canShake = false;
         }

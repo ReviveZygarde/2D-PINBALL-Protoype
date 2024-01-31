@@ -3995,6 +3995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RouletteWheel
       objectReference: {fileID: 0}
+    - target: {fileID: 7152697018273694068, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7884956133879478699, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
       propertyPath: PinballRigidbody
       value: 

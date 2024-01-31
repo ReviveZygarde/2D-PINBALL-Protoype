@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class RouletteBoundsCheck : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -16,11 +11,5 @@ public class RouletteBoundsCheck : MonoBehaviour
         {
             collision.gameObject.layer = 0;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

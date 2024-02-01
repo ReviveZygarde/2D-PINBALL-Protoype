@@ -37,6 +37,7 @@ public class OverRampLayerChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Pinball = GameObject.Find("Pinball");
         ballRigidbody = Pinball.GetComponent<Rigidbody2D>();
     }
 

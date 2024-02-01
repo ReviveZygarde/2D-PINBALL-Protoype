@@ -12,7 +12,9 @@ public class greenScreenVideo : MonoBehaviour
      * When using Greenscreen videos in gameplay, be sure to attach this script to it.
      * You will probably need this because you do not want a 1-2 frame flashbang of a
      * sprite color filling the entire screen, which is also lowkey epileptic.
-     * This is because of how Material Overrides work in the Video Player.
+     * This is because of how Material Overrides work with the Video Player, and
+     * due to how the greenscreen shader is made, preventing the "flashbang" is
+     * done by code.
      */
 
     // Start is called before the first frame update

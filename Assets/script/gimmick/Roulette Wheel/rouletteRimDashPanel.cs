@@ -40,10 +40,10 @@ public class rouletteRimDashPanel : MonoBehaviour
             if (marker)
             {
                 markerPassCount++;
-                rotatingWheel.speed += 25;
+                rotatingWheel.speed += 35; //slows down the wheel
                 if (markerPassCount >= markerPassCountGoal)
                 {
-                    StartCoroutine(enableFunnels());
+                    StartCoroutine(enableFunnels()); //turns on the funnels so the ball enters the wheel and exits the rim.
                 }
             }
         }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,7 @@ public class rouletteTabBehavior : MonoBehaviour
     public RouletteManager rouletteManager;
     [SerializeField] private GameObject childParticleObject;
     public Text UIstatusText;
+    public TextMeshPro numberMonitorText;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,7 @@ public class rouletteTabBehavior : MonoBehaviour
             {
                 childParticleObject.SetActive(false);
                 childParticleObject.SetActive(true);
+                numberMonitorText.text = numberValue.ToString();
                 applyBonusPoints();
                 //Code that makes the ball move with the trigger goes here.
                 canHoldOntoPinball = true;

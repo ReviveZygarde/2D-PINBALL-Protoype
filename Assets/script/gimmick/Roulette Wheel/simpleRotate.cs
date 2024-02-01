@@ -5,6 +5,7 @@ using UnityEngine;
 public class simpleRotate : MonoBehaviour
 {
     public float speed;
+    private float fallbackSpeed = -50f;
     public float originalSpeed;
 
     private void Start()
@@ -15,6 +16,13 @@ public class simpleRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, Time.deltaTime * speed, Space.Self);
+        if(speed > 20)
+        {
+            transform.Rotate(0, 0, Time.deltaTime * fallbackSpeed, Space.Self);
+        }
+        else
+        {
+            transform.Rotate(0, 0, Time.deltaTime * speed, Space.Self);
+        }
     }
 }

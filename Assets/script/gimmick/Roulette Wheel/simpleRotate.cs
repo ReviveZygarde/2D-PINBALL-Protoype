@@ -16,7 +16,7 @@ public class simpleRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(speed > 20)
+        if(speed > -20)
         {
             transform.Rotate(0, 0, Time.deltaTime * fallbackSpeed, Space.Self);
         }

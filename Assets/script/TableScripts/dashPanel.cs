@@ -22,7 +22,7 @@ public class dashPanel : OverRampLayerChanger //wow! actually using Inheritance!
     {
         if(collision.gameObject == Pinball)
         {
-            Pinball.transform.position = this.transform.position;
+            //Pinball.transform.position = this.transform.position;
             ballRigidbody.velocity = ballDirection * velocityMultiplier;
         }
     }

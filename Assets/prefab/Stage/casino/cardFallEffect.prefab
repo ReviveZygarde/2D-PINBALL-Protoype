@@ -319,7 +319,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3215611150277425189}
   serializedVersion: 8
-  lengthInSec: 3
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -506,7 +506,7 @@ ParticleSystem:
         serializedVersion: 2
         key0: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
         key1: {r: 0.9843946, g: 1, b: 0.4764151, a: 1}
-        key2: {r: 1, g: 1, b: 1, a: 0}
+        key2: {r: 0.9198113, g: 0.9615407, b: 1, a: 0}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0.8626342, g: 0, b: 1, a: 0}
         key5: {r: 0.8626342, g: 0, b: 1, a: 0}

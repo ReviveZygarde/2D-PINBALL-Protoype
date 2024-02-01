@@ -52,7 +52,7 @@ public class RouletteManager : MonoBehaviour
         while (waitBuffer < waitBufferGoal) //made this part of the coroutine instead of having it in the Update. Seems like the Build doesn't like it?
         {
             waitBuffer++;
-            Debug.Log($"Wait buffer currently {waitBuffer} of {waitBufferGoal}.");
+            Debug.Log($"Roulette DEBUG : Wait buffer currently {waitBuffer} of {waitBufferGoal}.");
             yield return new WaitForSeconds(1f);
         }
 

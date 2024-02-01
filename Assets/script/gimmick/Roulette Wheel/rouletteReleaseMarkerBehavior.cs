@@ -16,16 +16,18 @@ public class rouletteReleaseMarkerBehavior : MonoBehaviour
     {
         if(collision.gameObject.name == "Pinball")
         {
-            if(rouletteManager.waitBuffer >= rouletteManager.WaitBufferGoal)
+            if(rouletteManager.waitBuffer >= rouletteManager.waitBufferGoal)
             {
                 isOKtoRelease = true;
             }
         }
     }
 
+    /*
     // Update is called once per frame
     void Update()
     {
         
     }
+    */
 }

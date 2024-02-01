@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestTable.unity
     guid: eb2a6c8c8d2631c4b9101f0873db4188
   - enabled: 1
+    path: Assets/Scenes/casinoTable.unity
+    guid: b20a8ccd42a132f409bacf532f9ba7a6
+  - enabled: 1
     path: Assets/Scenes/ProtoGameOver.unity
     guid: 8b55aaccb0189324a8188ed281bacbbc
   - enabled: 1

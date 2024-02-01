@@ -12,7 +12,7 @@ public class RouletteManager : MonoBehaviour
     [SerializeField] private rouletteReleaseMarkerBehavior releaseMarkerBehavior;
     [SerializeField] private float waitIncrementForReleaseMarker;
     [Tooltip("Specifies how long you want the Pinball to stay in the roulette wheel. This counts by frame. Recommended: 500.")]
-    public int WaitBufferGoal;
+    public int waitBufferGoal;
     public float waitEntryCooldown;
     [SerializeField] private Vector2 directionToShoot;
     [SerializeField] private Rigidbody2D PinballRigidbody;
@@ -27,6 +27,7 @@ public class RouletteManager : MonoBehaviour
     {
         Pinball = GameObject.Find("Pinball");
         releaseMarker.SetActive(false);
+        waitBufferGoal = UnityEngine.Random.Range(2, 4);
     }
 
     public void initiateCoroutine()
@@ -47,6 +48,13 @@ public class RouletteManager : MonoBehaviour
             tab.canContactPinball = false;
         }
         releaseMarker.SetActive(true); //Turns on the ReleaseMarker game object so the ball can collide with it.
+
+        while (waitBuffer < waitBufferGoal) //made this part of the coroutine instead of having it in the Update. Seems like the Build doesn't like it?
+        {
+            waitBuffer++;
+            Debug.Log($"Wait buffer currently {waitBuffer} of {waitBufferGoal}.");
+            yield return new WaitForSeconds(1f);
+        }
 
         while (!releaseMarkerBehavior.isOKtoRelease) //Wait for the ReleaseMarker to give the OK to let go of the ball.
         {
@@ -73,11 +81,12 @@ public class RouletteManager : MonoBehaviour
         rimDashPanelsParent.SetActive(true);
         rotationSpeedComponent.speed = rotationSpeedComponent.originalSpeed;
         tableTrigger.SetActive(true);
+        waitBufferGoal = UnityEngine.Random.Range(2, 4); //waitBufferGoal gets re-initialized to a different RNG'd number.
         yield return null;
     }
 
 
-
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -86,4 +95,5 @@ public class RouletteManager : MonoBehaviour
             waitBuffer++; //so the player can wait for the pinball to leave the roulette.
         }
     }
+    */
 }

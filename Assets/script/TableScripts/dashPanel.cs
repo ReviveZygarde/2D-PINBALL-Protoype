@@ -5,6 +5,7 @@ using UnityEngine;
 public class dashPanel : OverRampLayerChanger
 {
     private Rigidbody2D ballRigidbody;
+    [SerializeField] private bool ballMagnet;
 
     /*
      * Inherited generic dash panel for the pinball when
@@ -22,7 +23,10 @@ public class dashPanel : OverRampLayerChanger
     {
         if(collision.gameObject == Pinball)
         {
-            //Pinball.transform.position = this.transform.position;
+            if (ballMagnet)
+            {
+                Pinball.transform.position = this.transform.position;
+            }
             ballRigidbody.velocity = ballDirection * velocityMultiplier;
         }
     }

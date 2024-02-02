@@ -162,6 +162,7 @@ public class tableTally : MonoBehaviour
     {
         interruptEvent_Rush.SetActive(true);
         AudioManager.vo_mission.Play();
+        AudioManager.rushBGM.Play();
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
         Time.timeScale = 1.0f;

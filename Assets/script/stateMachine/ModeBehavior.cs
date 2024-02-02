@@ -111,6 +111,10 @@ public class ModeBehavior : MonoBehaviour
             decrementModeTimerBy1();
             if (secondsUntilModeEnds <= 0)
             {
+                if(modeState == currentMode.RUSH)
+                {
+                    AudioManager.rushBGM.Stop();
+                }
                 modeState = currentMode.MODE_END;
                 DetermineNextMultiplier(); //Calculate score method goes here... Do not put any methods or code below this method. This method will STOP All coroutines and will not
                                   //call anything below this.

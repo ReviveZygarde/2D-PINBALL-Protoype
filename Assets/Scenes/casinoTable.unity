@@ -6183,10 +6183,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3261894919827551448, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4720631735700629072, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
       propertyPath: bossEntity
       value: 
-      objectReference: {fileID: 8929896046711060130}
+      objectReference: {fileID: 0}
     - target: {fileID: 4720631735700629072, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
       propertyPath: rhythmParent
       value: 
@@ -11382,11 +11386,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &8929896046711060130 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6551356624883941492, guid: 57a7a6f1fdbbad7499818b3a0ddef4fe, type: 3}
-  m_PrefabInstance: {fileID: 8989055363491066702}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8968035994860501105
 Transform:
   m_ObjectHideFlags: 0
@@ -11489,7 +11488,11 @@ PrefabInstance:
       objectReference: {fileID: 1339916978}
     - target: {fileID: 6551356624883941492, guid: 57a7a6f1fdbbad7499818b3a0ddef4fe, type: 3}
       propertyPath: m_Name
-      value: bossEntity_template
+      value: bossEntity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551356624883941492, guid: 57a7a6f1fdbbad7499818b3a0ddef4fe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

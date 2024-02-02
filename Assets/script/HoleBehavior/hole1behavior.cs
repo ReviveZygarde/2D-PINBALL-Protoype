@@ -19,6 +19,7 @@ public class hole1behavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        holeTally = GameObject.Find("common").GetComponent<tableTally>();
         ballObject = GameObject.Find("Pinball"); //Finds the pinball
         triggerCollider = GetComponent<Collider2D>(); //Gets its own collider
         statusText = GameObject.Find("UI_statusText").GetComponent<Text>(); //Finds the status message box for the UI.

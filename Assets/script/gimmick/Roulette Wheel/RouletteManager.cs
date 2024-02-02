@@ -11,7 +11,7 @@ public class RouletteManager : MonoBehaviour
     [SerializeField] private GameObject releaseMarker;
     [SerializeField] private rouletteReleaseMarkerBehavior releaseMarkerBehavior;
     [SerializeField] private float waitIncrementForReleaseMarker;
-    [Tooltip("Specifies how long you want the Pinball to stay in the roulette wheel. This counts by frame. Recommended: 500.")]
+    //[Tooltip("Specifies how long you want the Pinball to stay in the roulette wheel. This counts by frame. Recommended: 500.")]
     public int waitBufferGoal;
     public float waitEntryCooldown;
     [SerializeField] private Vector2 directionToShoot;
@@ -27,7 +27,7 @@ public class RouletteManager : MonoBehaviour
     {
         Pinball = GameObject.Find("Pinball");
         releaseMarker.SetActive(false);
-        waitBufferGoal = UnityEngine.Random.Range(2, 4);
+        waitBufferGoal = UnityEngine.Random.Range(1, 2);
     }
 
     public void initiateCoroutine()
@@ -81,7 +81,7 @@ public class RouletteManager : MonoBehaviour
         rimDashPanelsParent.SetActive(true);
         rotationSpeedComponent.speed = rotationSpeedComponent.originalSpeed;
         tableTrigger.SetActive(true);
-        waitBufferGoal = UnityEngine.Random.Range(2, 4); //waitBufferGoal gets re-initialized to a different RNG'd number.
+        waitBufferGoal = UnityEngine.Random.Range(1, 2); //waitBufferGoal gets re-initialized to a different RNG'd number.
         yield return null;
     }
 

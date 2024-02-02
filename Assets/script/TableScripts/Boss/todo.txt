@@ -1,0 +1,1 @@
+- Make a script that simply cycles through an array of GameObjects or Sprite Renderers every half a second to simulate an animation.

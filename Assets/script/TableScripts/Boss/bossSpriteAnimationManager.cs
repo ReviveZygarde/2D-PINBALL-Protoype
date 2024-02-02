@@ -8,12 +8,19 @@ public class bossSpriteAnimationManager : MonoBehaviour
     [SerializeField] private GameObject SE;
     [SerializeField] private GameObject SW;
     [SerializeField] private GameObject NW;
+    [SerializeField] private GameObject defeat;
     private Rigidbody2D entityRigidbody;
+    private BossCollision bossStatus;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        bossStatus = GetComponent<BossCollision>();
+    }
+
+    private void OnEnable()
+    {
+        defeat.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,6 +53,14 @@ public class bossSpriteAnimationManager : MonoBehaviour
             SE.SetActive(false);
             SW.SetActive(false);
             NW.SetActive(true);
+        }
+        if (bossStatus.isDefeated)
+        {
+            defeat.SetActive(true);
+            NE.SetActive(false);
+            SE.SetActive(false);
+            SW.SetActive(false);
+            NW.SetActive(false);
         }
     }
 }

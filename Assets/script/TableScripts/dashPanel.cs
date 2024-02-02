@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class dashPanel : OverRampLayerChanger
 {
-    private Rigidbody2D ballRigidbody;
+    private Rigidbody2D pinballRigidbody;
     [SerializeField] private bool ballMagnet;
 
     /*
@@ -16,7 +16,7 @@ public class dashPanel : OverRampLayerChanger
     void Start()
     {
         Pinball = GameObject.Find("Pinball");
-        ballRigidbody = Pinball.GetComponent<Rigidbody2D>();
+        pinballRigidbody = Pinball.GetComponent<Rigidbody2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,7 +27,7 @@ public class dashPanel : OverRampLayerChanger
             {
                 Pinball.transform.position = this.transform.position;
             }
-            ballRigidbody.velocity = ballDirection * velocityMultiplier;
+            pinballRigidbody.velocity = ballDirection * velocityMultiplier;
         }
     }
 }

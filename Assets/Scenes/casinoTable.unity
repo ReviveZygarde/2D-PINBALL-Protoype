@@ -3663,7 +3663,7 @@ GameObject:
   - component: {fileID: 899506640}
   - component: {fileID: 899506641}
   m_Layer: 0
-  m_Name: bossEntity
+  m_Name: bossEntity_casino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

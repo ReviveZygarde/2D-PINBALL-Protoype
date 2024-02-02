@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class rouletteTabBehavior : MonoBehaviour
 {
     [SerializeField] private int numberValue;
+    [SerializeField] private ModeBehavior modeComponent;
     private int pointsToAdd;
     public scoreBehavior scoreBehavior;
     public GameObject Pinball;
@@ -22,6 +23,7 @@ public class rouletteTabBehavior : MonoBehaviour
     void Start()
     {
         scoreBehavior = GameObject.Find("common").GetComponent<scoreBehavior>();
+        modeComponent = GameObject.Find("common").GetComponent<ModeBehavior>();
         Pinball = GameObject.Find("Pinball");
         triggerCollider = GetComponent<Collider2D>();
     }
@@ -91,10 +93,15 @@ public class rouletteTabBehavior : MonoBehaviour
                 }
             scoreBehavior.pl_score = scoreBehavior.pl_score + pointsToAdd;
             UIstatusText.text = $"JACKPOT! {pointsToAdd} POINTS!";
+            if(modeComponent.modeState == ModeBehavior.currentMode.RUSH || modeComponent.modeState == ModeBehavior.currentMode.BOSS)
+            {
+                modeComponent.secondsUntilModeEnds += numberValue;
+                UIstatusText.text = $"TIME EXTENSION! {numberValue} SEC.";
+            }
         }
         else
         {
-            UIstatusText.text = $"A DUD...";
+            UIstatusText.text = "A DUD...";
         }
     }
 

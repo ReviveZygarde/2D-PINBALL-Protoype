@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 95372529}
   - component: {fileID: 95372528}
   - component: {fileID: 95372530}
+  - component: {fileID: 95372531}
   m_Layer: 0
   m_Name: entrance
   m_TagString: Untagged
@@ -364,6 +365,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.03, y: 1.43}
   m_EdgeRadius: 0
+--- !u!114 &95372531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95372526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25267cd9962cb954e9f7d2130befe757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 0}
+  debug_OverWriteAsBoss: 0
 --- !u!1 &142407315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6700705603822217859, guid: f146d8b73a3f5154580e93cb0dfbea5f, type: 3}

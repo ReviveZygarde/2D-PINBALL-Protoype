@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dashPanel : OverRampLayerChanger //wow! actually using Inheritance!
+public class dashPanel : OverRampLayerChanger
 {
     private Rigidbody2D ballRigidbody;
 

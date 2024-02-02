@@ -3662,6 +3662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 899506640}
   - component: {fileID: 899506641}
+  - component: {fileID: 899506642}
   m_Layer: 0
   m_Name: bossEntity_casino
   m_TagString: Untagged
@@ -3707,6 +3708,23 @@ MonoBehaviour:
   oneMoreHitEffectObject: {fileID: 0}
   winEffectObject: {fileID: 0}
   childMesh: {fileID: 0}
+--- !u!114 &899506642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899506639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1210d468d7d17e347901741517a1354a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NE: {fileID: 0}
+  SE: {fileID: 0}
+  SW: {fileID: 0}
+  NW: {fileID: 0}
+  defeat: {fileID: 0}
 --- !u!4 &975137092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1997175051103542885, guid: 4f8ce05958e18aa4694b6f2663e8678d, type: 3}

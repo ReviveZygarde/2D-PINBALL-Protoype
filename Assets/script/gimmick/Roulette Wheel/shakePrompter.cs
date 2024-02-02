@@ -24,14 +24,11 @@ public class shakePrompter : MonoBehaviour
 
     private void OnEnable()
     {
-        if (spr == null)
+        if (spr != null)
         {
-            Debug.Log("shakePrompter has an OnEnable() method, and is trying to give a null error because it's trying to enable a component through this." +
-                "\n You can safely disregard :)");
-            return;
+            spr.enabled = false;
+            StartCoroutine(showPrompt());
         }
-        spr.enabled = false;
-        StartCoroutine(showPrompt());
     }
 
     IEnumerator showPrompt()

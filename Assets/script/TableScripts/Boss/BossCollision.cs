@@ -21,13 +21,18 @@ public class BossCollision : MonoBehaviour
     [SerializeField] private GameObject hitEffectObject;
     [SerializeField] private GameObject oneMoreHitEffectObject;
     [SerializeField] private GameObject winEffectObject;
+    [Tooltip("The GameObject that you want to enable/disable.")]
     [SerializeField] private GameObject childMesh;
+    [SerializeField] private GameObject animationSpriteToDisable;
+    [SerializeField] private GameObject bossDefeatSprite;
 
 
     // Start is called before the first frame update
     void Start()
     {
         isDefeated = false;
+        bossDefeatSprite.SetActive(false);
+        splineAnim = GetComponent<SplineAnimate>();
         //Pinball = GameObject.Find("Pinball");
         //common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
         //this.gameObject.SetActive(false); //Gets the required components, then disables itself.
@@ -65,6 +70,8 @@ public class BossCollision : MonoBehaviour
     {
         uiStatusText.text = $"ALL RIGHT!! YOU DID IT!";
         isDefeated = true;
+        bossDefeatSprite.SetActive(true);
+        animationSpriteToDisable.SetActive(false);
         oneMoreHitEffectObject.SetActive(false);
         timesHit = 0;
         winEffectObject.SetActive(true);
@@ -85,6 +92,8 @@ public class BossCollision : MonoBehaviour
         winEffectObject.SetActive(false);
         hitEffectObject.SetActive(false);
         splineAnim.Play();
+        bossDefeatSprite.SetActive(false);
+        animationSpriteToDisable.SetActive(true);
         this.gameObject.SetActive(false); //Game resumes.
         yield return null;
     }

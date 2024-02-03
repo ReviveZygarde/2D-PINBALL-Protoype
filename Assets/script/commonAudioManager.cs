@@ -12,6 +12,9 @@ public class commonAudioManager : MonoBehaviour
     public AudioSource vo_mission;
     public AudioSource vo_finish;
     public AudioSource jingle_winExtra;
+    public AudioSource SE_resultsCountdown;
+    public AudioSource SE_resultsStamp;
+    public AudioSource SE_resultsCashRegister;
     public AudioSource rushBGM;
 
     // Start is called before the first frame update

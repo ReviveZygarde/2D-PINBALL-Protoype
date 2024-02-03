@@ -6183,14 +6183,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3261894919827551448, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4720631735700629072, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
-      propertyPath: bossEntity
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4720631735700629072, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
       propertyPath: rhythmParent
       value: 

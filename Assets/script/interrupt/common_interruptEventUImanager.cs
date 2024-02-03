@@ -67,15 +67,19 @@ public class common_interruptEventUImanager : MonoBehaviour
         Time.timeScale = 0;
 
         yield return new WaitForSecondsRealtime(0.5f);
+        audioManager.SE_resultsStamp.Play();
         modeFinishSpeedCounter.text = $"{modeComponent.timescaleBonus * 10}";
         if (modeComponent.didPlayerLoseBall) { modeFinishSpeedCounter.text = ""; }
         yield return new WaitForSecondsRealtime(0.5f);
+        audioManager.SE_resultsStamp.Play();
         modeFinishBallCounter.text = $"{(scoreComponent.ballsLeft * 100)}";
         if (modeComponent.didPlayerLoseBall) { modeFinishBallCounter.text = ""; }
         yield return new WaitForSecondsRealtime(0.5f);
+        audioManager.SE_resultsStamp.Play();
         modeFinishTimeCounter.text = $"{modeComponent.secondsUntilModeEnds * modeComponent.multiplierFromScoreComponentOnCalculation * 100}";
         if (modeComponent.didPlayerLoseBall) { modeFinishTimeCounter.text = ""; }
         yield return new WaitForSecondsRealtime(0.5f);
+        audioManager.SE_resultsStamp.Play();
         modeFinishMultiplyCounter.text = $"{modeComponent.multiplierFromScoreComponentOnCalculation}";
         if (modeComponent.didPlayerLoseBall) { modeFinishMultiplyCounter.text = ""; }
         yield return new WaitForSecondsRealtime(2f);
@@ -143,10 +147,15 @@ public class common_interruptEventUImanager : MonoBehaviour
         while (scoreDisplay < scoreComponent.pl_score)
         {
             scoreDisplay = scoreDisplay + 256;
+            if (audioManager.SE_resultsCountdown.isPlaying == false)
+            {
+                audioManager.SE_resultsCountdown.Play();
+            }
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
             yield return new WaitForSecondsRealtime(0.000001f);
         }
         modeFinishFinalScoreCounter.text = $"{scoreComponent.pl_score}";
+        audioManager.SE_resultsCashRegister.Play();
         if(modeComponent.multiplierFromScoreComponentOnCalculation == 8)
         {
             audioManager.jingle_winExtra.Play();

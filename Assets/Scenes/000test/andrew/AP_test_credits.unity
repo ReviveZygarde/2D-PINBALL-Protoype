@@ -5638,17 +5638,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"PINBALL MASTER FLIPPER\"\n\n\n\n\nAICA CCC-TEAM\n\n\n\n\nPROJECT INCEPTION
-    AND LEAD\nAndrew Peterson\n\nPRODUCER\nEden Sozopa\n\nMAIN PROGRAM\nAndrew Peterson\n\nRHYTHM
-    PROGRAM\nMack Pearson\n\n2D ENVIRONMENT ARTIST\nRefik Kajic\n\nTABLE DESIGN\nEden
-    Sozopa\n\nCHARACTER DESIGN\nDarius Giron\nKeanu Martinez\n\nBOSS ENEMY DESIGN\nRefik
-    Kajic\n\nUSER INTERFACE DESIGN\nDanielle Dennis\nAndrew Peterson\n\nANNOUNCER\nWarren
+  m_text: "\"PINBALL MASTER FLIPPER\"\n\n\n\n\nAICA CCC-TEAM Production\n\n\n\n\nPROJECT
+    INCEPTION AND LEAD\nAndrew Peterson\n\nPRODUCER\nEden Sozopa\n\nMAIN PROGRAM\nAndrew
+    Peterson\n\nRHYTHM PROGRAM\nMack Pearson\n\n2D ENVIRONMENT ARTIST\nRefik Kajic\n\nTABLE
+    DESIGN\nEden Sozopa\n\nCHARACTER DESIGN\nDarius Giron\nKeanu Martinez\n\nBOSS
+    ENEMY DESIGN\nRefik Kajic\n\nUSER INTERFACE DESIGN\nDanielle Dennis\nAndrew Peterson\n\nANNOUNCER\nWarren
     Hernandez\n\nAUDIO - BGM\n(Insert ALL music copyrights here)\n\nAUDIO - SOUND
-    EFFECTS\nSEGA Corporation\nSony Interactive Entertainment\n\nEXTERNAL ASSETS\n(All
-    asset credits go here)\n\nSPECIAL THANKS\nDavid Antognoli\nTyrus Goshay\nMarc
-    Soehl\nCCC-IAM Department\nPlaytest Planet 2023 Participants\nRazeWare\n...and
-    you, the Player.\n\nFonts: \xA92013, 2019 DynaComware Taiwan, Inc. All Rights
-    Reserved. \xA92006 FONTWORKS Japan, Inc."
+    EFFECTS\nSounds Resource\n(www.sounds-resource.com/)\nSCE SFX Asset Library ver.
+    0.42\n\n\nEXTERNAL ASSETS\n(All asset credits go here)\n\nSPECIAL THANKS\nDavid
+    Antognoli\nTyrus Goshay\nMarc Soehl\nCCC-IAM Department\nPlaytest Planet 2023
+    Participants\nRazeWare\n...and you, the Player.\n\nFonts: \xA92013, 2019 DynaComware
+    Taiwan, Inc. All Rights Reserved. \xA92006 FONTWORKS Japan, Inc."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}
   m_sharedMaterial: {fileID: -7549111285098148876, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}

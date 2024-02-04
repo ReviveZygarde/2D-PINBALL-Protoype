@@ -20236,6 +20236,7 @@ MonoBehaviour:
   rimDashPanelsParent: {fileID: 1978576876936639868}
   rotationSpeedComponent: {fileID: 2956837438632491841}
   tableTrigger: {fileID: 1746157628217539273}
+  funnels: {fileID: 2788046440288913758}
   gameplayControlsBehavior: {fileID: 0}
 --- !u!1 &7221084171243780912
 GameObject:

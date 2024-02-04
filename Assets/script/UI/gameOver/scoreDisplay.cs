@@ -21,7 +21,7 @@ public class scoreDisplay : MonoBehaviour
 
     void OnPauseButton()
     {
-        SceneManager.LoadScene("TestTable");
+        SceneManager.LoadScene("masterDebugStandalone");
         globalScoreBehavior.Instance.global_pl_score = 0;
     }
 

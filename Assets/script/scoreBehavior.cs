@@ -15,7 +15,7 @@ public class scoreBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gl_scoreBehavior = GameObject.Find("GL_score").GetComponent<globalScoreBehavior>();
+        gl_scoreBehavior = globalScoreBehavior.Instance.GetComponent<globalScoreBehavior>();
         pl_score = gl_scoreBehavior.global_pl_score;
         modeBehavior = GetComponent<ModeBehavior>();
     }

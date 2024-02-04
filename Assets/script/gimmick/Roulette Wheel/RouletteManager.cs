@@ -20,6 +20,7 @@ public class RouletteManager : MonoBehaviour
     public GameObject rimDashPanelsParent;
     public simpleRotate rotationSpeedComponent;
     [SerializeField] private GameObject tableTrigger;
+    [SerializeField] private GameObject funnels;
     [SerializeField] private gameplayControlsBehavior gameplayControlsBehavior;
 
     // Start is called before the first frame update
@@ -72,6 +73,7 @@ public class RouletteManager : MonoBehaviour
             waitBuffer = 0; //wait buffer resets to 0 as release marker will be disabled for next use.
         }
         gameplayControlsBehavior.canShake = true;
+        funnels.SetActive(false);
         yield return new WaitForSeconds(waitEntryCooldown); //cooldown
         foreach (rouletteTabBehavior tab in rouletteTabChildren)
         {

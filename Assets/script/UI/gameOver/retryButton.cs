@@ -17,6 +17,6 @@ public class retryButton : MonoBehaviour
     void retryGame()
     {
         globalScoreBehavior.Instance.global_pl_score = 0;
-        SceneManager.LoadScene("TestTable");
+        SceneManager.LoadScene("masterDebugStandalone");
     }
 }

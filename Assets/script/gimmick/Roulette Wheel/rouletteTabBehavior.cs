@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public class rouletteTabBehavior : MonoBehaviour
 {
     [SerializeField] private int numberValue;
+    public enum color {GREEN, RED, BLACK}
+    public color tabColor = color.GREEN;
+    [SerializeField] private casinoTableLayoutChanger common_casinoTableLayoutChanger;
     [SerializeField] private ModeBehavior modeComponent;
     private int pointsToAdd;
     public scoreBehavior scoreBehavior;
@@ -26,6 +29,7 @@ public class rouletteTabBehavior : MonoBehaviour
         modeComponent = GameObject.Find("common").GetComponent<ModeBehavior>();
         Pinball = GameObject.Find("Pinball");
         triggerCollider = GetComponent<Collider2D>();
+        common_casinoTableLayoutChanger = GameObject.Find("casino_common").GetComponent<casinoTableLayoutChanger>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,6 +40,7 @@ public class rouletteTabBehavior : MonoBehaviour
             {
                 childParticleObject.SetActive(false);
                 childParticleObject.SetActive(true);
+                triggerTableLayoutChanger();
                 numberMonitorText.text = numberValue.ToString();
                 applyBonusPoints();
                 //Code that makes the ball move with the trigger goes here.
@@ -43,6 +48,34 @@ public class rouletteTabBehavior : MonoBehaviour
                 rouletteManager.initiateCoroutine();
                 //Code that releases the ball goes here. Make a coroutine on a timer so the ball doesnt get constantly stuck on the wheel.
             }
+        }
+    }
+
+    void triggerTableLayoutChanger() //This script will communicate with casino_common's TableLayoutChanger, and tell it to change table accordingly.
+    {
+        switch (tabColor)
+        {
+            case color.GREEN:
+                if(common_casinoTableLayoutChanger.layoutColorParameter != "green") //first it checks if the layoutColorParameter is already it's color.
+                {
+                    common_casinoTableLayoutChanger.layoutColorParameter = "green";
+                    common_casinoTableLayoutChanger.changeTableLayout();
+                }
+                break;
+            case color.RED:
+                if (common_casinoTableLayoutChanger.layoutColorParameter != "red")
+                {
+                    common_casinoTableLayoutChanger.layoutColorParameter = "red";
+                    common_casinoTableLayoutChanger.changeTableLayout();
+                }
+                break;
+            case color.BLACK:
+                if (common_casinoTableLayoutChanger.layoutColorParameter != "black")
+                {
+                    common_casinoTableLayoutChanger.layoutColorParameter = "black";
+                    common_casinoTableLayoutChanger.changeTableLayout();
+                }
+                break;
         }
     }
 
@@ -96,6 +129,12 @@ public class rouletteTabBehavior : MonoBehaviour
             if(modeComponent.modeState == ModeBehavior.currentMode.RUSH || modeComponent.modeState == ModeBehavior.currentMode.BOSS)
             {
                 modeComponent.secondsUntilModeEnds += numberValue;
+                //Hard-codes the time limit so the player can't exceed anything over 200 seconds.
+                if (modeComponent.secondsUntilModeEnds > 200)
+                {
+                    Debug.Log($"{modeComponent.secondsUntilModeEnds} seconds has been reduced to 200 seconds.");
+                    modeComponent.secondsUntilModeEnds = 200;
+                }
                 UIstatusText.text = $"TIME EXTENSION! {numberValue} SEC.";
             }
         }

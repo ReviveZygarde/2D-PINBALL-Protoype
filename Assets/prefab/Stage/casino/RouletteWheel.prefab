@@ -6346,6 +6346,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 5
+  tabColor: 1
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -6450,6 +6453,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 3
+  tabColor: 1
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -6760,6 +6766,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 25
+  tabColor: 2
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -6864,6 +6873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 19
+  tabColor: 2
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -7116,6 +7128,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 0
+  tabColor: 0
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -7520,6 +7535,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 10
+  tabColor: 1
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -13154,6 +13172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 14
+  tabColor: 2
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -13403,6 +13424,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 17
+  tabColor: 1
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -13507,6 +13531,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 21
+  tabColor: 1
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -13827,8 +13854,8 @@ Transform:
   m_GameObject: {fileID: 5694301819337225618}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.28403062, w: 0.9588152}
-  m_LocalPosition: {x: 0.463, y: -0.039, z: 0.5455034}
-  m_LocalScale: {x: 0.275, y: -0.001023112, z: 1}
+  m_LocalPosition: {x: 0.43667, y: -0.05326, z: 0.5455034}
+  m_LocalScale: {x: 0.21236326, y: -0.00082939595, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8106731939388659369}
@@ -14128,6 +14155,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 8
+  tabColor: 2
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -19962,6 +19992,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 0
+  tabColor: 0
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1
@@ -20066,6 +20099,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberValue: 2
+  tabColor: 1
+  common_casinoTableLayoutChanger: {fileID: 0}
+  modeComponent: {fileID: 0}
   scoreBehavior: {fileID: 0}
   Pinball: {fileID: 0}
   canContactPinball: 1

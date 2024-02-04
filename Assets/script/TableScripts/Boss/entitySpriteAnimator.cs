@@ -12,11 +12,11 @@ public class entitySpriteAnimator : MonoBehaviour
         StartCoroutine(spriteAnimation());
     }
 
-    IEnumerator spriteAnimation()
+    IEnumerator spriteAnimation() //infinitely loops this coroutine to simulate an animating sprite.
     {
         for (int i = 0; i < frameAnimation.Length + 1; i++)
         {
-            Debug.Log($"Animation at frame {i} of {frameAnimation.Length}");
+            Debug.Log($"Boss Debug: Animation at frame {i} of {frameAnimation.Length}");
             if (i >= frameAnimation.Length)
             {
                 i = 0;

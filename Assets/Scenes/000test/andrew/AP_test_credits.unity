@@ -5646,9 +5646,9 @@ MonoBehaviour:
     Hernandez\n\nAUDIO - BGM\n(Insert ALL music copyrights here)\n\nAUDIO - SOUND
     EFFECTS\nSEGA Corporation\nSony Interactive Entertainment\n\nEXTERNAL ASSETS\n(All
     asset credits go here)\n\nSPECIAL THANKS\nDavid Antognoli\nTyrus Goshay\nMarc
-    Soehl\nCCC-IAM Department\nPlaytest Planet 2023 Participants\nRazeWare\nYou,
-    The Player\n\nFonts: \xA92013, 2019 DynaComware Taiwan, Inc. All Rights Reserved.
-    \xA92006 FONTWORKS Japan, Inc."
+    Soehl\nCCC-IAM Department\nPlaytest Planet 2023 Participants\nRazeWare\n...and
+    you, the Player.\n\nFonts: \xA92013, 2019 DynaComware Taiwan, Inc. All Rights
+    Reserved. \xA92006 FONTWORKS Japan, Inc."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}
   m_sharedMaterial: {fileID: -7549111285098148876, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}

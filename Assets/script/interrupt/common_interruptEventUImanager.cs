@@ -97,6 +97,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             modeFinishSpeedCounter.text = $"{timeSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            resultsCountdownPlayback();
             yield return new WaitForSecondsRealtime(0.0001f);
         }
 
@@ -119,6 +120,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             modeFinishBallCounter.text = $"{ballSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            resultsCountdownPlayback();
             yield return new WaitForSecondsRealtime(0.0001f);
         }
 
@@ -135,6 +137,7 @@ public class common_interruptEventUImanager : MonoBehaviour
             modeFinishTimeCounter.text = $"{secondSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            resultsCountdownPlayback();
             yield return new WaitForSecondsRealtime(0.0001f);
         }
 
@@ -146,23 +149,38 @@ public class common_interruptEventUImanager : MonoBehaviour
 
         while (scoreDisplay < scoreComponent.pl_score)
         {
-            scoreDisplay = scoreDisplay + 256;
-            if (audioManager.SE_resultsCountdown.isPlaying == false)
+            if(confirmButton.lfIsHeld || confirmButton.rfIsHeld)
             {
-                audioManager.SE_resultsCountdown.Play();
+                scoreDisplay = scoreComponent.pl_score;
+                break; //Breaks out of the loop if the player doesn't want to wait for the score to go all the way up on-screen.
             }
+            scoreDisplay = scoreDisplay + 256;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
+            resultsCountdownPlayback();
             yield return new WaitForSecondsRealtime(0.000001f);
         }
+
         modeFinishFinalScoreCounter.text = $"{scoreComponent.pl_score}";
         audioManager.SE_resultsCashRegister.Play();
+
         if(modeComponent.multiplierFromScoreComponentOnCalculation == 8)
         {
+            yield return new WaitForSecondsRealtime(1.5f);
             audioManager.jingle_winExtra.Play();
             specialMessage.text = "EXTRA BALL GET!!";
         }
+
+        yield return new WaitForSecondsRealtime(1f);
         canShowScore = true;
         yield return null;
+    }
+
+    void resultsCountdownPlayback() //so i dont have to constantly do this if statement in the coroutine multiple times.
+    {
+        if (audioManager.SE_resultsCountdown.isPlaying == false)
+        {
+            audioManager.SE_resultsCountdown.Play();
+        }
     }
 
     // Update is called once per frame

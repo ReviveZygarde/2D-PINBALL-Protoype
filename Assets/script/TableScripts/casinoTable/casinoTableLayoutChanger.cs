@@ -1,16 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.DualShock;
+using UnityEngine.InputSystem;
 
 public class casinoTableLayoutChanger : MonoBehaviour
 {
+    //been using arrays lately... Pretty good if you're manipulating multiple GameObjects.
     public GameObject[] greenLayout;
     public GameObject[] redLayout;
     public GameObject[] blackLayout;
-    //been using arrays lately... Pretty good if you're manipulating multiple GameObjects.
-    [HideInInspector] public string layoutColorParameter = "green";
+
     //"green" should always be the default value. It's hidden so you don't change it in the inspector.
+    [HideInInspector] public string layoutColorParameter = "green";
+    
+    //En/disable the Greenscreen FMV when the table layout changes.
     public GameObject specialVisualEffect;
+
+    //Optional: below variable and all commented out lines associated are
+    //for changing the Dualshock4/Dualsense lightbar colors corresponding to the layout.
+    //private DualShockGamepad gamepad;
 
     /*
     * Casino Table Layout Changer
@@ -22,7 +31,8 @@ public class casinoTableLayoutChanger : MonoBehaviour
     {
         if (layoutColorParameter == "green")
         {
-            foreach(GameObject gameObject in greenLayout)
+            //gamepad.SetLightBarColor(Color.green);
+            foreach (GameObject gameObject in greenLayout)
             {
                 gameObject.SetActive(true);
             }
@@ -37,6 +47,7 @@ public class casinoTableLayoutChanger : MonoBehaviour
         }
         if (layoutColorParameter == "red")
         {
+            //gamepad.SetLightBarColor(Color.red);
             foreach (GameObject gameObject in greenLayout)
             {
                 gameObject.SetActive(false);
@@ -52,6 +63,7 @@ public class casinoTableLayoutChanger : MonoBehaviour
         }
         if (layoutColorParameter == "black")
         {
+            //gamepad.SetLightBarColor(Color.white);
             foreach (GameObject gameObject in greenLayout)
             {
                 gameObject.SetActive(false);
@@ -75,7 +87,7 @@ public class casinoTableLayoutChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //gamepad = (DualShockGamepad)Gamepad.all[0];
     }
 
     // Update is called once per frame

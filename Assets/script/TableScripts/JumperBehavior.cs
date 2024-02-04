@@ -12,6 +12,7 @@ public class JumperBehavior : MonoBehaviour
 
     private void Start()
     {
+        tally = GameObject.Find("common").GetComponent<tableTally>();
         statusText = GameObject.Find("UI_statusText").GetComponent<Text>();
     }
 

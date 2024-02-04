@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6654732556924630849}
   m_Layer: 0
   m_Name: Closed Sprite Shape (1)
-  m_TagString: Untagged
+  m_TagString: LBumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7933534, w: 0.6087614}
   m_LocalPosition: {x: 2.76, y: 1.35, z: -1.5230284}
-  m_LocalScale: {x: 0.5412766, y: -0.47256288, z: 0.5016}
+  m_LocalScale: {x: 0.54127663, y: -0.4725629, z: 0.5016}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5863587127464202808}

@@ -28,12 +28,31 @@ public class RhythmVisualizer : MonoBehaviour
     //component on the same GameObject this component is attached to. It will not work if you
     //try to reference the PlayerInput from another GameObject.
 
-    [SerializeField] private JumperBehavior[] Jumpers;
-    //An array of JumperBehaviors are needed because the GOOD! indicator will also make the jumpers do its collision effect
+    //[SerializeField] private JumperBehavior[] Jumpers;
+    [SerializeField] private List<JumperBehavior> JumpersList;
+    //A List of JumperBehaviors are needed because the GOOD! indicator will also make the jumpers do its collision effect.
+    //2024/2/3 - I changed the array into a List because I have to dynamically empty and re-add gameObjects when things
+    //like table layouts change during gameplay.
+
 
     void Start()
     {
-        
+        retrieveListOfBumpers();
+    }
+
+    void retrieveListOfBumpers()
+    {
+        GameObject[] UBumpers = GameObject.FindGameObjectsWithTag("UBumper");
+        foreach (GameObject bumper in UBumpers)
+        {
+            JumpersList.Add(bumper.GetComponent<JumperBehavior>());
+        }
+
+        GameObject[] LBumpers = GameObject.FindGameObjectsWithTag("LBumper");
+        foreach (GameObject bumper in LBumpers)
+        {
+            JumpersList.Add(bumper.GetComponent<JumperBehavior>());
+        }
     }
 
     private void OnEnable()
@@ -59,8 +78,12 @@ public class RhythmVisualizer : MonoBehaviour
             scoreComponent.pl_score = scoreComponent.pl_score + 20;
 
             //Make the jumpers change the sprite when you are OnBeat.
-            foreach (JumperBehavior jumper in Jumpers)
+            foreach (JumperBehavior jumper in JumpersList)
             {
+                if(jumper.isActiveAndEnabled == false) //if the script sees that the list has inactive GameObjects, it clears the list.
+                {
+                    JumpersList.Clear();
+                }
                 jumper.forceJumperEffect();
             }
         }
@@ -79,6 +102,11 @@ public class RhythmVisualizer : MonoBehaviour
        {
           rh_Status.text = "";
        }
+
+       if(JumpersList.Count == 0) //After the list is cleared and nothing is in it, the list has all the currently active GameObjects.
+        {
+            retrieveListOfBumpers();
+        }
 
         //changeSquareColor();
         /*else if (!SongPlayer.Instance.IsOnBeat())

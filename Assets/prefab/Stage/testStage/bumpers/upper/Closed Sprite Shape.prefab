@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 721394209016756928}
   m_Layer: 0
   m_Name: Closed Sprite Shape
-  m_TagString: Untagged
+  m_TagString: UBumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

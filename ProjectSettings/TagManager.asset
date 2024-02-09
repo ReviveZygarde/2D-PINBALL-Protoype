@@ -9,11 +9,13 @@ TagManager:
   - rouletteTag
   - UBumper
   - LBumper
+  - LFloor
+  - RFloor
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - floor
   - Water
   - UI
   - OverRamp
@@ -21,7 +23,7 @@ TagManager:
   - Particles
   - Roulette
   - OverRamp_L3
-  - 
+  - flipper
   - 
   - 
   - 

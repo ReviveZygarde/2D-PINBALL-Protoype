@@ -22,8 +22,9 @@ public class globalSetting : Singleton<globalSetting>
     // Start is called before the first frame update
     void Start()
     {
-        var gamepad = (DualShockGamepad)Gamepad.all[0];
-        gamepad.SetLightBarColor(Color.blue);
+        //Optional: Dualshock 4/Dualsense custom lightbar color
+        //var gamepad = (DualShockGamepad)Gamepad.all[0];
+        //gamepad.SetLightBarColor(Color.blue);
     }
 
     // Update is called once per frame

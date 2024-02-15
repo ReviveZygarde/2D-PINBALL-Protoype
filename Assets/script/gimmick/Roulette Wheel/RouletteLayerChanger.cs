@@ -5,6 +5,7 @@ using UnityEngine;
 public class RouletteLayerChanger : MonoBehaviour
 {
     public GameObject Pinball;
+    [SerializeField] private GameObject funnel;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class RouletteLayerChanger : MonoBehaviour
         if(collision.gameObject == Pinball)
         {
             Pinball.layer = 9;
+            funnel.SetActive(false);
         }
     }
 }

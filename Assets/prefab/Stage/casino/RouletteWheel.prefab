@@ -6210,6 +6210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pinball: {fileID: 0}
+  funnel: {fileID: 2788046440288913758}
 --- !u!1 &1978576876936639868
 GameObject:
   m_ObjectHideFlags: 0
@@ -13676,6 +13677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a916ebe33db2743bad5528e2a0bf5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Funnel: {fileID: 2788046440288913758}
 --- !u!1 &5620149949770658764
 GameObject:
   m_ObjectHideFlags: 0

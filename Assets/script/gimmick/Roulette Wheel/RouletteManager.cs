@@ -34,6 +34,7 @@ public class RouletteManager : MonoBehaviour
     public void initiateCoroutine()
     {
         CinemachineCopyYAxisToDisable.SetActive(false);
+        funnels.SetActive(false);
         StartCoroutine(CatchReleaseProcedure());
     }
 

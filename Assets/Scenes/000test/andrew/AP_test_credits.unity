@@ -5486,7 +5486,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4be295eeb7aa5fc4c89510a74a37cc1f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 15b8ac395aa31b2438e5ec4c293f26de, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5645,10 +5645,11 @@ MonoBehaviour:
     ENEMY DESIGN\nRefik Kajic\n\nUSER INTERFACE DESIGN\nDanielle Dennis\nAndrew Peterson\n\nANNOUNCER\nWarren
     Hernandez\n\nAUDIO - BGM\n(Insert ALL music copyrights here)\n\nAUDIO - SOUND
     EFFECTS\nSounds Resource\n(www.sounds-resource.com/)\nSCE SFX Asset Library ver.
-    0.42\n\n\nEXTERNAL ASSETS\n(All asset credits go here)\n\nSPECIAL THANKS\nDavid
-    Antognoli\nTyrus Goshay\nMarc Soehl\nCCC-IAM Department\nPlaytest Planet 2023
-    Participants\nRazeWare\n...and you, the Player.\n\nFonts: \xA92013, 2019 DynaComware
-    Taiwan, Inc. All Rights Reserved. \xA92006 FONTWORKS Japan, Inc."
+    0.42\n\n\nEXTERNAL ASSETS\nAdobe Stock\n(All asset credits go here)\n\nSPECIAL
+    THANKS\nDavid Antognoli\nTyrus Goshay\nMarc Soehl\nCCC-IAM Department\nPlaytest
+    Planet 2023 Participants\nRazeWare\n...and you, the Player.\n\nFonts: \xA92013,
+    2019 DynaComware Taiwan, Inc. All Rights Reserved. \xA92006 FONTWORKS Japan,
+    Inc."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}
   m_sharedMaterial: {fileID: -7549111285098148876, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}

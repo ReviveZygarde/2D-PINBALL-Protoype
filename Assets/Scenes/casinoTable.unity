@@ -8010,6 +8010,10 @@ PrefabInstance:
       value: Closed Sprite Shape (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8727434201846694664, guid: 84acd933fe6687a4cb8c889d8f951a2f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727434201846694664, guid: 84acd933fe6687a4cb8c889d8f951a2f, type: 3}
       propertyPath: m_TagString
       value: UBumper
       objectReference: {fileID: 0}
@@ -13396,6 +13400,10 @@ PrefabInstance:
     - target: {fileID: 8727434201846694664, guid: 84acd933fe6687a4cb8c889d8f951a2f, type: 3}
       propertyPath: m_Name
       value: Closed Sprite Shape
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727434201846694664, guid: 84acd933fe6687a4cb8c889d8f951a2f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8849506092755607559, guid: 84acd933fe6687a4cb8c889d8f951a2f, type: 3}
       propertyPath: m_Creator

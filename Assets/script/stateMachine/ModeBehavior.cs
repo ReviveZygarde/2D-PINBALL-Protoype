@@ -115,6 +115,10 @@ public class ModeBehavior : MonoBehaviour
                 {
                     AudioManager.rushBGM.Stop();
                 }
+                if(modeState == currentMode.BOSS)
+                {
+                    AudioManager.bossBGM.Stop();
+                }
                 modeState = currentMode.MODE_END;
                 DetermineNextMultiplier(); //Calculate score method goes here... Do not put any methods or code below this method. This method will STOP All coroutines and will not
                                   //call anything below this.
@@ -126,6 +130,7 @@ public class ModeBehavior : MonoBehaviour
 
     public void pauseTimers()
     {
+        AudioManager.bossBGM.Stop();
         StopAllCoroutines();
     }
 

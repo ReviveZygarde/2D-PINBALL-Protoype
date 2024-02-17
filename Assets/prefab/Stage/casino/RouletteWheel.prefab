@@ -13678,6 +13678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Funnel: {fileID: 2788046440288913758}
+  rouletteManager: {fileID: 7884956133879478699}
 --- !u!1 &5620149949770658764
 GameObject:
   m_ObjectHideFlags: 0
@@ -14016,7 +14017,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5696608663743979726}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -14389,8 +14390,8 @@ Transform:
   m_GameObject: {fileID: 6141636224564638742}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.86602443, w: 0.5000018}
-  m_LocalPosition: {x: -0.368, y: -0.36, z: 0.5455034}
-  m_LocalScale: {x: 0.47414154, y: 0.0265255, z: 1}
+  m_LocalPosition: {x: -0.318, y: -0.297, z: 0.5455034}
+  m_LocalScale: {x: 0.22792459, y: 0.0265255, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5296829240508409833}

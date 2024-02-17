@@ -39,6 +39,7 @@ public class common_interruptEventUImanager : MonoBehaviour
         audioManager = GetComponent<commonAudioManager>();
     }
 
+    /*
     public void resetBossInterruptBars()
     {
         //Finds UI game objects, and resets their localPosition to zero.
@@ -47,6 +48,7 @@ public class common_interruptEventUImanager : MonoBehaviour
         tmp_UIbottomBars.transform.localPosition = Vector2.zero;
         tmp_UItopBars.transform.localPosition = Vector2.zero;
     }
+    */
 
     public void screenAfterCalculate()
     {
@@ -54,6 +56,10 @@ public class common_interruptEventUImanager : MonoBehaviour
         if (modeComponent.didPlayerLoseBall)
         {
             finishTitle.text = "LOSE";
+        }
+        if (audioManager.stageBGM.isPlaying)
+        {
+            audioManager.stageBGM.Stop();
         }
         StartCoroutine(showModeEndStats());
     }
@@ -172,6 +178,7 @@ public class common_interruptEventUImanager : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(1f);
         canShowScore = true;
+        audioManager.stageBGM.Play();
         yield return null;
     }
 

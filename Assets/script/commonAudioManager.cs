@@ -16,6 +16,8 @@ public class commonAudioManager : MonoBehaviour
     public AudioSource SE_resultsStamp;
     public AudioSource SE_resultsCashRegister;
     public AudioSource rushBGM;
+    public AudioSource stageBGM;
+    public AudioSource bossBGM;
 
     // Start is called before the first frame update
     void Start()

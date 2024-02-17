@@ -148,11 +148,13 @@ public class tableTally : MonoBehaviour
     {
         interruptEvent_Boss.SetActive(true);
         AudioManager.vo_mission.Play();
+        AudioManager.stageBGM.Pause();
+        AudioManager.bossBGM.Play();
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
         Time.timeScale = 1.0f;
-        common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
-        ui_manager.resetBossInterruptBars();
+        //common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
+        //ui_manager.resetBossInterruptBars();
         interruptEvent_Boss.SetActive(false);
         modeBehavior.timerCountdownStart();
         yield return null;
@@ -162,6 +164,7 @@ public class tableTally : MonoBehaviour
     {
         interruptEvent_Rush.SetActive(true);
         AudioManager.vo_mission.Play();
+        AudioManager.stageBGM.Pause();
         AudioManager.rushBGM.Play();
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
@@ -176,6 +179,7 @@ public class tableTally : MonoBehaviour
     IEnumerator interruptRhythmEventPopUp()
     {
         interruptEvent_Rhythm.SetActive(true);
+        AudioManager.stageBGM.Pause();
         AudioManager.vo_mission.Play();
         Time.timeScale = 0f;
         rhythmParent.SetActive(true);

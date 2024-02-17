@@ -6,7 +6,7 @@ public class RouletteLayerChanger : MonoBehaviour
 {
     public GameObject Pinball;
     [SerializeField] private GameObject funnel;
-    public RouletteManager rouletteManager;
+    //public RouletteManager rouletteManager;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class RouletteLayerChanger : MonoBehaviour
         {
             Pinball.layer = 9;
             funnel.SetActive(false);
-            rouletteManager.stopCoroutines();
+            //rouletteManager.stopCoroutines();
         }
     }
 }

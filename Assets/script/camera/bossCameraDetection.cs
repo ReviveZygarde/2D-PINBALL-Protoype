@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class bossCameraDetection : MonoBehaviour
 {
-    [SerializeField] private GameObject bossArrow;
+    [SerializeField] private GameObject bossArrowUp;
+    [SerializeField] private GameObject bossArrowDown;
     [SerializeField] private GameObject bossEntity;
     [SerializeField] private Renderer bossRenderer;
     private GameObject mainCamera;
+
+    /*
+     * Boss Camera Detection
+     * Simply detects whether or not the Boss is on-screen, while the
+     * Boss is active. It also simply compares the Y-Axis coordinate
+     * between the Boss and the Camera, to show the proper arrow
+     * indicating the direction the boss is at.
+     */
 
     // Start is called before the first frame update
     void Start()
@@ -17,56 +26,36 @@ public class bossCameraDetection : MonoBehaviour
         bossRenderer = bossEntity.GetComponent<Renderer>();
     }
 
-    /*
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision == bossEntity)
-        {
-            if(bossEntity.activeSelf == true)
-            {
-                Debug.Log("Boss is off-screen");
-                bossArrow.SetActive(true);
-            }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision == bossEntity)
-        {
-            Debug.Log("Boss is on-screen");
-            bossArrow.SetActive(false);
-        }
-    }
-    */
 
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = mainCamera.transform.position;
+        transform.position = mainCamera.transform.position;
         if (bossEntity.activeSelf == false)
         {
-            bossArrow.SetActive(false);
+            bossArrowUp.SetActive(false);
+            bossArrowDown.SetActive(false);
         }
         else if(bossEntity.activeSelf == true)
         {
             if(bossRenderer.isVisible == false)
             {
-                if(bossEntity.transform.position.y > this.transform.position.y)
+                if(bossEntity.transform.position.y > transform.position.y)
                 {
-                    bossArrow.SetActive(true);
+                    bossArrowUp.SetActive(true);
+                    bossArrowDown.SetActive(false);
+                }
+                if (bossEntity.transform.position.y < transform.position.y)
+                {
+                    bossArrowUp.SetActive(false);
+                    bossArrowDown.SetActive(true);
                 }
             }
             else
             {
-                bossArrow.SetActive(false);
+                bossArrowUp.SetActive(false);
+                bossArrowDown.SetActive(false);
             }
         }
-        /*
-        if (bossRenderer.enabled == true && bossRenderer.isVisible == false)
-        {
-            bossArrow.SetActive(true);
-        }
-        */
     }
 }

@@ -25,6 +25,7 @@ public class BossCollision : MonoBehaviour
     [SerializeField] private GameObject childMesh;
     [SerializeField] private GameObject animationSpriteToDisable;
     [SerializeField] private GameObject bossDefeatSprite;
+    public GameObject bossArrowVisual;
 
 
     // Start is called before the first frame update

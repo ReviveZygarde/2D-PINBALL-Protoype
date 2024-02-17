@@ -289,6 +289,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5584749856583519572, guid: 24aa7b71094648345b66817c761e8cc7, type: 3}
   m_PrefabInstance: {fileID: 1250361568}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &89177931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3289041080594284207, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
+  m_PrefabInstance: {fileID: 2067349736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &93602407
 GameObject:
   m_ObjectHideFlags: 0
@@ -8540,6 +8545,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5584749856583519572, guid: 3f1df3d7117722746b9aefb62a048091, type: 3}
   m_PrefabInstance: {fileID: 1462152119}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1464036603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6551356624883941492, guid: 57a7a6f1fdbbad7499818b3a0ddef4fe, type: 3}
+  m_PrefabInstance: {fileID: 8989055363491066702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1482051504
 GameObject:
   m_ObjectHideFlags: 0
@@ -12945,10 +12955,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1010500847257290421, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
+      propertyPath: bossEntity
+      value: 
+      objectReference: {fileID: 1464036603}
     - target: {fileID: 2784622035877368241, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 3892752060061858563, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
+      propertyPath: bossEntity
+      value: 
+      objectReference: {fileID: 1464036603}
     - target: {fileID: 5490810091467843847, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3599688
@@ -14114,6 +14132,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 29994097}
     - target: {fileID: 2705037977386379936, guid: 57a7a6f1fdbbad7499818b3a0ddef4fe, type: 3}
+      propertyPath: bossArrowVisual
+      value: 
+      objectReference: {fileID: 89177931}
+    - target: {fileID: 2705037977386379936, guid: 57a7a6f1fdbbad7499818b3a0ddef4fe, type: 3}
       propertyPath: explosionImpulse
       value: 
       objectReference: {fileID: 443784224}
@@ -14175,6 +14197,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6551356624883941492, guid: 57a7a6f1fdbbad7499818b3a0ddef4fe, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739301167306153190, guid: 57a7a6f1fdbbad7499818b3a0ddef4fe, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739301167306153190, guid: 57a7a6f1fdbbad7499818b3a0ddef4fe, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

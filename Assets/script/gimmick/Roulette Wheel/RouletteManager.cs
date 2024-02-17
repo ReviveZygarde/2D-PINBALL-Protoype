@@ -88,6 +88,11 @@ public class RouletteManager : MonoBehaviour
         yield return null;
     }
 
+    public void stopCoroutines()
+    {
+        StopAllCoroutines();
+    }
+
 
     /*
     // Update is called once per frame

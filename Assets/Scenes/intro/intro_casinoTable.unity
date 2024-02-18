@@ -10273,8 +10273,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Neon Casino
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}
-  m_sharedMaterial: {fileID: -7549111285098148876, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 92ea36197a0809649b84a5f23f9a3c5c, type: 2}
+  m_sharedMaterial: {fileID: 1901114842259798710, guid: 92ea36197a0809649b84a5f23f9a3c5c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10824,7 +10824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1574846034
 Transform:
   m_ObjectHideFlags: 0
@@ -25003,7 +25003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &5689926116969516936
 SpriteRenderer:
   m_ObjectHideFlags: 0

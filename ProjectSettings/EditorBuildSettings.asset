@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitlePrototype.unity
     guid: 2aef813e1ff200147ad3679b1c68a7f8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestTable.unity
     guid: eb2a6c8c8d2631c4b9101f0873db4188
   - enabled: 1

@@ -7,6 +7,7 @@ public class JumperBehavior : MonoBehaviour
 {
     public tableTally tally;
     public Text statusText;
+    [SerializeField] private AudioSource hitNoise;
     [SerializeField] private GameObject NonHitChildSprite;
     [SerializeField] private GameObject OnHitChildSprite;
 
@@ -19,6 +20,7 @@ public class JumperBehavior : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         tally.tallyBumper();
+        hitNoise.Play();
         StartCoroutine(spriteChange());
         StartCoroutine(changeStatusMessage());
     }

@@ -9,6 +9,8 @@ public class scoreDisplay : MonoBehaviour
 {
     public Text score;
     private PlayerInput pl_input;
+    public GameObject blackScreenOver;
+    public string jumpToScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,13 @@ public class scoreDisplay : MonoBehaviour
 
     void OnPauseButton()
     {
-        SceneManager.LoadScene("masterDebugStandalone");
+        if (blackScreenOver == null)
+        {
+            SceneManager.LoadScene("masterDebugStandalone");
+        }
+        blackScreenOver.SetActive(true);
+        debugMasterMenuBehavior scenejump = blackScreenOver.GetComponent<debugMasterMenuBehavior>();
+        scenejump.goToPresetSceneForRelease(jumpToScene);
         globalScoreBehavior.Instance.global_pl_score = 0;
     }
 

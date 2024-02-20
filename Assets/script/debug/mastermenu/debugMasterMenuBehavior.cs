@@ -16,13 +16,17 @@ public class debugMasterMenuBehavior : MonoBehaviour
     public GameObject controlDiagramB;
     public GameObject controlDiagramC;
     public Gamepad gamepad;
+    public GameObject blackscreenOver;
 
     // Start is called before the first frame update
     void Start()
     {
         gl_setting = globalSetting.Instance;
+        if(ballMass != null)
         ballMass.text = gl_setting.ballSetting.ToString();
+        if(controltypetext != null)
         controltypetext.text = gl_setting.Control_Type.ToString();
+        if(gmlanguageset != null)
         gmlanguageset.text = gl_setting.languageType.ToString();
         debugLogging();
     }
@@ -81,18 +85,29 @@ public class debugMasterMenuBehavior : MonoBehaviour
 
     public void gotoTitle()
     {
-        StartCoroutine(wait());
+        string tmp = "TitlePrototype";
+        StartCoroutine(wait(tmp));
     }
 
-    IEnumerator wait()
+    IEnumerator wait(string sceneName)
     {
         yield return new WaitForSecondsRealtime(1);
-        SceneManager.LoadScene("TitlePrototype");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void gotoSelectedScene(Text inputtedText)
     {
         SceneManager.LoadScene(int.Parse(inputtedText.text));
+    }
+
+    public void goToPresetSceneForRelease(string sceneName)
+    {
+        if (GameObject.Find("BGM") != null && GameObject.Find("BGM").GetComponent<AudioSource>().isPlaying)
+        {
+            GameObject.Find("BGM").GetComponent<AudioSource>().Stop();
+        }
+        blackscreenOver.SetActive(true);
+        StartCoroutine(wait(sceneName));
     }
 
     void debugLogging()

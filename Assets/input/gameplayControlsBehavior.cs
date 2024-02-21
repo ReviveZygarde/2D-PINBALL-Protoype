@@ -26,6 +26,7 @@ public class gameplayControlsBehavior : MonoBehaviour
     public bool currentlyShaking;
     [Tooltip("Bandaid fix for ball getting stuck in roulette bug")]
     public bool isRouletteInScene;
+    [SerializeField] private GameObject rouletteFunnelForCasinoStage;
 
     //Audio for the Flippers
     public AudioSource flipperSound;
@@ -118,9 +119,9 @@ public class gameplayControlsBehavior : MonoBehaviour
 
     void disableRouletteFunnels()
     {
-        if(GameObject.Find("Funnel") != null)
+        if(rouletteFunnelForCasinoStage != null)
         {
-            GameObject.Find("Funnel").SetActive(false);
+            rouletteFunnelForCasinoStage.SetActive(false);
         }
     }
 

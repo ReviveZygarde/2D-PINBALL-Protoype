@@ -9736,6 +9736,10 @@ PrefabInstance:
       propertyPath: flipperSound
       value: 
       objectReference: {fileID: 2088313396}
+    - target: {fileID: 6116456757793223978, guid: 211af29bd9350274fb7630405f514ff0, type: 3}
+      propertyPath: rouletteFunnelForCasinoStage
+      value: 
+      objectReference: {fileID: 8488772359627240720}
     - target: {fileID: 6116456757793223980, guid: 211af29bd9350274fb7630405f514ff0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14671,6 +14675,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+--- !u!1 &8488772359627240720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2788046440288913758, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
+  m_PrefabInstance: {fileID: 8488772359627240719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

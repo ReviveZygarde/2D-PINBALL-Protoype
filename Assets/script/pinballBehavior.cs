@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class pinballBehavior : MonoBehaviour
 {
-    //Empty script...
-    //TODO: get information from a setting/game option singleton that tells the rigidbody mass?
     private Rigidbody2D ballRigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
         ballRigidbody = GetComponent<Rigidbody2D>();
-        if(globalSetting.Instance.ballSetting == globalSetting.ballMass.LIGHT)
+        //get information from GL_Setting that tells the ball its rigidbody mass
+        switch (globalSetting.Instance.ballSetting)
         {
-            ballRigidbody.mass = ballRigidbody.mass - 1f;
+            case globalSetting.ballMass.NORMAL:
+                break;
+            case globalSetting.ballMass.LIGHT:
+                ballRigidbody.mass = ballRigidbody.mass - 1f;
+                break;
+            case globalSetting.ballMass.HEAVY:
+                ballRigidbody.mass = ballRigidbody.mass + 1f;
+                break;
         }
     }
 

@@ -12,7 +12,7 @@ public class globalSetting : Singleton<globalSetting>
     public controlType Control_Type = controlType.A;
 
     public enum ballMass
-    {NORMAL, LIGHT}
+    {NORMAL, LIGHT, HEAVY}
     public ballMass ballSetting = ballMass.NORMAL;
 
     public enum language

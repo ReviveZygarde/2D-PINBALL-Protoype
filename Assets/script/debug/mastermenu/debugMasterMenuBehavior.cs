@@ -33,40 +33,41 @@ public class debugMasterMenuBehavior : MonoBehaviour
 
     public void changeBallMass()
     {
-        if(gl_setting.ballSetting == globalSetting.ballMass.NORMAL)
+        switch(gl_setting.ballSetting)
         {
-            gl_setting.ballSetting = globalSetting.ballMass.LIGHT;
-        }
-        else
-        {
-            gl_setting.ballSetting = globalSetting.ballMass.NORMAL;
+            case globalSetting.ballMass.NORMAL:
+                gl_setting.ballSetting = globalSetting.ballMass.LIGHT;
+                break;
+            case globalSetting.ballMass.LIGHT:
+                gl_setting.ballSetting = globalSetting.ballMass.HEAVY;
+                break;
+            case globalSetting.ballMass.HEAVY:
+                gl_setting.ballSetting = globalSetting.ballMass.NORMAL;
+                break;
         }
         ballMass.text = gl_setting.ballSetting.ToString();
     }
 
     public void changeControlType()
     {
-        //This is not good to write it like this but no one will see this by normal means.
-
-        if(gl_setting.Control_Type == globalSetting.controlType.A)
+        switch (gl_setting.Control_Type)
         {
-            gl_setting.Control_Type = globalSetting.controlType.B;
-            controlDiagramA.SetActive(false);
-            controlDiagramB.SetActive(true);
+            case globalSetting.controlType.A:
+                gl_setting.Control_Type = globalSetting.controlType.B;
+                controlDiagramA.SetActive(false);
+                controlDiagramB.SetActive(true);
+                break;
+            case globalSetting.controlType.B:
+                gl_setting.Control_Type = globalSetting.controlType.C;
+                controlDiagramB.SetActive(false);
+                controlDiagramC.SetActive(true);
+                break;
+            case globalSetting.controlType.C:
+                gl_setting.Control_Type = globalSetting.controlType.A;
+                controlDiagramC.SetActive(false);
+                controlDiagramA.SetActive(true);
+                break;
         }
-        else if (gl_setting.Control_Type == globalSetting.controlType.B)
-        {
-            gl_setting.Control_Type = globalSetting.controlType.C;
-            controlDiagramB.SetActive(false);
-            controlDiagramC.SetActive(true);
-        }
-        else if (gl_setting.Control_Type == globalSetting.controlType.C)
-        {
-            gl_setting.Control_Type = globalSetting.controlType.A;
-            controlDiagramC.SetActive(false);
-            controlDiagramA.SetActive(true);
-        }
-
         controltypetext.text = gl_setting.Control_Type.ToString();
     }
 

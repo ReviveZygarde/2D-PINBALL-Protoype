@@ -27,6 +27,9 @@ public class gameplayControlsBehavior : MonoBehaviour
     [Tooltip("Bandaid fix for ball getting stuck in roulette bug")]
     public bool isRouletteInScene;
 
+    //Audio for the Flippers
+    public AudioSource flipperSound;
+
     //for CINEMACHINE Camera Shake
     private CinemachineImpulseSource cameraShakeUp;
     private CinemachineImpulseSource cameraShakeLeft;
@@ -54,11 +57,13 @@ public class gameplayControlsBehavior : MonoBehaviour
     void OnLeftFlipper(InputValue value)
     {
         lfIsHeld = value.isPressed;
+        flipperSound.Play();
     }
 
     void OnRightFlipper(InputValue value)
     {
         rfIsHeld = value.isPressed;
+        flipperSound.Play();
     }
 
     void OnPlungerPullAction(InputValue value)

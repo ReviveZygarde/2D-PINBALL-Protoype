@@ -100,7 +100,7 @@ MonoBehaviour:
     m_ActionName: player1/PauseButton[/XInputControllerWindows/start,/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: player1
+  m_DefaultActionMap: ControlTypeA
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &6116456757793223978
@@ -118,3 +118,7 @@ MonoBehaviour:
   lfIsHeld: 0
   rfIsHeld: 0
   plungerActionIsHeld: 0
+  canShake: 1
+  currentlyShaking: 0
+  isRouletteInScene: 1
+  flipperSound: {fileID: 0}

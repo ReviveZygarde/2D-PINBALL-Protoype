@@ -67,6 +67,8 @@ Breaking Rules - Serat - Free Music Archive, CC-BY 4.0
 "Circuit Punk Game Menu" by Eric Matyas soundimage.org
 
 //-----------------------------------------------------
+For how to play music, if not used then take this out
+//-----------------------------------------------------
 
 "Overcast" Kevin MacLeod (incompetech.com)
 Licensed under Creative Commons: By Attribution 4.0 License

@@ -9,25 +9,17 @@ public class commonAudioManager : MonoBehaviour
     public AudioSource vo_two;
     public AudioSource vo_one;
     public AudioSource vo_go;
-    public AudioSource vo_mission;
+    public AudioSource vo_mission_boss;
+    public AudioSource vo_mission_rush;
+    public AudioSource vo_mission_rhythm;
     public AudioSource vo_finish;
+    public AudioSource vo_lose;
     public AudioSource jingle_winExtra;
+    public AudioSource jingle_finish;
     public AudioSource SE_resultsCountdown;
     public AudioSource SE_resultsStamp;
     public AudioSource SE_resultsCashRegister;
     public AudioSource rushBGM;
     public AudioSource stageBGM;
     public AudioSource bossBGM;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -166,7 +166,15 @@ public class ModeBehavior : MonoBehaviour
 
     public void DetermineNextMultiplier()
     {
-        AudioManager.vo_finish.Play();
+        if (didPlayerLoseBall)
+        {
+            AudioManager.vo_lose.Play();
+        }
+        else if (!didPlayerLoseBall)
+        {
+            AudioManager.vo_finish.Play();
+        }
+        AudioManager.jingle_finish.Play();
 
         //Tries to find the bossEntity, and if it's enabled, forcefully disables it.
         GameObject temp_bossEntityToDisable = GameObject.Find("bossEntity");
@@ -314,9 +322,7 @@ public class ModeBehavior : MonoBehaviour
             case ballSaver.ON:
                 if(ballSaverState == ballSaver.ON)
                 {
-                    return; //intentionally do nothing for now in the menu simulation.
-                            //In the actual game, though, make the ball respawn at the
-                            //starting point.
+                    return; //intentionally do nothing
                 }
                 break;
             case ballSaver.ALMOST_END:

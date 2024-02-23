@@ -25,7 +25,7 @@ public class scoreDisplay : MonoBehaviour
     {
         if (blackScreenOver == null)
         {
-            SceneManager.LoadScene("masterDebugStandalone");
+            SceneManager.LoadScene(jumpToScene);
         }
         blackScreenOver.SetActive(true);
         debugMasterMenuBehavior scenejump = blackScreenOver.GetComponent<debugMasterMenuBehavior>();

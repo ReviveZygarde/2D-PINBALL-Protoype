@@ -5496,7 +5496,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: to Menu
+  m_Text: to Title
 --- !u!222 &728836405
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11206,6 +11206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   retry: {fileID: 1938498032}
+  jumpToScene: TitlePrototype
 --- !u!114 &1976326524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11307,6 +11308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 1783682122}
+  blackScreenOver: {fileID: 0}
+  jumpToScene: TitlePrototype
 --- !u!114 &1976326529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11349,6 +11352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b09f2f12d9c471a47a91690df2041f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSeconds: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

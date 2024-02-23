@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class retryButton : MonoBehaviour
 {
     public Button retry;
+    [SerializeField] private string jumpToScene;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,6 @@ public class retryButton : MonoBehaviour
     void retryGame()
     {
         globalScoreBehavior.Instance.global_pl_score = 0;
-        SceneManager.LoadScene("masterDebugStandalone");
+        SceneManager.LoadScene(jumpToScene);
     }
 }

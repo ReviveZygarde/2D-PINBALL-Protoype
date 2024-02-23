@@ -1,0 +1,34 @@
+{
+    "name": "debugEntryForRelease",
+    "maps": [
+        {
+            "name": "debug_entry",
+            "id": "bd71f3d5-9e95-457d-8a6a-b58b0ae58412",
+            "actions": [
+                {
+                    "name": "EnterDebugMenu",
+                    "type": "Button",
+                    "id": "428c71f8-0da7-4099-a15e-27ab18392df0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5182d277-2e30-4c96-9697-e18e314be47a",
+                    "path": "<Keyboard>/backquote",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnterDebugMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

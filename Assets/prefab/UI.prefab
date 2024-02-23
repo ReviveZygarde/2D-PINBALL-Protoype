@@ -4451,8 +4451,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 422, y: -483}
-  m_SizeDelta: {x: 1023.1484, y: 62.619}
+  m_AnchoredPosition: {x: -8.9926, y: -483}
+  m_SizeDelta: {x: 1853.6746, y: 62.619}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &695939883704168983
 CanvasRenderer:
@@ -4483,13 +4483,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e47c7438edbaa384eb00a7a56af97c3a, type: 3}
+    m_Font: {fileID: 12800000, guid: 2368b76d2abc7914282d34d19867fb1e, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 50
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -4510,8 +4510,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   PromptTextForA: "D-Pad \u2190 or EAST Button to continue"
-  PromptTextForB: LB or RB to continue
-  PromptTextForC: LT (L2) or RT (R2) to continue
+  PromptTextForB: L or R Shoulder Buttons to continue
+  PromptTextForC: L or R Triggers to continue
 --- !u!1 &7062873654866292273
 GameObject:
   m_ObjectHideFlags: 0

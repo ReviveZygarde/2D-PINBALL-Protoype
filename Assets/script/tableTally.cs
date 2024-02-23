@@ -169,7 +169,7 @@ public class tableTally : MonoBehaviour
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(5);
         Time.timeScale = 1.0f;
-        common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
+        //common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
         //ui_manager.resetBossInterruptBars();
         interruptEvent_Rush.SetActive(false);
         modeBehavior.timerCountdownStart();
@@ -185,7 +185,7 @@ public class tableTally : MonoBehaviour
         rhythmParent.SetActive(true);
         yield return new WaitForSecondsRealtime(5f);
         Time.timeScale = 1.0f;
-        common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
+        //common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
         //ui_manager.resetBossInterruptBars();
         interruptEvent_Rhythm.SetActive(false);
         modeBehavior.timerCountdownStart();

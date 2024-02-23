@@ -8647,11 +8647,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Adjust the weight of the ball.
+  m_text: 'Adjust the weight of the Pinball.
 
-    [LIGHT] is recommended
+    [LIGHT] is recommended for
 
-    for newbies
+    newbies
     and grandmas.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}

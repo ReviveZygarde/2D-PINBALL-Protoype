@@ -4427,6 +4427,7 @@ GameObject:
   - component: {fileID: 7250776400195560278}
   - component: {fileID: 695939883704168983}
   - component: {fileID: 740688925350862122}
+  - component: {fileID: 7665201917891171618}
   m_Layer: 0
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -4494,7 +4495,23 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Push Left/Right Flipper Button to continue
+  m_Text: Press Left or Right Flipper Buttons to continue.
+--- !u!114 &7665201917891171618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7006187774514570445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa6fcf83807d7d245b4a07c623fc9196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  PromptTextForA: "D-Pad \u2190 or EAST Button to continue"
+  PromptTextForB: LB or RB to continue
+  PromptTextForC: LT (L2) or RT (R2) to continue
 --- !u!1 &7062873654866292273
 GameObject:
   m_ObjectHideFlags: 0

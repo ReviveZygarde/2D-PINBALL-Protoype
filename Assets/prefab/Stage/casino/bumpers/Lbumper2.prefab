@@ -11,7 +11,19 @@ PrefabInstance:
     - target: {fileID: 128954041878760930, guid: 4f8ce05958e18aa4694b6f2663e8678d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9a74b72383e5dd344969f088372068ec, type: 3}
+      objectReference: {fileID: 21300000, guid: b22284d4638cb5b4cb3ae4e8a3c3b908, type: 3}
+    - target: {fileID: 128954041878760930, guid: 4f8ce05958e18aa4694b6f2663e8678d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 128954041878760930, guid: 4f8ce05958e18aa4694b6f2663e8678d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 128954041878760930, guid: 4f8ce05958e18aa4694b6f2663e8678d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7647059
+      objectReference: {fileID: 0}
     - target: {fileID: 1997175051103542885, guid: 4f8ce05958e18aa4694b6f2663e8678d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.3382235
@@ -58,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 06116ba9f1c362048a9a8615252cfcdc, type: 3}
     - target: {fileID: 5208207532946048325, guid: 4f8ce05958e18aa4694b6f2663e8678d, type: 3}
       propertyPath: m_Name
-      value: Closed Sprite Shape Variant
+      value: Lbumper2
       objectReference: {fileID: 0}
     - target: {fileID: 6425194107634256152, guid: 4f8ce05958e18aa4694b6f2663e8678d, type: 3}
       propertyPath: m_IsActive

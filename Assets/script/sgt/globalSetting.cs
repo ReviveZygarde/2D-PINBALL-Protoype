@@ -19,17 +19,15 @@ public class globalSetting : Singleton<globalSetting>
     {EN, JP}
     public language languageType = language.EN;
 
+    public enum releaseLevel //RELEASE is for game releases, DEMO is for playtesting and/or game events, DEVELOP is for development.
+    {RELEASE, DEMO, DEVELOP}
+    public releaseLevel buildType = releaseLevel.DEVELOP;
+
     // Start is called before the first frame update
     void Start()
     {
-        //Optional: Dualshock 4/Dualsense custom lightbar color
+        //Optional: Dualshock 4/Dualsense custom lightbar color. Note: only works when the controller is physically plugged in via USB.
         //var gamepad = (DualShockGamepad)Gamepad.all[0];
         //gamepad.SetLightBarColor(Color.blue);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

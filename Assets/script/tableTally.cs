@@ -32,6 +32,11 @@ public class tableTally : MonoBehaviour
     [Tooltip("Hole 2. Player enters this for Rush Mode. (please excuse the name convention error...)")]
     public int criteria_ramp_entry;
 
+    //Entry requirements to enter Modes. 3, 3, and 4 are default values.
+    [SerializeField] private int requirementForBossHole = 3;
+    [SerializeField] private int requirementForRhythmHole = 3;
+    [SerializeField] private int requirementForRushRamp = 4;
+
     //bossEntity GameObject
     public GameObject bossEntity;
 
@@ -54,6 +59,19 @@ public class tableTally : MonoBehaviour
         //interruptEvent_Boss.SetActive(false);
         //interruptEvent_Rush.SetActive(false);
         bossEntity.SetActive(false);
+        //Changing the RequirementFor___ Variables to be more lenient with activating modes when releaseType is DEMO.
+        switch (globalSetting.Instance.buildType)
+        {
+            case globalSetting.releaseLevel.RELEASE:
+                break;
+            case globalSetting.releaseLevel.DEVELOP:
+                break;
+            case globalSetting.releaseLevel.DEMO:
+                requirementForBossHole = requirementForBossHole - 2;
+                requirementForRhythmHole = requirementForRhythmHole - 2;
+                requirementForRushRamp = requirementForRushRamp - 2;
+                break;
+        }
     }
 
     public void tallyHole1(GameObject passedGO) //Takes in the passed GameObject from whatever hole1behavior is calling it.
@@ -101,13 +119,13 @@ public class tableTally : MonoBehaviour
     }
     private void hole_2_3_rampCheck() //checks if the ball has been to certain places X amount of times to begin the commented Mode.
     {
-        if (criteria_hole2entry >= 3)
+        if (criteria_hole2entry >= requirementForRhythmHole)
         {
             resetCriteriaHoleEntries();
             modeBehavior.modeState = ModeBehavior.currentMode.RHYTHM;
             StartCoroutine(interruptRhythmEventPopUp());
         }
-        if (criteria_hole3entry >= 3)
+        if (criteria_hole3entry >= requirementForBossHole)
         {
             resetCriteriaHoleEntries();
             //start boss mode
@@ -115,7 +133,7 @@ public class tableTally : MonoBehaviour
             bossEntity.SetActive(true); //We summon the "boss" for the player to kill.
             StartCoroutine(interruptBossEventPopUp());
         }
-        if (criteria_ramp_entry >= 4)
+        if (criteria_ramp_entry >= requirementForRushRamp)
         {
             resetCriteriaHoleEntries();
             //start rush mode

@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/release2_menu.unity
     guid: 9a9b5cbdd015ded429b7c7653f406be4
+  - enabled: 1
+    path: Assets/Scenes/cityTable.unity
+    guid: 87ddc87bd37ed3046a53b303e27a0af0
   m_configObjects: {}

@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cityTable.unity
     guid: 87ddc87bd37ed3046a53b303e27a0af0
+  - enabled: 1
+    path: Assets/Scenes/000test/andrew/ap_soundtest.unity
+    guid: 1ceb2111fbbfea74faf93ca7c2cfaf39
   m_configObjects: {}

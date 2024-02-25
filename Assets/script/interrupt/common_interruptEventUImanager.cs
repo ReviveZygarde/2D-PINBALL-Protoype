@@ -99,7 +99,12 @@ public class common_interruptEventUImanager : MonoBehaviour
 
         while (timeSubtract > 0)
         {
-            timeSubtract--;
+            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld)
+            {
+                timeSubtract = 0;
+                break;
+            }
+            timeSubtract = timeSubtract - 500;
             modeFinishSpeedCounter.text = $"{timeSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
@@ -122,7 +127,12 @@ public class common_interruptEventUImanager : MonoBehaviour
 
         while (ballSubtract > 0)
         {
-            ballSubtract--;
+            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld)
+            {
+                ballSubtract = 0;
+                break;
+            }
+            ballSubtract = ballSubtract - 100;
             modeFinishBallCounter.text = $"{ballSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
@@ -139,7 +149,12 @@ public class common_interruptEventUImanager : MonoBehaviour
 
         while (secondSubtract > 0)
         {
-            secondSubtract = secondSubtract - 150;
+            if (confirmButton.lfIsHeld || confirmButton.rfIsHeld)
+            {
+                secondSubtract = 0;
+                break;
+            }
+            secondSubtract = secondSubtract - 500;
             modeFinishTimeCounter.text = $"{secondSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
@@ -167,6 +182,9 @@ public class common_interruptEventUImanager : MonoBehaviour
         }
 
         modeFinishFinalScoreCounter.text = $"{scoreComponent.pl_score}";
+        modeFinishSpeedCounter.text = $"0";
+        modeFinishBallCounter.text = $"0";
+        modeFinishTimeCounter.text = $"0";
         audioManager.SE_resultsCashRegister.Play();
 
         if(modeComponent.multiplierFromScoreComponentOnCalculation == 8)

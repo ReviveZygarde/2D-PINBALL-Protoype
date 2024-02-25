@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298e33bb5dbbf0c43bba80a5bd218688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runtimeDebugEnable: 0
   Control_Type: 0
   ballSetting: 0
   languageType: 0
+  buildType: 2

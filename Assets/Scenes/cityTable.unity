@@ -595,6 +595,10 @@ PrefabInstance:
       propertyPath: modeFinishFinalScoreCounter
       value: 
       objectReference: {fileID: 478197134}
+    - target: {fileID: 8643073791273722883, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
+      propertyPath: secondsUntilBallSaveEnds
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1310,6 +1314,10 @@ PrefabInstance:
     - target: {fileID: 4056606433793585036, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212537072521655485, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7077221710989962403, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: ScoreBehavior

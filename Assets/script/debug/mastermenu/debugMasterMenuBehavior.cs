@@ -107,7 +107,10 @@ public class debugMasterMenuBehavior : MonoBehaviour
         {
             GameObject.Find("BGM").GetComponent<AudioSource>().Stop();
         }
-        blackscreenOver.SetActive(true);
+        if (blackscreenOver != null)
+        {
+            blackscreenOver.SetActive(true);
+        }
         StartCoroutine(wait(sceneName));
     }
 

@@ -14355,18 +14355,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1296124319}
     m_Modifications:
-    - target: {fileID: 418425193996345319, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
-      propertyPath: m_Creator
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 433939062844126773, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
-      propertyPath: m_Creator
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2303433786577959012, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
-      propertyPath: m_Creator
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2460674182963433616, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
       propertyPath: UIstatusText
       value: 
@@ -14483,10 +14471,6 @@ PrefabInstance:
       propertyPath: UIstatusText
       value: 
       objectReference: {fileID: 29994097}
-    - target: {fileID: 8448795276218078837, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
-      propertyPath: m_Creator
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8649505424224216052, guid: b24b2624823712742b28b5d95f2299c1, type: 3}
       propertyPath: UIstatusText
       value: 

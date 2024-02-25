@@ -104,7 +104,7 @@ public class common_interruptEventUImanager : MonoBehaviour
                 timeSubtract = 0;
                 break;
             }
-            timeSubtract = timeSubtract - 500;
+            timeSubtract--;
             modeFinishSpeedCounter.text = $"{timeSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
@@ -132,7 +132,7 @@ public class common_interruptEventUImanager : MonoBehaviour
                 ballSubtract = 0;
                 break;
             }
-            ballSubtract = ballSubtract - 100;
+            ballSubtract--;
             modeFinishBallCounter.text = $"{ballSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";
@@ -154,7 +154,7 @@ public class common_interruptEventUImanager : MonoBehaviour
                 secondSubtract = 0;
                 break;
             }
-            secondSubtract = secondSubtract - 500;
+            secondSubtract = secondSubtract - 150;
             modeFinishTimeCounter.text = $"{secondSubtract}";
             scoreDisplay++;
             modeFinishFinalScoreCounter.text = $"{scoreDisplay}";

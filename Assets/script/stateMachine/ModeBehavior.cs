@@ -66,6 +66,17 @@ public class ModeBehavior : MonoBehaviour
         predefined_secondsUntilModeEnds = secondsUntilModeEnds;
         timerCountdownStart(); //This would be called as soon as the ball is launched from the spring.
         AudioManager = GetComponent<commonAudioManager>();
+        switch (globalSetting.Instance.buildType)
+        {
+            case globalSetting.releaseLevel.RELEASE:
+                break;
+            case globalSetting.releaseLevel.DEMO:
+                secondsUntilBallSaveEnds = secondsUntilBallSaveEnds / 2;
+                predefined_secondsUntilBallSaveEnds = secondsUntilBallSaveEnds;
+                break;
+            case globalSetting.releaseLevel.DEVELOP:
+                break;
+        }
     }
 
     public void timerCountdownStart()

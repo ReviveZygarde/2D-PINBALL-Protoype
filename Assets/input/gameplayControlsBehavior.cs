@@ -25,9 +25,6 @@ public class gameplayControlsBehavior : MonoBehaviour
     private Rigidbody2D pinballRigidbody;
     public bool canShake = true; //Leave this enabled by default.
     public bool currentlyShaking;
-    [Tooltip("Bandaid fix for ball getting stuck in roulette bug")]
-    public bool isRouletteInScene;
-    [SerializeField] private GameObject rouletteFunnelForCasinoStage;
 
     //pause menu related
     public AudioSource pauseSound;
@@ -135,20 +132,8 @@ public class gameplayControlsBehavior : MonoBehaviour
         }
     }
 
-    void disableRouletteFunnels()
-    {
-        if(rouletteFunnelForCasinoStage != null)
-        {
-            rouletteFunnelForCasinoStage.SetActive(false);
-        }
-    }
-
     IEnumerator DisableShake() //Temporarily disables a boolean so you cannot spam the table shake (and thus attempting to defy gravity)
     {
-        if (isRouletteInScene)
-        {
-            disableRouletteFunnels();
-        }
         currentlyShaking = true;
         canShake = false;
         yield return new WaitForSeconds(0.75f);

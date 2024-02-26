@@ -180,6 +180,17 @@
                 },
                 {
                     "name": "",
+                    "id": "34c639df-b6ff-43ba-8c15-a8e3f3a89be5",
+                    "path": "<DualShockGamepad>/touchpadButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PauseButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "720661b0-ff2e-47cb-989d-0589b98e143d",
                     "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
@@ -458,6 +469,17 @@
                 },
                 {
                     "name": "",
+                    "id": "4f361de3-e1f5-4b66-a22a-2fbe87d8691c",
+                    "path": "<DualShockGamepad>/touchpadButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PauseButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "97555579-2dd0-406f-85d5-71d62501e738",
                     "path": "<Keyboard>/a",
                     "interactions": "",
@@ -716,6 +738,17 @@
                     "name": "",
                     "id": "203cf11d-b19b-4fd3-b56c-9e269f628beb",
                     "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PauseButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e8679d89-4896-4e19-8e23-9d03325457ef",
+                    "path": "<DualShockGamepad>/touchpadButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

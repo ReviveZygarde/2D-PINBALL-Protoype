@@ -1806,10 +1806,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: blastEffect
       objectReference: {fileID: 0}
-    - target: {fileID: 1530194853268737636, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7541750336218524927, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.52

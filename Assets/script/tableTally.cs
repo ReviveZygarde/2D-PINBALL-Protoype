@@ -48,10 +48,12 @@ public class tableTally : MonoBehaviour
 
     //for the RhythmMode Manager
     public GameObject rhythmParent;
+    private GameObject pl_input;
 
     // Start is called before the first frame update
     void Start()
     {
+        pl_input = GameObject.Find("pl_input");
         scoreComponent = GetComponent<scoreBehavior>();
         AudioManager = GetComponent<commonAudioManager>();
         modeBehavior = GetComponent<ModeBehavior>();
@@ -169,7 +171,9 @@ public class tableTally : MonoBehaviour
         AudioManager.stageBGM.Pause();
         AudioManager.bossBGM.Play();
         Time.timeScale = 0f;
-        yield return new WaitForSecondsRealtime(5);
+        pl_input.SetActive(false);
+        yield return new WaitForSecondsRealtime(5f);
+        pl_input.SetActive(true);
         Time.timeScale = 1.0f;
         //common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
         //ui_manager.resetBossInterruptBars();
@@ -185,7 +189,9 @@ public class tableTally : MonoBehaviour
         AudioManager.stageBGM.Pause();
         AudioManager.rushBGM.Play();
         Time.timeScale = 0f;
-        yield return new WaitForSecondsRealtime(5);
+        pl_input.SetActive(false);
+        yield return new WaitForSecondsRealtime(5f);
+        pl_input.SetActive(true);
         Time.timeScale = 1.0f;
         //common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
         //ui_manager.resetBossInterruptBars();
@@ -201,7 +207,9 @@ public class tableTally : MonoBehaviour
         AudioManager.vo_mission_rhythm.Play();
         Time.timeScale = 0f;
         rhythmParent.SetActive(true);
+        pl_input.SetActive(false);
         yield return new WaitForSecondsRealtime(5f);
+        pl_input.SetActive(true);
         Time.timeScale = 1.0f;
         //common_interruptEventUImanager ui_manager = GetComponent<common_interruptEventUImanager>();
         //ui_manager.resetBossInterruptBars();

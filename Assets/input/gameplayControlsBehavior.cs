@@ -1,4 +1,5 @@
 using Cinemachine;
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,11 @@ public class gameplayControlsBehavior : MonoBehaviour
     [Tooltip("Bandaid fix for ball getting stuck in roulette bug")]
     public bool isRouletteInScene;
     [SerializeField] private GameObject rouletteFunnelForCasinoStage;
+
+    //pause menu related
+    public AudioSource pauseSound;
+    public GameObject PauseMenu;
+    [HideInInspector] public float timescaleBeforePaused;
 
     //Audio for the Flippers
     public AudioSource flipperSound;
@@ -70,6 +76,18 @@ public class gameplayControlsBehavior : MonoBehaviour
     void OnPlungerPullAction(InputValue value)
     {
         plungerActionIsHeld = value.isPressed;
+    }
+
+    void OnPauseButton(InputValue value)
+    {
+        //Pause Menu-related
+        AudioListener.pause = true;
+        pauseSound.Play();
+        PauseMenu.SetActive(true);
+        timescaleBeforePaused = Time.timeScale;
+        Time.timeScale = 0f;
+        canShake = true;
+        this.gameObject.SetActive(false);
     }
 
     /*

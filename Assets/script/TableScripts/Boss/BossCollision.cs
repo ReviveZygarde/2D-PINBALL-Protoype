@@ -25,6 +25,7 @@ public class BossCollision : MonoBehaviour
     [SerializeField] private GameObject childMesh;
     [SerializeField] private GameObject animationSpriteToDisable;
     [SerializeField] private GameObject bossDefeatSprite;
+    private GameObject pl_input;
 
 
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class BossCollision : MonoBehaviour
         isDefeated = false;
         bossDefeatSprite.SetActive(false);
         splineAnim = GetComponent<SplineAnimate>();
+        pl_input = GameObject.Find("pl_input");
         //Pinball = GameObject.Find("Pinball");
         //common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
         //this.gameObject.SetActive(false); //Gets the required components, then disables itself.
@@ -69,6 +71,7 @@ public class BossCollision : MonoBehaviour
     IEnumerator explosionSequence()
     {
         uiStatusText.text = $"ALL RIGHT!! YOU DID IT!";
+        pl_input.SetActive(false);
         isDefeated = true;
         bossDefeatSprite.SetActive(true);
         animationSpriteToDisable.SetActive(false);
@@ -94,6 +97,7 @@ public class BossCollision : MonoBehaviour
         splineAnim.Play();
         bossDefeatSprite.SetActive(false);
         animationSpriteToDisable.SetActive(true);
+        pl_input.SetActive(true);
         this.gameObject.SetActive(false); //Game resumes.
         yield return null;
     }

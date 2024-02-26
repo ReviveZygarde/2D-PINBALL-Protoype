@@ -222,7 +222,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6116456757793223978, guid: 211af29bd9350274fb7630405f514ff0, type: 3}
   m_PrefabInstance: {fileID: 1897391174}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1341231113}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7eade25e74ec6ea478f8d17999d84dbc, type: 3}
@@ -491,6 +491,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0b0539ec7b15cc46aecc0f38d214dba, type: 3}
+--- !u!1 &317692663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3231582761131124695, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+  m_PrefabInstance: {fileID: 890859188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &319097049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -690,6 +695,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30e835564a0c5c446b4bf856ef37d5fb, type: 3}
+--- !u!82 &401367295 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5217222788800665582, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
+  m_PrefabInstance: {fileID: 319097049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &418205469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,14 +1321,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 5212537072521655485, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 4453945347508297283, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: pl_input
+      value: 
+      objectReference: {fileID: 1341231113}
     - target: {fileID: 7077221710989962403, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: ScoreBehavior
       value: 
       objectReference: {fileID: 1295908011}
+    - target: {fileID: 7603235706196636955, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1946761420}
+    - target: {fileID: 7603235706196636955, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1492545254}
+    - target: {fileID: 7603235706196636955, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1946761420}
+    - target: {fileID: 7603235706196636955, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_Delegates.Array.data[4].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1492545254}
+    - target: {fileID: 8700296949852435462, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1946761420}
+    - target: {fileID: 8700296949852435462, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1492545254}
+    - target: {fileID: 8700296949852435462, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1946761420}
+    - target: {fileID: 8700296949852435462, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: m_Delegates.Array.data[4].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1492545254}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2144,6 +2186,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fee8bd753f5f2cf4facfb6219f6bb42e, type: 3}
+--- !u!1 &1341231113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6116456757793223981, guid: 211af29bd9350274fb7630405f514ff0, type: 3}
+  m_PrefabInstance: {fileID: 1897391174}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1370724416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,6 +2227,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6063282332238072864, guid: 30e835564a0c5c446b4bf856ef37d5fb, type: 3}
   m_PrefabInstance: {fileID: 1628570247065238569}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1492545254 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4439872529645828258, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
+  m_PrefabInstance: {fileID: 319097049}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1516273464
 PrefabInstance:
@@ -2644,6 +2696,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6116456757793223978, guid: 211af29bd9350274fb7630405f514ff0, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 317692663}
+    - target: {fileID: 6116456757793223978, guid: 211af29bd9350274fb7630405f514ff0, type: 3}
+      propertyPath: pauseSound
+      value: 
+      objectReference: {fileID: 401367295}
+    - target: {fileID: 6116456757793223978, guid: 211af29bd9350274fb7630405f514ff0, type: 3}
       propertyPath: flipperSound
       value: 
       objectReference: {fileID: 2076925997}
@@ -2918,6 +2978,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1946761420 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5390336623000284425, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
+  m_PrefabInstance: {fileID: 319097049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1973160575
 GameObject:
   m_ObjectHideFlags: 0

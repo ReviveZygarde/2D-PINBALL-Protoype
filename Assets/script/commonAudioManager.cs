@@ -19,6 +19,10 @@ public class commonAudioManager : MonoBehaviour
     public AudioSource SE_resultsCountdown;
     public AudioSource SE_resultsStamp;
     public AudioSource SE_resultsCashRegister;
+    public AudioSource SE_PauseOpen;
+    public AudioSource SE_PauseClose;
+    public AudioSource SE_PauseSelect;
+    public AudioSource SE_PauseCursor;
     public AudioSource rushBGM;
     public AudioSource stageBGM;
     public AudioSource bossBGM;

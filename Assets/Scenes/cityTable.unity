@@ -1325,6 +1325,11 @@ PrefabInstance:
       propertyPath: pl_input
       value: 
       objectReference: {fileID: 1341231113}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.data[4]
+      value: Railways will activate based on a timer. Keep an eye on the time if
+        you're waiting for a specific Line.
+      objectReference: {fileID: 0}
     - target: {fileID: 7077221710989962403, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: ScoreBehavior
       value: 

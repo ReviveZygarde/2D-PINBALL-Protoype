@@ -1,20 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class pauseMenuBehavior : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject pl_input;
+    private PlayerInput pauseInput;
     public GameObject pauseMenu;
     [SerializeField] private string sceneToExitTo;
+    [SerializeField] private GameObject hintParent;
 
     void Start()
     {
+        pauseInput = GetComponent<PlayerInput>();
         if(pauseMenu == null)
         {
             pauseMenu = this.gameObject;
+        }
+    }
+
+    void OnPauseHintToggle(InputValue value)
+    {
+        if (hintParent.activeSelf)
+        {
+            hintParent.SetActive(false);
+        }
+        else
+        {
+            hintParent.SetActive(true);
         }
     }
 

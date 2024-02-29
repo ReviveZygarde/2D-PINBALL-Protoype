@@ -823,7 +823,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198, y: -54}
+  m_AnchoredPosition: {x: 144, y: -426}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &522758117
@@ -846,7 +846,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gamebiites Edition
+  m_text: Gamebiites DEMO Version
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 04603172ddd247b4fadc552dc77dd52f, type: 2}
   m_sharedMaterial: {fileID: 7058199391171222993, guid: 04603172ddd247b4fadc552dc77dd52f, type: 2}
@@ -909,7 +909,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -465.63998, w: -7.6333504}
+  m_margin: {x: 0, y: 0, z: -679.30927, w: -7.6333504}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

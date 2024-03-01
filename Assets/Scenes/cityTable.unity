@@ -3550,6 +3550,7 @@ GameObject:
   - component: {fileID: 363672493}
   - component: {fileID: 363672494}
   - component: {fileID: 363672495}
+  - component: {fileID: 363672496}
   m_Layer: 0
   m_Name: entrance
   m_TagString: Untagged
@@ -3689,6 +3690,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.03, y: 1.43}
   m_EdgeRadius: 0
+--- !u!114 &363672496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363672491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccc7019b89918044b06c048ada2c2d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doesPauseTimer: 1
 --- !u!1 &368591258
 GameObject:
   m_ObjectHideFlags: 0
@@ -4201,6 +4215,7 @@ GameObject:
   - component: {fileID: 416509865}
   - component: {fileID: 416509864}
   - component: {fileID: 416509866}
+  - component: {fileID: 416509867}
   m_Layer: 7
   m_Name: exit
   m_TagString: Untagged
@@ -4340,6 +4355,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.03, y: 1.43}
   m_EdgeRadius: 0
+--- !u!114 &416509867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416509862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccc7019b89918044b06c048ada2c2d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doesPauseTimer: 0
 --- !u!1 &418205469
 GameObject:
   m_ObjectHideFlags: 0
@@ -6573,6 +6601,7 @@ GameObject:
   - component: {fileID: 615654885}
   - component: {fileID: 615654884}
   - component: {fileID: 615654886}
+  - component: {fileID: 615654887}
   m_Layer: 10
   m_Name: exit
   m_TagString: Untagged
@@ -6712,6 +6741,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.03, y: 1.43}
   m_EdgeRadius: 0
+--- !u!114 &615654887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615654882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccc7019b89918044b06c048ada2c2d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doesPauseTimer: 0
 --- !u!1 &618363610
 GameObject:
   m_ObjectHideFlags: 0
@@ -6856,6 +6898,7 @@ GameObject:
   - component: {fileID: 679026894}
   - component: {fileID: 679026893}
   - component: {fileID: 679026895}
+  - component: {fileID: 679026896}
   m_Layer: 0
   m_Name: entrance
   m_TagString: Untagged
@@ -6995,6 +7038,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.03, y: 1.43}
   m_EdgeRadius: 0
+--- !u!114 &679026896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679026891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccc7019b89918044b06c048ada2c2d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doesPauseTimer: 1
 --- !u!1 &681458372
 GameObject:
   m_ObjectHideFlags: 0
@@ -9694,7 +9750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1026617853
 Transform:
   m_ObjectHideFlags: 0
@@ -13145,6 +13201,7 @@ GameObject:
   - component: {fileID: 1446352447}
   - component: {fileID: 1446352446}
   - component: {fileID: 1446352448}
+  - component: {fileID: 1446352449}
   m_Layer: 6
   m_Name: Square (7)
   m_TagString: Untagged
@@ -13284,6 +13341,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.03, y: 1.43}
   m_EdgeRadius: 0
+--- !u!114 &1446352449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446352444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccc7019b89918044b06c048ada2c2d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doesPauseTimer: 0
 --- !u!1 &1448372031
 GameObject:
   m_ObjectHideFlags: 0
@@ -13592,7 +13662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461073959}
   m_Layer: 0
-  m_Name: railway
+  m_Name: railway___bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14822,6 +14892,7 @@ GameObject:
   - component: {fileID: 1558907131}
   - component: {fileID: 1558907130}
   - component: {fileID: 1558907132}
+  - component: {fileID: 1558907133}
   m_Layer: 0
   m_Name: entrance
   m_TagString: Untagged
@@ -14961,6 +15032,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.03, y: 1.43}
   m_EdgeRadius: 0
+--- !u!114 &1558907133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558907128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccc7019b89918044b06c048ada2c2d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doesPauseTimer: 1
 --- !u!1 &1573973356
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,51 +16,8 @@ public class railwayManager : MonoBehaviour
     {
         pinball = GameObject.Find("Pinball");
         timeLeft = initializedTimeLeft;
-        foreach (GameObject line in lines)
-        {
-            line.SetActive(false);
-        }
-        changeLines();
     }
 
-    IEnumerator waitToChangeLines()
-    {
-        while(timeLeft > 0)
-        {
-            timeLeft--;
-            yield return new WaitForSeconds(1f);
-        }
-
-        while (pinball.layer != 0)
-        {
-            yield return new WaitForSeconds(0.25f);
-        }
-
-        changeThenInitializeTime();
-        yield return null;
-    }
-
-    void changeThenInitializeTime()
-    {
-        changeLines();
-        timeLeft = initializedTimeLeft;
-    }
-
-    void changeLines()
-    {
-        StopAllCoroutines();
-        lines[nextIndexOfArray].SetActive(true);
-        if((nextIndexOfArray - 1) >= 0)
-        {
-            lines[nextIndexOfArray - 1].SetActive(false);
-        }
-        nextIndexOfArray++;
-        if (nextIndexOfArray >= lines.Length)
-        {
-            nextIndexOfArray = 0;
-        }
-        StartCoroutine(waitToChangeLines());
-    }
 
     // Update is called once per frame
     void Update()

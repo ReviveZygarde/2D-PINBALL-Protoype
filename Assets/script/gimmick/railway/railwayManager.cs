@@ -16,6 +16,10 @@ public class railwayManager : MonoBehaviour
     {
         pinball = GameObject.Find("Pinball");
         timeLeft = initializedTimeLeft;
+        foreach (GameObject line in lines)
+        {
+            line.SetActive(false);
+        }
         changeLines();
     }
 
@@ -45,13 +49,10 @@ public class railwayManager : MonoBehaviour
     void changeLines()
     {
         StopAllCoroutines();
-        foreach (GameObject line in lines)
-        {
-            line.SetActive(false);
-        }
         lines[nextIndexOfArray].SetActive(true);
         nextIndexOfArray++;
-        if(nextIndexOfArray >= lines.Length)
+        lines[nextIndexOfArray - 1].SetActive(false);
+        if (nextIndexOfArray >= lines.Length)
         {
             nextIndexOfArray = 0;
         }

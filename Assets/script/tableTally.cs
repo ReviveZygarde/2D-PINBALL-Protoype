@@ -119,7 +119,7 @@ public class tableTally : MonoBehaviour
         bumperTally++;
         scoreComponent.pl_score = scoreComponent.pl_score + 20;
     }
-    private void hole_2_3_rampCheck() //checks if the ball has been to certain places X amount of times to begin the commented Mode.
+    public void hole_2_3_rampCheck() //checks if the ball has been to certain places X amount of times to begin the commented Mode.
     {
         if (criteria_hole2entry >= requirementForRhythmHole)
         {

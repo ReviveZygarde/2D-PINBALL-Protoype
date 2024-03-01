@@ -3559,6 +3559,7 @@ GameObject:
   - component: {fileID: 363672494}
   - component: {fileID: 363672495}
   - component: {fileID: 363672496}
+  - component: {fileID: 363672497}
   m_Layer: 0
   m_Name: entrance
   m_TagString: Untagged
@@ -3711,6 +3712,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doesPauseTimer: 1
+--- !u!114 &363672497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363672491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9437fe5104ba34894910ce35dd94bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  Pinball: {fileID: 0}
+  common_tally: {fileID: 0}
+  mode: {fileID: 0}
+  statusText: {fileID: 0}
 --- !u!1 &368591258
 GameObject:
   m_ObjectHideFlags: 0
@@ -6907,6 +6925,7 @@ GameObject:
   - component: {fileID: 679026893}
   - component: {fileID: 679026895}
   - component: {fileID: 679026896}
+  - component: {fileID: 679026897}
   m_Layer: 0
   m_Name: entrance
   m_TagString: Untagged
@@ -7059,6 +7078,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doesPauseTimer: 1
+--- !u!114 &679026897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679026891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9437fe5104ba34894910ce35dd94bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  Pinball: {fileID: 0}
+  common_tally: {fileID: 0}
+  mode: {fileID: 0}
+  statusText: {fileID: 0}
 --- !u!1 &681458372
 GameObject:
   m_ObjectHideFlags: 0
@@ -14948,6 +14984,7 @@ GameObject:
   - component: {fileID: 1558907130}
   - component: {fileID: 1558907132}
   - component: {fileID: 1558907133}
+  - component: {fileID: 1558907134}
   m_Layer: 0
   m_Name: entrance
   m_TagString: Untagged
@@ -15100,6 +15137,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doesPauseTimer: 1
+--- !u!114 &1558907134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558907128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9437fe5104ba34894910ce35dd94bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  Pinball: {fileID: 0}
+  common_tally: {fileID: 0}
+  mode: {fileID: 0}
+  statusText: {fileID: 0}
 --- !u!1 &1573973356
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ using UnityEngine;
 public class pinballBehavior : MonoBehaviour
 {
     private Rigidbody2D ballRigidbody;
+    [SerializeField] private bool hasShadow;
+    [SerializeField] private GameObject ballShadow;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,16 @@ public class pinballBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (hasShadow)
+        {
+            if (this.gameObject.layer == 0 || this.gameObject.layer == 9)
+            {
+                ballShadow.SetActive(false);
+            }
+            else
+            {
+                ballShadow.SetActive(true);
+            }
+        }
     }
 }

@@ -7,7 +7,7 @@ public class railwayManager : MonoBehaviour
     [SerializeField] private GameObject[] lines;
     [SerializeField] private int initializedTimeLeft = 15; //15 is the default value
     [SerializeField] private int timeLeft;
-    [SerializeField] private int currentIndexOfArray;
+    [SerializeField] private int nextIndexOfArray;
     [SerializeField] private GameObject pinball;
     
 
@@ -32,10 +32,8 @@ public class railwayManager : MonoBehaviour
             yield return new WaitForSeconds(0.25f);
         }
 
-        if (pinball.layer == 0)
-        {
-            changeThenInitializeTime();
-        }
+        changeThenInitializeTime();
+
     }
 
     void changeThenInitializeTime()
@@ -46,17 +44,17 @@ public class railwayManager : MonoBehaviour
 
     void changeLines()
     {
-        foreach(GameObject line in lines)
+        StopAllCoroutines();
+        foreach (GameObject line in lines)
         {
             line.SetActive(false);
         }
-        lines[currentIndexOfArray].SetActive(true);
-        currentIndexOfArray++;
-        if(currentIndexOfArray >= lines.Length)
+        lines[nextIndexOfArray].SetActive(true);
+        nextIndexOfArray++;
+        if(nextIndexOfArray >= lines.Length)
         {
-            currentIndexOfArray = 0;
+            nextIndexOfArray = 0;
         }
-        StopAllCoroutines();
         StartCoroutine(waitToChangeLines());
     }
 

@@ -29,10 +29,6 @@ public class railwayManager : MonoBehaviour
 
         while (pinball.layer != 0)
         {
-            if (pinball.layer == 0)
-            {
-                changeThenInitializeTime();
-            }
             yield return new WaitForSeconds(0.25f);
         }
 

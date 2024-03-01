@@ -27,19 +27,25 @@ public class railwayManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
         }
 
-        if (timeLeft <= 0)
+        while (pinball.layer != 0)
         {
-            timeLeft = 0;
-            while(pinball.layer != 0)
+            if (pinball.layer == 0)
             {
-                if (pinball.layer == 0)
-                {
-                    changeLines();
-                    timeLeft = initializedTimeLeft;
-                }
-                yield return new WaitForSeconds(0.25f);
+                changeThenInitializeTime();
             }
+            yield return new WaitForSeconds(0.25f);
         }
+
+        if (pinball.layer == 0)
+        {
+            changeThenInitializeTime();
+        }
+    }
+
+    void changeThenInitializeTime()
+    {
+        changeLines();
+        timeLeft = initializedTimeLeft;
     }
 
     void changeLines()

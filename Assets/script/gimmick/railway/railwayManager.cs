@@ -33,7 +33,7 @@ public class railwayManager : MonoBehaviour
         }
 
         changeThenInitializeTime();
-
+        yield return null;
     }
 
     void changeThenInitializeTime()

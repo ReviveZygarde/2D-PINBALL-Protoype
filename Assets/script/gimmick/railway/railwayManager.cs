@@ -37,12 +37,12 @@ public class railwayManager : MonoBehaviour
         {
             lineObject.SetActive(false);
         }
-        lines[currentIndexOfArray].SetActive(true);
-        currentIndexOfArray++;
-        if(currentIndexOfArray > lines.Length)
+        if (currentIndexOfArray >= lines.Length)
         {
             currentIndexOfArray = 0;
         }
+        lines[currentIndexOfArray].SetActive(true);
+        currentIndexOfArray++;
         timeLeft = initializedTimeLeft;
         StartCoroutine(countdownToLineChange());
     }

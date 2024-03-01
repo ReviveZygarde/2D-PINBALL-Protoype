@@ -50,8 +50,11 @@ public class railwayManager : MonoBehaviour
     {
         StopAllCoroutines();
         lines[nextIndexOfArray].SetActive(true);
+        if((nextIndexOfArray - 1) >= 0)
+        {
+            lines[nextIndexOfArray - 1].SetActive(false);
+        }
         nextIndexOfArray++;
-        lines[nextIndexOfArray - 1].SetActive(false);
         if (nextIndexOfArray >= lines.Length)
         {
             nextIndexOfArray = 0;

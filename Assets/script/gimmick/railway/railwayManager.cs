@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class railwayManager : MonoBehaviour
 {
+    [SerializeField] private AudioSource SE_trainTracks;
     [SerializeField] private GameObject[] lines;
     [SerializeField] private int initializedTimeLeft = 15; //15 is the default value
-    [SerializeField] private int timeLeft;
+    public int timeLeft;
     [SerializeField] private int currentIndexOfArray;
     [SerializeField] private GameObject pinball;
+    public enum currentLine { INITIAL_STATE, Red, Pink, Blue }
+    public currentLine train = currentLine.INITIAL_STATE;
     
 
     // Start is called before the first frame update
@@ -33,6 +36,7 @@ public class railwayManager : MonoBehaviour
     void changeLines()
     {
         //Debug.Log($"This is where index {lines[currentIndexOfArray]} is active.");
+        SE_trainTracks.Play();
         foreach(GameObject lineObject in lines)
         {
             lineObject.SetActive(false);
@@ -40,9 +44,11 @@ public class railwayManager : MonoBehaviour
         if (currentIndexOfArray >= lines.Length)
         {
             currentIndexOfArray = 0;
+            train = (currentLine)currentIndexOfArray;
         }
         lines[currentIndexOfArray].SetActive(true);
         currentIndexOfArray++;
+        train = (currentLine)currentIndexOfArray;
         timeLeft = initializedTimeLeft;
         StartCoroutine(countdownToLineChange());
     }

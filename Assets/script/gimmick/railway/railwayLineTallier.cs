@@ -61,7 +61,7 @@ public class railwayLineTallier : MonoBehaviour
 
         if(mode.modeState != ModeBehavior.currentMode.NORMAL || mode.modeState != ModeBehavior.currentMode.CRACK)
         {
-
+            //Make a coroutine that extends the time, and then make this call the coroutine.
         }
     }
 

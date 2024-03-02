@@ -8984,15 +8984,44 @@ PrefabInstance:
       objectReference: {fileID: 1341231113}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: hints.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-      propertyPath: hints.Array.data[5]
+      propertyPath: hints.Array.data[0]
+      value: Try shaking the table left or right to precisely get the ball into the
+        Line.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.data[1]
       value: To activate the different Modes, enter the Line that corresponds the
         Mode's color. (BOSS is red, RUSH is blue, and RHYTHM is pink)
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.data[2]
+      value: During RHYTHM Mode, you can still move flippers to the beat of the song
+        even if the ball isn't near them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.data[3]
+      value: During BOSS Mode, keep hitting the boss until it glows yellow. That
+        means you're about to win.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.data[4]
+      value: If you see the ball get stuck, try shaking the table.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.data[5]
+      value: During RUSH Mode, the more you enter the blue Ramps, the higher the
+        bonus and faster time elapses.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: hints.Array.data[6]
+      value: Railways will activate based on a timer. Keep an eye on the time if
+        you're waiting for a specific Line.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.data[7]
       value: "The [Tab] Key, \u24CE, \u25B3, and NORTH Buttons will toggle the hints
         ON and OFF."
       objectReference: {fileID: 0}

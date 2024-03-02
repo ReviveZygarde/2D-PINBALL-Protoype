@@ -71,9 +71,10 @@ Breaking Rules - Serat - Free Music Archive, CC-BY 4.0
 Music by Cleyton Kauffman - https://soundcloud.com/cleytonkauffman
 
 //-----------------------------------------------------
-For how to play music, if not used then take this out
-//-----------------------------------------------------
 
-"Overcast" Kevin MacLeod (incompetech.com)
-Licensed under Creative Commons: By Attribution 4.0 License
-http://creativecommons.org/licenses/by/4.0/
+Title Screen Music:
+
+「Precipitating Dolphins」by まんぼう二等兵 
+(DOVA SYNDROME)
+
+//-----------------------------------------------------

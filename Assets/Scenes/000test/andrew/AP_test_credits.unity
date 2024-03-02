@@ -5642,17 +5642,37 @@ MonoBehaviour:
     INCEPTION AND LEAD\nAndrew Peterson\n\nPRODUCER\nEden Szopa\n\nMAIN PROGRAM\nAndrew
     Peterson\n\nRHYTHM PROGRAM\nMack Pearson\n\n2D ENVIRONMENT ARTIST\nRefik Kajic\n\nTABLE
     DESIGN\nEden Szopa\n\nCHARACTER DESIGN\nDarius Giron\nKeanu Martinez\n\nBOSS
-    ENEMY DESIGN\nRefik Kajic\n\nUSER INTERFACE DESIGN\nDanielle Dennis\nAndrew Peterson\n\nANNOUNCER\nWarren
-    Hernandez\n\nAUDIO - BGM\n(Insert ALL music copyrights here)\n\nAUDIO - SOUND
-    EFFECTS\nSounds Resource\n(www.sounds-resource.com)\nSCE SFX Asset Library ver.
-    0.42\n\n\nEXTERNAL ASSETS\nAdobe Stock\nPexels Stock Photo\nRazeWare\n(All asset
-    credits go here)\n\nSPECIAL THANKS\nDavid Antognoli\nTyrus Goshay\nMarc Soehl\nCCC-IAM
-    Department\nPlaytest Planet 2023 Participants\n...and you, the Player.\n\nFonts:
-    \xA92013, 2019 DynaComware Taiwan, Inc. All Rights Reserved. \xA92006 FONTWORKS
-    Japan, Inc."
+    ENEMY DESIGN\nRefik Kajic\n\nUSER INTERFACE DESIGN\nL Dennis\nAndrew Peterson\n\nANNOUNCER\nWarren
+    Hernandez\n\nAUDIO - BGM\n\r\nHeterophony by Glitch | https://soundcloud.com/glitch\r\nMusic
+    promoted by https://www.free-stock-music.com\r\nCreative Commons / Attribution
+    3.0 Unported License (CC BY 3.0)\r\nhttps://creativecommons.org/licenses/by/3.0/deed.en_US\r\n\r\n\r\nWater
+    Drop by Glitch | https://soundcloud.com/glitch\r\nMusic promoted by https://www.free-stock-music.com\r\nCreative
+    Commons / Attribution 3.0 Unported License (CC BY 3.0)\r\nhttps://creativecommons.org/licenses/by/3.0/deed.en_US\r\n\r\r\n\"ld47\"
+    by bertsz\r\n(Open Game Art)\r\nPublic Domain\r\n\r\r\nPiercing by Numall Fix
+    | https://soundcloud.com/numall-fix\r\nMusic promoted by https://www.free-stock-music.com\r\nCreative
+    Commons / Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)\r\nhttps://creativecommons.org/licenses/by-sa/3.0/deed.en_US\r\n\r\nSome
+    Distant Memory by Glitch | https://soundcloud.com/glitch\r\nMusic promoted by
+    https://www.free-stock-music.com\r\nCreative Commons / Attribution 3.0 Unported
+    License (CC BY 3.0)\r\nhttps://creativecommons.org/licenses/by/3.0/deed.en_US\r\n\r\n\"Rocket
+    Power\" Kevin MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By
+    Attribution 4.0 License\r\nhttp://creativecommons.org/licenses/by/4.0/\r\n\r\n\r\nE.F
+    by Glitch | https://soundcloud.com/glitch\r\nMusic promoted by https://www.free-stock-music.com\r\nCreative
+    Commons / Attribution 3.0 Unported License (CC BY 3.0)\r\nhttps://creativecommons.org/licenses/by/3.0/deed.en_US\r\n\r\n\r\nCoffee
+    Shop by PYC Music | https://soundcloud.com/pycmusic\r\nMusic promoted by https://www.free-stock-music.com\r\nCreative
+    Commons / Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)\r\nhttps://creativecommons.org/licenses/by-nd/3.0/\r\n\r\n\r\nMonolith
+    - Music by Tri-Tachyon - https://soundcloud.com/tri-tachyon/albums\r\n\r\n\r\nBreaking
+    Rules - Serat - Free Music Archive, CC-BY 4.0 \r\n\r\n\r\n\"Circuit Punk Game
+    Menu\" by Eric Matyas soundimage.org\r\n\r\r\nMusic by Cleyton Kauffman - https://soundcloud.com/cleytonkauffman\r\n\r\nTitle
+    Screen Music:\r\n\u300CPrecipitating Dolphins\u300D\nby \u307E\u3093\u307C\u3046\u4E8C\u7B49\u5175
+    \r\n(DOVA SYNDROME)\r\n\r\n\nAUDIO - SOUND EFFECTS\nSounds Resource\n(www.sounds-resource.com)\nSCE
+    SFX Asset Library ver. 0.42\n\n\nEXTERNAL ASSETS\nAdobe Stock\nPexels Stock Photo\nRazeWare\nSherbbs
+    Particle Collection\n(All asset credits go here)\n\nSPECIAL THANKS\nDavid Antognoli\nTyrus
+    Goshay\nMarc Soehl\nCCC-IAM Department\nPlaytest Planet 2023 Participants\n...and
+    you, the Player.\n\nFonts: \xA92013, 2019 DynaComware Taiwan, Inc. All Rights
+    Reserved. \xA92006 FONTWORKS Japan, Inc."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}
-  m_sharedMaterial: {fileID: -7549111285098148876, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eddb5eab30deae54a8300769d0bb83c8, type: 2}
+  m_sharedMaterial: {fileID: 5399153684034095516, guid: eddb5eab30deae54a8300769d0bb83c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5741,7 +5761,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7549111285098148876, guid: baa4eaea718d2984d9fd487a6f513cc5, type: 2}
+  - {fileID: 5399153684034095516, guid: eddb5eab30deae54a8300769d0bb83c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

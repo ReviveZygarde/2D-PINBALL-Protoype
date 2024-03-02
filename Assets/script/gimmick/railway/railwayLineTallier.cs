@@ -58,6 +58,11 @@ public class railwayLineTallier : MonoBehaviour
                 }
                 break;
         }
+
+        if(mode.modeState != ModeBehavior.currentMode.NORMAL || mode.modeState != ModeBehavior.currentMode.CRACK)
+        {
+
+        }
     }
 
     IEnumerator statusTextChange()

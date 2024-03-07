@@ -16,7 +16,7 @@ public class attractPlay : MonoBehaviour
 
     IEnumerator waitUntilPlayAttractVideo()
     {
-        while(seconds < 10)
+        while(seconds < maxSeconds)
         {
             yield return new WaitForSeconds(1);
             seconds++;

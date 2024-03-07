@@ -6,6 +6,7 @@ public class OverRampLayerChanger : MonoBehaviour
 {
     public GameObject Pinball;
     private Rigidbody2D ballRigidbody;
+    private AudioSource soundEffect;
     [Tooltip("Marks the OverRamp's entrance so the ball can change its Collision Layer")]
     public bool isEntrance;
 
@@ -38,6 +39,7 @@ public class OverRampLayerChanger : MonoBehaviour
     void Start()
     {
         Pinball = GameObject.Find("Pinball");
+        soundEffect = GameObject.Find("SE_overRamp").GetComponent<AudioSource>();
         ballRigidbody = Pinball.GetComponent<Rigidbody2D>();
     }
 
@@ -51,7 +53,7 @@ public class OverRampLayerChanger : MonoBehaviour
                 Pinball.layer = LayerToSetPinball;
                 Debug.Log($"Pinball layer is now {Pinball.layer}.");
                 ballRigidbody.velocity = ballDirection * velocityMultiplier;
-
+                soundEffect.Play();
             }
             if (isExit)
             {

@@ -59,10 +59,36 @@ public class railwayLineTallier : MonoBehaviour
                 break;
         }
 
-        if(mode.modeState != ModeBehavior.currentMode.NORMAL || mode.modeState != ModeBehavior.currentMode.CRACK)
+        if(mode.modeState == ModeBehavior.currentMode.RUSH || mode.modeState == ModeBehavior.currentMode.BOSS)
         {
             //Make a coroutine that extends the time, and then make this call the coroutine.
+            StartCoroutine(timeExtension());
         }
+        if (mode.modeState == ModeBehavior.currentMode.RUSH || mode.modeState == ModeBehavior.currentMode.CRACK)
+        {
+            speedUp();
+        }
+    }
+
+    IEnumerator timeExtension()
+    {
+        mode.secondsUntilModeEnds = mode.secondsUntilModeEnds + 5;
+        if(mode.secondsUntilModeEnds >= 200)
+        {
+            mode.secondsUntilModeEnds = 200;
+        }
+        yield return new WaitForSeconds(2f);
+        statusText.text = "TIME EXTENSION!";
+        yield return new WaitForSeconds(2f);
+        statusText.text = "+5 SECONDS";
+        yield return null;
+    }
+
+    void speedUp()
+    {
+        statusText.text = "LET'S SPEED IT UP!!!";
+        Time.timeScale = Time.timeScale + 0.15f;
+        //yield return null;
     }
 
     IEnumerator statusTextChange()
@@ -72,16 +98,6 @@ public class railwayLineTallier : MonoBehaviour
             statusText.text = "AROUND THE RAMP!";
             yield return new WaitForSeconds(3f);
             statusText.text = $"{4 - common_tally.criteria_ramp_entry} MORE FOR RUSH!";
-            yield return new WaitForSeconds(3f);
-            statusText.text = "";
-            yield return null;
-        }
-        if (mode.modeState == ModeBehavior.currentMode.RUSH || mode.modeState == ModeBehavior.currentMode.CRACK)
-        {
-            statusText.text = "LET'S SPEED IT UP!!!";
-            Time.timeScale = Time.timeScale + 0.15f;
-            yield return new WaitForSeconds(3f);
-            statusText.text = "";
             yield return null;
         }
     }

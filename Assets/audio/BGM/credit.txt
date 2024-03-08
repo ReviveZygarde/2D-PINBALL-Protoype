@@ -72,18 +72,11 @@ Music by Cleyton Kauffman - https://soundcloud.com/cleytonkauffman
 
 //-----------------------------------------------------
 
-Title Screen Music:
 
-「Precipitating Dolphins」by まんぼう二等兵 
-(DOVA SYNDROME)
+DOVA-SYNDROME Music
 
-//-----------------------------------------------------
-
-Factory BGM
-「Error Terminal」 by Marron Fields Production (DOVA-SYNDROME)
-
-//-----------------------------------------------------
-
-「Weather Funk」Marron Fields Production (DOVA-SYNDROME)
+まんぼう二等兵
+Marron Fields Production
+KANADERUYAKAN 
 
 

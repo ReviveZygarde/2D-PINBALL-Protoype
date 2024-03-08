@@ -7,6 +7,7 @@ public class pinballBehavior : MonoBehaviour
     private Rigidbody2D ballRigidbody;
     [SerializeField] private bool hasShadow;
     [SerializeField] private GameObject ballShadow;
+    [SerializeField] private GameObject effectsChild;
 
     // Start is called before the first frame update
     void Start()
@@ -34,10 +35,12 @@ public class pinballBehavior : MonoBehaviour
             if (this.gameObject.layer == 0 || this.gameObject.layer == 9)
             {
                 ballShadow.SetActive(false);
+                effectsChild.SetActive(false);
             }
             else
             {
                 ballShadow.SetActive(true);
+                effectsChild.SetActive(true);
             }
         }
     }

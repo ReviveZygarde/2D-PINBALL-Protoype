@@ -34,7 +34,7 @@ public class BossCollision : MonoBehaviour
         isDefeated = false;
         bossDefeatSprite.SetActive(false);
         splineAnim = GetComponent<SplineAnimate>();
-        pl_input = GameObject.Find("pl_input");
+        //pl_input = GameObject.Find("pl_input");
         //Pinball = GameObject.Find("Pinball");
         //common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
         //this.gameObject.SetActive(false); //Gets the required components, then disables itself.
@@ -71,6 +71,7 @@ public class BossCollision : MonoBehaviour
     IEnumerator explosionSequence()
     {
         uiStatusText.text = $"ALL RIGHT!! YOU DID IT!";
+        pl_input = GameObject.Find("pl_input");
         pl_input.SetActive(false);
         isDefeated = true;
         bossDefeatSprite.SetActive(true);

@@ -21,7 +21,7 @@ public class bossCameraDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bossEntity = GameObject.Find("bossEntity");
+        //bossEntity = GameObject.Find("bossEntity");
         mainCamera = GameObject.Find("Main Camera");
         bossRenderer = bossEntity.GetComponent<Renderer>();
     }

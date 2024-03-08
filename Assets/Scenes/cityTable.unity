@@ -5564,6 +5564,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.03, y: 1.43}
   m_EdgeRadius: 0
+--- !u!1 &404286539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5714082788148609534, guid: ded4b3f4f6897a04280c28f836c6bad6, type: 3}
+  m_PrefabInstance: {fileID: 2910804770226771133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &404985523
 GameObject:
   m_ObjectHideFlags: 0
@@ -8164,7 +8169,7 @@ PrefabInstance:
     - target: {fileID: 3892752060061858563, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
       propertyPath: bossEntity
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 404286539}
     - target: {fileID: 5490810091467843847, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3599688

@@ -887,6 +887,14 @@ PrefabInstance:
       propertyPath: pl_input
       value: 
       objectReference: {fileID: 1959760593}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.data[4]
+      value: The NORTH Button will toggle the hints ON and OFF.
+      objectReference: {fileID: 0}
     - target: {fileID: 7077221710989962403, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: ScoreBehavior
       value: 

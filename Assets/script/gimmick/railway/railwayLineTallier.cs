@@ -59,7 +59,7 @@ public class railwayLineTallier : MonoBehaviour
                 break;
         }
 
-        if(mode.modeState == ModeBehavior.currentMode.RUSH || mode.modeState == ModeBehavior.currentMode.BOSS)
+        if(mode.modeState == ModeBehavior.currentMode.RUSH)
         {
             //Make a coroutine that extends the time, and then make this call the coroutine.
             StartCoroutine(timeExtension());

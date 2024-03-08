@@ -11323,7 +11323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1783682122}
   blackScreenOver: {fileID: 0}
-  jumpToScene: TitlePrototype
+  jumpToScene: ap_newtitle
 --- !u!114 &1976326529
 MonoBehaviour:
   m_ObjectHideFlags: 0

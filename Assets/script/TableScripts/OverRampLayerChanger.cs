@@ -53,6 +53,12 @@ public class OverRampLayerChanger : MonoBehaviour
                 Pinball.layer = LayerToSetPinball;
                 Debug.Log($"Pinball layer is now {Pinball.layer}.");
                 ballRigidbody.velocity = ballDirection * velocityMultiplier;
+                if(LayerToSetPinball == 0)
+                {
+                    GameObject pl_input_object = GameObject.Find("pl_input");
+                    gameplayControlsBehavior controlsBehavior_L0 = pl_input_object.GetComponent<gameplayControlsBehavior>();
+                    controlsBehavior_L0.canShake = true;
+                }
                 soundEffect.Play();
             }
             if (isExit)

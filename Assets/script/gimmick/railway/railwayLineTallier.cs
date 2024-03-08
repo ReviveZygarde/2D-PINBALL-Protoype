@@ -64,6 +64,7 @@ public class railwayLineTallier : MonoBehaviour
             //Make a coroutine that extends the time, and then make this call the coroutine.
             StartCoroutine(timeExtension());
         }
+
         if (mode.modeState == ModeBehavior.currentMode.RUSH || mode.modeState == ModeBehavior.currentMode.CRACK)
         {
             speedUp();
@@ -72,7 +73,7 @@ public class railwayLineTallier : MonoBehaviour
 
     IEnumerator timeExtension()
     {
-        mode.secondsUntilModeEnds = mode.secondsUntilModeEnds + 5;
+        mode.secondsUntilModeEnds = mode.secondsUntilModeEnds + 10;
         if(mode.secondsUntilModeEnds >= 200)
         {
             mode.secondsUntilModeEnds = 200;
@@ -80,7 +81,7 @@ public class railwayLineTallier : MonoBehaviour
         yield return new WaitForSeconds(2f);
         statusText.text = "TIME EXTENSION!";
         yield return new WaitForSeconds(2f);
-        statusText.text = "+5 SECONDS";
+        statusText.text = "+10 SECONDS";
         yield return null;
     }
 

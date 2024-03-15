@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/000test/andrew/ap_newtitle.unity
     guid: 203e3c448ccb63946b905d600ad274a2
+  - enabled: 1
+    path: Assets/Scenes/release3_stageSelect.unity
+    guid: 25534e891698d104f9ca47d7f853c88e
   m_configObjects: {}

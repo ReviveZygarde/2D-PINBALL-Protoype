@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 5059954392241832098}
   - component: {fileID: 6291300267751975663}
   - component: {fileID: 4619187083336641308}
+  - component: {fileID: 7410855504983909933}
   m_Layer: 0
   m_Name: Closed Sprite Shape
   m_TagString: LBumper
@@ -440,6 +441,18 @@ MonoBehaviour:
   hitNoise: {fileID: 3317696898311984117}
   NonHitChildSprite: {fileID: 1185983440796663776}
   OnHitChildSprite: {fileID: 6425194107634256152}
+--- !u!114 &7410855504983909933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5208207532946048325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520271c1f26f8214e87e614a687ca6ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6425194107634256152
 GameObject:
   m_ObjectHideFlags: 0

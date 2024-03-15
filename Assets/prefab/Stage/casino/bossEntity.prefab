@@ -29673,6 +29673,7 @@ GameObject:
   - component: {fileID: 7424626859009114280}
   - component: {fileID: 748692633464540731}
   - component: {fileID: 1490485597087929277}
+  - component: {fileID: 5807925156818579792}
   m_Layer: 0
   m_Name: bossEntity
   m_TagString: Untagged
@@ -29834,6 +29835,18 @@ MonoBehaviour:
   childMesh: {fileID: 6699123672155396938}
   animationSpriteToDisable: {fileID: 1343710155155044753}
   bossDefeatSprite: {fileID: 3363271994488370015}
+--- !u!114 &5807925156818579792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742496801754693491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520271c1f26f8214e87e614a687ca6ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4290953891994236008
 GameObject:
   m_ObjectHideFlags: 0
@@ -39655,6 +39668,7 @@ GameObject:
   - component: {fileID: 825953861248354788}
   - component: {fileID: 982315602557787181}
   - component: {fileID: 1470552958661764451}
+  - component: {fileID: 9079003959945613948}
   m_Layer: 8
   m_Name: winEffect
   m_TagString: Untagged
@@ -44836,6 +44850,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9079003959945613948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6381373735354741520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea9ce4c02c5e3740b4a0808f39415ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6520772165420505831
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,6 +22,14 @@ public class pauseMenuBehavior : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        if (Gamepad.current != null)
+        {
+            Gamepad.current.PauseHaptics();
+        }
+    }
+
     void OnPauseHintToggle(InputValue value)
     {
         if (hintParent.activeSelf)

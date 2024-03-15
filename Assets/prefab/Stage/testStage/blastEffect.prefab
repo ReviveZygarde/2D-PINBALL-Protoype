@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8788679585821498672}
   - component: {fileID: 8141844156982961643}
   - component: {fileID: 19028123655943324}
+  - component: {fileID: 8381459096868614316}
   m_Layer: 0
   m_Name: blastEffect
   m_TagString: Untagged
@@ -133,6 +134,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 123e8f65055f59a47927712cce90d52f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8381459096868614316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530194853268737636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097d369b0b3544d4caeeeda5533741a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &6535000302135116270

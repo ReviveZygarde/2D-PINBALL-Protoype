@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem.DualShock;
 using UnityEngine.UI;
 
 public class rouletteTabBehavior : MonoBehaviour
@@ -60,6 +61,10 @@ public class rouletteTabBehavior : MonoBehaviour
                 {
                     common_casinoTableLayoutChanger.layoutColorParameter = "green";
                     common_casinoTableLayoutChanger.changeTableLayout();
+                    if (DualShockGamepad.current != null)
+                    {
+                        DualShockGamepad.current.SetLightBarColor(Color.green);
+                    }
                 }
                 break;
             case color.RED:
@@ -67,6 +72,10 @@ public class rouletteTabBehavior : MonoBehaviour
                 {
                     common_casinoTableLayoutChanger.layoutColorParameter = "red";
                     common_casinoTableLayoutChanger.changeTableLayout();
+                    if (DualShockGamepad.current != null)
+                    {
+                        DualShockGamepad.current.SetLightBarColor(Color.red);
+                    }
                 }
                 break;
             case color.BLACK:
@@ -74,6 +83,10 @@ public class rouletteTabBehavior : MonoBehaviour
                 {
                     common_casinoTableLayoutChanger.layoutColorParameter = "black";
                     common_casinoTableLayoutChanger.changeTableLayout();
+                    if (DualShockGamepad.current != null)
+                    {
+                        DualShockGamepad.current.SetLightBarColor(Color.white);
+                    }
                 }
                 break;
         }

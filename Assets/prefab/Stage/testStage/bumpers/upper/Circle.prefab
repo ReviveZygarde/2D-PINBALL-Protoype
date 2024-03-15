@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 9119988121496057310}
   - component: {fileID: 2559871358750850266}
   - component: {fileID: 6505163441970075196}
+  - component: {fileID: 1163654308961785633}
   m_Layer: 0
   m_Name: Circle
   m_TagString: UBumper
@@ -290,6 +291,18 @@ MonoBehaviour:
   hitNoise: {fileID: 6958283231224925254}
   NonHitChildSprite: {fileID: 6090641577046709464}
   OnHitChildSprite: {fileID: 7702096234648040278}
+--- !u!114 &1163654308961785633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886835713553548297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520271c1f26f8214e87e614a687ca6ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6090641577046709464
 GameObject:
   m_ObjectHideFlags: 0

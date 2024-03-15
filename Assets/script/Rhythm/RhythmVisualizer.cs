@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.DualShock;
 using UnityEngine.UI;
 
 /// <summary>
@@ -17,6 +18,7 @@ public class RhythmVisualizer : MonoBehaviour
     //TMPro.TextMeshProUGUI textMeshPro;
     // Start is called before the first frame update
     public Text rh_Status;
+    [SerializeField] private Color lightbarColor;
     public scoreBehavior scoreComponent;
 
     [Tooltip("For the OnLeftFlipper() and OnRightFlipper(), they only work if you have the" +
@@ -33,10 +35,6 @@ public class RhythmVisualizer : MonoBehaviour
     //A List of JumperBehaviors are needed because the GOOD! indicator will also make the jumpers do its collision effect.
     //2024/2/3 - I changed the array into a List because I have to dynamically empty and re-add gameObjects when things
     //like table layouts change during gameplay.
-
-    //particle effects
-    [Tooltip("You can have a particle effect play when the RhythmManager detects OnBeat = true. This is optional.")]
-    [SerializeField] private GameObject particleEffectOnGood;
 
 
     void Start()
@@ -78,13 +76,12 @@ public class RhythmVisualizer : MonoBehaviour
     {
         if (RhythmManager.Instance.IsOnBeat())
         {
+            if(Gamepad.current != null)
+            {
+                Gamepad.current.SetMotorSpeeds(0.25f, 0.75f);
+            }
             rh_Status.text = "GOOD!";
             scoreComponent.pl_score = scoreComponent.pl_score + 20;
-            if(particleEffectOnGood != null)
-            {
-                particleEffectOnGood.SetActive(false);
-                particleEffectOnGood.SetActive(true);
-            }
             //Make the jumpers change the sprite when you are OnBeat.
             foreach (JumperBehavior jumper in JumpersList)
             {
@@ -108,7 +105,8 @@ public class RhythmVisualizer : MonoBehaviour
     {
        if (!RhythmManager.Instance.IsOnBeat())
        {
-          rh_Status.text = "";
+            InputSystem.PauseHaptics();
+            rh_Status.text = "";
        }
 
        if(JumpersList.Count == 0) //After the list is cleared and nothing is in it, the list has all the currently active GameObjects.

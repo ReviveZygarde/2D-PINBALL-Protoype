@@ -34,6 +34,10 @@ public class RhythmVisualizer : MonoBehaviour
     //2024/2/3 - I changed the array into a List because I have to dynamically empty and re-add gameObjects when things
     //like table layouts change during gameplay.
 
+    //particle effects
+    [Tooltip("You can have a particle effect play when the RhythmManager detects OnBeat = true. This is optional.")]
+    [SerializeField] private GameObject particleEffectOnGood;
+
 
     void Start()
     {
@@ -76,7 +80,11 @@ public class RhythmVisualizer : MonoBehaviour
         {
             rh_Status.text = "GOOD!";
             scoreComponent.pl_score = scoreComponent.pl_score + 20;
-
+            if(particleEffectOnGood != null)
+            {
+                particleEffectOnGood.SetActive(false);
+                particleEffectOnGood.SetActive(true);
+            }
             //Make the jumpers change the sprite when you are OnBeat.
             foreach (JumperBehavior jumper in JumpersList)
             {

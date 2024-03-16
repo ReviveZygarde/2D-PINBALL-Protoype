@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb41d1bb746e3140a095a7dce6f01dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToExitTo: 11
+  SceneToExitTo: 3
   secondsToWait: 3
 --- !u!1 &1937380778
 GameObject:

@@ -42,6 +42,16 @@ public class debugMasterMenuBehavior : MonoBehaviour
                 gl_setting.ballSetting = globalSetting.ballMass.HEAVY;
                 break;
             case globalSetting.ballMass.HEAVY:
+                if (gl_setting.hasEnteredKonamiCode)
+                {
+                    gl_setting.ballSetting = globalSetting.ballMass.ULTRA;
+                }
+                else
+                {
+                    gl_setting.ballSetting = globalSetting.ballMass.NORMAL;
+                }
+                break;
+            case globalSetting.ballMass.ULTRA:
                 gl_setting.ballSetting = globalSetting.ballMass.NORMAL;
                 break;
         }

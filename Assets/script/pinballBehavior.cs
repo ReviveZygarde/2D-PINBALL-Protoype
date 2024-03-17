@@ -24,6 +24,9 @@ public class pinballBehavior : MonoBehaviour
             case globalSetting.ballMass.HEAVY:
                 ballRigidbody.mass = ballRigidbody.mass + 1f;
                 break;
+            case globalSetting.ballMass.ULTRA:
+                ballRigidbody.mass = 0.008f;
+                break;
         }
     }
 

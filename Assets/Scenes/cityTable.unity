@@ -3990,100 +3990,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30e835564a0c5c446b4bf856ef37d5fb, type: 3}
---- !u!1001 &248531889
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1661648112}
-    m_Modifications:
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3162024582759712413, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_Name
-      value: ballRespawn
-      objectReference: {fileID: 0}
-    - target: {fileID: 3387057446301100468, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: blastEffect
-      value: 
-      objectReference: {fileID: 1984797449}
-    - target: {fileID: 3387057446301100468, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: launcherGate
-      value: 
-      objectReference: {fileID: 1851051840}
-    - target: {fileID: 3387057446301100468, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: springLauncher
-      value: 
-      objectReference: {fileID: 1992147011}
-    - target: {fileID: 6492374008812090784, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 6492374008812090784, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.92
-      objectReference: {fileID: 0}
-    - target: {fileID: 7619042227866692139, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 239.33911
-      objectReference: {fileID: 0}
-    - target: {fileID: 7619042227866692139, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.6332
-      objectReference: {fileID: 0}
-    - target: {fileID: 7619042227866692139, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.49
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
---- !u!4 &248531890 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2136743335238530863, guid: 776900657ef2f19478a45c63cd0786be, type: 3}
-  m_PrefabInstance: {fileID: 248531889}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &267161981
 GameObject:
   m_ObjectHideFlags: 0
@@ -23902,6 +23808,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1427695222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1530194853268737636, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
+  m_PrefabInstance: {fileID: 1646712318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428976287
 GameObject:
   m_ObjectHideFlags: 0
@@ -29645,7 +29556,7 @@ Transform:
   - {fileID: 90367325}
   - {fileID: 155888855}
   - {fileID: 1984797453}
-  - {fileID: 248531890}
+  - {fileID: 2136743335484931230}
   - {fileID: 683599485}
   - {fileID: 1358512359}
   - {fileID: 6830770995321644458}
@@ -34868,11 +34779,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!1 &1984797449 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1530194853268737636, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
-  m_PrefabInstance: {fileID: 1274220075}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1984797453 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7541750336218524927, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
@@ -38112,6 +38018,11 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &2136743335484931230 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+  m_PrefabInstance: {fileID: 9008804954660184048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2278779820136331449
 GameObject:
   m_ObjectHideFlags: 0
@@ -39478,6 +39389,319 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowLights: {fileID: 6898829806405563385}
+--- !u!1001 &9008804954660184048
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1661648112}
+    m_Modifications:
+    - target: {fileID: 330160101087370976, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 330160101087370976, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 330160101087370976, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 330160101087370976, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786706495417157601, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067262997008678961, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 2067262997008678961, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 2067262997008678961, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 2067262997008678961, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 2171739654013981852, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 2171739654013981852, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 2171739654013981852, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 2171739654013981852, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 2465388486277093999, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 2465388486277093999, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 2465388486277093999, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 2465388486277093999, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 3049987796374358183, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 3049987796374358183, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 3049987796374358183, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 3049987796374358183, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 3306880349284213043, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 3306880349284213043, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 3306880349284213043, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 3306880349284213043, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 3327944464801833940, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: m_Name
+      value: ballRespawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567015562576112083, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 3567015562576112083, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 3567015562576112083, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 3567015562576112083, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 4992870330045121066, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 4992870330045121066, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 4992870330045121066, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 4992870330045121066, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 5215942661406527829, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 5215942661406527829, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 5215942661406527829, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 5215942661406527829, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 5520585682211141150, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 5520585682211141150, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 5520585682211141150, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 5520585682211141150, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 5528408270021407296, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 5528408270021407296, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 5528408270021407296, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 5528408270021407296, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 6883645053822903843, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 6883645053822903843, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 6883645053822903843, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 6883645053822903843, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 6920512320514456410, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 6920512320514456410, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 6920512320514456410, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 6920512320514456410, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 7037992305588763377, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 7037992305588763377, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 7037992305588763377, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 7037992305588763377, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 8333606833151873139, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 8333606833151873139, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 8333606833151873139, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 8333606833151873139, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 8450504042287426091, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 8450504042287426091, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 1427695222}
+    - target: {fileID: 8450504042287426091, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 8450504042287426091, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

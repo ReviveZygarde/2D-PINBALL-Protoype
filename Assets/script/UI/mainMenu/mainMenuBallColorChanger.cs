@@ -29,6 +29,9 @@ public class mainMenuBallColorChanger : MonoBehaviour
             case globalSetting.ballMass.HEAVY:
                 cc.changeImageColor(2);
                 break;
+            case globalSetting.ballMass.ULTRA:
+                cc.changeImageColor(3);
+                break;
         }
     }
 }

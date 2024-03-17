@@ -25,7 +25,7 @@ public class pinballBehavior : MonoBehaviour
                 ballRigidbody.mass = ballRigidbody.mass + 1f;
                 break;
             case globalSetting.ballMass.ULTRA:
-                ballRigidbody.mass = 0.008f;
+                ballRigidbody.mass = 0.05f;
                 break;
         }
     }

@@ -12,6 +12,7 @@ public class debug_RespawnBall : MonoBehaviour
     [Tooltip("The GameObject to enable/disable once the PlungeGate trigger is touched. " +
         "This is to prevent the ball from re-entering the plunger shaft.")]
     public GameObject launcherGate;
+    private Rigidbody2D ballRigidbody;
     [SerializeField] private GameObject blastEffect;
     public Launcher springLauncher;
     private ModeBehavior common_modeBehavior;
@@ -27,18 +28,37 @@ public class debug_RespawnBall : MonoBehaviour
         common_scoreBehavior = GameObject.Find("common").GetComponent<scoreBehavior>();
         statusText = GameObject.Find("UI_statusText").GetComponent<Text>();
         camShakeBlast = GameObject.Find("camShakeBlast").GetComponent<CinemachineImpulseSource>();
+        ballRigidbody = Pinball.GetComponent<Rigidbody2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject == Pinball)
+        {
+            Sequence();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject == Pinball)
+        {
+            Sequence();
+        }
+    }
+
+    private void Sequence()
+    {
         //Once the pinball goes off the screen it goes back to the spawnpoint.
-        Pinball.SetActive(false);
+        //Pinball.SetActive(false);
         launcherGate.SetActive(false); //Deactivates the Gate so the ball can get back in the big portion of the table.
         StartCoroutine(statusMessageChange());
         common_modeBehavior.consumeBall();
         Pinball.layer = 0; //if the ball was in any other collision layer, it resets back to 0.
         Pinball.transform.position = PinballSpawnpoint.transform.position;
-        Pinball.SetActive(true);
+        //Pinball.SetActive(true);
+        //Disabling then re-enabling the Pinball gave errors, so I have it set to reposition the ball and change its velocity to zero.
+        ballRigidbody.velocity = Vector2.zero;
         springLauncher.isActive = true; // Make the spring launcher usable again.
         camShakeBlast.GenerateImpulse();
         blastEffect.SetActive(false);

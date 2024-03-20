@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: R_HingeJoint Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 9120418649860811797, guid: 836b3e43b0b66ad4dbf10897a8dee532, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a9c9322a98edd824a86c01d72584bec0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

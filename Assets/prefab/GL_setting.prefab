@@ -49,4 +49,4 @@ MonoBehaviour:
   languageType: 0
   buildType: 2
   hasEnteredKonamiCode: 0
-  frameRateLimitTo60FPS: 1
+  frameRateLimitTo60FPS: 0

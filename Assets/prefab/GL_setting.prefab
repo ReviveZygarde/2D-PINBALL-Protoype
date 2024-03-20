@@ -48,3 +48,5 @@ MonoBehaviour:
   ballSetting: 0
   languageType: 0
   buildType: 2
+  hasEnteredKonamiCode: 0
+  frameRateLimitTo60FPS: 1

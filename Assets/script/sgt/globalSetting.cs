@@ -23,4 +23,6 @@ public class globalSetting : Singleton<globalSetting>
     public releaseLevel buildType = releaseLevel.DEVELOP;
 
     public bool hasEnteredKonamiCode;
+
+    public bool frameRateLimitTo60FPS = true;
 }

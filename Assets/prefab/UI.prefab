@@ -336,7 +336,7 @@ MonoBehaviour:
   waitToStartMoving: 0
   rectTransform: {fileID: 0}
   bypassTimescale: 1
-  startDeltaTime: 0.0021761
+  startDeltaTime: 0.0261132
   vec3: {x: 0, y: 0, z: 0}
 --- !u!1 &284072672761865691
 GameObject:
@@ -3792,7 +3792,7 @@ MonoBehaviour:
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
   bypassTimescale: 1
-  startDeltaTime: 0.0021761
+  startDeltaTime: 0.0261132
   vec3: {x: 0, y: 0, z: 0}
 --- !u!1 &4056606433793585036
 GameObject:
@@ -4384,7 +4384,7 @@ MonoBehaviour:
   waitToStartMoving: 0
   rectTransform: {fileID: 0}
   bypassTimescale: 1
-  startDeltaTime: 0.0021761
+  startDeltaTime: 0.0261132
   vec3: {x: 0, y: 0, z: 0}
 --- !u!1 &4654567172928742198
 GameObject:
@@ -8712,7 +8712,7 @@ MonoBehaviour:
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
   bypassTimescale: 1
-  startDeltaTime: 0.0021761
+  startDeltaTime: 0.0261132
   vec3: {x: 0, y: 0, z: 0}
 --- !u!1 &8553917321913515184
 GameObject:

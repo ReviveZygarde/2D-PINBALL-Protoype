@@ -24,5 +24,5 @@ public class globalSetting : Singleton<globalSetting>
 
     public bool hasEnteredKonamiCode;
 
-    public bool frameRateLimitTo60FPS = true;
+    public bool frameRateLimitTo60FPS;
 }

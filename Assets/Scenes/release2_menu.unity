@@ -123,6 +123,102 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8863270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8863271}
+  - component: {fileID: 8863274}
+  - component: {fileID: 8863273}
+  - component: {fileID: 8863272}
+  m_Layer: 5
+  m_Name: table
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8863271
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863270}
+  m_LocalRotation: {x: -0, y: -0, z: 0.000000014901161, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.67569256, y: 0.67569256, z: 0.67569256}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1262451834}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1937, y: 67}
+  m_SizeDelta: {x: 3000.0002, y: 3000.0002}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8863272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d324e6941436bf418d6365e282585bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {fileID: 96615425}
+  isText: 1
+  speedTime: 0.2
+  waitToStartMoving: 0.5
+  rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
+  vec3: {x: 0, y: 0, z: 0}
+--- !u!114 &8863273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 0.41960785}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2331438c60f93b74eb94b95fd5684975, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &8863274
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863270}
+  m_CullTransparentMesh: 1
 --- !u!1 &35242635
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +435,8 @@ MonoBehaviour:
   speedTime: 0.2
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!82 &75326706
 AudioSource:
@@ -510,6 +608,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90872995}
+  m_CullTransparentMesh: 1
+--- !u!1 &96615425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96615426}
+  - component: {fileID: 96615428}
+  - component: {fileID: 96615427}
+  m_Layer: 5
+  m_Name: destination2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &96615426
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96615425}
+  m_LocalRotation: {x: -0, y: -0, z: 0.000000014901161, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.67569256, y: 0.67569256, z: 0.67569256}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1262451834}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -340, y: 67}
+  m_SizeDelta: {x: 3000.0002, y: 3000.0002}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &96615427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96615425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 0.41960785}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2331438c60f93b74eb94b95fd5684975, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &96615428
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96615425}
   m_CullTransparentMesh: 1
 --- !u!1 &97528536
 GameObject:
@@ -701,6 +874,8 @@ MonoBehaviour:
   speedTime: 0.15
   waitToStartMoving: 0.6
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!1 &113102306
 GameObject:
@@ -1024,6 +1199,8 @@ MonoBehaviour:
   speedTime: 0.15
   waitToStartMoving: 0.6
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!82 &140046401
 AudioSource:
@@ -1581,16 +1758,16 @@ MonoBehaviour:
             m_StringArgument: intro_casinoTable
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
+        - m_Target: {fileID: 829468777}
+          m_TargetAssemblyTypeName: debugMasterMenuBehavior, Assembly-CSharp
+          m_MethodName: goToPresetSceneForRelease
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: intro_cityTable
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 4
@@ -1609,16 +1786,16 @@ MonoBehaviour:
             m_StringArgument: intro_casinoTable
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
+        - m_Target: {fileID: 829468777}
+          m_TargetAssemblyTypeName: debugMasterMenuBehavior, Assembly-CSharp
+          m_MethodName: goToPresetSceneForRelease
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: intro_cityTable
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 1
@@ -7385,6 +7562,8 @@ MonoBehaviour:
   speedTime: 0.5
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!114 &408138117
 MonoBehaviour:
@@ -8560,6 +8739,8 @@ MonoBehaviour:
   speedTime: 0.2
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!114 &720052056
 MonoBehaviour:
@@ -9133,6 +9314,8 @@ MonoBehaviour:
   speedTime: 0.5
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!114 &835896200
 MonoBehaviour:
@@ -9431,6 +9614,8 @@ MonoBehaviour:
   speedTime: 0.2
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!114 &870068719
 MonoBehaviour:
@@ -9970,6 +10155,8 @@ MonoBehaviour:
   speedTime: 0.2
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!1 &937559334
 GameObject:
@@ -11327,6 +11514,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 854324014}
+  - {fileID: 96615426}
+  - {fileID: 8863271}
   - {fileID: 870068717}
   - {fileID: 1502091276}
   - {fileID: 1332764106}
@@ -12679,6 +12868,8 @@ MonoBehaviour:
   speedTime: 0.2
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!114 &1459631676
 MonoBehaviour:
@@ -15140,6 +15331,8 @@ MonoBehaviour:
   speedTime: 0.2
   waitToStartMoving: 0.5
   rectTransform: {fileID: 0}
+  bypassTimescale: 0
+  startDeltaTime: 0.0021761
   vec3: {x: 0, y: 0, z: 0}
 --- !u!82 &2082618356
 AudioSource:

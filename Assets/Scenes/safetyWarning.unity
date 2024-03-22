@@ -444,10 +444,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GL_setting
       objectReference: {fileID: 0}
-    - target: {fileID: 6817262183204646920, guid: 3b016d866c2150c4a865291ce6f3313a, type: 3}
-      propertyPath: buildType
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

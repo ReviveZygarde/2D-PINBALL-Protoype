@@ -61,8 +61,9 @@ MonoBehaviour:
   m_Name: tableTemplate
   m_EditorClassIdentifier: 
   templateScene: {fileID: 102900000, guid: 0c6eb2ce80539a3419ac1f8768334bc6, type: 3}
-  templateName: 
-  description: 
+  templateName: Empty Pinball Table
+  description: An empty pinball table, with only the essentials and a pre-made Boss.
+    Pinball and Lower bumpers only, no Upper Bumpers or Holes.
   preview: {fileID: -8750327643943561222}
   dependencies:
   - dependency: {fileID: 2328020909958386119, guid: 3d55fa6d88736494ca1d2c60c487e5fa, type: 3}

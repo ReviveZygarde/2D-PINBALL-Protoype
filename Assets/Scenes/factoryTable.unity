@@ -2538,7 +2538,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -10475,7 +10475,7 @@ Transform:
   m_GameObject: {fileID: 894425326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.56, y: 12.98, z: 1}
+  m_LocalPosition: {x: 3.77, y: 10.46, z: 1}
   m_LocalScale: {x: 1.3932996, y: 1.3932996, z: 1.3932996}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10909,7 +10909,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -11269,7 +11269,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -17225,7 +17225,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -17506,7 +17506,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -25590,7 +25590,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -33807,7 +33807,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -34055,7 +34055,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -54710,11 +54710,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.76
+      value: 5.89
       objectReference: {fileID: 0}
     - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.46
+      value: 12.86
       objectReference: {fileID: 0}
     - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
       propertyPath: m_LocalPosition.z

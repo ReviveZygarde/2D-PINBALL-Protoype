@@ -16443,7 +16443,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9f0e6f2bba0a6c74783d0c4d9ff22ba4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a2611976c9b2fb14998a0735a65e3798, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -17420,13 +17420,14 @@ MonoBehaviour:
     by Eric Matyas soundimage.org\r\n\r\r\nMusic by Cleyton Kauffman - https://soundcloud.com/cleytonkauffman\r\n\r\nTitle
     Screen Music:\r\n\u300CPrecipitating Dolphins\u300D\nby \u307E\u3093\u307C\u3046\u4E8C\u7B49\u5175
     \r\n(DOVA SYNDROME)\r\n\n\rCredits Theme music:\n\u300C\u65E5\u5E38\u30B9\u30D1\u30A4\u30B9
-    -instrumental-\u300D\nioni (DOVA-SYNDROME)\n\r\n\nAUDIO - SOUND EFFECTS\nSounds
-    Resource\n(www.sounds-resource.com)\nSCE SFX Asset Library ver. 0.42\nMixkit
-    Audio Library\n\n\nEXTERNAL ASSETS\nAdobe Stock\nPexels Stock Photo\nRazeWare\nSherbbs
-    Particle Collection\nAndtech Star Pack\n(All asset credits go here)\n\nSPECIAL
-    THANKS\nDavid Antognoli\nTyrus Goshay\nMarc Soehl\nCCC-IAM Department\nPlaytest
-    Planet 2023 Participants\n...and you, the Player.\n\nFonts\n\xA92013, 2019 DynaComware
-    Taiwan, Inc. All Rights Reserved.\n\xA92006 FONTWORKS Japan, Inc."
+    -instrumental-\u300D\nioni (DOVA-SYNDROME)\n\n\u300CCOLLECTION\u300D\nSHUNTA
+    (DOVA-SYNDROME)\n\r\nAUDIO - SOUND EFFECTS\nSounds Resource\n(www.sounds-resource.com)\nSCE
+    SFX Asset Library ver. 0.42\nMixkit Audio Library\n\n\nEXTERNAL ASSETS\nAdobe
+    Stock\nPexels Stock Photo\nRazeWare\nSherbbs Particle Collection\nAndtech Star
+    Pack\n(All asset credits go here)\n\nSPECIAL THANKS\nDavid Antognoli\nTyrus Goshay\nMarc
+    Soehl\nCCC-IAM Department\nPlaytest Planet 2023 Participants\n...and you, the
+    Player.\n\nFonts\n\xA92013, 2019 DynaComware Taiwan, Inc. All Rights Reserved.\n\xA92006
+    FONTWORKS Japan, Inc."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eddb5eab30deae54a8300769d0bb83c8, type: 2}
   m_sharedMaterial: {fileID: 5399153684034095516, guid: eddb5eab30deae54a8300769d0bb83c8, type: 2}

@@ -9470,21 +9470,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1661648112}
     m_Modifications:
-    - target: {fileID: 987879470774652138, guid: 0f1e1175c51c1ea44bc7e830bb8b8b85, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1574760345664003615, guid: 0f1e1175c51c1ea44bc7e830bb8b8b85, type: 3}
       propertyPath: m_Name
       value: alertEffect
-      objectReference: {fileID: 0}
-    - target: {fileID: 5188338358295600134, guid: 0f1e1175c51c1ea44bc7e830bb8b8b85, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6057923394814725263, guid: 0f1e1175c51c1ea44bc7e830bb8b8b85, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8148761426019625360, guid: 0f1e1175c51c1ea44bc7e830bb8b8b85, type: 3}
       propertyPath: m_LocalPosition.x

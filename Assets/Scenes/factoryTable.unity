@@ -2655,7 +2655,7 @@ PrefabInstance:
       objectReference: {fileID: 1123412796}
     - target: {fileID: 4720631735700629072, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
       propertyPath: requirementForBossHole
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5073367209291250109, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
       propertyPath: m_LocalPosition.x

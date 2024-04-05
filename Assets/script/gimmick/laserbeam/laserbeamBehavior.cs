@@ -9,6 +9,7 @@ public class laserbeamBehavior : MonoBehaviour
     private Collider2D col;
     private tableTally tallier;
     public GameObject alertEffect;
+    public GameObject alertUIeffect;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,9 @@ public class laserbeamBehavior : MonoBehaviour
         if(alertEffect != null)
         {
             alertEffect.SetActive(false);
+            alertUIeffect.SetActive(false);
             alertEffect.SetActive(true);
+            alertUIeffect.SetActive(true);
         }
         tallier.criteria_hole3entry++;
         tallier.hole_2_3_rampCheck();

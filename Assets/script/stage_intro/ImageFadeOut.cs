@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class ImageFadeOut : MonoBehaviour
 {
     private Image img;
-    // Start is called before the first frame update
-    void Start()
+
+    void OnEnable()
     {
         img = GetComponent<Image>();
+        img.color = new Color(1, 1, 1, 1);
         StartCoroutine(FadeImage());
     }
 

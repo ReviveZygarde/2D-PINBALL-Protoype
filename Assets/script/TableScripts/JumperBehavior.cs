@@ -46,7 +46,7 @@ public class JumperBehavior : MonoBehaviour
     IEnumerator changeStatusMessage()
     {
         statusText.text = "BUMP BUMP BUMP...";
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         statusText.text = "";
         yield return null;
     }

@@ -41,6 +41,7 @@ public class ModeBehavior : MonoBehaviour
     private commonAudioManager AudioManager;
     private common_interruptEventUImanager modeEndResultsScreen;
     [SerializeField] private GameObject transitionToGameOver;
+    [SerializeField] private string gameOverSceneJump;
 
     /// <summary>
     /// TODO:
@@ -370,7 +371,8 @@ public class ModeBehavior : MonoBehaviour
     IEnumerator transitionToGameOverWait()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("ProtoGameOver");
+        SceneManager.LoadScene(gameOverSceneJump);
+        //SceneManager.LoadScene("ProtoGameOver");
     }
 
     private void checkCrackMode()

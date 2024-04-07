@@ -1927,6 +1927,8 @@ MonoBehaviour:
   timescaleBonus: 0
   multiplierFromScoreComponentOnCalculation: 0
   didPlayerLoseBall: 0
+  transitionToGameOver: {fileID: 0}
+  gameOverSceneJump: ProtoGameOver
 --- !u!114 &4720631735700629072
 MonoBehaviour:
   m_ObjectHideFlags: 0

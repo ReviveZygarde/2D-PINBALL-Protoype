@@ -5592,6 +5592,10 @@ PrefabInstance:
       propertyPath: modeFinishFinalScoreCounter
       value: 
       objectReference: {fileID: 478197134}
+    - target: {fileID: 8643073791273722883, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
+      propertyPath: transitionToGameOver
+      value: 
+      objectReference: {fileID: 890859189}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16113,6 +16117,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+--- !u!1 &890859189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5560021410991877105, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+  m_PrefabInstance: {fileID: 890859188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &891102379
 GameObject:
   m_ObjectHideFlags: 0

@@ -40,6 +40,7 @@ public class ModeBehavior : MonoBehaviour
     //et cetera...
     private commonAudioManager AudioManager;
     private common_interruptEventUImanager modeEndResultsScreen;
+    [SerializeField] private GameObject transitionToGameOver;
 
     /// <summary>
     /// TODO:
@@ -349,7 +350,9 @@ public class ModeBehavior : MonoBehaviour
                     if(scoreComponent.ballsLeft <= 0)
                     {
                         Debug.Log($"Score: {scoreComponent.pl_score}. Show game over screen.");
-                        SceneManager.LoadScene("ProtoGameOver");
+                        AudioManager.stageBGM.Stop();
+                        transitionToGameOver.SetActive(true);
+                        StartCoroutine(transitionToGameOverWait());
                     }
                     else
                     {
@@ -362,6 +365,12 @@ public class ModeBehavior : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    IEnumerator transitionToGameOverWait()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("ProtoGameOver");
     }
 
     private void checkCrackMode()

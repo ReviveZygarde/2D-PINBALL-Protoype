@@ -1025,6 +1025,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8346664107405524757, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
   m_PrefabInstance: {fileID: 261040899}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &261040903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5560021410991877105, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+  m_PrefabInstance: {fileID: 261040899}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &263163175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8930,6 +8935,10 @@ PrefabInstance:
       propertyPath: modeFinishFinalScoreCounter
       value: 
       objectReference: {fileID: 860138383}
+    - target: {fileID: 8643073791273722883, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
+      propertyPath: transitionToGameOver
+      value: 
+      objectReference: {fileID: 261040903}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

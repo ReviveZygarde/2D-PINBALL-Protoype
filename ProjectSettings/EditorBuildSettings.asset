@@ -53,4 +53,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/template/Template.unity
     guid: 0c6eb2ce80539a3419ac1f8768334bc6
+  - enabled: 1
+    path: Assets/extraGame_AKB/Anklebreaker Assets/Scenes/andrewp_testing/Scene_AutumnFoutain_ap_testing_granny_competitive.unity
+    guid: eccfe00fa7a243048886004220f3dd58
+  - enabled: 1
+    path: Assets/extraGame_AKB/extraGameEnd.unity
+    guid: ceaeed28ea92997468c75ed93273c2fa
   m_configObjects: {}

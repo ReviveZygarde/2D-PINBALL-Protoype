@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+namespace extraGame_AKB
+{
+using UnityEngine;
 
 public class BasicRigidBodyPush : MonoBehaviour
 {
@@ -33,3 +35,5 @@ public class BasicRigidBodyPush : MonoBehaviour
 		body.AddForce(pushDir * strength, ForceMode.Impulse);
 	}
 }
+}
+

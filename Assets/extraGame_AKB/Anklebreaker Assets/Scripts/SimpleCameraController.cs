@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -290,3 +292,6 @@ namespace UnityTemplateProjects
         }
     }
 }
+
+}
+

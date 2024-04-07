@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,3 +24,6 @@ public class Billboarding : MonoBehaviour
         transform.rotation = Quaternion.Euler(staticXrotation, gameObject.transform.rotation.eulerAngles.y, staticZrotation);
     }
 }
+
+}
+

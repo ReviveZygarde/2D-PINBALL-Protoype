@@ -4,9 +4,6 @@ using UnityEngine;
 /// Singleton C# Script created by Marc Temkin of
 /// Columbia College Chicago.
 ///----------------------------------------------
-
-namespace Assets.Scripts
-{
     public class  Singleton<T> : 
         MonoBehaviour where T : Component {
         
@@ -53,4 +50,3 @@ namespace Assets.Scripts
             }
         }
     }
-}

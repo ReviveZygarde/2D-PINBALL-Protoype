@@ -1,4 +1,6 @@
-﻿using System.IO;
+namespace extraGame_AKB
+{
+using System.IO;
 using System.Linq;
 using System.Text;
 using UnityEditor;
@@ -102,3 +104,5 @@ namespace StarterAssets
 #endif
     }
 }
+}
+

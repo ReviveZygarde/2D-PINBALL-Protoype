@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using Microsoft.Win32;
 using System.Collections;
 using System.Collections.Generic;
@@ -86,3 +88,6 @@ public class SettingsMenu : MonoBehaviour
     }
     
 }
+
+}
+

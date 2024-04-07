@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -61,3 +63,6 @@ public class background_sounds : MonoBehaviour
         background_sound_source.Play();
     }
 }
+
+}
+

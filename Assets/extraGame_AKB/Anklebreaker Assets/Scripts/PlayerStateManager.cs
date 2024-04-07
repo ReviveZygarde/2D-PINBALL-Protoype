@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
@@ -394,3 +396,6 @@ public partial class PlayerStateManager : MonoBehaviour
     #endregion
 
 }
+
+}
+

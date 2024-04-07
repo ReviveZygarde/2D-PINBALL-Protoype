@@ -1,4 +1,6 @@
-﻿using System.Collections;
+namespace extraGame_AKB
+{
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
@@ -300,3 +302,5 @@ public class ThirdPersonController : MonoBehaviour
         }
     }
 }
+}
+

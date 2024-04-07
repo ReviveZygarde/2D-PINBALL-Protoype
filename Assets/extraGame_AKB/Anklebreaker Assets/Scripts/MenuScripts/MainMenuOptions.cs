@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -115,3 +117,6 @@ public class MainMenuOptions : MonoBehaviour
         }
     }
 }
+
+}
+

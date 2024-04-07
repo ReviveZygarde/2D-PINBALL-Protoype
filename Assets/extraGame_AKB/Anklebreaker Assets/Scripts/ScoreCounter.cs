@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
@@ -42,3 +44,6 @@ public class ScoreCounter : MonoBehaviour
 
     }
 }
+
+}
+

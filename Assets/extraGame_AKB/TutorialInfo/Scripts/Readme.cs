@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System;
 using UnityEngine;
 
@@ -14,3 +16,6 @@ public class Readme : ScriptableObject
         public string heading, text, linkText, url;
     }
 }
+
+}
+

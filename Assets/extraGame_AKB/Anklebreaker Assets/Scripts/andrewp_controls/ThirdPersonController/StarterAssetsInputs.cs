@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
@@ -91,3 +93,5 @@ using UnityEngine.InputSystem;
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
 	}
+}
+

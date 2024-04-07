@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,3 +26,6 @@ public partial class PlayerStateManager
         Vector2 TrickVector = value.Get<Vector2>();
     }
 }
+
+}
+

@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -148,3 +150,6 @@ public class Made_up_person : Stat_Dict
         
     }
 }
+
+}
+

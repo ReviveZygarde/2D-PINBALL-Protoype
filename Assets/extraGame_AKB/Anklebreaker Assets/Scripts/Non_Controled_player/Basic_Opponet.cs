@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -59,3 +61,6 @@ public class Basic_Opponet : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, rotator, turn_speed * Time.deltaTime);
     }
 }
+
+}
+

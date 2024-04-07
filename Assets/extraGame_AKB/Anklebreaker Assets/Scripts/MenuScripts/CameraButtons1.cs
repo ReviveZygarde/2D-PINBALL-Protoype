@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -58,3 +60,5 @@ public class CameraButtons1 : MonoBehaviour
         camera1_move_enabled = true;
     }
 }
+}
+

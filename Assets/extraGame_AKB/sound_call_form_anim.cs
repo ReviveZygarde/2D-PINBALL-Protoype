@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,3 +43,6 @@ public class sound_call_form_anim : StateMachineBehaviour
     //    // Implement code that sets up animation IK (inverse kinematics)
     //}
 }
+
+}
+

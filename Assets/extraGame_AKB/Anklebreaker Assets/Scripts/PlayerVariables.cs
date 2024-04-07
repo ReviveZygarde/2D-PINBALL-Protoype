@@ -1,3 +1,5 @@
+namespace extraGame_AKB
+{
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,3 +27,6 @@ public partial class PlayerStateManager
 
     private Vector3 _gravityVector;
 }
+
+}
+

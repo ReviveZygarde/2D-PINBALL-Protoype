@@ -12,10 +12,12 @@ public class nameEntryBehavior : MonoBehaviour
     public GameObject transitionToBonusGameObject;
     private debugMasterMenuBehavior debugMasterMenuBehavior;
     [SerializeField] private List<AudioSource> jingles;
+    [SerializeField] private TMP_InputField textToCapitalize;
 
     // Start is called before the first frame update
     void Start()
     {
+        textToCapitalize = GameObject.Find("nameInputField").GetComponent<TMP_InputField>();
         gl_scorekeep = globalScorekeep.Instance.GetComponent<globalScorekeep>();
         debugMasterMenuBehavior = GetComponent<debugMasterMenuBehavior>();
     }
@@ -23,75 +25,48 @@ public class nameEntryBehavior : MonoBehaviour
     public void registerName(TMP_InputField inputtedText)
     {
         //gl_scorekeep.names[gl_scorekeep.placeBeaten] = inputtedText.text;
+        if(inputtedText.text.Equals("") || inputtedText.text.Equals(" ") || inputtedText.text.Equals("  ") || inputtedText.text.Equals("   "))
+        {
+            Debug.Log("Empty name or name only consists of spaces.");
+            return;
+        }
+        GameObject.Find("BGM").GetComponent<AudioSource>().Stop();
         gl_scorekeep.names.Insert(gl_scorekeep.placeBeaten, inputtedText.text);
         checkBonusEligible(inputtedText);
-        gl_scorekeep.placeBeaten = 0;
-        gl_scorekeep.hasReachedHighScore = false;
+        GameObject.Find("EventSystem").SetActive(false); //Disable event system so the player doesn't spam the entry.
     }
 
     public void checkBonusEligible(TMP_InputField inputtedText)
     {
         if (inputtedText.text.Equals("AKB"))
         {
-            transitionToBonusGameObject.SetActive(true);
+            transitionToBonusGameObject.SetActive(true); //Start the transition to the bonus game (Anklebreaker).
         }
         else
         {
-            if (inputtedText.text.Equals("BIL"))
+            foreach (AudioSource jingle in jingles)
             {
-                jingles[0].Play();
-            }
-            if (inputtedText.text.Equals("CHU"))
-            {
-                jingles[1].Play();
-            }
-            if (inputtedText.text.Equals("CRZ"))
-            {
-                jingles[2].Play();
-            }
-            if (inputtedText.text.Equals("MKB"))
-            {
-                jingles[3].Play();
-            }
-            if (inputtedText.text.Equals("NGT"))
-            {
-                jingles[4].Play();
-            }
-            if (inputtedText.text.Equals("SC5"))
-            {
-                jingles[5].Play();
-            }
-            if (inputtedText.text.Equals("SMB"))
-            {
-                jingles[6].Play();
-            }
-            if (inputtedText.text.Equals("HO"))
-            {
-                jingles[7].Play();
-            }
-            if (inputtedText.text.Equals("SHO"))
-            {
-                jingles[8].Play();
-            }
-            if (inputtedText.text.Equals("SA2"))
-            {
-                jingles[9].Play();
-            }
-            if (inputtedText.text.Equals("SA3"))
-            {
-                jingles[10].Play();
-            }
-            if (inputtedText.text.Equals("RR4"))
-            {
-                jingles[11].Play();
+                if (inputtedText.text.Equals(jingle.name)) //if the inputted name matches the GameObject name of
+                                                           //the AudioSource, play that AudioSource that has the matching name.
+                {
+                    jingle.Play();
+                }
             }
             StartCoroutine(transitionToRankings());
         }
+        //Reset the GL_scorekeeping values.
+        gl_scorekeep.placeBeaten = 0;
+        gl_scorekeep.hasReachedHighScore = false;
     }
 
     IEnumerator transitionToRankings()
     {
         yield return new WaitForSeconds(5);
         debugMasterMenuBehavior.goToPresetSceneForRelease("ap_newtitle");
+    }
+
+    void Update()
+    {
+        textToCapitalize.text = textToCapitalize.text.ToUpper();
     }
 }

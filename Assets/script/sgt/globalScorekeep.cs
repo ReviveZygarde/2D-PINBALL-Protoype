@@ -29,14 +29,17 @@ public class globalScorekeep : Singleton<globalScorekeep>
             }
             if (gl_score.global_pl_score > scores[currentSpot])
             {
-                scores.Add(gl_score.global_pl_score);
+                //scores.Add(gl_score.global_pl_score);
                 placeBeaten = currentSpot;
+                scores.Insert(placeBeaten, gl_score.global_pl_score);
                 hasReachedHighScore = true;
                 break;
             }
             currentSpot++;
         }
-        scores.Sort();
-        scores.Reverse();
+        //Sorts the list, then reverses it to show index 0 at the top, then the 8th place at the bottom
+        //EDIT: never mind, how come I didnt see scores.Insert()? lol.
+        //scores.Sort();
+        //scores.Reverse();
     }
 }

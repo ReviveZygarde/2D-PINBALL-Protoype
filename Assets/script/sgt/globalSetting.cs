@@ -21,9 +21,11 @@ public class globalSetting : Singleton<globalSetting>
     {RELEASE, DEMO, DEVELOP}
     public releaseLevel buildType = releaseLevel.DEVELOP;
 
+    /*
     public enum stagePlaying
     { CASINO, CITY, FACTORY, NONE}
     public stagePlaying currentStage = stagePlaying.NONE;
+    */
 
     public bool hasEnteredKonamiCode;
 

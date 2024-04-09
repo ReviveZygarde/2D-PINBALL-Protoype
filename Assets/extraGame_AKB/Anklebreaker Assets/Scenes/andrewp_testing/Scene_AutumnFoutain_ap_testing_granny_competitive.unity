@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1502740477}
-  m_IndirectSpecularColor: {r: 0.7159583, g: 0.79578096, b: 0.7836513, a: 1}
+  m_IndirectSpecularColor: {r: 0.45122087, g: 0.49995506, b: 0.56825876, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16380,23 +16380,23 @@ AudioSource:
   m_GameObject: {fileID: 627188944}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -7666186201953227568, guid: 26def0460289b1541a779766c11e0813, type: 2}
-  m_audioClip: {fileID: 8300000, guid: f2c3971f076105d44ad8020c9d0f03c2, type: 3}
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e9ec3c8f7da0a0942939296a019fbfb7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.259
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 165
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 0
   MaxDistance: 10
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
-  BypassListenerEffects: 0
+  BypassListenerEffects: 1
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -16499,7 +16499,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -16529,7 +16529,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

@@ -44,3 +44,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2257971ee6ee75441b91b540820471bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  placeBeaten: 0
+  hasReachedHighScore: 0
+  names:
+  - A.P
+  - EDN
+  - RFK
+  - KEA
+  - L.D
+  - DAR
+  - WAR
+  - AKB
+  scores: 80969800404b4c00c0c62d0040420f0020a10700e0930400400d0300a0860100

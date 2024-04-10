@@ -10,7 +10,7 @@ public class ImageFadeOut : MonoBehaviour
     void OnEnable()
     {
         img = GetComponent<Image>();
-        img.color = new Color(1, 1, 1, 1);
+        //img.color = new Color(1, 1, 1, 1);
         StartCoroutine(FadeImage());
     }
 
@@ -21,7 +21,7 @@ public class ImageFadeOut : MonoBehaviour
         for (float i = 1; i >= 0; i -= Time.deltaTime)
         {
             // set color with i as alpha
-            img.color = new Color(1, 1, 1, i);
+            img.color = new Color(img.color.r, img.color.g, img.color.b, i);
             yield return null;
         }
     }

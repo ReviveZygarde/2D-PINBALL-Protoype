@@ -27,7 +27,10 @@ public class blackBars_gotoZero : MonoBehaviour
         //startDeltaTime = Time.deltaTime;
         StartCoroutine(waitToStart());
         rectTransform = GetComponent<RectTransform>();
-        vec3 = rectTransform.localPosition;
+        if(rectTransform != null)
+        {
+            vec3 = rectTransform.localPosition;
+        }
     }
 
     private void OnEnable()

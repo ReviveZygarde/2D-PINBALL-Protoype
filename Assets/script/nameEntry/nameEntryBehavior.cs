@@ -13,6 +13,8 @@ public class nameEntryBehavior : MonoBehaviour
     private debugMasterMenuBehavior debugMasterMenuBehavior;
     [SerializeField] private List<AudioSource> jingles;
     [SerializeField] private TMP_InputField textToCapitalize;
+    private disableThenEnable characterFadeOutSequence;
+    [SerializeField] private GameObject leaderboardParent;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class nameEntryBehavior : MonoBehaviour
         textToCapitalize = GameObject.Find("nameInputField").GetComponent<TMP_InputField>();
         gl_scorekeep = globalScorekeep.Instance.GetComponent<globalScorekeep>();
         debugMasterMenuBehavior = GetComponent<debugMasterMenuBehavior>();
+        characterFadeOutSequence = GetComponent<disableThenEnable>();
     }
 
     public void registerName(TMP_InputField inputtedText)
@@ -34,6 +37,7 @@ public class nameEntryBehavior : MonoBehaviour
         gl_scorekeep.names.Insert(gl_scorekeep.placeBeaten, inputtedText.text);
         checkBonusEligible(inputtedText);
         GameObject.Find("EventSystem").SetActive(false); //Disable event system so the player doesn't spam the entry.
+        characterFadeOutSequence.disableDesiredObject();
     }
 
     public void checkBonusEligible(TMP_InputField inputtedText)
@@ -44,6 +48,7 @@ public class nameEntryBehavior : MonoBehaviour
         }
         else
         {
+            leaderboardParent.SetActive(true); //leaderboard rankings fly in
             foreach (AudioSource jingle in jingles)
             {
                 if (inputtedText.text.Equals(jingle.name)) //if the inputted name matches the GameObject name of
@@ -62,6 +67,7 @@ public class nameEntryBehavior : MonoBehaviour
     IEnumerator transitionToRankings()
     {
         yield return new WaitForSeconds(5);
+        //TODO: change this to the Thanks for Playing scene.
         debugMasterMenuBehavior.goToPresetSceneForRelease("ap_newtitle");
     }
 

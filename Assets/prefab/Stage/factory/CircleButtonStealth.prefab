@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5359921864015258535
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1242900957089516599, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c99a7c8d974efe2438786626c11cf07b, type: 3}
+    - target: {fileID: 1967006345156211495, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5230284
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197770854456016177, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.45151523
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197770854456016177, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.45151523
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197770854456016177, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.45151523
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044274134299673215, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 95a541b48f1e209459d8d32153b91af6, type: 3}
+    - target: {fileID: 7497014875726894704, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9242c62254a2cbc46920bfb524e396b9, type: 3}
+    - target: {fileID: 8587474210528633144, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.43854773
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587474210528633144, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.43854773
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587474210528633144, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.43854773
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587474210528633144, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587474210528633144, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587474210528633144, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587474210528633144, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587474210528633144, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070757678213825656, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      propertyPath: m_Name
+      value: CircleButtonStealth
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9070757678213825656, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7549968855136247382}
+  m_SourcePrefab: {fileID: 100100000, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+--- !u!1 &4000193198641096671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9070757678213825656, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
+  m_PrefabInstance: {fileID: 5359921864015258535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7549968855136247382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000193198641096671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2fe208668f3ff844bb19a9bbf033d2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splineAnimators:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  waitTimer: 10
+  uiOverheadText: {fileID: 0}
+  laserBeam: {fileID: 0}

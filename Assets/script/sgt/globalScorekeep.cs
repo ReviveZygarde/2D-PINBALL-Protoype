@@ -16,7 +16,7 @@ public class globalScorekeep : Singleton<globalScorekeep>
         gl_score = globalScoreBehavior.Instance.GetComponent<globalScoreBehavior>();
     }
 
-    public void compareScores()
+    public void compareScores() //simply compares the int of globalScoreBehavior with those in the Scores list here.
     {
         int currentSpot = 0;
 
@@ -27,11 +27,11 @@ public class globalScorekeep : Singleton<globalScorekeep>
                 hasReachedHighScore = false;
                 break;
             }
-            if (gl_score.global_pl_score > scores[currentSpot])
+            if (gl_score.global_pl_score >= scores[currentSpot])
             {
                 //scores.Add(gl_score.global_pl_score);
                 placeBeaten = currentSpot;
-                scores.Insert(placeBeaten, gl_score.global_pl_score);
+                scores.Insert(placeBeaten, gl_score.global_pl_score); //insert the score at the place it beat.
                 hasReachedHighScore = true;
                 break;
             }
@@ -41,5 +41,20 @@ public class globalScorekeep : Singleton<globalScorekeep>
         //EDIT: never mind, how come I didnt see scores.Insert()? lol.
         //scores.Sort();
         //scores.Reverse();
+    }
+
+    public void truncateNamesAndScoresList()
+    {
+        //This is to conserve memory and prevent the
+        //memory/RAM filling up if the game is playing
+        //for a REALLY long time. So what this does is
+        //simply removing the name and score that is at
+        //the very last place (so technically a hidden
+        //"9th" place that isn't shown to the player)
+        if(names.Count >= 8 && scores.Count >= 8)
+        {
+            names.RemoveAt(8);
+            scores.RemoveAt(8);
+        }
     }
 }

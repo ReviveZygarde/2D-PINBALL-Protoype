@@ -62,6 +62,7 @@ public class nameEntryBehavior : MonoBehaviour
         //Reset the GL_scorekeeping values.
         gl_scorekeep.placeBeaten = 0;
         gl_scorekeep.hasReachedHighScore = false;
+        gl_scorekeep.truncateNamesAndScoresList();
     }
 
     IEnumerator transitionToRankings()
@@ -73,6 +74,7 @@ public class nameEntryBehavior : MonoBehaviour
 
     void Update()
     {
+        //forces CAPS LOCK to the player input
         textToCapitalize.text = textToCapitalize.text.ToUpper();
     }
 }

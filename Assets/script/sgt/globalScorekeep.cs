@@ -51,10 +51,10 @@ public class globalScorekeep : Singleton<globalScorekeep>
         //simply removing the name and score that is at
         //the very last place (so technically a hidden
         //"9th" place that isn't shown to the player)
-        if(names.Count >= 8 && scores.Count >= 8)
+        if (names.Count > 8 && scores.Count > 8)
         {
-            names.RemoveAt(8);
-            scores.RemoveAt(8);
+            names.RemoveAt(names.Count - 1);
+            scores.RemoveAt(scores.Count - 1);
         }
     }
 }

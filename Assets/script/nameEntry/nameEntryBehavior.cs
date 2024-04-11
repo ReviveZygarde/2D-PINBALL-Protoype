@@ -68,7 +68,7 @@ public class nameEntryBehavior : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         //TODO: change this to the Thanks for Playing scene.
-        debugMasterMenuBehavior.goToPresetSceneForRelease("ap_newtitle");
+        debugMasterMenuBehavior.goToPresetSceneForRelease("ending_demo");
     }
 
     void Update()

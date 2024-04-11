@@ -22,5 +22,6 @@ public class textFadeOutEffect : MonoBehaviour
             textObject.color = new Color(textObject.color.r, textObject.color.g, textObject.color.b, i);
             yield return null;
         }
+        this.gameObject.SetActive(false);
     }
 }

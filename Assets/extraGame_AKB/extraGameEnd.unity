@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectTransition: {fileID: 562023950}
-  sceneJump: ap_newtitle
+  sceneJump: rankings
 --- !u!1 &402042513
 GameObject:
   m_ObjectHideFlags: 0

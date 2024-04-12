@@ -587,7 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pl_input: {fileID: 1484756226}
   startButtonText: {fileID: 693033265}
-  sceneToExitTo: 3
+  sceneToExitTo: 9
 --- !u!1 &1539276759
 GameObject:
   m_ObjectHideFlags: 0

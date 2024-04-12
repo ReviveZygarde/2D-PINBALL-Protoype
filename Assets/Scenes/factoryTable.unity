@@ -3299,6 +3299,11 @@ SpriteShapeRenderer:
     m_Center: {x: -0.17256784, y: -3.2534318, z: 0}
     m_Extent: {x: 5.7861443, y: 4.8461833, z: 0}
   m_SpriteSortPoint: 0
+--- !u!1 &372530962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017566119958523882, guid: 7ecce5c4671c45f499f1870467996d27, type: 3}
+  m_PrefabInstance: {fileID: 9008804954660184048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &391364692
 GameObject:
   m_ObjectHideFlags: 0
@@ -35515,6 +35520,22 @@ PrefabInstance:
       propertyPath: common_modeBehavior
       value: 
       objectReference: {fileID: 1295908016}
+    - target: {fileID: 956539772365303940, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+      propertyPath: statusText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 956539772365303940, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+      propertyPath: launcherGate
+      value: 
+      objectReference: {fileID: 1851051840}
+    - target: {fileID: 956539772365303940, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+      propertyPath: springLauncher
+      value: 
+      objectReference: {fileID: 1992147011}
+    - target: {fileID: 956539772365303940, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+      propertyPath: PinballSpawnpoint
+      value: 
+      objectReference: {fileID: 372530962}
     - target: {fileID: 4024266906184777417, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.57

@@ -57,4 +57,20 @@ public class globalScorekeep : Singleton<globalScorekeep>
             scores.RemoveAt(scores.Count - 1);
         }
     }
+
+    public void clearRecords()
+    {
+        if(scores == null && names == null)
+        {
+            scores = new List<int>();
+            names = new List<string>();
+        }
+        names.Clear();
+        scores.Clear();
+        for(int i = 0; i < 8; i++)
+        {
+            names.Add("---");
+            scores.Add(0);
+        }
+    }
 }

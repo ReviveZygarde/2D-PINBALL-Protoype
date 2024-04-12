@@ -128,10 +128,4 @@ public class debugMasterMenuBehavior : MonoBehaviour
     {
         Debug.Log(string.Join("\n", Gamepad.all));
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

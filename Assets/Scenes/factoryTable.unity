@@ -575,6 +575,7 @@ Transform:
   m_Children:
   - {fileID: 1595751646}
   - {fileID: 1847413938}
+  - {fileID: 405762528}
   m_Father: {fileID: 1661648112}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &58613902
@@ -1263,6 +1264,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eade25e74ec6ea478f8d17999d84dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &134436062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5268374584746313211, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+  m_PrefabInstance: {fileID: 1462156186124170191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &138156970
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,6 +3353,16 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 5217222788800665582, guid: 0914e9a846ae9574480a0b09c8348ac0, type: 3}
   m_PrefabInstance: {fileID: 319097049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &405762526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1876608597678122732, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+  m_PrefabInstance: {fileID: 8171883999440956418}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &405762528 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+  m_PrefabInstance: {fileID: 8171883999440956418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &458695608 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6802136311937697248, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
@@ -4870,6 +4886,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: CircleButtonStealth
       objectReference: {fileID: 0}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: laserBeam
+      value: 
+      objectReference: {fileID: 1595751642}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: uiOverheadText
+      value: 
+      objectReference: {fileID: 462801164}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: bossTriggerArea
+      value: 
+      objectReference: {fileID: 134436062}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: PinballLockonToDisable
+      value: 
+      objectReference: {fileID: 7433685420940236105}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: bossAppearance.Array.data[0]
+      value: 
+      objectReference: {fileID: 1229112142}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: bossAppearance.Array.data[1]
+      value: 
+      objectReference: {fileID: 2028466348}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: splineAnimators.Array.data[0]
+      value: 
+      objectReference: {fileID: 1037016854852928303}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: splineAnimators.Array.data[1]
+      value: 
+      objectReference: {fileID: 1752038002}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: splineAnimators.Array.data[2]
+      value: 
+      objectReference: {fileID: 1879820925}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: splineAnimators.Array.data[3]
+      value: 
+      objectReference: {fileID: 1996364386}
     - target: {fileID: 8063763093087399926, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.96
@@ -10452,47 +10508,52 @@ PrefabInstance:
       objectReference: {fileID: 1341231113}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: hints.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: hints.Array.data[0]
-      value: Timing is key! Look for openings as the bumpers move around.
+      value: When the Boss's prongs are open, you can't hit it. You must disarm it
+        by hitting the red switches.
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
       propertyPath: hints.Array.data[1]
+      value: Timing is key! Look for openings as the bumpers move around.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
+      propertyPath: hints.Array.data[2]
       value: As bumpers intersect while moving, the ball ricocheting may get faster
         than usual due to where the Bumpers are located.
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-      propertyPath: hints.Array.data[2]
+      propertyPath: hints.Array.data[3]
       value: If you trip the laser too many times, you will summon the Boss.
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-      propertyPath: hints.Array.data[3]
+      propertyPath: hints.Array.data[4]
       value: Try shaking the table left or right to precisely get the ball into the
         Ramps and Holes.
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-      propertyPath: hints.Array.data[4]
+      propertyPath: hints.Array.data[5]
       value: During RHYTHM Mode, you can still move flippers to the beat of the song
         even if the ball isn't near them.
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-      propertyPath: hints.Array.data[5]
+      propertyPath: hints.Array.data[6]
       value: During BOSS Mode, keep hitting the boss until it glows yellow. That
         means you're about to win.
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-      propertyPath: hints.Array.data[6]
+      propertyPath: hints.Array.data[7]
       value: If you see the ball get stuck, try shaking the table.
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-      propertyPath: hints.Array.data[7]
+      propertyPath: hints.Array.data[8]
       value: During RUSH Mode, the more you enter the Ramps, the higher the bonus
         and faster time elapses.
       objectReference: {fileID: 0}
     - target: {fileID: 5092587012509584852, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
-      propertyPath: hints.Array.data[8]
+      propertyPath: hints.Array.data[9]
       value: The NORTH Buttons will toggle the hints ON and OFF.
       objectReference: {fileID: 0}
     - target: {fileID: 5741213803006924982, guid: bf6cf6e65457bf54aaa6bfaad370aeb7, type: 3}
@@ -17053,7 +17114,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -18010,6 +18071,11 @@ SpriteShapeRenderer:
     m_Center: {x: 2.458158, y: 3.7602606, z: 0}
     m_Extent: {x: 5.508676, y: 7.6570883, z: 0}
   m_SpriteSortPoint: 0
+--- !u!1 &1229112142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963129186947344900, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+  m_PrefabInstance: {fileID: 1462156186124170191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1240605878
 GameObject:
   m_ObjectHideFlags: 0
@@ -34214,6 +34280,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2028466348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4729167517777492633, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+  m_PrefabInstance: {fileID: 1462156186124170191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2030194242
 GameObject:
   m_ObjectHideFlags: 0
@@ -35525,6 +35596,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 462801164}
     - target: {fileID: 956539772365303940, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+      propertyPath: blastEffect
+      value: 
+      objectReference: {fileID: 405762526}
+    - target: {fileID: 956539772365303940, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
       propertyPath: launcherGate
       value: 
       objectReference: {fileID: 1851051840}
@@ -35580,12 +35655,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: bossEntity
       objectReference: {fileID: 0}
+    - target: {fileID: 6869878829379164702, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 90367325}
     - target: {fileID: 8980038185591303561, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
       propertyPath: m_Target
       value: 
       objectReference: {fileID: 1358512360}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1014347529467039639, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
@@ -35740,6 +35820,22 @@ PrefabInstance:
       propertyPath: uiOverheadText
       value: 
       objectReference: {fileID: 462801164}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: bossTriggerArea
+      value: 
+      objectReference: {fileID: 134436062}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: PinballLockonToDisable
+      value: 
+      objectReference: {fileID: 7433685420940236105}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: bossAppearance.Array.data[0]
+      value: 
+      objectReference: {fileID: 1229112142}
+    - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
+      propertyPath: bossAppearance.Array.data[1]
+      value: 
+      objectReference: {fileID: 2028466348}
     - target: {fileID: 7549968855136247382, guid: 1bc07c88d2984c04bbe51e018577bb98, type: 3}
       propertyPath: splineAnimators.Array.data[0]
       value: 
@@ -55872,6 +55968,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5766772636844634545, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
   m_PrefabInstance: {fileID: 1462156186124170191}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7433685420940236105 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6869878829379164702, guid: f8e3776f6ab63a047ab4caa928a55b39, type: 3}
+  m_PrefabInstance: {fileID: 1462156186124170191}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7433685420940236099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c6e8af717a5f242818a17b6a9b805f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8058101201437037126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55965,6 +56072,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce740f58e1d62f046ada1700f2001b93, type: 3}
+--- !u!1001 &8171883999440956418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 13567423}
+    m_Modifications:
+    - target: {fileID: 1876608597678122732, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_Name
+      value: ballKillExplosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035125634594326530, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020991130534387642, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 6830770995321644458}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b40ba5af2c2056c4eb61b396dade0ff7, type: 3}
 --- !u!1001 &8566865877632814574
 PrefabInstance:
   m_ObjectHideFlags: 0

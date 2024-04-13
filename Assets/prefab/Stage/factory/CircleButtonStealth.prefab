@@ -18,11 +18,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.273
+      value: 6.96
       objectReference: {fileID: 0}
     - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.38
+      value: 15.95
       objectReference: {fileID: 0}
     - target: {fileID: 2705107870765780049, guid: 154c14ffba684ef4d885d8843a7736f0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -145,3 +145,8 @@ MonoBehaviour:
   waitTimer: 10
   uiOverheadText: {fileID: 0}
   laserBeam: {fileID: 0}
+  PinballLockonToDisable: {fileID: 0}
+  bossTriggerArea: {fileID: 0}
+  bossAppearance:
+  - {fileID: 0}
+  - {fileID: 0}

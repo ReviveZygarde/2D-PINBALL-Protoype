@@ -17428,8 +17428,9 @@ MonoBehaviour:
     Star Pack\n(All asset credits go here)\n\nPROJECT ANKLEBREAKER\nRashad Patterson\nHerbert
     Chillis\n\nSPECIAL THANKS\nDavid Antognoli\nTyrus Goshay\nMarc Soehl\nCCC-IAM
     Department\nPlaytest Planet 2023 Participants\nIllinois Institute of Technology
-    IGDA\n...and you, the Player.\n\nFonts\n\xA92013, 2019 DynaComware Taiwan, Inc.
-    All Rights Reserved.\n\xA92006 FONTWORKS Japan, Inc."
+    IGDA\n...and you, the Player.\n\nFonts\nDIGITAL-7: Sizenko Alexander\n\xA92013,
+    2019 DynaComware Taiwan, Inc. All Rights Reserved.\n\xA92006 FONTWORKS Japan,
+    Inc."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eddb5eab30deae54a8300769d0bb83c8, type: 2}
   m_sharedMaterial: {fileID: 5399153684034095516, guid: eddb5eab30deae54a8300769d0bb83c8, type: 2}

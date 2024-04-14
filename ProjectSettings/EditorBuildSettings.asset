@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/intro/intro_cityTable.unity
     guid: 4a673855278d06243a956dee90947185
   - enabled: 1
+    path: Assets/Scenes/intro/intro_factoryTable.unity
+    guid: 1f762ce394766e5448de57bff8ea2ce5
+  - enabled: 1
     path: Assets/Scenes/factoryTable.unity
     guid: eda8d0a1588718445b0209a4b867b173
   - enabled: 1

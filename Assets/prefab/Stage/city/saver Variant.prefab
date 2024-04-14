@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 4171863017572220105, guid: 205d393039a97934780e53ff7b49137f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4189744429367100458, guid: 205d393039a97934780e53ff7b49137f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -87,6 +91,10 @@ PrefabInstance:
     - target: {fileID: 7697350463550120827, guid: 205d393039a97934780e53ff7b49137f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8320023211687149609, guid: 205d393039a97934780e53ff7b49137f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8830786773120666112, guid: 205d393039a97934780e53ff7b49137f, type: 3}
       propertyPath: m_Name

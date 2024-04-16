@@ -34,8 +34,8 @@ public partial class PlayerStateManager : MonoBehaviour
     public GameObject B_ButtonPrompt;
     public Slider SP_slider;
     public int SP_GaugeIncreaseValue;
-    public GameObject GO_Fire;
-    public GameObject GO_FireBall;
+    //public GameObject GO_Fire;
+    //public GameObject GO_FireBall;
     private ParticleSystem FX_Fire;
     [SerializeField] private StarterAssetsInputs pl_sai;
     private bool RootMotionEnabled;
@@ -60,13 +60,13 @@ public partial class PlayerStateManager : MonoBehaviour
         Input = GetComponent<PlayerInput>();
         tpc = GetComponent<ThirdPersonController>();
         pl_input = GetComponent<PlayerInput>();
-        GO_FireBall = GameObject.Find("FX_FireBall");
+        //GO_FireBall = GameObject.Find("FX_FireBall");
         characterController = GetComponent<CharacterController>();
         B_ButtonPrompt = this.transform.Find("B_Button_Prompt").gameObject;
         //SP_slider = GameObject.Find("Special Meter").GetComponent<Slider>();
         B_ButtonPrompt.SetActive(false);
-        GO_FireBall.SetActive(false);
-        FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
+        //GO_FireBall.SetActive(false);
+        //FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
         pl_sai = GetComponent<StarterAssetsInputs>();
         SpecialGaugeValue = 0;
     }
@@ -75,7 +75,7 @@ public partial class PlayerStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GO_Fire.SetActive(false);
+        //GO_Fire.SetActive(false);
 
         if (!awayTeam)
         {
@@ -110,14 +110,14 @@ public partial class PlayerStateManager : MonoBehaviour
 
             if (SpecialGaugeValue >= 100)
             {
-                GO_Fire.SetActive(true);
+                //GO_Fire.SetActive(true);
                 status = playerStatus.SP_READY;
                 FX_Fire.Play();
                 Debug.Log("AP DEBUG : THIS IS IT!!");
             }
             else
             {
-                FX_Fire.Stop();
+                //FX_Fire.Stop();
 
             }
 
@@ -364,7 +364,7 @@ public partial class PlayerStateManager : MonoBehaviour
         basketballHandler.ForceChangeParentToPlayerHand();
         pl_input.enabled = false;
         pl_sai.ForceMoveVectorToZero = true;
-        GO_FireBall.SetActive(true);
+        //GO_FireBall.SetActive(true);
         animator.Play("SP_SlamDunk1");
         yield return new WaitForSeconds(0.5f);
         basketballHandler.ShootBall();
@@ -375,7 +375,7 @@ public partial class PlayerStateManager : MonoBehaviour
             pl_input.enabled = true;
         }
         tpc.JumpHeight = originalJumpHeight;
-        GO_FireBall.SetActive(false);
+        //GO_FireBall.SetActive(false);
         status = playerStatus.NORMAL;
         pl_sai.ForceMoveVectorToZero = false;
     }

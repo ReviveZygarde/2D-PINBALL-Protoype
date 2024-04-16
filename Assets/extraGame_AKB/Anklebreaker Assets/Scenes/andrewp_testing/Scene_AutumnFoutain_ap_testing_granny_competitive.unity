@@ -20230,6 +20230,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 904452658027478539, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 904452658328543878, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 904452658350674319, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
@@ -20242,11 +20246,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 904452658505385269, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 904452659002730304, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 904452659096896749, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 904452659141852839, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_AnchorMax.y
@@ -20254,7 +20262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 904452659152664013, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 904452659708087916, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4113780171225317362, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -20290,7 +20302,15 @@ PrefabInstance:
       objectReference: {fileID: -7943520297258774546, guid: fa9e9bb9aafbc8d4e80ff67bc250aa05, type: 2}
     - target: {fileID: 4113780171615705130, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_text
-      value: Quit Game
+      value: Return to PBMF
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113780171906295504, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 384.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113780171906295504, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.7099
       objectReference: {fileID: 0}
     - target: {fileID: 4113780171906295505, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -20371,6 +20391,10 @@ PrefabInstance:
     - target: {fileID: 9106106754413033974, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Scene_AutumnFoutain_ap_testing_granny_competitive
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106106754737403399, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

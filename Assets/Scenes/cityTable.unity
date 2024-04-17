@@ -10247,6 +10247,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1408462169686530684, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
+      propertyPath: volumeTrigger
+      value: 
+      objectReference: {fileID: 1274220076}
     - target: {fileID: 2784622035877368241, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -21828,6 +21832,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
+--- !u!4 &1274220076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7790433937612639617, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
+  m_PrefabInstance: {fileID: 1274220075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1274243419
 GameObject:
   m_ObjectHideFlags: 0

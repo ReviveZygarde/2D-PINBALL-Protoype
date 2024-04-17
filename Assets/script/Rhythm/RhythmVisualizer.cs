@@ -36,6 +36,8 @@ public class RhythmVisualizer : MonoBehaviour
     //2024/2/3 - I changed the array into a List because I have to dynamically empty and re-add gameObjects when things
     //like table layouts change during gameplay.
 
+    [SerializeField] GameObject globalPostProcessEffector;
+
 
     void Start()
     {
@@ -81,6 +83,8 @@ public class RhythmVisualizer : MonoBehaviour
                 Gamepad.current.SetMotorSpeeds(0.25f, 0.75f);
             }
             rh_Status.text = "GOOD!";
+            globalPostProcessEffector.SetActive(false);
+            globalPostProcessEffector.SetActive(true);
             scoreComponent.pl_score = scoreComponent.pl_score + 20;
             //Make the jumpers change the sprite when you are OnBeat.
             foreach (JumperBehavior jumper in JumpersList)

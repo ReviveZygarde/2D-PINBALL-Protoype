@@ -6245,49 +6245,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7790433937457502512, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7790433937503887207, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7790433937518494870, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7790433937612639618, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
-      propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7790433938145864919, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7790433938735061240, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7790433939033450949, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7790433939155495740, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7790433939205637067, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7790433939403898499, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
+--- !u!4 &1049420630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7790433937612639617, guid: 79b7fd4edad3af54298c89218cc9a247, type: 3}
+  m_PrefabInstance: {fileID: 1049420629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1059114018
 GameObject:
   m_ObjectHideFlags: 0
@@ -14749,6 +14750,10 @@ PrefabInstance:
       propertyPath: bossEntity
       value: 
       objectReference: {fileID: 2761993111183323962}
+    - target: {fileID: 1408462169686530684, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
+      propertyPath: volumeTrigger
+      value: 
+      objectReference: {fileID: 1049420630}
     - target: {fileID: 2747724809304908782, guid: 9a052c744b1dbba4c94b755b853eddd8, type: 3}
       propertyPath: bossEntity
       value: 

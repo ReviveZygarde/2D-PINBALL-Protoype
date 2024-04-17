@@ -42,6 +42,9 @@ public class RhythmVisualizer : MonoBehaviour
     void Start()
     {
         retrieveListOfBumpers();
+        //see GameplayControlsBehavior.cs, line 49.
+        rhythmVisualizer_pl_input.defaultActionMap = "ControlType" + globalSetting.Instance.Control_Type;
+        rhythmVisualizer_pl_input.SwitchCurrentActionMap(rhythmVisualizer_pl_input.defaultActionMap);
     }
 
     void retrieveListOfBumpers()
@@ -57,11 +60,6 @@ public class RhythmVisualizer : MonoBehaviour
         {
             JumpersList.Add(bumper.GetComponent<JumperBehavior>());
         }
-    }
-
-    private void OnEnable()
-    {
-        rhythmVisualizer_pl_input.SwitchCurrentActionMap("ControlType" + globalSetting.Instance.Control_Type);
     }
 
     void OnLeftFlipper(InputValue value)
@@ -117,6 +115,8 @@ public class RhythmVisualizer : MonoBehaviour
         {
             retrieveListOfBumpers();
         }
+
+        //Ignore these lines of code below, they're leftovers from Beat Dash.
 
         //changeSquareColor();
         /*else if (!SongPlayer.Instance.IsOnBeat())

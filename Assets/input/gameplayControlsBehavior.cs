@@ -46,7 +46,14 @@ public class gameplayControlsBehavior : MonoBehaviour
         //Gets the control scheme configuration State Machine from GL_Setting, and retroactively applies it to the pl_input
         //by appending the State Machine's state to the end of the "ControlType" string. (i.e. A = ControlTypeA, B = ControlTypeB, etc.)
         //If it can't find the globalSetting singleton (usually for testing), it will use w/e control type defined in the inspector, per scene.
-        pl_input.SwitchCurrentActionMap("ControlType" + globalSetting.Instance.Control_Type);
+        /* 2024/4/16
+         * A playtester encountered a bug where the CurrentActionMap switches back to ControlTypeA, because it is the default action map.
+         * SwitchCurrentActionMap() could not read what I told it to read, because the Default action map rules everything out and pl_input was.
+         * trying to read THAT, not my desired string. So, I had to set the defaultActionMap to my desired string, and then SwitchCurrentActionMap()
+         * to the the defaultActionMap. Now rhythm mode works properly on different control schemes than Type A! Yay!
+         */
+        pl_input.defaultActionMap = "ControlType" + globalSetting.Instance.Control_Type;
+        pl_input.SwitchCurrentActionMap(pl_input.defaultActionMap);
         //Finds Gameobjects and obtains their Rigidbody for manipulation
         leftFlipperJoint = GameObject.Find("L_HingeJoint").GetComponent<L_FlipControl>();
         rightFlipperJoint = GameObject.Find("R_HingeJoint").GetComponent<R_FlipControl>();

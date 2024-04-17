@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
-public class reduceGlobalPostprocessEffect : reduceGlobalBloom
+public class reduceGlobalPostprocessEffect : MonoBehaviour
 {
     PostProcessVolume volume;
     float originalWeight;
@@ -16,8 +16,11 @@ public class reduceGlobalPostprocessEffect : reduceGlobalBloom
 
     private void OnEnable()
     {
-        volume.weight = originalWeight;
-        StartCoroutine(reduceOtherEffect());
+        if(volume != null)
+        {
+            volume.weight = originalWeight;
+            StartCoroutine(reduceOtherEffect());
+        }
     }
 
     IEnumerator reduceOtherEffect()

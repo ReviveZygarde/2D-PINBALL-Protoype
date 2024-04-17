@@ -30,4 +30,6 @@ public class globalSetting : Singleton<globalSetting>
     public bool hasEnteredKonamiCode;
 
     public bool frameRateLimitTo60FPS;
+
+    public bool postprocessEffectsEnabled = true;
 }

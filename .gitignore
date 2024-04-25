@@ -70,3 +70,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/ui/menu/font/DFP-HEISEIGOTHIC-W7 SDF.asset
+Assets/ui/menu/font/dfp-kakougothic-w5 SDF.asset
+Assets/ui/menu/font/dfp-sougei-w7 SDF.asset
+Assets/ui/menu/font/SCE-PS3-NR-R-JPN SDF.asset
+Assets/ui/menu/font/SCE-PS3-RD-R-LATIN SDF.asset
+Assets/ui/menu/font/vipnagorgialla bd SDF.asset

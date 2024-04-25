@@ -13053,7 +13053,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Move: Left Stick\nSelect: \u25EF / \u24B6\nCancel: \u2573 / \u24B7\n"
+  m_text: "Move: Left Stick\nSelect: \u25EF / \u2573 / \u24B6\nCancel: \u25B3 / \u25A1
+    / \u24B7"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 92ea36197a0809649b84a5f23f9a3c5c, type: 2}
   m_sharedMaterial: {fileID: 1901114842259798710, guid: 92ea36197a0809649b84a5f23f9a3c5c, type: 2}
@@ -18203,7 +18204,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Move: Left Stick\nSelect: \u25EF / \u24B6\nCancel: \u2573 / \u24B7\n"
+  m_text: "Move: Left Stick\nSelect: \u25EF / \u2573 / \u24B6\nCancel: \u25B3 / \u25A1
+    / \u24B7"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 92ea36197a0809649b84a5f23f9a3c5c, type: 2}
   m_sharedMaterial: {fileID: 1901114842259798710, guid: 92ea36197a0809649b84a5f23f9a3c5c, type: 2}

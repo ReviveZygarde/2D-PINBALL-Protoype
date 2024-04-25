@@ -649,8 +649,19 @@
                 },
                 {
                     "name": "",
-                    "id": "4f6f8a65-8a38-4a27-b2fc-38441cc3c6d1",
-                    "path": "<DualShockGamepad>/buttonSouth",
+                    "id": "1b4aa628-d35b-4d8b-bd5a-98e8ac6b9b35",
+                    "path": "<DualShockGamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34b73b6b-03a7-4240-9101-c6daba8e2fef",
+                    "path": "<DualShockGamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -797,6 +808,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "554a6c47-5df9-4da7-8feb-cd5bbf5e465f",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Submit",
                     "isComposite": false,
                     "isPartOfComposite": false

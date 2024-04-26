@@ -11,8 +11,8 @@ public class attract_videoPlaybackBehavior : MonoBehaviour
     private VideoPlayer video;
     [SerializeField] private PlayerInput pl_input;
     [SerializeField] private GameObject startButtonText;
-    [Tooltip("Refer to Build Settings for scene index. Leaving this at 0 or a negative number will take the player to the title screen.")]
-    [SerializeField] private int sceneToExitTo;
+    [SerializeField] private string sceneJumpOnPause;
+    [SerializeField] private string sceneJump;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +37,8 @@ public class attract_videoPlaybackBehavior : MonoBehaviour
 
     void OnPauseButton()
     {
-        video.Pause();
+        //video.Pause();
+        SceneManager.LoadScene(sceneJumpOnPause);
     }
 
     // Update is called once per frame
@@ -45,14 +46,7 @@ public class attract_videoPlaybackBehavior : MonoBehaviour
     {
         if (video.isPaused)
         {
-            if(sceneToExitTo <= 0)
-            {
-                SceneManager.LoadScene("TitlePrototype");
-            }
-            else
-            {
-                SceneManager.LoadScene(sceneToExitTo);
-            }
+            SceneManager.LoadScene(sceneJump);
         }
     }
 }

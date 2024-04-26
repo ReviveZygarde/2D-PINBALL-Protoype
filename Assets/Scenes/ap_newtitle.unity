@@ -9628,7 +9628,7 @@ GameObject:
   - component: {fileID: 1441346597}
   - component: {fileID: 1441346596}
   m_Layer: 0
-  m_Name: VO
+  m_Name: VO_title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10066,6 +10066,8 @@ MonoBehaviour:
   controlDiagramB: {fileID: 0}
   controlDiagramC: {fileID: 0}
   blackscreenOver: {fileID: 1610492350}
+  ballSettingVO: []
+  controlSettingVO: []
 --- !u!82 &1610492352
 AudioSource:
   m_ObjectHideFlags: 0

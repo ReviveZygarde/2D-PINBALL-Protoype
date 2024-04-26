@@ -15,6 +15,7 @@ public class nameEntryBehavior : MonoBehaviour
     [SerializeField] private TMP_InputField textToCapitalize;
     private disableThenEnable characterFadeOutSequence;
     [SerializeField] private GameObject leaderboardParent;
+    public AudioSource vo_thankyou;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +49,7 @@ public class nameEntryBehavior : MonoBehaviour
         }
         else
         {
+            vo_thankyou.Play();
             leaderboardParent.SetActive(true); //leaderboard rankings fly in
             foreach (AudioSource jingle in jingles)
             {
@@ -55,6 +57,7 @@ public class nameEntryBehavior : MonoBehaviour
                                                            //the AudioSource, play that AudioSource that has the matching name.
                 {
                     jingle.Play();
+                    vo_thankyou.Stop();
                 }
             }
             StartCoroutine(transitionToRankings());

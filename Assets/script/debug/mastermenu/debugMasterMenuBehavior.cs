@@ -17,6 +17,8 @@ public class debugMasterMenuBehavior : MonoBehaviour
     public GameObject controlDiagramC;
     public Gamepad gamepad;
     public GameObject blackscreenOver;
+    public AudioSource[] ballSettingVO;
+    public AudioSource[] controlSettingVO;
 
     // Start is called before the first frame update
     void Start()
@@ -37,22 +39,27 @@ public class debugMasterMenuBehavior : MonoBehaviour
         {
             case globalSetting.ballMass.NORMAL:
                 gl_setting.ballSetting = globalSetting.ballMass.LIGHT;
+                if(ballSettingVO != null) ballSettingVO[1].Play();
                 break;
             case globalSetting.ballMass.LIGHT:
                 gl_setting.ballSetting = globalSetting.ballMass.HEAVY;
+                if (ballSettingVO != null) ballSettingVO[2].Play();
                 break;
             case globalSetting.ballMass.HEAVY:
                 if (gl_setting.hasEnteredKonamiCode)
                 {
                     gl_setting.ballSetting = globalSetting.ballMass.ULTRA;
+                    if (ballSettingVO != null) ballSettingVO[3].Play();
                 }
                 else
                 {
                     gl_setting.ballSetting = globalSetting.ballMass.NORMAL;
+                    if (ballSettingVO != null) ballSettingVO[0].Play();
                 }
                 break;
             case globalSetting.ballMass.ULTRA:
                 gl_setting.ballSetting = globalSetting.ballMass.NORMAL;
+                if (ballSettingVO != null) ballSettingVO[0].Play();
                 break;
         }
         ballMass.text = gl_setting.ballSetting.ToString();
@@ -60,22 +67,32 @@ public class debugMasterMenuBehavior : MonoBehaviour
 
     public void changeControlType()
     {
-        switch (gl_setting.Control_Type)
+        if (controlSettingVO != null)
+        {
+            foreach(AudioSource voClip in controlSettingVO)
+            {
+                voClip.Stop();
+            }
+        }
+            switch (gl_setting.Control_Type)
         {
             case globalSetting.controlType.A:
                 gl_setting.Control_Type = globalSetting.controlType.B;
                 controlDiagramA.SetActive(false);
                 controlDiagramB.SetActive(true);
+                if(controlSettingVO != null) controlSettingVO[1].Play();
                 break;
             case globalSetting.controlType.B:
                 gl_setting.Control_Type = globalSetting.controlType.C;
                 controlDiagramB.SetActive(false);
                 controlDiagramC.SetActive(true);
+                if (controlSettingVO != null) controlSettingVO[2].Play();
                 break;
             case globalSetting.controlType.C:
                 gl_setting.Control_Type = globalSetting.controlType.A;
                 controlDiagramC.SetActive(false);
                 controlDiagramA.SetActive(true);
+                if (controlSettingVO != null) controlSettingVO[0].Play();
                 break;
         }
         controltypetext.text = gl_setting.Control_Type.ToString();

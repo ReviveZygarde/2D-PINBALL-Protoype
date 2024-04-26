@@ -20314,7 +20314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4113780171906295505, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: ap_newtitle
+      value: rankings
       objectReference: {fileID: 0}
     - target: {fileID: 4113780172199717693, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument

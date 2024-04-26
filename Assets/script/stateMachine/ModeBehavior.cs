@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -370,6 +371,8 @@ public class ModeBehavior : MonoBehaviour
 
     IEnumerator transitionToGameOverWait()
     {
+        GameObject.Find("pl_input").SetActive(false);
+        GameObject.Find("Pinball").SetActive(false);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(gameOverSceneJump);
         //SceneManager.LoadScene("ProtoGameOver");

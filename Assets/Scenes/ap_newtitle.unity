@@ -9633,7 +9633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1441346595
 Transform:
   m_ObjectHideFlags: 0
@@ -9643,11 +9643,11 @@ Transform:
   m_GameObject: {fileID: 1441346594}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2.3963003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2053724077}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!164 &1441346596
 AudioReverbFilter:
@@ -9707,7 +9707,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 475d05af6faf02443beb5a50cb691bd9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e6dae46695fe22d4496e12191cd77a06, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -11030,7 +11030,6 @@ Transform:
   - {fileID: 1849457002}
   - {fileID: 1271331612}
   - {fileID: 2043583739}
-  - {fileID: 1441346595}
   m_Father: {fileID: 474323224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2119360978
@@ -11330,6 +11329,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1215799284}
   - {fileID: 1850517387}
+  - {fileID: 1441346595}
   - {fileID: 281943577}
   - {fileID: 1162975960}
   - {fileID: 1861363048}

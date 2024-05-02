@@ -211,7 +211,7 @@ MonoBehaviour:
   gain: 0
   signatureHi: 1
   signatureLo: 4
-  inputBufScale: 0.3
+  inputBufScale: 0.99
 --- !u!114 &5762487851044075571
 MonoBehaviour:
   m_ObjectHideFlags: 0

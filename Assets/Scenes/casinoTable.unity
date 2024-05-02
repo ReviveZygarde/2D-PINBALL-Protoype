@@ -13411,7 +13411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5777712947499543579, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
       propertyPath: bpm
-      value: 128
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 5777712947499543579, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
       propertyPath: inputBufScale

@@ -9641,10 +9641,6 @@ PrefabInstance:
       propertyPath: bpm
       value: 120
       objectReference: {fileID: 0}
-    - target: {fileID: 5777712947499543579, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
-      propertyPath: inputBufScale
-      value: 0.99
-      objectReference: {fileID: 0}
     - target: {fileID: 6308409819723807833, guid: 12a1dc2db733c244a9b1d0111e5a46fa, type: 3}
       propertyPath: m_Name
       value: rhythmParent

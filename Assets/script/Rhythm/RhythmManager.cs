@@ -43,6 +43,7 @@ public class RhythmManager : MonoBehaviour
 
     void Start()
     {
+        /*
         Instance = this;
         audioSource = GetComponent<AudioSource>();
         accent = signatureHi;
@@ -54,7 +55,23 @@ public class RhythmManager : MonoBehaviour
         nextTick = startTick * sampleRate;
         //start the audio delayed and then sync
         audioSource.PlayScheduled(AudioSettings.dspTime + 1);
+        */
+    }
 
+    private void OnEnable()
+    {
+        //To fix the audio desync bug, the variables have to be reset every time the component is Enabled, instead of being at Start().
+        Instance = this;
+        audioSource = GetComponent<AudioSource>();
+        accent = signatureHi;
+        sampleRate = AudioSettings.outputSampleRate;
+        samplesPerTick = sampleRate * 60.0F / bpm * 4.0F / signatureLo;
+        quarterInputBuffer = ((samplesPerTick * (inputBufScale * 60 / bpm)));
+        running = true;
+        double startTick = AudioSettings.dspTime;
+        nextTick = startTick * sampleRate;
+        //start the audio delayed and then sync
+        audioSource.PlayScheduled(AudioSettings.dspTime + 1);
     }
 
 

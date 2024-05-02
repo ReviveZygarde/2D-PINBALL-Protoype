@@ -29,5 +29,16 @@ public class debugBuildTime : MonoBehaviour
         {
             text.text = $"DATE {compiledDateAndTime}";
         }
+        //Enable/Disable debug logs
+        if (globalSetting.Instance.buildType == globalSetting.releaseLevel.RELEASE || globalSetting.Instance.buildType == globalSetting.releaseLevel.DEMO)
+        {
+            Debug.Log("This is RELEASE or DEMO. Debug logging will be OFF.");
+            Debug.unityLogger.logEnabled = false;
+        }
+        else
+        {
+            Debug.Log("This is DEVELOP. Debug logging will be ON.");
+            Debug.unityLogger.logEnabled = true;
+        }
     }
 }

@@ -16,12 +16,16 @@ public class scoreBehavior : MonoBehaviour
     void Start()
     {
         gl_scoreBehavior = globalScoreBehavior.Instance.GetComponent<globalScoreBehavior>();
-        pl_score = gl_scoreBehavior.global_pl_score;
+        //pl_score = gl_scoreBehavior.global_pl_score;
         modeBehavior = GetComponent<ModeBehavior>();
     }
 
     public void applyScoreToGLscore()
     {
+        if(pl_score > 2000000000 || pl_score < 0) //Hardcode the maximum score to 2 billion and prevent overflow.
+        {
+            pl_score = 2000000000;
+        }
         gl_scoreBehavior.global_pl_score = pl_score;
     }
 

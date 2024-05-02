@@ -10917,6 +10917,7 @@ MonoBehaviour:
   textToCapitalize: {fileID: 0}
   leaderboardParent: {fileID: 919907979}
   vo_thankyou: {fileID: 459513743}
+  sceneJumpAfterNormalNameEntry: rankings
 --- !u!114 &695111950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10938,6 +10939,7 @@ MonoBehaviour:
   controlDiagramC: {fileID: 0}
   blackscreenOver: {fileID: 233419626}
   ballSettingVO: []
+  controlSettingVO: []
 --- !u!114 &695111951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11995,6 +11997,7 @@ MonoBehaviour:
   controlDiagramC: {fileID: 0}
   blackscreenOver: {fileID: 0}
   ballSettingVO: []
+  controlSettingVO: []
 --- !u!1 &832559521
 GameObject:
   m_ObjectHideFlags: 0

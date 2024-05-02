@@ -16,6 +16,7 @@ public class nameEntryBehavior : MonoBehaviour
     private disableThenEnable characterFadeOutSequence;
     [SerializeField] private GameObject leaderboardParent;
     public AudioSource vo_thankyou;
+    [SerializeField] string sceneJumpAfterNormalNameEntry;
 
     // Start is called before the first frame update
     void Start()
@@ -72,7 +73,7 @@ public class nameEntryBehavior : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         //TODO: change this to the Thanks for Playing scene.
-        debugMasterMenuBehavior.goToPresetSceneForRelease("ending_demo");
+        debugMasterMenuBehavior.goToPresetSceneForRelease(sceneJumpAfterNormalNameEntry); //ending_demo
     }
 
     void Update()

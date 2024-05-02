@@ -58,16 +58,16 @@ public class globalScorekeep : Singleton<globalScorekeep>
         }
     }
 
-    public void clearRecords()
+    public void clearRecords() //Clears the entire leaderboard to dashed-out names and scores of zero.
     {
-        if(scores == null && names == null)
+        if(scores == null && names == null) //If the leaderboard lists are null, make a new list
         {
             scores = new List<int>();
             names = new List<string>();
         }
         names.Clear();
         scores.Clear();
-        for(int i = 0; i < 8; i++)
+        for(int i = 0; i < 8; i++) //The clearing and replace procedure.
         {
             names.Add("---");
             scores.Add(0);

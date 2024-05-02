@@ -113,7 +113,7 @@ public class debugMasterMenuBehavior : MonoBehaviour
 
     public void gotoTitle()
     {
-        string tmp = "TitlePrototype";
+        string tmp = "rankings";
         StartCoroutine(wait(tmp));
     }
 

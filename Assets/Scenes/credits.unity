@@ -17414,38 +17414,39 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"PINBALL MASTER FLIPPER\"\n\n\n\n\nAICA CCC-TEAM Production\n\n\n\n\nPROJECT
-    INCEPTION AND LEAD\nAndrew-P\n\nPRODUCER\nEden Szopa\n\nMAIN PROGRAM\nAndrew-P\n\nRHYTHM
-    PROGRAM\nMack Pearson\n\nTABLE DESIGN\nEden Szopa\n\nCHARACTER DESIGN\nValentina
-    Giron\nKeanu Martinez\n\nBOSS ENEMY DESIGN\nRefik Kajic\n\nUSER INTERFACE DESIGN\nL
-    Dennis\nAndrew-P\n\nANNOUNCER\nWarren Hernandez\n\nAUDIO - BGM\n\nWater Drop
-    by Glitch | https://soundcloud.com/glitch\r\nMusic promoted by https://www.free-stock-music.com\r\nCreative
-    Commons / Attribution 3.0 Unported License (CC BY 3.0)\r\n\r\r\n\"ld47\" by bertsz\r\n(Open
-    Game Art)\r\nPublic Domain\r\n\r\r\nPiercing by Numall Fix | https://soundcloud.com/numall-fix\r\nMusic
+  m_text: "\"PINBALL MASTER FLIPPER\"\r\n\r\n\r\n\r\n\r\nAICA CCC-TEAM Production\r\n\r\n\r\n\r\n\r\nPROJECT
+    INCEPTION AND LEAD\r\nAndrew-P\r\n\r\nPRODUCER\r\nEden Szopa\r\n\r\nMAIN PROGRAM\r\nAndrew-P\r\n\r\nRHYTHM
+    PROGRAM\r\nMack Pearson\r\n\r\nTABLE DESIGN\r\nEden Szopa\r\n\r\nCHARACTER DESIGN\r\nValentina
+    Giron\r\nKeanu Martinez\r\n\r\nBOSS ENEMY DESIGN\r\nRefik Kajic\r\n\r\nUSER INTERFACE
+    DESIGN\r\nDanielle Dennis\r\nAndrew-P\r\n\r\nANNOUNCER\r\nWarren Hernandez\r\n\r\nAUDIO
+    - BGM\r\n\r\nWater Drop by Glitch | https://soundcloud.com/glitch\r\nMusic promoted
+    by https://www.free-stock-music.com\r\nCreative Commons / Attribution 3.0 Unported
+    License (CC BY 3.0)\r\n\r\n\r\n\"ld47\" by bertsz\r\n(Open Game Art)\r\nPublic
+    Domain\r\n\r\n\r\nPiercing by Numall Fix | https://soundcloud.com/numall-fix\r\nMusic
     promoted by https://www.free-stock-music.com\r\nCreative Commons / Attribution-ShareAlike
     3.0 Unported (CC BY-SA 3.0)\r\n\r\nSome Distant Memory by Glitch | https://soundcloud.com/glitch\r\nMusic
     promoted by https://www.free-stock-music.com\r\nCreative Commons / Attribution
     3.0 Unported License (CC BY 3.0)\r\n\r\n\"Rocket Power\" Kevin MacLeod (incompetech.com)\r\nLicensed
     under Creative Commons: By Attribution 4.0 License\r\n\r\nE.F by Glitch | https://soundcloud.com/glitch\r\nMusic
     promoted by https://www.free-stock-music.com\r\nCreative Commons / Attribution
-    3.0 Unported License (CC BY 3.0)\r\n\r\r\nCoffee Shop by PYC Music | https://soundcloud.com/pycmusic\r\nMusic
+    3.0 Unported License (CC BY 3.0)\r\n\r\n\r\nCoffee Shop by PYC Music | https://soundcloud.com/pycmusic\r\nMusic
     promoted by https://www.free-stock-music.com\r\nCreative Commons / Attribution-NoDerivs
     3.0 Unported (CC BY-ND 3.0)\r\n\r\nMonolith - Music by Tri-Tachyon - https://soundcloud.com/tri-tachyon/albums\r\n\r\nBreaking
     Rules - Serat - Free Music Archive, CC-BY 4.0 \r\n\r\n\"Circuit Punk Game Menu\"
-    by Eric Matyas soundimage.org\r\n\r\r\nMusic by Cleyton Kauffman - https://soundcloud.com/cleytonkauffman\r\n\r\n\u300CJumping
-    to the moon\u300D\n\u307E\u3093\u307C\u3046\u4E8C\u7B49\u5175\n(DOVA-SYNDROME)\n\nTitle
-    Screen Music:\r\n\u300CPrecipitating Dolphins\u300D\n\u307E\u3093\u307C\u3046\u4E8C\u7B49\u5175
-    \r\n(DOVA SYNDROME)\r\n\n\rCredits Theme music:\n\u300C\u65E5\u5E38\u30B9\u30D1\u30A4\u30B9
-    -instrumental-\u300D\nioni (DOVA-SYNDROME)\n\n\u300CCOLLECTION\u300D\nSHUNTA
-    (DOVA-SYNDROME)\n\r\nAUDIO - SOUND EFFECTS\nSounds Resource\n(www.sounds-resource.com)\nSCE
-    SFX Asset Library ver. 0.42\nMixkit Audio Library\nZOPHAR's Domain\n\n\nEXTERNAL
-    ASSETS\nAdobe Stock\nPexels Stock Photo\nSVGRepo\nRazeWare\nSherbbs Particle
-    Collection\nAndtech Star Pack\n\nPROJECT ANKLEBREAKER\nRashad Patterson\nHerbert
-    Chillis\n\nSPECIAL THANKS\nDavid Antognoli\nTyrus Goshay\nMarc Soehl\nCCC-IAM
-    Department\nPlaytest Planet 2023 Participants\nIllinois Institute of Technology
-    IGDA\n...and you, the Player.\n\nFonts\nDIGITAL-7: Sizenko Alexander\n\xA92013,
-    2019 DynaComware Taiwan, Inc. All Rights Reserved.\n\xA92006 FONTWORKS Japan,
-    Inc."
+    by Eric Matyas soundimage.org\r\n\r\n\r\nMusic by Cleyton Kauffman - https://soundcloud.com/cleytonkauffman\r\n\r\n\u300CJumping
+    to the moon\u300D\r\n\u307E\u3093\u307C\u3046\u4E8C\u7B49\u5175\r\n(DOVA-SYNDROME)\r\n\r\nTitle
+    Screen Music:\r\n\u300CPrecipitating Dolphins\u300D\r\n\u307E\u3093\u307C\u3046\u4E8C\u7B49\u5175
+    \r\n(DOVA SYNDROME)\r\n\r\n\r\nCredits Theme music:\r\n\u300C\u65E5\u5E38\u30B9\u30D1\u30A4\u30B9
+    -instrumental-\u300D\r\nioni (DOVA-SYNDROME)\r\n\r\n\u300CCOLLECTION\u300D\r\nSHUNTA
+    (DOVA-SYNDROME)\r\n\r\nAUDIO - SOUND EFFECTS\r\nSounds Resource\r\n(www.sounds-resource.com)\r\nSCE
+    SFX Asset Library ver. 0.42\r\nMixkit Audio Library\r\nZOPHAR's Domain\r\n\r\n\r\nEXTERNAL
+    ASSETS\r\nAdobe Stock\r\nPexels Stock Photo\r\nSVGRepo\r\nRazeWare\r\nSherbbs
+    Particle Collection\r\nAndtech Star Pack\r\n\r\nPROJECT ANKLEBREAKER\r\nRashad
+    Patterson\r\nHerbert Chillis\r\n\r\nSPECIAL THANKS\r\nDavid Antognoli\r\nTyrus
+    Goshay\r\nMarc Soehl\r\nCCC-IAM Department\r\nPlaytest Planet 2023 Participants\r\nIllinois
+    Institute of Technology IGDA\r\n...and you, the Player.\r\n\r\nFonts\r\nDIGITAL-7:
+    Sizenko Alexander\r\n\xA92013, 2019 DynaComware Taiwan, Inc. All Rights Reserved.\r\n\xA92006
+    FONTWORKS Japan, Inc."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eddb5eab30deae54a8300769d0bb83c8, type: 2}
   m_sharedMaterial: {fileID: 5399153684034095516, guid: eddb5eab30deae54a8300769d0bb83c8, type: 2}

@@ -14,20 +14,20 @@ public class debugBuildTime : MonoBehaviour
     {
         text = GetComponent<Text>();
         string gameVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-        print(gameVersion);
-        versiontext.text = $"Version {gameVersion}";
+        if(versiontext != null)
+        {
+            versiontext.text = $"Version {gameVersion}";
+        }
         System.Version version = Assembly.GetExecutingAssembly().GetName().Version;
         System.DateTime startDate = new System.DateTime(2000, 1, 1, 0, 0, 0);
         System.TimeSpan span = new System.TimeSpan(version.Build, 0, 0, version.Revision * 2);
         System.DateTime buildDate = startDate.Add(span);
-        print(buildDate.ToString());
+        Debug.Log($"PINBALL MASTER FLIPPER Version {gameVersion}");
+        Debug.Log($"DATE {buildDate}");
         string compiledDateAndTime = buildDate.ToString();
-        text.text = $"DATE {compiledDateAndTime}";
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(text != null)
+        {
+            text.text = $"DATE {compiledDateAndTime}";
+        }
     }
 }

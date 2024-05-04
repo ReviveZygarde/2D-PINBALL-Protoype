@@ -63,6 +63,9 @@ EditorBuildSettings:
     path: Assets/Scenes/rankings.unity
     guid: f8599f3b21b60cb4c8197542de13a231
   - enabled: 1
+    path: Assets/Scenes/demo_howtoplay.unity
+    guid: d289aaa096325fd49b9f388609aeb09b
+  - enabled: 1
     path: Assets/Scenes/ending_demo.unity
     guid: 3f61662128b959f47864a8e78b1ee0f9
   - enabled: 1
@@ -71,8 +74,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/extraGame_AKB/extraGameEnd.unity
     guid: ceaeed28ea92997468c75ed93273c2fa
-  - enabled: 1
-    path: Assets/Scenes/demo_howtoplay.unity
-    guid: d289aaa096325fd49b9f388609aeb09b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9fea9601263f75746a731a49cad37d63, type: 2}

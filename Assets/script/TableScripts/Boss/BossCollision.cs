@@ -26,6 +26,7 @@ public class BossCollision : MonoBehaviour
     [SerializeField] private GameObject animationSpriteToDisable;
     [SerializeField] private GameObject bossDefeatSprite;
     private GameObject pl_input;
+    private Collider2D bossColliderComponent;
 
 
     // Start is called before the first frame update
@@ -34,10 +35,19 @@ public class BossCollision : MonoBehaviour
         isDefeated = false;
         bossDefeatSprite.SetActive(false);
         splineAnim = GetComponent<SplineAnimate>();
+        bossColliderComponent = GetComponent<Collider2D>();
         //pl_input = GameObject.Find("pl_input");
         //Pinball = GameObject.Find("Pinball");
         //common_modeBehavior = GameObject.Find("common").GetComponent<ModeBehavior>();
         //this.gameObject.SetActive(false); //Gets the required components, then disables itself.
+    }
+
+    private void OnEnable()
+    {
+        if(bossColliderComponent != null)
+        {
+            bossColliderComponent.enabled = true;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -108,7 +118,7 @@ public class BossCollision : MonoBehaviour
         Collider2D collider = GetComponent<Collider2D>();
         splineAnim.Pause();
         collider.enabled = false;
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(1f); //2024/5/3: this was changed from 2 seconds based on playtesters' feedback
         splineAnim.Play();
         collider.enabled = true;
         hitEffectObject.SetActive(false);

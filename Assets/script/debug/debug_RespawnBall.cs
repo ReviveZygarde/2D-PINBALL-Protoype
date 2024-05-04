@@ -39,6 +39,7 @@ public class debug_RespawnBall : MonoBehaviour
         }
     }
 
+    /*
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject == Pinball)
@@ -46,6 +47,7 @@ public class debug_RespawnBall : MonoBehaviour
             Sequence();
         }
     }
+    */
 
     private void Sequence()
     {

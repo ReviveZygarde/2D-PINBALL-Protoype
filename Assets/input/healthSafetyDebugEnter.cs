@@ -19,7 +19,6 @@ public class healthSafetyDebugEnter : MonoBehaviour
                 this.gameObject.SetActive(false);
                 break;
             case globalSetting.releaseLevel.DEMO:
-                this.gameObject.SetActive(false);
                 break;
             case globalSetting.releaseLevel.DEVELOP:
                 break;

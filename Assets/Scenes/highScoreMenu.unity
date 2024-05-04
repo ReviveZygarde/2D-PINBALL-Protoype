@@ -10917,7 +10917,7 @@ MonoBehaviour:
   textToCapitalize: {fileID: 0}
   leaderboardParent: {fileID: 919907979}
   vo_thankyou: {fileID: 459513743}
-  sceneJumpAfterNormalNameEntry: rankings
+  sceneJumpAfterNormalNameEntry: ending_demo
 --- !u!114 &695111950
 MonoBehaviour:
   m_ObjectHideFlags: 0

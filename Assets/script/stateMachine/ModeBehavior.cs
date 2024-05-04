@@ -148,6 +148,16 @@ public class ModeBehavior : MonoBehaviour
         StopAllCoroutines();
     }
 
+    public void pauseBossModeTimer()
+    {
+        StopAllCoroutines();
+    }
+
+    public void resumeBossModeTimer()
+    {
+        StartCoroutine(timerCountdown_Mode());
+    }
+
     private void decrementSaverTimerBy1()
     {
         secondsUntilBallSaveEnds--;

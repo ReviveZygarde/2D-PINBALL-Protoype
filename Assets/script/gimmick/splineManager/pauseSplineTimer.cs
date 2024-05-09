@@ -46,8 +46,8 @@ public class pauseSplineTimer : MonoBehaviour
         }
         if(mode.modeState == ModeBehavior.currentMode.RUSH)
         {
-            mode.secondsUntilModeEnds = mode.secondsUntilModeEnds + 10;
-            uiOverheadText.text = $"TIME EXTENSION! +10 SEC.";
+            mode.secondsUntilModeEnds = mode.secondsUntilModeEnds + 2;
+            uiOverheadText.text = $"TIME EXTENSION! +2 SEC.";
         }
         if(mode.secondsUntilModeEnds >= 200) //similar to the roulette wheel, if the time exceeds 200 go back down to 200 seconds.
         {

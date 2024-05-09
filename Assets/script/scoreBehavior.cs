@@ -18,6 +18,17 @@ public class scoreBehavior : MonoBehaviour
         gl_scoreBehavior = globalScoreBehavior.Instance.GetComponent<globalScoreBehavior>();
         //pl_score = gl_scoreBehavior.global_pl_score;
         modeBehavior = GetComponent<ModeBehavior>();
+        //Changing the ballsLeft when releaseType is DEMO.
+        switch (globalSetting.Instance.buildType)
+        {
+            case globalSetting.releaseLevel.RELEASE:
+                break;
+            case globalSetting.releaseLevel.DEVELOP:
+                break;
+            case globalSetting.releaseLevel.DEMO:
+                ballsLeft = ballsLeft - 1;
+                break;
+        }
     }
 
     public void applyScoreToGLscore()
